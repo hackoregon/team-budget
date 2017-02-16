@@ -15,6 +15,28 @@
 --   perfmeas, perftype specifies the Performance Measures, 
 --     "but not the values" associated with those measures.
 
+-- Account definitions
+-- "accounts which bind Orgs, funds, programs, and possibly objects and MUT/MUD."
+select count(*) from accts; -- 0 rows.
+
+-- 0 rows in alloc* tables.
+select * from allocdet;
+select * from allochdr;
+select * from allocres;
+
+-- Employee type by bureau?
+-- These tables not listed in documentation.
+select count(id) from category; -- 30 rows.
+select * from category order by description limit 500;
+select * from categsupp order by categ, supp limit 500; -- Associative table
+select * from suppamt order by id;
+select * from suppcode order by description;
+
+select c.id, c.description, cs.supp, sc.description, c.sal_pct, c.benf_pct, c.srv_id, c.sal_object, c.fte_object, c.pos_object
+from category c inner join categsupp cs on c.id = cs.categ
+  inner join suppcode sc on cs.supp = sc.id
+order by c.id, c.description limit 500;
+
 -- Column definitions for views and reports.
 -- label1 in {'FY 2016-17', 'FY 2015-16', ...}.
 -- label2 in {'Adopted', 'Estimated', 'Performance', ...}.
@@ -123,6 +145,16 @@ select * from pengres limit 500;
 -- Performance Measures
 select count(id) from perfmeas; -- 1,010 rows
 select * from perfmeas order by seq limit 1200;
+-- "Performance measures are values that can be associated with various 
+--   entities in the system to measure their output, to quantify their inputs 
+--   and/or to be the basis of various efficiency units."
+-- "Performance Measures can be associated with Orgs, Programs, Grants, Projects."
+select count(*) from ss_perf; -- 16,033 rows
+select * from ss_perf order by perf limit 1000;
+
+select ssp.perf, ssp.col, ssp.data, p.name, p.lname, p.seq, p.ptype, p.corg
+from ss_perf ssp inner join perfmeas p on ssp.perf = p.id
+order by ssp.perf, ssp.col limit 2000;
 
 -- only 4 rows: {Effectiveness, Efficiency, Key Performance Measure, Workload}
 select * from perftype limit 500;
@@ -151,17 +183,26 @@ select * from ss_audit limit 1000;
 -- Actual expenditures?
 select count(*) from ss_data;  -- 3,645,260 rows
 select * from ss_data order by fund, col, object limit 1000;
-select d.org, c.name, d.fund, d.program, d.object, d.col, d.mut, d.mud, d.data
-  from ss_data d inner join consolinfo c on d.org = c.org
-  order by d.org, d.fund
-  limit 2000;
-select d.org, c.parent, d.fund, d.program, d.object, d.col, d.mut, d.mud, d.data
-  from ss_data d inner join consoldef c on d.org = c.org
-  order by d.org
-  limit 1000;
 
-select count(*) from ss_perf; -- 16,033 rows
-select * from ss_perf order by perf limit 1000;
+-- Displays associated names for some of the id fields.
+select cd.parent, d.org, ci.name, d.fund, fi.name, d.program, d.object, d.col, d.data, d.mut, d.mud
+  from ss_data d inner join consolinfo ci on d.org = ci.org
+    inner join consoldef cd on d.org = cd.org
+    inner join fundinfo fi on d.fund = fi.org
+  where d.org like 'FR%'
+  order by d.org, d.fund, d.col, d.data
+  limit 2000;
+
+select count(distinct object) from ss_data; -- 823
+select distinct object from ss_data order by object;
+
+-- What are projections used for?
+-- "BRASS projection definitions excluding the equations which are stored in ss_projrection_eqs."
+-- "Projections is the main tool to generate projection which write back to ss_data."
+select * from ss_projection order by proj_name limit 500; -- 5 rows.
+-- "BRASS projection equations which are associated with a projection definitions in ss_projection."
+-- "Equations are the processed in a BRASS projection."
+select * from ss_projection_eqs order by val_tot limit 500; -- 5 rows.
 
 -- 7 rows: {'Rollover from prior year', ...}
 select * from stages;
