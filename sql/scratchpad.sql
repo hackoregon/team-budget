@@ -177,7 +177,8 @@ select * from user_list limit 1000;
 -- "This table contains users specific information. 
 --   This includes security related items such as passwords and access related 
 --   pointers but also individual information such as preferred page layouts."
-select * from users;
+select count(userid) from users; -- 276 rows.
+select * from users order by name limit 500;
 
 -- "typically used to store local or temporary data and lists for processing."
 select * from work_a limit 1000;
