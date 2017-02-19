@@ -21,4 +21,4 @@ class KPM(models.Model):
     fy = models.CharField(max_length=255, default='')
     budget_type = models.CharField(max_length=255, default='')
     amount = models.IntegerField(blank=True, null=True)
-    units = budget_type = models.CharField(max_length=255, default='')
+    units = models.CharField(max_length=255, default='')
