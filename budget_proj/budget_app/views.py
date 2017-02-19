@@ -34,15 +34,15 @@ class ListOcrb(generics.ListAPIView):
     class gives you a convinient way to declare views quickly when you only
     need basic functionality or simple CRUD operations. 
     """
-    queryset = models.Ocrb.objects.all()
-    serializer_class = serializers.SongSerializer
+    queryset = models.OCRB.objects.all()
+    serializer_class = serializers.OcrbSerializer
 
 
 class ListKpm(generics.ListAPIView):
     """
     A class based view that inherits from the movies class
     """
-    queryset = models.Kpm.objects.all()
+    queryset = models.KPM.objects.all()
     serializer_class = serializers.KpmSerializer
 
 
