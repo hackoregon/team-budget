@@ -22,4 +22,10 @@ Run the app server:
 ```
 python3 budget_proj/manage.py runserver
 ```
-Then launch http://127.0.0.1:8000 in your browser and you'll get a response from the Django app.
+Then launch your browser and browse to one of these two endpoints (not currently pulling data):
+http://127.0.0.1:8000/ocrb
+http://127.0.0.1:8000/kpm
+
+# Endpoint map
+- OCRB: provides data from City of Portland Budget in Brief documents (e.g. FY 2016-17), all Service Area sections, table "Operating and Capital Requirements by Bureau"
+- KPM: provides data from City of Portland Budget in Brief documents (e.g. FY 2016-17), all Service Area sections, table "Key Performance Measures"
