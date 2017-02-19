@@ -14,7 +14,7 @@ Clone, configure your virtual environment and install requirements:
 ```
 git clone https://github.com/hackoregon/transportation-backend.git
 cd transportation-backend
-virtualenv -p python3 venv
+virtualenv -p python3 budget_venv
 source venv/bin/activate
 pip install -r requirements.txt
 ```
