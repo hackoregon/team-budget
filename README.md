@@ -12,10 +12,10 @@ Per the current recommended approach for organizing code in repos, Budget team w
 
 Clone, configure your virtual environment and install requirements:
 ```
-git clone https://github.com/hackoregon/transportation-backend.git
-cd transportation-backend
+git clone https://github.com/hackoregon/team-budget.git
+cd team-budget
 virtualenv -p python3 budget_venv
-source venv/bin/activate
+source budget_venv/bin/activate
 pip install -r requirements.txt
 ```
 Run the app server:
