@@ -62,5 +62,19 @@ class ListKpm(generics.ListAPIView):
     serializer_class = serializers.KpmSerializer
 
     def get(self, request, format=None):
-        pass
-        # load OCRB
+        f = '../Data/Budget_in _Brief_KPM_data_All_Years.csv'
+        col_headers = ['source_document', 'service_area', 'bureau', 'key_performance_measures', 'fy', 'budget_type', 'amount',
+        'units']
+        reader = csv.DictReader(open(f, 'r'), col_headers)
+        all_data = [obj for obj in reader]
+
+        # skip header row
+        all_data = all_data[1:]
+        all_obj = [models.KPM(**data) for data in all_data]
+        for obj in all_obj: # remove empty strings from number fields
+            if obj.amount == '':
+                obj.amount = None
+
+        serializer = serializers.KpmSerializer(all_obj, many=True)
+
+        return Response(serializer.data)
