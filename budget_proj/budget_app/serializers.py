@@ -5,9 +5,9 @@ from . import models
 class OcrbSerializer(serializers.ModelSerializer):
     class Meta:
         model = models.OCRB
-        fields = '__all__'
+        exclude = ('id',)
 
 class KpmSerializer(serializers.ModelSerializer):
-	class Meta:
-		model = models.KPM
-		fields = '__all__'
+    class Meta:
+        model = models.KPM
+        exclude = ('id',)
