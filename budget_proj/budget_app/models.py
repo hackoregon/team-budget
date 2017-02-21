@@ -20,5 +20,7 @@ class KPM(models.Model):
     key_performance_measures = models.CharField(max_length=255, default='')
     fy = models.CharField(max_length=255, default='')
     budget_type = models.CharField(max_length=255, default='')
-    amount = models.IntegerField(blank=True, null=True)
+    amount = models.FloatField(blank=True, null=True)
     units = models.CharField(max_length=255, default='')
+
+
