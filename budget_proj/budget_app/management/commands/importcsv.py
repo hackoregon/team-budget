@@ -60,6 +60,8 @@ def insert(infile, model, field_to_header):
         for csv_record in reader:
             db_values = {}
             for field in model._meta.get_fields():
+                if isinstance(field, models.AutoField):
+                    continue
                 header = field_to_header.get(field.name, field.name)
                 value = csv_record[header]
                 db_values[field.name] = value
