@@ -12,7 +12,7 @@ import sys
 
 from django.db import models
 from django.db import transaction
-from django.db.models import loading
+from django.apps import apps
 from django.core.management.base import BaseCommand, CommandError
 
 
@@ -23,14 +23,15 @@ class Command(BaseCommand):
 
     def add_arguments(self, parser):
         parser.add_argument("model",
-                            help="Name of model (app.model), app defaults to apiv1")
+                            help="Name of model (app.model), app defaults to {}"
+                            .format(DEFAULT_APP))
         parser.add_argument("infile", type=argparse.FileType('r'),
                             default=sys.stdin)
         parser.add_argument("mappings", nargs="*",
                             help="csv:database mappings")
 
     def handle(self, *args, **options):
-        model = get_model(options['model'])
+        model = apps.get_model(options['model'])
         field_to_header = parse_mappings(options['mappings'])
         insert(options['infile'], model, field_to_header)
 
@@ -41,7 +42,7 @@ def get_model(model_path):
     else:
         app_label = DEFAULT_APP
         model_name = model_path
-    return loading.get_model(app_label, model_name)
+    return apps.get_model(app_label, model_name)
 
 
 def parse_mappings(mappings):
