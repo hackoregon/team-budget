@@ -18,48 +18,73 @@ from . import serializers
 # ------------------------------------------
 
 
-# @api_view(['GET'])
-# def ocrb(request):
-#     """
-#     A function based view that uses the api_view decorator to add functionality
-#     to the view.   
-#     """
-#     if request.method == 'GET':
-#         ocrb_all_bureaus = models.Ocrb.objects.all()
-#         serializer = serializers.OcrbSerializer(ocrb, many=True)
-#         return Response(serializer.data)
+def getAllOcrb():
+    """
+    Brute force implementation re-loads from CSV every time that data is needed.
+    The CSV is assumed to have a header row of column names, which is ignored.
+    :return: All OCRB objects defined in the CSV.
+    """
+    f = '../Data/Budget_in_Brief_OCRB_data_All_Years.csv'
+    col_headers = ['source_document', 'service_area', 'bureau', 'budget_category', 'amount', 'fy', 'budget_type']
+    reader = csv.DictReader(open(f, 'r'), col_headers)
+    all_data = [obj for obj in reader]
 
+    # skip header row
+    all_data = all_data[1:]
+    all_obj = [models.OCRB(**data) for data in all_data]
+    return all_obj
 
 class ListOcrb(generics.ListAPIView):
-    """
-    A class based view that inherits from the generics class. The generics
-    class gives you a convinient way to declare views quickly when you only
-    need basic functionality or simple CRUD operations.
-    """
+    # queryset is required by superclass, even though we do not use it here.
     queryset = models.OCRB.objects.all()
-    serializer_class = serializers.OcrbSerializer
-
 
     def get(self, request, format=None):
-        f = '../Data/Budget_in_Brief_OCRB_data_All_Years.csv'
-        col_headers = ['source_document', 'service_area', 'bureau', 'budget_category', 'amount', 'fy', 'budget_type']
-        reader = csv.DictReader(open(f, 'r'), col_headers)
-        all_data = [obj for obj in reader]
+        return Response(serializers.OcrbSerializer(getAllOcrb(), many=True).data)
 
-        # skip header row
-        all_data = all_data[1:]
-        all_obj = [models.OCRB(**data) for data in all_data]
-        serializer = serializers.OcrbSerializer(all_obj, many=True)
 
-        return Response(serializer.data)
+class FindOperatingAndCapitalRequirements(generics.ListAPIView):
+    """
+    Uses query parameters to select items to be returned.
+    Assumption: the Model gets data from the database.
+    This enables us to use Model attributes, like 'objects',
+    and a QuerySet, which enables use of 'filter' and 'order_by'.
+    """
+    serializer_class = serializers.OcrbSerializer
+
+    def get_queryset(self):
+        """
+        Filters the objects based on query parameters.
+        :return: Subset of all OCRB objects that matches the conjunction of all non-null query parameters.
+        """
+        # TODO: There must be a better way to conjoin all these filters
+        # while still handling the None case correctly.
+        # This code looks really klunky. (I wrote it, so it is okay for me to say that.)
+        queryset = models.OCRB.objects.all()
+        fiscal_year = self.request.query_params.get('fy', None)
+        if fiscal_year is not None:
+            queryset = queryset.filter(fy__exact=fiscal_year)
+        service_area = self.request.query_params.get('service_area', None)
+        if service_area is not None:
+            queryset = queryset.filter(service_area__exact=service_area)
+        bureau = self.request.query_params.get('bureau', None)
+        if bureau is not None:
+            queryset = queryset.filter(bureau__exact=bureau)
+        budget_type = self.request.query_params.get('budget_type', None)
+        if budget_type is not None:
+            queryset = queryset.filter(budget_type__exact=budget_type)
+        budget_category = self.request.query_params.get('budget_category', None)
+        if budget_category is not None:
+            queryset = queryset.filter(budget_category__exact=budget_category)
+        return queryset.order_by('fy', 'budget_type', 'service_area', 'bureau', 'budget_category')
 
 
 class ListKpm(generics.ListAPIView):
     """
-    A class based view that inherits from the movies class
+    A class based view that inherits from the ListAPIView class,
+    but overrides the 'get' method to load data without using the database.
     """
+    # queryset is required by superclass, even though we do not use it here.
     queryset = models.KPM.objects.all()
-    serializer_class = serializers.KpmSerializer
 
     def get(self, request, format=None):
         f = '../Data/Budget_in _Brief_KPM_data_All_Years.csv'
