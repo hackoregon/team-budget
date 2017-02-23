@@ -65,7 +65,7 @@ def find_kpm_data():
 class ListOcrb(generics.ListAPIView):
     """
     A class based view that inherits from the generics class. The generics
-    class gives you a convinient way to declare views quickly when you only
+    class gives you a convenient way to declare views quickly when you only
     need basic functionality or simple CRUD operations.
     """
     queryset = find_ocrb_data()
@@ -74,7 +74,7 @@ class ListOcrb(generics.ListAPIView):
 
 class ListKpm(generics.ListAPIView):
     """
-    A class based view that inherits from the movies class
+    A class based view that inherits from the generics class as well.
     """
     queryset = find_kpm_data()
     serializer_class = serializers.KpmSerializer
