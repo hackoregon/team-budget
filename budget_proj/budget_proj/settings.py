@@ -43,7 +43,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     # *******************************
-    # added outside of default setup 
+    # added outside of default setup
     'rest_framework',
     'budget_app',
     # *******************************

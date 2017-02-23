@@ -49,7 +49,7 @@ def find_kpm_data():
     helper method to read and parse kpm csv data.
     To be used until we get data loaded into our models
     """
-    fname = 'Budget_in _Brief_KPM_data_All_Years.csv'
+    fname = 'Budget_in%20_Brief_KPM_data_All_Years.csv'
     f = open(os.path.join(settings.BASE_DATA_DIR, fname), 'r')
     col_headers = ['source_document', 'service_area', 'bureau', 'key_performance_measures', 'fy', 'budget_type', 'amount',
         'units']
