@@ -42,7 +42,7 @@ http://127.0.0.1:8000/budget
 # To get the 'Adopted' budget information for all bureaus in the 
 # 'City Support Services' service area for fiscal year '2015-16':
 http://127.0.0.1:8000/budget?fy=2015-16&service_area=City Support Services&budget_type=Adopted
-# To get all budget_type information for the 'Bureau of Fire & Police Disability & Retirement'
+# To get all budget_type information for the 'Portland Bureau of Emergency Management'
 # for all years of available data.
 http://127.0.0.1:8000/budget?bureau=Portland Bureau of Emergency Management
 # To get all budget_type information for the 'Bureau of Fire & Police Disability & Retirement'
