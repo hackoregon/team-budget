@@ -71,11 +71,22 @@ class ListKpm(generics.ListAPIView):
 
 class FindOperatingAndCapitalRequirements(generics.ListAPIView):
     """
-    Uses query parameters to select items to be returned.
-    Assumption: the Model gets data from the database.
-    This enables us to use Model attributes, like 'objects',
-    and a QuerySet, which enables use of 'filter' and 'order_by'.
+    Uses query parameters to select items to be returned from the database that summarizes Operating and Capital Requirements by Bureau.
+
+    No more than one instance of each parameter may be given. For example,
+      To see all records for all service areas:
+        /summary
+      To see only records for bureaus in the 'Community Development' service_area:
+        /summary?service_area=Community Development
+      To see only records for fiscal year '2015-16' for the bureaus in the 'Community Development' service_area:
+        /summary?fy=2015-16&service_area=Community Development
+      To see only 'Adopted' budget figures for the 'Portland Parks & Recreation' bureau (Note: the '&' embedded in the bureau name must be URI encoded as '%26'):
+        /summary?budget_type=Adopted&bureau=Portland Parks %26 Recreation
     """
+    # Assumption: the Model gets data from the database.
+    # This enables us to use Model attributes, like 'objects',
+    # and a QuerySet, which enables use of 'filter' and 'order_by'.
+
     serializer_class = serializers.OcrbSerializer
 
     def get_queryset(self):
