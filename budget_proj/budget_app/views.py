@@ -1,4 +1,5 @@
-import csv
+import csv, os
+from django.conf import settings
 
 # ------------------------------------------
 # imports needed for the functional view
@@ -18,28 +19,54 @@ from . import serializers
 # ------------------------------------------
 
 
-def getAllOcrb():
+def find_ocrb_data():
     """
-    Brute force implementation re-loads from CSV every time that data is needed.
-    The CSV is assumed to have a header row of column names, which is ignored.
-    :return: All OCRB objects defined in the CSV.
+    helper method to read and parse ocrb csv data.
+    To be used until we get data loaded into our models
     """
-    f = '../Data/Budget_in_Brief_OCRB_data_All_Years.csv'
+    fname = 'Budget_in_Brief_OCRB_data_All_Years.csv'
+    f = open(os.path.join(settings.BASE_DATA_DIR, fname), 'r')
     col_headers = ['source_document', 'service_area', 'bureau', 'budget_category', 'amount', 'fy', 'budget_type']
-    reader = csv.DictReader(open(f, 'r'), col_headers)
-    all_data = [obj for obj in reader]
+    reader = csv.DictReader(f, col_headers)
+    next(reader) # skip column headers
+    all_objects = [models.OCRB(**row) for row in reader]
+    return all_objects
 
-    # skip header row
-    all_data = all_data[1:]
-    all_obj = [models.OCRB(**data) for data in all_data]
-    return all_obj
+
+def find_kpm_data():
+    """
+    helper method to read and parse kpm csv data.
+    To be used until we get data loaded into our models
+    """
+    fname = 'Budget_in _Brief_KPM_data_All_Years.csv'
+    f = open(os.path.join(settings.BASE_DATA_DIR, fname), 'r')
+    col_headers = ['source_document', 'service_area', 'bureau', 'key_performance_measures', 'fy', 'budget_type', 'amount',
+        'units']
+    reader = csv.DictReader(f, col_headers)
+    next(reader) # skip column headers
+    all_objects = [models.KPM(**row) for row in reader]
+    for obj in all_objects: # remove empty strings from number fields, fix in serializer?
+        if obj.amount == '':
+            obj.amount = None
+    return all_objects
+
 
 class ListOcrb(generics.ListAPIView):
-    # queryset is required by superclass, even though we do not use it here.
-    queryset = models.OCRB.objects.all()
+    """
+    A class based view that inherits from the generics class. The generics
+    class gives you a convenient way to declare views quickly when you only
+    need basic functionality or simple CRUD operations.
+    """
+    queryset = find_ocrb_data()
+    serializer_class = serializers.OcrbSerializer
 
-    def get(self, request, format=None):
-        return Response(serializers.OcrbSerializer(getAllOcrb(), many=True).data)
+
+class ListKpm(generics.ListAPIView):
+    """
+    A class based view that inherits from the generics class as well.
+    """
+    queryset = find_kpm_data()
+    serializer_class = serializers.KpmSerializer
 
 
 class FindOperatingAndCapitalRequirements(generics.ListAPIView):
@@ -76,30 +103,3 @@ class FindOperatingAndCapitalRequirements(generics.ListAPIView):
         if budget_category is not None:
             queryset = queryset.filter(budget_category__exact=budget_category)
         return queryset.order_by('fy', 'budget_type', 'service_area', 'bureau', 'budget_category')
-
-
-class ListKpm(generics.ListAPIView):
-    """
-    A class based view that inherits from the ListAPIView class,
-    but overrides the 'get' method to load data without using the database.
-    """
-    # queryset is required by superclass, even though we do not use it here.
-    queryset = models.KPM.objects.all()
-
-    def get(self, request, format=None):
-        f = '../Data/Budget_in _Brief_KPM_data_All_Years.csv'
-        col_headers = ['source_document', 'service_area', 'bureau', 'key_performance_measures', 'fy', 'budget_type', 'amount',
-        'units']
-        reader = csv.DictReader(open(f, 'r'), col_headers)
-        all_data = [obj for obj in reader]
-
-        # skip header row
-        all_data = all_data[1:]
-        all_obj = [models.KPM(**data) for data in all_data]
-        for obj in all_obj: # remove empty strings from number fields
-            if obj.amount == '':
-                obj.amount = None
-
-        serializer = serializers.KpmSerializer(all_obj, many=True)
-
-        return Response(serializer.data)
