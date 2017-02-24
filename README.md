@@ -19,13 +19,18 @@ source budget_venv/bin/activate
 pip install -r requirements.txt
 ```
 
+Run the migrate scripts:
+```
+python3 budget_proj/manage.py migrate
+```
+
 Run the app server:
 ```
 python3 budget_proj/manage.py runserver
 ```
 
 Import data into the database. From the top level directory, run the following script to 
-load the Operating and Capital Requirements by Bureau (OCRB) data.
+load the Operating and Capital Requirements by Bureau (OCRB) data into the embedded sqlite3 database:
 ```
 ./budget_proj/manage.py importcsv budget_app.OCRB ./Data/Budget_in_Brief_OCRB_data_All_Years.csv "Source document:source_document" "Service Area:service_area" "Bureau:bureau" "Budget Category:budget_category" "Amount:amount" "FY:fy" "Budget Type:budget_type"
 ```
@@ -52,7 +57,7 @@ http://127.0.0.1:8000/summary?bureau=Bureau of Fire %26 Police Disability %26 Re
 ```
 
 The sort order returned by /summary is always the same, i.e. you are not allowed to pass parameters
-to change the sort order, although that could be an enhancement in the future.
+to change the sort order. However, that could be an enhancement in the future.
 
 (3) Download all Key Performance Measure (KPM) data.
 ```
@@ -61,5 +66,5 @@ http://127.0.0.1:8000/kpm
 
 # Endpoint map
 - ocrb: provides data from City of Portland Budget in Brief documents (e.g. FY 2016-17), all Service Area sections, table "Operating and Capital Requirements by Bureau".
-- budget: uses query parameters to return subsets of the budget data given by the 'ocrb' endpoint.
+- summary: uses query parameters to return subsets of the budget data given by the 'ocrb' endpoint.
 - kpm: provides data from City of Portland Budget in Brief documents (e.g. FY 2016-17), all Service Area sections, table "Key Performance Measures".
