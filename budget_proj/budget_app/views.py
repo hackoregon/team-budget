@@ -82,6 +82,10 @@ class FindOperatingAndCapitalRequirements(generics.ListAPIView):
         /summary?fy=2015-16&service_area=Community Development
       To see only 'Adopted' budget figures for the 'Portland Parks & Recreation' bureau (Note: the '&' embedded in the bureau name must be URI encoded as '%26'):
         /summary?budget_type=Adopted&bureau=Portland Parks %26 Recreation
+      If there are no matches for the query parameters, an empty list is returned:
+        /summary?fy=1776-77
+      which usually means that you spelled one of the parameter names wrong or you gave an unknown value for the parameter. However, the service still returns an HTTP 200 OK response, because an empty list is a valid response.
+      Note: Parameter names and parameter values are not case-sensitive.
     """
     # Assumption: the Model gets data from the database.
     # This enables us to use Model attributes, like 'objects',
@@ -100,17 +104,17 @@ class FindOperatingAndCapitalRequirements(generics.ListAPIView):
         queryset = models.OCRB.objects.all()
         fiscal_year = self.request.query_params.get('fy', None)
         if fiscal_year is not None:
-            queryset = queryset.filter(fy__exact=fiscal_year)
+            queryset = queryset.filter(fy__iexact=fiscal_year)
         service_area = self.request.query_params.get('service_area', None)
         if service_area is not None:
-            queryset = queryset.filter(service_area__exact=service_area)
+            queryset = queryset.filter(service_area__iexact=service_area)
         bureau = self.request.query_params.get('bureau', None)
         if bureau is not None:
-            queryset = queryset.filter(bureau__exact=bureau)
+            queryset = queryset.filter(bureau__iexact=bureau)
         budget_type = self.request.query_params.get('budget_type', None)
         if budget_type is not None:
-            queryset = queryset.filter(budget_type__exact=budget_type)
+            queryset = queryset.filter(budget_type__iexact=budget_type)
         budget_category = self.request.query_params.get('budget_category', None)
         if budget_category is not None:
-            queryset = queryset.filter(budget_category__exact=budget_category)
+            queryset = queryset.filter(budget_category__iexact=budget_category)
         return queryset.order_by('fy', 'budget_type', 'service_area', 'bureau', 'budget_category')
