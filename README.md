@@ -73,14 +73,76 @@ http://127.0.0.1:8000/kpm
 - KPM:
 ```json
 [
-    {"source_document":"FY 2015-16 Budget in Brief","service_area":"Public Safety","bureau":"Bureau of Emergency Communications","key_performance_measures":"BOEC - % of priority medical calls dispatched within 90 seconds","fy":"2013-14","budget_type":"Actual ","amount":72.0,"units":"%"},{"source_document":"FY 2015-16 Budget in Brief","service_area":"Public Safety","bureau":"Bureau of Fire & Police Disability & Retirement","key_performance_measures":"FPDR - Tax levy rate per $1,000 of Real Market Value","fy":"2013-14","budget_type":"Actual ","amount":1.62,"units":"$"},    {"source_document":"FY 2015-16 Budget in Brief","service_area":"Transportation & Parking","bureau":"Portland Bureau of Transportation","key_performance_measures":"BOT – % of bridges in non-distressed condition","fy":"2013-14","budget_type":"Actual ","amount":null,"units":""},
+  {
+    "source_document": "FY 2015-16 Budget in Brief",
+    "service_area": "Public Safety",
+    "bureau": "Bureau of Emergency Communications",
+    "key_performance_measures": "BOEC - % of priority medical calls dispatched within 90 seconds",
+    "fy": "2013-14",
+    "budget_type": "Actual ",
+    "amount": 72,
+    "units": "%"
+  },
+  {
+    "source_document": "FY 2015-16 Budget in Brief",
+    "service_area": "Public Safety",
+    "bureau": "Bureau of Fire & Police Disability & Retirement",
+    "key_performance_measures": "FPDR - Tax levy rate per $1,000 of Real Market Value",
+    "fy": "2013-14",
+    "budget_type": "Actual ",
+    "amount": 1.62,
+    "units": "$"
+  },
+  {
+    "source_document": "FY 2015-16 Budget in Brief",
+    "service_area": "Transportation & Parking",
+    "bureau": "Portland Bureau of Transportation",
+    "key_performance_measures": "BOT – % of bridges in non-distressed condition",
+    "fy": "2013-14",
+    "budget_type": "Actual ",
+    "amount": null,
+    "units": ""
+  }
 ]
+```
 - OCRB: 
 ```json
 [
-    {"source_document":"FY 2015-16 Budget in Brief","service_area":"Public Safety","bureau":"Bureau of Emergency Communications","budget_category":"Capital","amount":0,"fy":"2013-14","budget_type":"Actual"},
-    {"source_document":"FY 2015-16 Budget in Brief","service_area":"Public Safety","bureau":"Bureau of Fire & Police Disability & Retirement","budget_category":"Capital","amount":232658,"fy":"2013-14","budget_type":"Actual"},
-    {"source_document":"FY 2015-16 Budget in Brief","service_area":"Public Safety","bureau":"Bureau of Emergency Communications","budget_category":"Operating","amount":23346735,"fy":"2013-14","budget_type":"Actual"},
-    {"source_document":"FY 2015-16 Budget in Brief","service_area":"Public Safety","bureau":"Bureau of Fire & Police Disability & Retirement","budget_category":"Operating","amount":162156833,"fy":"2013-14","budget_type":"Actual"},
+  {
+    "source_document": "FY 2015-16 Budget in Brief",
+    "service_area": "Public Safety",
+    "bureau": "Bureau of Emergency Communications",
+    "budget_category": "Capital",
+    "amount": 0,
+    "fy": "2013-14",
+    "budget_type": "Actual"
+  },
+  {
+    "source_document": "FY 2015-16 Budget in Brief",
+    "service_area": "Public Safety",
+    "bureau": "Bureau of Fire & Police Disability & Retirement",
+    "budget_category": "Capital",
+    "amount": 232658,
+    "fy": "2013-14",
+    "budget_type": "Actual"
+  },
+  {
+    "source_document": "FY 2015-16 Budget in Brief",
+    "service_area": "Public Safety",
+    "bureau": "Bureau of Emergency Communications",
+    "budget_category": "Operating",
+    "amount": 23346735,
+    "fy": "2013-14",
+    "budget_type": "Actual"
+  },
+  {
+    "source_document": "FY 2015-16 Budget in Brief",
+    "service_area": "Public Safety",
+    "bureau": "Bureau of Fire & Police Disability & Retirement",
+    "budget_category": "Operating",
+    "amount": 162156833,
+    "fy": "2013-14",
+    "budget_type": "Actual"
+  }
 ]
 ```
