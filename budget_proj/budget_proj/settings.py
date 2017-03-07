@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     # added outside of default setup
     'rest_framework',
     'budget_app',
+    'rest_framework_swagger'
     # *******************************
 ]
 
