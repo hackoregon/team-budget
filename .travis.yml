@@ -2,6 +2,6 @@ sudo: required
 services:
   - docker
 script:
-  - ./budget_proj/bin/start-proj.sh
+  - ./bin/start-proj.sh
 after_success:
   - ./bin/docker-push.sh
