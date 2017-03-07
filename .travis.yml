@@ -1,8 +1,6 @@
 sudo: required
 services:
   - docker
-before_install:
-  - ./bin/config_env.sh
 script:
   - ./budget_proj/bin/start-proj.sh
 after_success:
