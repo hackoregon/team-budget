@@ -2,5 +2,5 @@ budget_venv
 *.pyc
 .DS_Store
 budget_proj/db.sqlite3
-budget_proj/budget_proj/project_config.py
 .idea/*
+project_config.py

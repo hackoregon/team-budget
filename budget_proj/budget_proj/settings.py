@@ -19,7 +19,6 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # Set directory that contains our csv data etc.
 BASE_DATA_DIR = os.path.join(os.path.dirname(BASE_DIR), 'Data')
 
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.10/howto/deployment/checklist/
 
@@ -29,7 +28,9 @@ SECRET_KEY = 'm=o=gmv!5hn0jny6xn3b3xo#%zk70jw!*dbef^*%mp)m03wm1d'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+# 2017-02-23: This was necessary to workaround DISALLOWED_HOSTS errors for
+# both Docker Toolkit and native Docker testing
+ALLOWED_HOSTS = ['192.168.99.100', 'localhost', '127.0.0.1']
 
 
 # Application definition
