@@ -38,7 +38,7 @@ def find_kpm_data():
     helper method to read and parse kpm csv data.
     To be used until we get data loaded into our models
     """
-    fname = 'Budget_in _Brief_KPM_data_All_Years.csv'
+    fname = 'Budget_in_Brief_KPM_data_All_Years.csv'
     f = open(os.path.join(settings.BASE_DATA_DIR, fname), 'r')
     col_headers = ['source_document', 'service_area', 'bureau', 'key_performance_measures', 'fy', 'budget_type', 'amount',
         'units']
@@ -60,6 +60,27 @@ class ListOcrb(generics.ListAPIView):
     queryset = find_ocrb_data()
     serializer_class = serializers.OcrbSerializer
 
+class OcrbList(generics.ListCreateAPIView):
+    """
+    Class based view that inherits from the generics class and pulls from AWS
+    """
+    queryset = models.OCRB.objects.all()
+    serializer_class = serializers.OcrbSerializer
+    def get(self, request, *args, **kwargs):
+        #check for query params
+        #eg: http://127.0.0.1:8000/ocrb-prod/?amount=0
+        k = request.GET.keys()
+        filter_dict = {}
+        if(k):
+            for key, value in request.GET.items():
+                filter_dict[key] = value
+            ocrbs = models.OCRB.objects.filter(**filter_dict)
+            serialized_data = serializers.OcrbSerializer(ocrbs, many=True)
+            return Response(serialized_data.data)
+        else:
+            serialized_data = serializers.OcrbSerializer(models.OCRB.objects.all(), many=True)
+            return Response(serialized_data.data)
+
 
 class ListKpm(generics.ListAPIView):
     """
@@ -68,6 +89,12 @@ class ListKpm(generics.ListAPIView):
     queryset = find_kpm_data()
     serializer_class = serializers.KpmSerializer
 
+class KpmList(generics.ListCreateAPIView):
+    """
+    Class based view that inherits from the generics class and pulls from AWS
+    """
+    queryset = models.KPM.objects.all()
+    serializer_class = serializers.KpmSerializer
 
 class FindOperatingAndCapitalRequirements(generics.ListAPIView):
     """
