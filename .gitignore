@@ -4,3 +4,4 @@ budget_venv
 budget_proj/db.sqlite3
 .idea/*
 project_config.py
+env.sh
