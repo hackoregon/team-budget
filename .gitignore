@@ -6,3 +6,4 @@ budget_proj/db.sqlite3
 project_config.py
 static/
 staticfiles
+env.sh

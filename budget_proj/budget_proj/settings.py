@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/1.10/ref/settings/
 """
 
 import os
+import requests
 from . import project_config
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -30,8 +31,19 @@ DEBUG = True
 
 # 2017-02-23: This was necessary to workaround DISALLOWED_HOSTS errors for
 # both Docker Toolkit and native Docker testing
-ALLOWED_HOSTS = ['192.168.99.100', 'localhost', '127.0.0.1']
+#ALLOWED_HOSTS = ['192.168.99.100', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['0.0.0.0', '127.0.0.1', 'localhost', '.elb.amazonaws.com']
 
+# Get the IPV4 address we're working with on AWS
+# The Loadbalancer uses this ip address for healthchecks
+EC2_PRIVATE_IP = None
+try:
+    EC2_PRIVATE_IP = requests.get('http://169.254.169.254/latest/meta-data/local-ipv4', timeout=0.01).text
+except requests.exceptions.RequestException:
+    pass
+
+if EC2_PRIVATE_IP:
+    ALLOWED_HOSTS.append(EC2_PRIVATE_IP)
 
 # Application definition
 
