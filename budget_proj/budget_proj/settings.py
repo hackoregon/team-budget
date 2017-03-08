@@ -23,7 +23,7 @@ BASE_DATA_DIR = os.path.join(os.path.dirname(BASE_DIR), 'Data')
 # See https://docs.djangoproject.com/en/1.10/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'm=o=gmv!5hn0jny6xn3b3xo#%zk70jw!*dbef^*%mp)m03wm1d'
+SECRET_KEY = project_config.DJANGO_SECRET
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
