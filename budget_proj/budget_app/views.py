@@ -60,6 +60,12 @@ class ListOcrb(generics.ListAPIView):
     queryset = find_ocrb_data()
     serializer_class = serializers.OcrbSerializer
 
+class OcrbList(generics.ListCreateAPIView):
+    """
+    Class based view that inherits from the generics class and pulls from AWS
+    """
+    queryset = models.OCRB.objects.all()
+    serializer_class = serializers.OcrbSerializer
 
 class ListKpm(generics.ListAPIView):
     """
@@ -68,6 +74,12 @@ class ListKpm(generics.ListAPIView):
     queryset = find_kpm_data()
     serializer_class = serializers.KpmSerializer
 
+class KpmList(generics.ListCreateAPIView):
+    """
+    Class based view that inherits from the generics class and pulls from AWS
+    """
+    queryset = models.KPM.objects.all()
+    serializer_class = serializers.KpmSerializer
 
 class FindOperatingAndCapitalRequirements(generics.ListAPIView):
     """
