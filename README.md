@@ -19,8 +19,9 @@ source budget_venv/bin/activate
 pip install -r requirements.txt
 ```
 
-Run the migrate scripts:
+If you are configured to use a local database for development, you might need to run the migrate scripts. You only need to run this when the models have changed:
 ```
+python3 budget_proj/manage.py makemigrations
 python3 budget_proj/manage.py migrate
 ```
 
