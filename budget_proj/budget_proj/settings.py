@@ -11,22 +11,39 @@ https://docs.djangoproject.com/en/1.10/ref/settings/
 """
 
 import os
+import requests
+from . import project_config
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
+# Set directory that contains our csv data etc.
+BASE_DATA_DIR = os.path.join(os.path.dirname(BASE_DIR), 'Data')
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.10/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'm=o=gmv!5hn0jny6xn3b3xo#%zk70jw!*dbef^*%mp)m03wm1d'
+SECRET_KEY = project_config.DJANGO_SECRET
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+# 2017-02-23: This was necessary to workaround DISALLOWED_HOSTS errors for
+# both Docker Toolkit and native Docker testing
+#ALLOWED_HOSTS = ['192.168.99.100', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['0.0.0.0', '127.0.0.1', 'localhost', '.elb.amazonaws.com']
 
+# Get the IPV4 address we're working with on AWS
+# The Loadbalancer uses this ip address for healthchecks
+EC2_PRIVATE_IP = None
+try:
+    EC2_PRIVATE_IP = requests.get('http://169.254.169.254/latest/meta-data/local-ipv4', timeout=0.01).text
+except requests.exceptions.RequestException:
+    pass
+
+if EC2_PRIVATE_IP:
+    ALLOWED_HOSTS.append(EC2_PRIVATE_IP)
 
 # Application definition
 
@@ -38,9 +55,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     # *******************************
-    # added outside of default setup 
+    # added outside of default setup
     'rest_framework',
     'budget_app',
+    'rest_framework_swagger'
     # *******************************
 ]
 
@@ -80,8 +98,12 @@ WSGI_APPLICATION = 'budget_proj.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': project_config.AWS['NAME'],
+        'HOST': project_config.AWS['HOST'],
+        'PORT': 5432,
+        'USER': project_config.AWS['USER'],
+        'PASSWORD': project_config.AWS['PASSWORD'],
     }
 }
 

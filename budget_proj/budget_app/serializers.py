@@ -7,6 +7,7 @@ class OcrbSerializer(serializers.ModelSerializer):
         model = models.OCRB
         exclude = ('id',)
 
+
 class KpmSerializer(serializers.ModelSerializer):
     class Meta:
         model = models.KPM

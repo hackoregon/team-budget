@@ -1,5 +1,6 @@
 from django.db import models
 
+
 class OCRB(models.Model):
     id = models.AutoField(primary_key=True)
     source_document = models.CharField(max_length=255, default='')
@@ -9,7 +10,6 @@ class OCRB(models.Model):
     amount = models.IntegerField(blank=True, null=True)
     fy = models.CharField(max_length=255, default='')
     budget_type = models.CharField(max_length=255, default='')
-
 
 
 class KPM(models.Model):
