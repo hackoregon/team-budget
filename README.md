@@ -29,10 +29,15 @@ Run the app server:
 python3 budget_proj/manage.py runserver
 ```
 
-Import data into the database. From the top level directory, run the following script to 
-load the Operating and Capital Requirements by Bureau (OCRB) data into the embedded sqlite3 database:
+If you are using a local database for development, rather than accessing the production database, you probably want to import data into your local dev database. From the top level directory of this project, run the following script to 
+load the Operating and Capital Requirements by Bureau (OCRB) data into the database specified in your `settings.py` file:
 ```
 ./budget_proj/manage.py importcsv budget_app.OCRB ./Data/Budget_in_Brief_OCRB_data_All_Years.csv "Source document:source_document" "Service Area:service_area" "Bureau:bureau" "Budget Category:budget_category" "Amount:amount" "FY:fy" "Budget Type:budget_type"
+```
+
+Run this script to load the Key Performance Measures (KPM) data into the database:
+```
+./budget_proj/manage.py importcsv budget_app.KPM ./Data/Budget_in_Brief_KPM_data_All_Years.csv "Source Document:source_document" "Service Area:service_area" "Bureau:bureau" "Key Performance Measure:key_performance_measures" "FY:fy" "Budget Type:budget_type" "Amount:amount" "Units:units"
 ```
 
 Then launch your browser and browse to one of several endpoints:<br>
