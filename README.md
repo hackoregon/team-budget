@@ -8,7 +8,7 @@ Per the current recommended approach for organizing code in repos, Budget team w
 - team-budget: repo for all code related to backend (Django, API) and data/database
 - team-budget-frontend: repo for all code related to frontend (React/HTML/CSS/JS)
 
-# Setting up local development
+## Setting up local development
 
 Clone, configure your virtual environment and install requirements:
 ```
@@ -70,7 +70,10 @@ to change the sort order. However, that could be an enhancement in the future.
 http://127.0.0.1:8000/kpm
 ```
 
-# Endpoint map
+## Endpoint map
 - ocrb: provides data from City of Portland Budget in Brief documents (e.g. FY 2016-17), all Service Area sections, table "Operating and Capital Requirements by Bureau".
 - summary: uses query parameters to return subsets of the budget data given by the 'ocrb' endpoint.
 - kpm: provides data from City of Portland Budget in Brief documents (e.g. FY 2016-17), all Service Area sections, table "Key Performance Measures".
+
+## License
+This project is licensed under the terms of the MIT license.
