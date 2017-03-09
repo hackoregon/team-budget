@@ -2,3 +2,8 @@ budget_venv
 *.pyc
 .DS_Store
 budget_proj/db.sqlite3
+.idea/*
+project_config.py
+static/
+staticfiles
+env.sh

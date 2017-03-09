@@ -8,7 +8,7 @@ Per the current recommended approach for organizing code in repos, Budget team w
 - team-budget: repo for all code related to backend (Django, API) and data/database
 - team-budget-frontend: repo for all code related to frontend (React/HTML/CSS/JS)
 
-# Setting up local development
+## Setting up local development
 
 Clone, configure your virtual environment and install requirements:
 ```
@@ -19,8 +19,9 @@ source budget_venv/bin/activate
 pip install -r requirements.txt
 ```
 
-Run the migrate scripts:
+If you are configured to use a local database for development, you might need to run the migrate scripts. You only need to run this when the models have changed:
 ```
+python3 budget_proj/manage.py makemigrations
 python3 budget_proj/manage.py migrate
 ```
 
@@ -29,10 +30,15 @@ Run the app server:
 python3 budget_proj/manage.py runserver
 ```
 
-Import data into the database. From the top level directory, run the following script to 
-load the Operating and Capital Requirements by Bureau (OCRB) data into the embedded sqlite3 database:
+If you are using a local database for development, rather than accessing the production database, you probably want to import data into your local dev database. From the top level directory of this project, run the following script to 
+load the Operating and Capital Requirements by Bureau (OCRB) data into the database specified in your `settings.py` file:
 ```
 ./budget_proj/manage.py importcsv budget_app.OCRB ./Data/Budget_in_Brief_OCRB_data_All_Years.csv "Source document:source_document" "Service Area:service_area" "Bureau:bureau" "Budget Category:budget_category" "Amount:amount" "FY:fy" "Budget Type:budget_type"
+```
+
+Run this script to load the Key Performance Measures (KPM) data into the database:
+```
+./budget_proj/manage.py importcsv budget_app.KPM ./Data/Budget_in_Brief_KPM_data_All_Years.csv "Source Document:source_document" "Service Area:service_area" "Bureau:bureau" "Key Performance Measure:key_performance_measures" "FY:fy" "Budget Type:budget_type" "Amount:amount" "Units:units"
 ```
 
 Then launch your browser and browse to one of several endpoints:<br>
@@ -68,6 +74,9 @@ http://127.0.0.1:8000/kpm
 - kpm: provides data from City of Portland Budget in Brief documents (e.g. FY 2016-17), all Service Area sections, table "Key Performance Measures".
 - ocrb: provides data from City of Portland Budget in Brief documents (e.g. FY 2016-17), all Service Area sections, table "Operating and Capital Requirements by Bureau".
 - summary: uses query parameters to return subsets of the budget data given by the 'ocrb' endpoint.
+
+## License
+This project is licensed under the terms of the MIT license.
 
 # Sample Endpoint data
 - KPM:
