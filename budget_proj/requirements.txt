@@ -1,3 +1,4 @@
+# This file is required at least to support the Docker build
 appdirs==1.4.0
 Django==1.10.5
 django-filter==1.0.1
