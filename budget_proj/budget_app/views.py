@@ -101,18 +101,20 @@ class FindOperatingAndCapitalRequirements(generics.ListAPIView):
     Uses query parameters to select items to be returned from the database that summarizes Operating and Capital Requirements by Bureau.
 
     No more than one instance of each parameter may be given. For example,
-      To see all records for all service areas:
-        /summary
-      To see only records for bureaus in the 'Community Development' service_area:
-        /summary?service_area=Community Development
-      To see only records for fiscal year '2015-16' for the bureaus in the 'Community Development' service_area:
-        /summary?fy=2015-16&service_area=Community Development
-      To see only 'Adopted' budget figures for the 'Portland Parks & Recreation' bureau (Note: the '&' embedded in the bureau name must be URI encoded as '%26'):
-        /summary?budget_type=Adopted&bureau=Portland Parks %26 Recreation
-      If there are no matches for the query parameters, an empty list is returned:
-        /summary?fy=1776-77
-      which usually means that you spelled one of the parameter names wrong or you gave an unknown value for the parameter. However, the service still returns an HTTP 200 OK response, because an empty list is a valid response.
-      Note: Parameter names and parameter values are not case-sensitive.
+    To see all records for all service areas:
+    >>> /summary
+    To see only records for bureaus in the 'Community Development' service_area:
+    >>> /summary?service_area=Community Development
+    To see only records for fiscal year '2015-16' for the bureaus in the 'Community Development' service_area:
+    >>> /summary?fy=2015-16&service_area=Community Development
+    To see only 'Adopted' budget figures for the 'Portland Parks & Recreation' bureau (Note: the '&' embedded in the bureau name must be URI encoded as '%26'):
+    >>> /summary?budget_type=Adopted&bureau=Portland Parks %26 Recreation
+    If there are no matches for the query parameters, an empty list is returned. For example,
+    >>> /summary?fy=1776-77
+    This usually means that you spelled one of the parameter names wrong or you gave an unknown value for the parameter. However, the service still returns an HTTP 200 OK response, because an empty list is a valid response.
+    Note: Parameter names and parameter values are not case-sensitive.
+
+    :parameter fy: fiscal year (optional) formatted as nnnn-nn, e.g. 2015-16.
     """
     # Assumption: the Model gets data from the database.
     # This enables us to use Model attributes, like 'objects',
