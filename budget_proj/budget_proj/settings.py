@@ -29,10 +29,8 @@ SECRET_KEY = project_config.DJANGO_SECRET
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-# 2017-02-23: This was necessary to workaround DISALLOWED_HOSTS errors for
-# both Docker Toolkit and native Docker testing
-#ALLOWED_HOSTS = ['192.168.99.100', 'localhost', '127.0.0.1']
-ALLOWED_HOSTS = ['0.0.0.0', '127.0.0.1', 'localhost', '.elb.amazonaws.com']
+# The 192. address is necessary to enable testing with Docker Toolbox for Mac and Windows
+ALLOWED_HOSTS = ['0.0.0.0', '127.0.0.1', 'localhost', '.elb.amazonaws.com', '192.168.99.100']
 
 # Get the IPV4 address we're working with on AWS
 # The Loadbalancer uses this ip address for healthchecks
