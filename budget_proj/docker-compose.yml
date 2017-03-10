@@ -1,7 +1,11 @@
-web:
+budget-service:
+  environment:
+  - PROJ_SETTINGS_DIR=${PROJ_SETTINGS_DIR}
+  - DEPLOY_TARGET=${DEPLOY_TARGET}
+  - AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID}
+  - AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY}
+  - CONFIG_BUCKET=${CONFIG_BUCKET}  
   build: .
-  #command: gunicorn budget_proj.wsgi:application -b :8000
-  #command: python3 budget_proj/manage.py runserver
   command: /code/docker-entrypoint.sh
   volumes:
     - .:/code
