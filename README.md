@@ -1,4 +1,4 @@
-# Budget team project repo
+# Budget team project repo 
 
 This repo contains code and documents for all aspects of the Budget team project.
 
