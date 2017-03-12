@@ -1,6 +1,8 @@
 sudo: required
 services:
   - docker
+before_script:
+  - ./budget_proj/bin/getconfig.sh
 script:
   - ./budget_proj/bin/test-proj.sh
 after_success:

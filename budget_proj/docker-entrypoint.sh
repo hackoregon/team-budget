@@ -2,8 +2,6 @@
 
 echo  Running docker-entrypoint.sh...
 
-./bin/getconfig.sh
-
 # TODO: determine which of these steps is necessary at every launch of the endpoints:
 # https://github.com/hackoregon/team-budget/issues/51
 python3 manage.py migrate
