@@ -1,10 +1,10 @@
 budget-service:
   environment:
-  - PROJ_SETTINGS_DIR=${PROJ_SETTINGS_DIR}
-  - DEPLOY_TARGET=${DEPLOY_TARGET}
   - AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID}
   - AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY}
   - CONFIG_BUCKET=${CONFIG_BUCKET}  
+  - DEPLOY_TARGET=${DEPLOY_TARGET}
+  - PROJ_SETTINGS_DIR=${PROJ_SETTINGS_DIR}
   build: .
   command: /code/docker-entrypoint.sh
   volumes:
