@@ -21,4 +21,5 @@ else
     aws s3 cp \
           s3://$CONFIG_BUCKET/$DEPLOY_TARGET/project_config.py \
           $PROJ_SETTINGS_DIR/project_config.py;
+    chmod +x $PROJ_SETTINGS_DIR/project_config.py
 fi
