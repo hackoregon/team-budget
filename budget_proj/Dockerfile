@@ -4,7 +4,7 @@ RUN mkdir /code
 WORKDIR /code
 ADD requirements.txt /code/
 RUN pip install --upgrade --user awscli
-RUN ./budget_proj/bin/getconfig.sh
+RUN budget_proj/bin/getconfig.sh
 RUN pip install -r requirements.txt
 ADD . /code/
 RUN mkdir /Data
