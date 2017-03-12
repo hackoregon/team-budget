@@ -1,4 +1,7 @@
-# to connect to database, copy this file as project_config.py and replace values as specified
+'''
+To connect to database, make a copy of this file as "project_config.py" and replace VALUES as noted
+'''
+
 AWS = {
     'ENGINE': 'django.db.backends.postgresql',
     'NAME': 'PUT_DATABASE_NAME_HERE',
