@@ -17,6 +17,7 @@ else
     echo -e  "USING THE $CONFIG_BUCKET CONFIG BUCKET"
     echo -e "########################################"
     export PATH=$PATH:~/.local/bin
+    pip install --upgrade --user awscli
     aws s3 cp \
           s3://$CONFIG_BUCKET/$DEPLOY_TARGET/project_config.py \
           $PROJ_SETTINGS_DIR/project_config.py;
