@@ -1,4 +1,8 @@
 #! /bin/bash
+# PURPOSE: used to test that the DRF app is running inside the Docker container
+# Can be used in Travis build or on local developer machine
+
+echo  Running test_proj.sh...
 
 # Get environment variables if running script in LOCAL (not INTEGRATION or PRODUCTION)
 source ./budget_proj/bin/env.sh

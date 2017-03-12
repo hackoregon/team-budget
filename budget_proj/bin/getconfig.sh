@@ -1,6 +1,7 @@
 #! /bin/bash
 # Get Configuration
 echo "##############################"
+echo  Running getconfig.sh...
 echo  CONFIG SETTINGS
 echo "##############################"
 echo  PROJ_SETTINGS_DIR $PROJ_SETTINGS_DIR
