@@ -5,11 +5,8 @@
 
 echo  Running test_proj.sh...
 
-# Get environment variables if running script in LOCAL (not INTEGRATION or PRODUCTION)
-source ./budget_proj/bin/env.sh
-
 # Run all configured unit tests inside the Docker container
-#docker-compose -f budget_proj/docker-compose.yml run budget-service python manage.py test
 
-# Troubleshooting
-docker-compose -f budget_proj/docker-compose.yml run budget-service python manage.py runserver
+# ??? how to feed the built image into this step ???
+
+docker-compose -f budget_proj/docker-compose.yml run budget-service python manage.py test
