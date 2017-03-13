@@ -6,7 +6,7 @@ AWS = {
     'ENGINE': 'django.db.backends.postgresql',
     'NAME': 'PUT_DATABASE_NAME_HERE',
     'HOST': 'PUT_HOST_FQDN_OR_IP_ADDRESS_HERE',
-    'PORT': 'PUT_PORT_HERE',
+    'PORT': '5432',
     'USER': 'PUT_DATABASE_LOGIN_ID_HERE',
     'PASSWORD': 'PUT_DATABASE_PASSWORD_HERE'
 }
