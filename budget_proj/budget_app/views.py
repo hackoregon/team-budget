@@ -145,3 +145,36 @@ class FindOperatingAndCapitalRequirements(generics.ListAPIView):
         if budget_category is not None:
             queryset = queryset.filter(budget_category__iexact=budget_category)
         return queryset.order_by('fy', 'budget_type', 'service_area', 'bureau', 'budget_category')
+
+
+# TODO: Configure ListBudgetHistory so that GET and HEAD are the only possible HTTP actions.
+class ListBudgetHistory(generics.ListCreateAPIView):
+    """
+    Historical Operating and Capital Requirements by Bureau (OCRB).
+    """
+    serializer_class = serializers.BudgetHistorySerializer
+
+
+    def get_queryset(self):
+        return models.BudgetHistory.objects.all()
+
+
+    def get(self, request, *args, **kwargs):
+        """
+        Uses query parameters to select items to be returned from the database that summarizes Operating and Capital Requirements by Bureau.
+        Note: Parameter names are case-insensitive, but parameter values are case-sensitive.
+        """
+        if(request.GET.keys()):
+            # Build a dictionary of query parameters and their values.
+            filter_dict = {}
+            for key, value in request.GET.items():
+                filter_dict[key.lower()] = value  # Assumes all model attributes are lowercase.
+            # TODO: Make filtering be case-insensitive for parameter values.
+            rows = models.BudgetHistory.objects.filter(**filter_dict)
+        else:
+            rows = self.get_queryset()
+        sorted_rows = rows.order_by('fiscal_year', 'bureau_name', 'accounting_object_name', 'functional_area_name')
+        serialized_data = self.serializer_class(sorted_rows, many=True)
+        return Response(serialized_data.data)
+
+
