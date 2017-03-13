@@ -5,9 +5,7 @@
 
 echo  Running test_proj.sh...
 
-# Run all configured unit tests inside the Docker container
-
-# ??? how to feed the built image into this step ???
-
+# Start the container separately to avoid the ImportError on project_config we experience when running "docker-compose run python manage.py test"
 docker-compose -f budget_proj/docker-compose.yml start budget-service
+# Run all configured unit tests inside the Docker container
 docker-compose -f budget_proj/docker-compose.yml exec budget-service python manage.py test
