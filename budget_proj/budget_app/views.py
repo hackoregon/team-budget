@@ -21,8 +21,11 @@ class ListOcrb(generics.ListCreateAPIView):
     """
     Operating and Capital Requirements by Bureau (OCRB).
     """
-    queryset = models.OCRB.objects.all()
     serializer_class = serializers.OcrbSerializer
+
+
+    def get_queryset(self):
+        return models.OCRB.objects.all()
 
 
     def get(self, request, *args, **kwargs):
@@ -35,13 +38,13 @@ class ListOcrb(generics.ListCreateAPIView):
             # Build a dictionary of query parameters and their values.
             filter_dict = {}
             for key, value in request.GET.items():
-                filter_dict[key.lower()] = value
-            # TODO: Make filtering by parameter values be case-insensitive.
+                filter_dict[key.lower()] = value  # Assumes all model attributes are lowercase.
+            # TODO: Make filtering be case-insensitive for parameter values .
             ocrbs = models.OCRB.objects.filter(**filter_dict)
         else:
-            ocrbs = models.OCRB.objects.all()
-        ocrbs = ocrbs.order_by('fy', 'budget_type', 'service_area', 'bureau', 'budget_category')
-        serialized_data = serializers.OcrbSerializer(ocrbs, many=True)
+            ocrbs = self.get_queryset()
+        sorted_ocrbs = ocrbs.order_by('fy', 'budget_type', 'service_area', 'bureau', 'budget_category')
+        serialized_data = serializers.OcrbSerializer(sorted_ocrbs, many=True)
         return Response(serialized_data.data)
 
 
