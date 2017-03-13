@@ -20,4 +20,6 @@ else
     aws s3 cp \
           s3://$CONFIG_BUCKET/$DEPLOY_TARGET/project_config.py \
           $PROJ_SETTINGS_DIR/project_config.py;
+    # Debugging just to make sure the file is where and how we expect it to be, at least until this script finishes
+    ls -la $PROJ_SETTINGS_DIR/project_config.py
 fi
