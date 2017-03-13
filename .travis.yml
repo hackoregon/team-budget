@@ -7,6 +7,6 @@ before_script:
   - ./budget_proj/bin/getconfig.sh
 script:
 #  - ./budget_proj/bin/build-proj.sh && ./budget_proj/bin/test-proj.sh
-  - ./budget_proj/bin/build-test-proj.sh
+  - ./budget_proj/bin/alt-test-proj.sh
 after_success:
   - ./budget_proj/bin/docker-push.sh
