@@ -9,4 +9,5 @@ echo  Running test_proj.sh...
 
 # ??? how to feed the built image into this step ???
 
-docker-compose -f budget_proj/docker-compose.yml run budget-service python manage.py test
+docker-compose -f budget_proj/docker-compose.yml start budget-service
+docker-compose -f budget_proj/docker-compose.yml exec budget-service python manage.py test
