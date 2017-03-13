@@ -1,2 +1,2 @@
 #! /bin/bash
-docker-compose build
+docker-compose -f budget_proj/docker-compose.yml build
