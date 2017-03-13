@@ -7,5 +7,6 @@ before_script:
   - ./budget_proj/bin/getconfig.sh
 script:
   - ./budget_proj/bin/build-proj.sh && ./budget_proj/bin/test-proj.sh
+  - skip_cleanup: true
 after_success:
   - ./budget_proj/bin/docker-push.sh
