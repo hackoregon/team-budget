@@ -30,4 +30,4 @@ else
 fi
 
 # Load environment variables
-source ./bin/$CONFIG_FILE
+source $PROJ_SETTINGS_DIR/bin/$CONFIG_FILE
