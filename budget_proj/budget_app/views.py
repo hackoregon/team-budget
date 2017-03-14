@@ -16,7 +16,6 @@ from . import models
 from . import serializers
 # ------------------------------------------
 
-# TODO: Configure ListOcrb so that GET and HEAD are the only possible HTTP actions.
 class ListOcrb(generics.ListAPIView):
     """
     Operating and Capital Requirements by Bureau (OCRB).
@@ -38,7 +37,6 @@ class ListOcrb(generics.ListAPIView):
             filter_dict = {}
             for key, value in request.GET.items():
                 filter_dict[key.lower() + "__iexact"] = value  # Assumes all model attributes are lowercase.
-            # TODO: Make filtering be case-insensitive for parameter values.
             ocrbs = models.OCRB.objects.filter(**filter_dict)
         else:
             ocrbs = self.get_queryset()
@@ -47,7 +45,6 @@ class ListOcrb(generics.ListAPIView):
         return Response(serialized_data.data)
 
 
-# TODO: Configure ListKpm so that GET and HEAD are the only possible HTTP actions.
 class ListKpm(generics.ListAPIView):
     """
     Key Performance Measures (KPM).
