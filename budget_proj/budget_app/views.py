@@ -17,7 +17,7 @@ from . import serializers
 # ------------------------------------------
 
 # TODO: Configure ListOcrb so that GET and HEAD are the only possible HTTP actions.
-class ListOcrb(generics.ListCreateAPIView):
+class ListOcrb(generics.ListAPIView):
     """
     Operating and Capital Requirements by Bureau (OCRB).
     """
@@ -48,7 +48,7 @@ class ListOcrb(generics.ListCreateAPIView):
 
 
 # TODO: Configure ListKpm so that GET and HEAD are the only possible HTTP actions.
-class ListKpm(generics.ListCreateAPIView):
+class ListKpm(generics.ListAPIView):
     """
     Key Performance Measures (KPM).
     """
