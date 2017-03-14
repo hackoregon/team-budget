@@ -7,7 +7,14 @@ echo "##############################"
 echo  PROJ_SETTINGS_DIR $PROJ_SETTINGS_DIR
 echo  DEPLOY_TARGET $DEPLOY_TARGET
 echo  CONFIG_BUCKET $CONFIG_BUCKET
+
+# Troubleshooting - temporarily always sourcing
+
+# Get environment variables for configuration
+source ./bin/env.sh
+
 if [ "$DEPLOY_TARGET" == "local" ]; then
+# TODO: we should likely source the env.sh script here for consistency's sake
     echo -e "#####################################################"
     echo -e  USING LOCAL CONFIG. MAKE SURE YOU HAVE A LOCAL CONFIG
     echo -e "#####################################################"
