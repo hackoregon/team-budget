@@ -6,7 +6,7 @@
 echo  Running test_proj.sh...
 
 # Temporary troubleshooting
-echo DUMMY_VAR $DUMMY_VAR
+echo DATABASE_PORT $DATABASE_PORT
 
 # Run all configured unit tests inside the Docker container
 docker-compose -f budget_proj/docker-compose.yml run budget-service python manage.py test
