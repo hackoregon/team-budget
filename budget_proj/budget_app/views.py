@@ -52,3 +52,32 @@ class ListKpm(generics.ListAPIView):
     queryset = models.KPM.objects.all()
     serializer_class = serializers.KpmSerializer
 
+
+class ListBudgetHistory(generics.ListAPIView):
+    """
+    Historical Operating and Capital Requirements by Bureau (OCRB).
+    """
+    serializer_class = serializers.BudgetHistorySerializer
+
+
+    def get_queryset(self):
+        return models.BudgetHistory.objects.all()
+
+
+    def get(self, request, *args, **kwargs):
+        """
+        Uses query parameters to select items to be returned from the database that summarizes Operating and Capital Requirements by Bureau.
+        Note: Parameter names and parameter values are compared case-insensitive.
+        """
+        if(request.GET.keys()):
+            # Build a dictionary of query parameters and their values.
+            filter_dict = {}
+            for key, value in request.GET.items():
+                filter_dict[key.lower() + "__iexact"] = value  # Assumes all model attributes are lowercase.
+            rows = models.BudgetHistory.objects.filter(**filter_dict)
+        else:
+            rows = self.get_queryset()
+        sorted_rows = rows.order_by('fiscal_year', 'bureau_name', 'accounting_object_name', 'functional_area_name')
+        serialized_data = self.serializer_class(sorted_rows, many=True)
+        return Response(serialized_data.data)
+

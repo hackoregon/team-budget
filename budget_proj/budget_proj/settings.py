@@ -96,10 +96,10 @@ WSGI_APPLICATION = 'budget_proj.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
+        'ENGINE': project_config.AWS['ENGINE'],
         'NAME': project_config.AWS['NAME'],
         'HOST': project_config.AWS['HOST'],
-        'PORT': 5432,
+        'PORT': project_config.AWS['PORT'],
         'USER': project_config.AWS['USER'],
         'PASSWORD': project_config.AWS['PASSWORD'],
     }
