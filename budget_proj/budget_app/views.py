@@ -37,7 +37,7 @@ class ListOcrb(generics.ListCreateAPIView):
             # Build a dictionary of query parameters and their values.
             filter_dict = {}
             for key, value in request.GET.items():
-                filter_dict[key.lower()] = value  # Assumes all model attributes are lowercase.
+                filter_dict[key.lower() + "__iexact"] = value  # Assumes all model attributes are lowercase.
             # TODO: Make filtering be case-insensitive for parameter values.
             ocrbs = models.OCRB.objects.filter(**filter_dict)
         else:
