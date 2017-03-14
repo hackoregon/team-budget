@@ -1,7 +1,7 @@
 #! /bin/bash
 
 # Declare environment file for de-duplication
-CONFIG_FILE = env.sh
+export CONFIG_FILE='env.sh'
 
 # Get Configuration
 echo "##############################"
