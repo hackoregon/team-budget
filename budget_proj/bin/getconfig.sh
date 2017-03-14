@@ -31,3 +31,4 @@ fi
 
 # Load environment variables
 source $PROJ_SETTINGS_DIR/bin/$CONFIG_FILE
+echo DUMMY_VAR $DUMMY_VAR
