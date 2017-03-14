@@ -1,4 +1,8 @@
 #! /bin/bash
+
+# Declare environment file for de-duplication
+CONFIG_FILE = env.sh
+
 # Get Configuration
 echo "##############################"
 echo  Running getconfig.sh...
@@ -8,15 +12,9 @@ echo  PROJ_SETTINGS_DIR $PROJ_SETTINGS_DIR
 echo  DEPLOY_TARGET $DEPLOY_TARGET
 echo  CONFIG_BUCKET $CONFIG_BUCKET
 
-# Troubleshooting - temporarily always sourcing
-
-# Get environment variables for configuration
-source ./bin/env.sh
-
 if [ "$DEPLOY_TARGET" == "local" ]; then
-# TODO: we should likely source the env.sh script here for consistency's sake
     echo -e "#####################################################"
-    echo -e  USING LOCAL CONFIG. MAKE SURE YOU HAVE A LOCAL CONFIG
+    echo -e  USING LOCAL CONFIG - MAKE SURE YOU HAVE A LOCAL CONFIG in bin/$CONFIG_FILE
     echo -e "#####################################################"
 else
     echo -e "########################################"
@@ -25,8 +23,11 @@ else
     echo -e "########################################"
     export PATH=$PATH:~/.local/bin
     aws s3 cp \
-          s3://$CONFIG_BUCKET/$DEPLOY_TARGET/project_config.py \
-          $PROJ_SETTINGS_DIR/project_config.py;
+          s3://$CONFIG_BUCKET/$DEPLOY_TARGET/$CONFIG_FILE \
+          $PROJ_SETTINGS_DIR/bin/$CONFIG_FILE;
     # Debugging just to make sure the file is where and how we expect it to be, at least until this script finishes
-    ls -la $PROJ_SETTINGS_DIR/project_config.py
+    ls -la $PROJ_SETTINGS_DIR/bin/$CONFIG_FILE
 fi
+
+# Load environment variables
+source ./bin/$CONFIG_FILE
