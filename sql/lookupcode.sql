@@ -1,3 +1,37 @@
+I used Excel to generate a lot of the SQL. Just line up the columns and then use CONCATENATE to put together a SQL command.
+The information for inserts and updates came from the spreadsheet "Hack Oregon hx budget data ASV2.xlsx"
+
+A) PULL
+ For example, here's the formula for the SQL to pull the codes from public.budget_app_budgethistory
+=CONCATENATE("insert into public.budget_app_lookupcode (code_type, code, description) select '",B3,"',",B3,", ",A3," from public.budget_app_budgethistory group by ",B3,",",A3,";")
+
+Where B3 is the code column (eg: fund_code) and A3 is the code description (eg: fund_name)
+
+This creates a command that looks like this:
+insert into public.budget_app_lookupcode (code_type, code, description) select 'fund_code',fund_code, fund_name from public.budget_app_budgethistory group by fund_code,fund_name;
+
+
+B) INSERT
+To create the SQL for inserting divisions:
+Here's the formula
+=CONCATENATE("insert into public.budget_app_lookupcode (code_type, code, description) values ('division_code','",A2,"', '",B2,"' );")
+
+Where A2 is the division code, and B2 the division description.
+
+Resulting command:
+insert into public.budget_app_lookupcode (code_type, code, description) values ('division_code','ATAT', 'Office of City Attorney' );
+
+
+C) UPDATE
+Here's the formula to update
+=CONCATENATE("update public.budget_app_lookupcode set description='",A1,"' where code='",B1,"' and code_type='service_area_code';")
+
+Where A1 is the service area description and B1 is the service area code.
+
+Here's the actual command
+update public.budget_app_lookupcode set description='Community Development' where code='CD' and code_type='service_area_code';
+
+
 -- This query shows the different code types populating public.budget_app_lookupcode
 select code_type from public.budget_app_lookupcode group by code_type;
 
