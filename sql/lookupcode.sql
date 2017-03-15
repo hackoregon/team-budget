@@ -1,3 +1,4 @@
+/*  Methodology
 I used Excel to generate a lot of the SQL. Just line up the columns and then use CONCATENATE to put together a SQL command.
 The information for inserts and updates came from the spreadsheet "Hack Oregon hx budget data ASV2.xlsx"
 
@@ -30,7 +31,7 @@ Where A1 is the service area description and B1 is the service area code.
 
 Here's the actual command
 update public.budget_app_lookupcode set description='Community Development' where code='CD' and code_type='service_area_code';
-
+*/
 
 -- This query shows the different code types populating public.budget_app_lookupcode
 select code_type from public.budget_app_lookupcode group by code_type;
