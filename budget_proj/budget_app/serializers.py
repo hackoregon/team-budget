@@ -19,4 +19,8 @@ class BudgetHistorySerializer(serializers.ModelSerializer):
         model = models.BudgetHistory
         exclude = ('id',)
 
+class LookupCodeSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = models.LookupCode
+        exclude = ('id',)
 

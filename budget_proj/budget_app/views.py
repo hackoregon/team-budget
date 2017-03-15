@@ -81,3 +81,26 @@ class ListBudgetHistory(generics.ListAPIView):
         serialized_data = self.serializer_class(sorted_rows, many=True)
         return Response(serialized_data.data)
 
+class ListLookupCode(generics.ListAPIView):
+    """
+    Code reference table for Budget History.
+    """
+    serializer_class = serializers.LookupCodeSerializer
+
+
+    def get_queryset(self):
+        return models.LookupCode.objects.all()
+
+
+    def get(self, request, *args, **kwargs):
+        if(request.GET.keys()):
+            # Build a dictionary of query parameters and their values.
+            filter_dict = {}
+            for key, value in request.GET.items():
+                filter_dict[key.lower() + "__iexact"] = value
+            rows = models.LookupCode.objects.filter(**filter_dict)
+        else:
+            rows = self.get_queryset()
+        sorted_rows = rows.order_by('code')
+        serialized_data = self.serializer_class(sorted_rows, many=True)
+        return Response(serialized_data.data)
