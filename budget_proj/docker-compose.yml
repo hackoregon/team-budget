@@ -14,7 +14,7 @@ budget-service:
   - DATABASE_PASSWORD=${DATABASE_PASSWORD}
 
   build: .
-  command: /code/bin/test-in-docker.sh
+  command: /code/bin/docker-entrypoint.sh
   volumes:
     - .:/code
   ports:
