@@ -10,4 +10,5 @@ urlpatterns = [
     url(r'^kpm/$', views.ListKpm.as_view()),
     url(r'^ocrb/$', views.ListOcrb.as_view()),
     url(r'^history/$', views.ListBudgetHistory.as_view()),
+    url(r'^code/$', views.ListLookupCode.as_view()),
 ]

@@ -42,3 +42,9 @@ class BudgetHistory(models.Model):
     bureau_name = models.CharField(max_length=255, default='')
     fiscal_year = models.CharField(max_length=32, default='')
     amount = models.IntegerField(blank=True, null=True)
+
+class LookupCode(models.Model):
+    id = models.AutoField(primary_key=True)
+    code_type = models.CharField(max_length=32, default='')
+    code = models.CharField(max_length=32, default='')
+    description = models.CharField(max_length=255, default='')
