@@ -12,3 +12,11 @@ class KpmSerializer(serializers.ModelSerializer):
     class Meta:
         model = models.KPM
         exclude = ('id',)
+
+
+class BudgetHistorySerializer(serializers.ModelSerializer):
+    class Meta:
+        model = models.BudgetHistory
+        exclude = ('id',)
+
+
