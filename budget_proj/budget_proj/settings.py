@@ -12,10 +12,13 @@ https://docs.djangoproject.com/en/1.10/ref/settings/
 
 import os
 import requests
-from . import project_config
+# TODO remove the following import statement when we've convered to source env.sh
+#from . import project_config
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+# TODO: remove this variable and its consumers once we've confirmed elimination of CSV imports
 
 # Set directory that contains our csv data etc.
 BASE_DATA_DIR = os.path.join(os.path.dirname(BASE_DIR), 'Data')
@@ -24,7 +27,7 @@ BASE_DATA_DIR = os.path.join(os.path.dirname(BASE_DIR), 'Data')
 # See https://docs.djangoproject.com/en/1.10/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = project_config.DJANGO_SECRET
+SECRET_KEY = os.environ.get("DJANGO_SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -96,12 +99,12 @@ WSGI_APPLICATION = 'budget_proj.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': project_config.AWS['ENGINE'],
-        'NAME': project_config.AWS['NAME'],
-        'HOST': project_config.AWS['HOST'],
-        'PORT': project_config.AWS['PORT'],
-        'USER': project_config.AWS['USER'],
-        'PASSWORD': project_config.AWS['PASSWORD'],
+        'ENGINE': os.environ.get("DATABASE_ENGINE"),
+        'NAME': os.environ.get("DATABASE_NAME"),
+        'HOST': os.environ.get("DATABASE_HOST"),
+        'PORT': os.environ.get("DATABASE_PORT"),
+        'USER': os.environ.get("DATABASE_USER"),
+        'PASSWORD': os.environ.get("DATABASE_PASSWORD"),
     }
 }
 
