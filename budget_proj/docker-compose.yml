@@ -1,8 +1,20 @@
-web:
+budget-service:
+  environment:
+  - AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID}
+  - AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY}
+  - CONFIG_BUCKET=${CONFIG_BUCKET}  
+  - DEPLOY_TARGET=${DEPLOY_TARGET}
+  - PROJ_SETTINGS_DIR=${PROJ_SETTINGS_DIR}
+  - DJANGO_SECRET_KEY=${DJANGO_SECRET_KEY}
+  - DATABASE_ENGINE=${DATABASE_ENGINE}
+  - DATABASE_NAME=${DATABASE_NAME}
+  - DATABASE_HOST=${DATABASE_HOST}
+  - DATABASE_PORT=5432
+  - DATABASE_USER=${DATABASE_USER}
+  - DATABASE_PASSWORD=${DATABASE_PASSWORD}
+
   build: .
-  #command: gunicorn budget_proj.wsgi:application -b :8000
-  #command: python3 budget_proj/manage.py runserver
-  command: /code/docker-entrypoint.sh
+  command: /code/bin/docker-entrypoint.sh
   volumes:
     - .:/code
   ports:
