@@ -1,7 +1,9 @@
 #! /bin/bash
 
 #
-# To connect to database, make a copy of this file as "env.sh" and replace VALUES as noted
+# To connect to database, make a copy of this file as "env.sh" and replace VALUES as noted.
+# Then source the file in the shell where you will build or run the server. For example:
+# $ source ./build_proj/bin/env.sh
 # 
 
 export DATABASE_ENGINE='PUT_DATABASE_ENGINE_HERE' # e.g. django.db.backends.postgresql
