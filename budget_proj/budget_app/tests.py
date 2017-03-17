@@ -10,6 +10,33 @@ from rest_framework.test import APITestCase
 # - https://github.com/hackoregon/hacku-devops-2017/wiki/Assignment-5
 # - http://www.django-rest-framework.org/api-guide/testing/
 
+class TestCodeEndpoint(TestCase):
+    def setup(self):
+        self.client = Client()
+
+    def test(self):
+        response = self.client.get('/code/')
+
+        self.assertEqual(response.status_code, 200)
+
+class TestHistoryEndpoint(TestCase):
+    def setup(self):
+        self.client = Client()
+
+    def test(self):
+        response = self.client.get('/history/')
+
+        self.assertEqual(response.status_code, 200)
+
+class TestKpmEndpoint(TestCase):
+    def setup(self):
+        self.client = Client()
+
+    def test(self):
+        response = self.client.get('/kpm/')
+
+        self.assertEqual(response.status_code, 200)
+
 class TestOcrbEndpoint(TestCase):
     def setup(self):
         self.client = Client()
