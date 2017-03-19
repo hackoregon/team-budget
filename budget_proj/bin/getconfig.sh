@@ -1,7 +1,7 @@
 #! /bin/bash
 
 # Declare environment file for de-duplication
-export CONFIG_FILE='env.sh'
+export CONFIG_FILE='project_config.py'
 
 # Get Configuration
 echo "##############################"
