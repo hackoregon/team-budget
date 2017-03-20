@@ -27,7 +27,7 @@ BASE_DATA_DIR = os.path.join(os.path.dirname(BASE_DIR), 'Data')
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = os.getenv('DJANGO_SECRET_KEY')
-#SECRET_KEY = project_config.DJANGO_SECRET
+#SECRET_KEY = project_config.DJANGO_SECRET_KEY
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -105,7 +105,7 @@ DATABASES = {
         'PORT': os.environ.get("DATABASE_PORT"),
         'USER': os.environ.get("DATABASE_USER"),
         'PASSWORD': os.environ.get("DATABASE_PASSWORD"),
-#        'ENGINE': 'django.db.backends.postgresql',
+#        'ENGINE': project_config.AWS["ENGINE"],
 #        'NAME': project_config.AWS['NAME'],
 #        'HOST': project_config.AWS['HOST'],
 #        'PORT': 5432,
