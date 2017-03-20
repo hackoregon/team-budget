@@ -6,7 +6,7 @@ budget-service:
   - DEPLOY_TARGET=${DEPLOY_TARGET}
   - PROJ_SETTINGS_DIR=${PROJ_SETTINGS_DIR}
   build: .
-  command: /code/bin/docker-entrypoint.sh
+#  command: /code/bin/docker-entrypoint.sh
   volumes:
     - .:/code
   ports:
