@@ -32,7 +32,7 @@ Here's how:
 5. edit `project_config.py` to add the values for your chosen database plus the Django secret
 6. run `source budget_proj/bin/env.sh`
 7. run `./budget_proj/bin/start-proj.sh -l`
-    - This includes the `--build` parameter , so that if you've made changes to the Django code or anything else used by Docker to build the container, Docker will include the changes made since the last start (build) of the container
+    - This script already includes the `--build` parameter for `docker-compose`, so that if you've made changes to the Django code or anything else used by Docker to build the container, Docker will include the changes made since the last start (build) of the container
 
 Once the container is running, you'll find the API endpoints at http://127.0.0.1:8000.  (If you're using Docker Toolbox, they'll be available at  http://192.168.99.100:8000 instead).
 
