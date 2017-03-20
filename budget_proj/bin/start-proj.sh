@@ -11,7 +11,8 @@ echo  Running start-proj.sh...
 while getopts ":lt" opt; do
     case "$opt" in
         l)
-          source $PROJ_SETTINGS_DIR/bin/env.sh
+          # This is an unfortunate workaround to the subdirectory that is used to contain all app code
+          export PROJ_SETTINGS_DIR = budget_proj
           docker-compose -f $PROJ_SETTINGS_DIR/local-docker-compose.yml up --build
           ;;
         t)
