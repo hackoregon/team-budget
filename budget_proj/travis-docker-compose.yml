@@ -5,6 +5,7 @@ budget-service:
   - CONFIG_BUCKET=${CONFIG_BUCKET}  
   - DEPLOY_TARGET=${DEPLOY_TARGET}
   - PROJ_SETTINGS_DIR=${PROJ_SETTINGS_DIR}
+  build: .
   volumes:
     - .:/code
   ports:
