@@ -12,7 +12,6 @@ https://docs.djangoproject.com/en/1.10/ref/settings/
 
 import os
 import requests
-# TODO remove the following import statement when we've converted to source env.sh
 from . import project_config
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -26,14 +25,14 @@ BASE_DATA_DIR = os.path.join(os.path.dirname(BASE_DIR), 'Data')
 # See https://docs.djangoproject.com/en/1.10/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-#SECRET_KEY = os.getenv('DJANGO_SECRET_KEY')
 SECRET_KEY = project_config.DJANGO_SECRET_KEY
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
 # The 192. address is necessary to enable testing with Docker Toolbox for Mac and Windows
-ALLOWED_HOSTS = ['0.0.0.0', '127.0.0.1', 'localhost', '.elb.amazonaws.com', '192.168.99.100']
+#ALLOWED_HOSTS = ['0.0.0.0', '127.0.0.1', 'localhost', '.elb.amazonaws.com', '192.168.99.100']
+ALLOWED_HOSTS = project_config.ALLOWED_HOSTS
 
 # Get the IPV4 address we're working with on AWS
 # The Loadbalancer uses this ip address for healthchecks
@@ -99,16 +98,10 @@ WSGI_APPLICATION = 'budget_proj.wsgi.application'
 
 DATABASES = {
     'default': {
-#        'ENGINE': os.environ.get("DATABASE_ENGINE"),
-#        'NAME': os.environ.get("DATABASE_NAME"),
-#        'HOST': os.environ.get("DATABASE_HOST"),
-#        'PORT': os.environ.get("DATABASE_PORT"),
-#        'USER': os.environ.get("DATABASE_USER"),
-#        'PASSWORD': os.environ.get("DATABASE_PASSWORD"),
         'ENGINE': project_config.AWS["ENGINE"],
         'NAME': project_config.AWS['NAME'],
         'HOST': project_config.AWS['HOST'],
-        'PORT': 5432,
+        'PORT': project_config.AWS['PORT'],
         'USER': project_config.AWS['USER'],
         'PASSWORD': project_config.AWS['PASSWORD'],
     }
@@ -152,6 +145,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.10/howto/static-files/
 
 STATIC_URL = "/static/"
-# This seems to be necessary to enable the Django app to correctly style the Swagger wrapper when 
+
+# This seems to be necessary to enable the Django app to correctly style the Swagger wrapper when
 # it's run inside a Docker container
 STATIC_ROOT = 'staticfiles'
