@@ -15,4 +15,4 @@ RUN wget \
     -O /Data/Budget_in_Brief_OCRB_data_All_Years.csv \
     https://raw.githubusercontent.com/hackoregon/team-budget/master/Data/Budget_in_Brief_OCRB_data_All_Years.csv
 WORKDIR /code
-ENTRYPOINT [ "/code/bin/docker-entrypoint.sh" ]
+#ENTRYPOINT [ "/code/bin/docker-entrypoint.sh" ]
