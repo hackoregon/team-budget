@@ -30,6 +30,8 @@ Run the app server:
 python3 budget_proj/manage.py runserver
 ```
 
+(You can also try this using a local Docker container, if you'd prefer to keep all locally-installed dependencies and commands to a minimum.  See README-docker.md in the `budget_proj` folder.)
+
 If you are using a local database for development, rather than accessing the production database, you probably want to import data into your local dev database. From the top level directory of this project, run the following command to 
 load the Operating and Capital Requirements by Bureau (OCRB) data into the database specified in your `settings.py` file:
 ```

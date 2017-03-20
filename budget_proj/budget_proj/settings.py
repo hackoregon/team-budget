@@ -30,8 +30,6 @@ SECRET_KEY = project_config.DJANGO_SECRET_KEY
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-# The 192. address is necessary to enable testing with Docker Toolbox for Mac and Windows
-#ALLOWED_HOSTS = ['0.0.0.0', '127.0.0.1', 'localhost', '.elb.amazonaws.com', '192.168.99.100']
 ALLOWED_HOSTS = project_config.ALLOWED_HOSTS
 
 # Get the IPV4 address we're working with on AWS
@@ -98,7 +96,7 @@ WSGI_APPLICATION = 'budget_proj.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': project_config.AWS["ENGINE"],
+        'ENGINE': project_config.AWS['ENGINE'],
         'NAME': project_config.AWS['NAME'],
         'HOST': project_config.AWS['HOST'],
         'PORT': project_config.AWS['PORT'],
@@ -146,6 +144,6 @@ USE_TZ = True
 
 STATIC_URL = "/static/"
 
-# This seems to be necessary to enable the Django app to correctly style the Swagger wrapper when
-# it's run inside a Docker container
+# This seems to be necessary to enable the Django app to correctly style
+# the Swagger wrapper when the Django app runs inside a Docker container
 STATIC_ROOT = 'staticfiles'
