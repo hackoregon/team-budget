@@ -26,8 +26,8 @@ BASE_DATA_DIR = os.path.join(os.path.dirname(BASE_DIR), 'Data')
 # See https://docs.djangoproject.com/en/1.10/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.getenv('DJANGO_SECRET_KEY')
-#SECRET_KEY = project_config.DJANGO_SECRET_KEY
+#SECRET_KEY = os.getenv('DJANGO_SECRET_KEY')
+SECRET_KEY = project_config.DJANGO_SECRET_KEY
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -99,18 +99,18 @@ WSGI_APPLICATION = 'budget_proj.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': os.environ.get("DATABASE_ENGINE"),
-        'NAME': os.environ.get("DATABASE_NAME"),
-        'HOST': os.environ.get("DATABASE_HOST"),
-        'PORT': os.environ.get("DATABASE_PORT"),
-        'USER': os.environ.get("DATABASE_USER"),
-        'PASSWORD': os.environ.get("DATABASE_PASSWORD"),
-#        'ENGINE': project_config.AWS["ENGINE"],
-#        'NAME': project_config.AWS['NAME'],
-#        'HOST': project_config.AWS['HOST'],
-#        'PORT': 5432,
-#        'USER': project_config.AWS['USER'],
-#        'PASSWORD': project_config.AWS['PASSWORD'],
+#        'ENGINE': os.environ.get("DATABASE_ENGINE"),
+#        'NAME': os.environ.get("DATABASE_NAME"),
+#        'HOST': os.environ.get("DATABASE_HOST"),
+#        'PORT': os.environ.get("DATABASE_PORT"),
+#        'USER': os.environ.get("DATABASE_USER"),
+#        'PASSWORD': os.environ.get("DATABASE_PASSWORD"),
+        'ENGINE': project_config.AWS["ENGINE"],
+        'NAME': project_config.AWS['NAME'],
+        'HOST': project_config.AWS['HOST'],
+        'PORT': 5432,
+        'USER': project_config.AWS['USER'],
+        'PASSWORD': project_config.AWS['PASSWORD'],
     }
 }
 
