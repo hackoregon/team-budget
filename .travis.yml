@@ -2,7 +2,7 @@ sudo: required
 services:
   - docker
 install:
-#  - pip install awscli
+  - pip install awscli
 before_script:
   - ./budget_proj/bin/getconfig.sh
 script:

@@ -4,7 +4,7 @@ RUN mkdir /code
 WORKDIR /code
 ADD requirements.txt /code/
 RUN pip install -r requirements.txt
-RUN pip install --upgrade --user awscli
+#RUN pip install --upgrade --user awscli
 ADD . /code/
 RUN mkdir /Data
 WORKDIR /Data
