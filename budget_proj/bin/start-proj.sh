@@ -11,6 +11,7 @@ echo  Running start-proj.sh...
 while getopts ":lt" opt; do
     case "$opt" in
         l)
+          source $PROJ_SETTINGS_DIR/bin/env.sh
           docker-compose -f $PROJ_SETTINGS_DIR/local-docker-compose.yml up --build
           ;;
         t)
