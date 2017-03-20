@@ -4,7 +4,7 @@ services:
 install:
   - pip install awscli
 before_script:
-#  - ./budget_proj/bin/getconfig.sh
+  - ./budget_proj/bin/getconfig.sh
 script:
   - ./budget_proj/bin/test-proj.sh
 after_success:
