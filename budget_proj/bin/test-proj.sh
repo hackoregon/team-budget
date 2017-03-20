@@ -6,4 +6,4 @@
 echo  Running test_proj.sh...
 
 # Run all configured unit tests inside the Docker container
-docker-compose -f budget_proj/docker-compose.yml run budget-service python manage.py test --no-input
+docker-compose -f $PROJ_SETTINGS_DIR/travis-docker-compose.yml run budget-service python manage.py test --no-input
