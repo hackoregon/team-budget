@@ -4,6 +4,8 @@
 
 usage() { echo "Usage: $0 [-l] for a local test or [-t] for a travis test " 1>&2; exit 1; }
 
+if [ $# == 0 ]; then usage; fi
+
 echo  Running test_proj.sh...
 
 # Run all configured unit tests inside the Docker container
