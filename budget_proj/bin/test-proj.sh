@@ -11,11 +11,11 @@ while getopts ":lt" opt; do
     case "$opt" in
         l)
           docker-compose -f $PROJ_SETTINGS_DIR/local-docker-compose.yml \
-          run budget-service python manage.py test --no-input
+          run $DOCKER_IMAGE python manage.py test --no-input
           ;;
         t)
           docker-compose -f $PROJ_SETTINGS_DIR/travis-docker-compose.yml \
-          run budget-service python manage.py test --no-input
+          run $DOCKER_IMAGE python manage.py test --no-input
           ;;
         *)
           usage
