@@ -6,7 +6,7 @@ budget-service:
   - DEPLOY_TARGET=${DEPLOY_TARGET}
   - PROJ_SETTINGS_DIR=${PROJ_SETTINGS_DIR}
   build: .
-  image: "${DOCKER_REPO}/${DEPLOY_TARGET}/${DOCKER_IMAGE}:latest"
+#  image: "${DOCKER_REPO}/${DEPLOY_TARGET}/${DOCKER_IMAGE}:latest"
   volumes:
     - .:/code
   ports:
