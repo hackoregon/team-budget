@@ -6,7 +6,12 @@ budget-service:
   - DEPLOY_TARGET=${DEPLOY_TARGET}
   - PROJ_SETTINGS_DIR=${PROJ_SETTINGS_DIR}
   build: .
-#  image: "${DOCKER_REPO}/${DEPLOY_TARGET}/${DOCKER_IMAGE}:latest"
+
+# docker-compose complains if I enable the image key at the same time as the build key
+# "ERROR: The Compose file is invalid because:
+# "Service budget-service has both an image and build path specified. A service can either be built to image or use an existing image, not both."
+
+#  image: "${DOCKER_REPO}/${DEPLOY_TARGET}/${DOCKER_IMAGE}:latest" 
   volumes:
     - .:/code
   ports:
