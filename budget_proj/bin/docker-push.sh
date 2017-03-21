@@ -5,8 +5,11 @@ if [ -z "$TRAVIS_PULL_REQUEST" ] || [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
   # Push only if we're testing the master branch
 #  if [ "$TRAVIS_BRANCH" == "master" ]; then
     export PATH=$PATH:$HOME/.local/bin
+    echo Running docker login command... # Troubleshooting
     docker login -u "$DOCKER_USERNAME" -p "$DOCKER_PASSWORD" "$DOCKER_REPO"
+    echo Running docker push command... # Troubleshooting
     docker push "$DOCKER_REPO"/"$DEPLOY_TARGET"/"$DOCKER_IMAGE":latest
+    echo Running ecs-deploy.sh script... # Troubleshooting
     ./$PROJ_SETTINGS_DIR/bin/ecs-deploy.sh  \
      -n "$ECS_SERVICE_NAME" \
      -c "$ECS_CLUSTER"   \
