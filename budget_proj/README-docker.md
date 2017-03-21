@@ -28,11 +28,13 @@ At present, each developer builds the Docker container on their own computer.  (
 
 Here's how:
 
-- `git clone` the current **team-budget** repo to your local system (or `git pull` if you already have it cloned and just need to update to latest code)
-- `cd team-budget/budget_proj/` (i.e. into the folder where you find `Dockerfile`)
-- run `docker-compose up --build` 
-    - Note: if you're launching it for the first time, you can merely run `docker-compose up`
-    - Otherwise, if you've made changes to the Django code or anything else used by Docker to build the container, the `--build` parameter makes sure that Docker includes any changes made since the last build of the container
+1. clone the current repo to your local system (or `git pull` if you already have it cloned and just need to update to latest code)
+2. run `cd team-budget` (i.e. into the folder where you find the repo)
+3. run `cp ./budget_proj/bin/env-template.sh ./budget_proj/bin/env.sh`
+4. run `cp ./budget_proj/budget_proj/project_config_template.py ./budget_proj/budget_proj/project_config.py`
+5. edit `project_config.py` to add the values for your chosen database plus the Django secret
+6. run `./budget_proj/bin/start-proj.sh -l`
+    - Note: this script already includes the `--build` parameter for `docker-compose`, so that if you've made changes to the Django code or anything else used by Docker to build the container, Docker will include the changes made since the last start (build) of the container
 
 Once the container is running, you can browser or query the API endpoints at http://127.0.0.1:8000.  (If you're using **Docker Toolbox**, they'll be available at http://192.168.99.100:8000 instead).
 
@@ -46,7 +48,7 @@ This is when you use the Docker cli:
 docker exec -it [container_id or name] /bin/bash
 ```
 
-(Getting the container_id or name for the running Docker container is easy - just run `docker ps`)
+(Getting the container_id or name for the running Docker container is easy - just run `docker ps`.)
 
 ## Further info
 [Tips for Docker Toolbox on OS X](https://github.com/hackoregon/devops-17/blob/master/HOWTO%20Guides/HOWTO-Docker-on-OSX-with-Docker-Toolbox.md)
