@@ -4,7 +4,6 @@
 if [ -z "$TRAVIS_PULL_REQUEST" ] || [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
   # Push only if we're testing the master branch
 #  if [ "$TRAVIS_BRANCH" == "master" ]; then
-    pip install --user awscli
     export PATH=$PATH:$HOME/.local/bin
     docker login -u "$DOCKER_USERNAME" -p "$DOCKER_PASSWORD" "$DOCKER_REPO"
     docker push "$DOCKER_REPO"/"$DEPLOY_TARGET"/"$DOCKER_IMAGE":latest
