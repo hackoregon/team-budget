@@ -8,12 +8,15 @@ You'll need to install two pieces of software:
 - Docker
 - Docker Compose
 
+### Mac Users
 If you're running Mac OS X on a MacBook from 2010 or later, the install for both of these is simple:
 - download the Docker DMG file [here](https://docs.docker.com/docker-for-mac/install/)
 - install and you're ready to go!
 
+### Windows Users (and ancient Macs)
 If you're running an older MacBook, or running Windows, see [here](https://github.com/hackoregon/devops-17/blob/master/HOWTO%20Guides/HOWTO-Docker-on-OSX-with-Docker-Toolbox.md) for instructions on using the Docker Toolkit and still get the same basic experience.
 
+### Linux Users
 If you're running a friendly Linux:
 - installing Docker - try one of these links [here](https://www.docker.com/community-edition) (Note: we've never tried this - send us feedback on the #dev-ops channel)
 - installing Docker Compose - use the `curl` command you'll find [here](https://github.com/docker/compose/releases)
@@ -21,19 +24,19 @@ If you're running a friendly Linux:
 Ping us if you need instructions on installing Docker on Linux.
 
 ## Build the Docker container
-At present, each developer will have to build the docker container on their own computer.  (In the future, based on demand, we may pre-build the container image and enable developers to download the latest.)
+At present, each developer builds the Docker container on their own computer.  (In the future, based on demand, we may pre-build the container image and enable developers to download the latest stable image.)
 
 Here's how:
 
-- clone the current repo to your local system (or `git pull` if you already have it cloned and just need to update to latest code)
+- `git clone` the current **team-budget** repo to your local system (or `git pull` if you already have it cloned and just need to update to latest code)
 - `cd team-budget/budget_proj/` (i.e. into the folder where you find `Dockerfile`)
 - run `docker-compose up --build` 
-    - if you're launching it for the first time, you can merely run `docker-compose up`
-    - otherwise, if you've made changes to the Django code or anything else used by Docker to build the container, the `--build` parameter makes sure that Docker includes any changes made since the last build of the container
+    - Note: if you're launching it for the first time, you can merely run `docker-compose up`
+    - Otherwise, if you've made changes to the Django code or anything else used by Docker to build the container, the `--build` parameter makes sure that Docker includes any changes made since the last build of the container
 
-Once the container is running, you'll find the API endpoints at http://127.0.0.1:8000.  (If you're using Docker Toolbox, they'll be available at  http://192.168.99.100:8000 instead).
+Once the container is running, you can browser or query the API endpoints at http://127.0.0.1:8000.  (If you're using **Docker Toolbox**, they'll be available at http://192.168.99.100:8000 instead).
 
-## How can you interrogate the running server in the container?
+## How can you troubleshoot the app or other bits in the container?
 
 Sometimes you'll have to troubleshoot the server - look at log files, look for a missing file, whatever.
 
