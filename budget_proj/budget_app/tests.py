@@ -15,7 +15,7 @@ class TestCodeEndpoint(TestCase):
         self.client = Client()
 
     def test(self):
-        response = self.client.get('/code/')
+        response = self.client.get('/budget/code/')
 
         self.assertEqual(response.status_code, 200)
 
@@ -24,7 +24,7 @@ class TestHistoryEndpoint(TestCase):
         self.client = Client()
 
     def test(self):
-        response = self.client.get('/history/')
+        response = self.client.get('/budget/history/')
 
         self.assertEqual(response.status_code, 200)
 
@@ -33,7 +33,7 @@ class TestKpmEndpoint(TestCase):
         self.client = Client()
 
     def test(self):
-        response = self.client.get('/kpm/')
+        response = self.client.get('/budget/kpm/')
 
         self.assertEqual(response.status_code, 200)
 
@@ -42,6 +42,6 @@ class TestOcrbEndpoint(TestCase):
         self.client = Client()
 
     def test(self):
-        response = self.client.get('/ocrb/')
+        response = self.client.get('/budget/ocrb/')
 
         self.assertEqual(response.status_code, 200)
