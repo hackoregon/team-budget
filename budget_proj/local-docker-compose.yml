@@ -1,4 +1,4 @@
-version: "3"
+version: "2"
 services:
   budget-service:
     environment:
@@ -8,7 +8,6 @@ services:
     - DEPLOY_TARGET=${DEPLOY_TARGET}
     - PROJ_SETTINGS_DIR=${PROJ_SETTINGS_DIR}
     build: .
-    image: "${DOCKER_REPO}/${DEPLOY_TARGET}/${DOCKER_IMAGE}:latest" # troubleshooting only
     command: /code/bin/docker-entrypoint.sh
     volumes:
       - .:/code
