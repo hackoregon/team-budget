@@ -17,8 +17,6 @@ while getopts ":lt" opt; do
           docker-compose -f $PROJ_SETTINGS_DIR/travis-docker-compose.yml build
           docker-compose -f $PROJ_SETTINGS_DIR/travis-docker-compose.yml run \
           --entrypoint /code/bin/test-entrypoint.sh $DOCKER_IMAGE
-#          docker-compose -f $PROJ_SETTINGS_DIR/travis-docker-compose.yml \
-#          run $DOCKER_IMAGE python manage.py test --no-input
           ;;
         *)
           usage
