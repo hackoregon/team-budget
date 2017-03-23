@@ -142,7 +142,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.10/howto/static-files/
 
-STATIC_URL = "/static/"
+STATIC_URL = "/budget/static/"
 
 # This seems to be necessary to enable the Django app to correctly style
 # the Swagger wrapper when the Django app runs inside a Docker container

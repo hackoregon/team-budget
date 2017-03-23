@@ -8,4 +8,4 @@ before_script:
 script:
   - './budget_proj/bin/test-proj.sh -t'
 after_success:
-#  - ./budget_proj/bin/docker-push.sh
+  - ./budget_proj/bin/docker-push.sh

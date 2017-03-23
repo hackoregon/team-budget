@@ -8,8 +8,6 @@ echo "##############################"
 echo  Running getconfig.sh...
 echo  CONFIG SETTINGS
 echo "##############################"
-echo  CONFIG_BUCKET $CONFIG_BUCKET
-echo  DEPLOY_TARGET $DEPLOY_TARGET
 echo  PROJ_SETTINGS_DIR $PROJ_SETTINGS_DIR
 
 if [ "$DEPLOY_TARGET" == "local" ]; then
@@ -17,9 +15,11 @@ if [ "$DEPLOY_TARGET" == "local" ]; then
     echo -e  USING LOCAL CONFIG - MAKE SURE YOU HAVE A LOCAL CONFIG in bin/$CONFIG_FILE
     echo -e "#####################################################"
 else
+    echo  CONFIG_BUCKET $CONFIG_BUCKET
+    echo  DEPLOY_TARGET $DEPLOY_TARGET
     echo -e "########################################"
-    echo -e  "USING $DEPLOY_TARGET CONFIG"
     echo -e  "USING THE $CONFIG_BUCKET CONFIG BUCKET"
+    echo -e  "USING $DEPLOY_TARGET CONFIG"
     echo -e "########################################"
     export PATH=$PATH:~/.local/bin # TODO is this necessary for anything?
     aws s3 cp \

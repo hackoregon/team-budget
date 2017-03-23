@@ -10,12 +10,14 @@ echo  Running test_proj.sh...
 while getopts ":lt" opt; do
     case "$opt" in
         l)
-          docker-compose -f $PROJ_SETTINGS_DIR/local-docker-compose.yml \
-          run budget-service python manage.py test --no-input
+          docker-compose -f $PROJ_SETTINGS_DIR/local-docker-compose.yml build
+          docker-compose -f $PROJ_SETTINGS_DIR/local-docker-compose.yml run \
+          --entrypoint /code/bin/test-entrypoint.sh $DOCKER_IMAGE
           ;;
         t)
-          docker-compose -f $PROJ_SETTINGS_DIR/travis-docker-compose.yml \
-          run budget-service python manage.py test --no-input
+          docker-compose -f $PROJ_SETTINGS_DIR/travis-docker-compose.yml build
+          docker-compose -f $PROJ_SETTINGS_DIR/travis-docker-compose.yml run \
+          --entrypoint /code/bin/test-entrypoint.sh $DOCKER_IMAGE
           ;;
         *)
           usage
