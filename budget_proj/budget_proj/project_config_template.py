@@ -10,7 +10,7 @@ AWS = {
     'USER': 'PUT_DATABASE_LOGIN_ID_HERE',
     'PASSWORD': 'PUT_DATABASE_PASSWORD_HERE'
 }
-DJANGO_SECRET = 'PUT_DJANGO_SECRET_HERE'
+DJANGO_SECRET_KEY = 'PUT_DJANGO_SECRET_HERE'
 
 # Note: the 192.168.99.100 address is necessary to enable testing with Docker Toolbox for Mac and Windows
 ALLOWED_HOSTS = ['127.0.0.1', 'localhost', '192.168.99.100']
