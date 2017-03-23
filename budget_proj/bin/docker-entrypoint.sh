@@ -2,7 +2,6 @@
 
 echo  Running docker-entrypoint.sh...
 
-export PATH=$PATH:~/.local/bin
 #./bin/getconfig.sh
 #python manage.py migrate --no-input
 #python manage.py collectstatic --no-input

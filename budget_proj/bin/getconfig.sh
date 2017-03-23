@@ -21,7 +21,7 @@ else
     echo -e  "USING THE $CONFIG_BUCKET CONFIG BUCKET"
     echo -e  "USING $DEPLOY_TARGET CONFIG"
     echo -e "########################################"
-    export PATH=$PATH:~/.local/bin # TODO is this necessary for anything?
+    export PATH=$PATH:~/.local/bin # necessary to help locate the awscli binaries which are pip installed --user
     aws s3 cp \
           s3://$CONFIG_BUCKET/$DEPLOY_TARGET/$CONFIG_FILE \
           $PROJ_SETTINGS_DIR/budget_proj/$CONFIG_FILE;
