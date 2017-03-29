@@ -5,7 +5,6 @@ from .. import project_config
 
 
 SECRET_KEY = project_config.DJANGO_SECRET_KEY
-ALLOWED_HOSTS = project_config.ALLOWED_HOSTS
 
 # Get the IPV4 address we're working with on AWS
 # The Loadbalancer uses this ip address for healthchecks

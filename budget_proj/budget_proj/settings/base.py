@@ -24,7 +24,8 @@ BASE_DATA_DIR = os.path.join(os.path.dirname(BASE_DIR), 'Data')
 
 DEBUG = False
 
-ALLOWED_HOSTS = []
+# Note: the 192.168.99.100 address is necessary to enable testing with Docker Toolbox for Mac and Windows
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', '192.168.99.100']
 
 # Application definition
 INSTALLED_APPS = [
