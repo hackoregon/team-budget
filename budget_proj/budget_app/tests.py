@@ -28,7 +28,7 @@ class TestCodeEndpoint(TestCase):
         codes = [item["code"] for item in json_content]
 
         for code in codes:
-            self.assertEqual(code, AT)
+            self.assertEqual(code, 'AT')
 
 class TestHistoryEndpoint(TestCase):
     def setup(self):
@@ -46,7 +46,7 @@ class TestHistoryEndpoint(TestCase):
         fiscal_years = [item["fiscal_year"] for item in json_content]
 
         for fiscal_year in fiscal_years:
-            self.assertEqual(fiscal_year, 2015-16)
+            self.assertEqual(fiscal_year, '2015-16')
 
 class TestKpmEndpoint(TestCase):
     def setup(self):
@@ -64,7 +64,7 @@ class TestKpmEndpoint(TestCase):
         fiscal_years = [item["fy"] for item in json_content]
 
         for fiscal_year in fiscal_years:
-            self.assertEqual(fiscal_year, 2015-16)
+            self.assertEqual(fiscal_year, '2015-16')
 
 class TestOcrbEndpoint(TestCase):
     def setup(self):
@@ -82,4 +82,4 @@ class TestOcrbEndpoint(TestCase):
         fiscal_years = [item["fy"] for item in json_content]
 
         for fiscal_year in fiscal_years:
-            self.assertEqual(fiscal_year, 2015-16)
+            self.assertEqual(fiscal_year, '2015-16')
