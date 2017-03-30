@@ -12,3 +12,4 @@ six==1.10.0
 
 gunicorn
 mixer==5.6.6
+eventlet # to address ELB/gunicorn issue here https://github.com/benoitc/gunicorn/issues/1194
