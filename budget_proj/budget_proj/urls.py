@@ -13,9 +13,9 @@ Including another URLconf
     1. Import the include() function: from django.conf.urls import url, include
     2. Add a URL to urlpatterns:  url(r'^blog/', include('blog.urls'))
 """
-from django.conf.urls import url
+from django.conf.urls import url, include
 from django.contrib import admin
-from django.conf.urls import include
+from django.conf import settings
 # This import is necessary to enable Swagger styling to work when the app runs in Docker container
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 
@@ -26,3 +26,11 @@ urlpatterns = [
 
 # This statement is necessary to enable Swagger styling to work when the app runs in Docker container
 urlpatterns += staticfiles_urlpatterns()
+
+# This part is for detecting and running django debug toolbar
+if settings.DEBUG:
+    try:
+        import debug_toolbar
+        urlpatterns = [url(r'^__debug__/', include(debug_toolbar.urls)),] + urlpatterns
+    except ImportError:
+        pass
