@@ -15,10 +15,6 @@ import os
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-# TODO: remove this variable and its consumers once we've confirmed elimination of CSV imports
-# Set directory that contains our csv data etc.
-BASE_DATA_DIR = os.path.join(os.path.dirname(BASE_DIR), 'Data')
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.10/howto/deployment/checklist/
 
