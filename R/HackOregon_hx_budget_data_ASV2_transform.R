@@ -35,6 +35,7 @@ baseFileName <- "HackOregon_hx_budget_data_ASV2"
 csvSuffix <- ".csv"
 originalModifier <- "_extracted"
 transformedModifier <- "_transformed"
+nonzeroModifier <- "_nonzero"
 
 dfExtracted <- read.csv(paste0(dataDirectory, baseFileName, originalModifier, csvSuffix), stringsAsFactors = FALSE)
 
@@ -76,3 +77,7 @@ str(dfTidy)
 
 write.csv(dfTidy, paste0(dataDirectory, baseFileName, transformedModifier, csvSuffix), row.names = FALSE)
 
+# Removes rows with zero amount.
+dfTidyNonZero <- dfTidy[dfTidy$amount != 0, ]
+dim(dfTidyNonZero)
+write.csv(dfTidyNonZero, paste0(dataDirectory, baseFileName, nonzeroModifier, csvSuffix), row.names = FALSE)
