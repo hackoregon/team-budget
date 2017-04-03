@@ -21,7 +21,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DEBUG = False
 
 # Note: the 192.168.99.100 address is necessary to enable testing with Docker Toolbox for Mac and Windows
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost', '192.168.99.100']
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', '192.168.99.100', 'hacko-integration-658279555.us-west-2.elb.amazonaws.com']
 
 # Application definition
 INSTALLED_APPS = [

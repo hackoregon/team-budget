@@ -8,7 +8,7 @@ SECRET_KEY = project_config.DJANGO_SECRET_KEY
 
 AWS_LOAD_BALANCER = 'hacko-integration-658279555.us-west-2.elb.amazonaws.com'
 
-ALLOWED_HOSTS.append(AWS_LOAD_BALANCER)
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', '192.168.99.100', AWS_LOAD_BALANCER]
 
 # Get the IPV4 address we're working with on AWS
 # The Loadbalancer uses this ip address for healthchecks
