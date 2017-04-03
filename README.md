@@ -1,10 +1,16 @@
 # Budget team project repo
 
-This repo contains code and documents for all aspects of the Budget team project.
+This repo contains two major components:
+- code for the backend (API) layer of the Budget project
+- issue tracking for all aspects (API, Frontend, data, deployment) of the Budget project
 
-Per the current recommended approach for organizing code in repos, Budget team will use two repos: team-budget and team-budget-frontend.
+## Deployed Code!
+Here's the backend API in the Integration environment:
+http://hacko-integration-658279555.us-west-2.elb.amazonaws.com/budget
 
 ## Team Budget repos
+Per the current recommended approach for organizing code in repos, Budget team will use two repos: team-budget (for API and data) and team-budget-frontend (for frontend).
+
 - team-budget: repo for all code related to backend (Django, API) and data/database
 - team-budget-frontend: repo for all code related to frontend (React/HTML/CSS/JS)
 
@@ -16,7 +22,7 @@ git clone https://github.com/hackoregon/team-budget.git
 cd team-budget
 virtualenv -p python3 budget_venv
 source budget_venv/bin/activate
-pip install -r requirements.txt
+pip install -r requirements/dev.txt
 ```
 
 If you are configured to use a local database for development, you might need to run the migrate scripts. You only need to run this when the models have changed:

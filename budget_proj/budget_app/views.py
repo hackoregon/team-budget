@@ -32,7 +32,7 @@ class ListOcrb(generics.ListAPIView):
         Uses query parameters to select items to be returned from the database that summarizes Operating and Capital Requirements by Bureau.
         Note: Parameter names and parameter values are compared case-insensitive.
         """
-        if(request.GET.keys()):
+        if request.GET.keys():
             # Build a dictionary of query parameters and their values.
             filter_dict = {}
             for key, value in request.GET.items():
@@ -69,7 +69,7 @@ class ListBudgetHistory(generics.ListAPIView):
         Uses query parameters to select items to be returned from the database that summarizes Operating and Capital Requirements by Bureau.
         Note: Parameter names and parameter values are compared case-insensitive.
         """
-        if(request.GET.keys()):
+        if request.GET.keys():
             # Build a dictionary of query parameters and their values.
             filter_dict = {}
             for key, value in request.GET.items():
@@ -93,7 +93,7 @@ class ListLookupCode(generics.ListAPIView):
 
 
     def get(self, request, *args, **kwargs):
-        if(request.GET.keys()):
+        if request.GET.keys():
             # Build a dictionary of query parameters and their values.
             filter_dict = {}
             for key, value in request.GET.items():
