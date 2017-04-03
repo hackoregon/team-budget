@@ -1,6 +1,6 @@
-from .base import *
-
 import requests
+
+from .base import *
 from .. import project_config
 
 
