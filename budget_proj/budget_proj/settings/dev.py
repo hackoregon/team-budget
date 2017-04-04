@@ -1,4 +1,5 @@
 from .base import *
+from .. import project_config
 
 SECRET_KEY = 'Anything will do for local dev'
 DEBUG = True
@@ -7,9 +8,13 @@ DEBUG = True
 # https://docs.djangoproject.com/en/1.10/ref/settings/#databases
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': 'budget_db.sqlite3',
-    },
+        'ENGINE': project_config.BUDGET_DB['ENGINE'],
+        'NAME': project_config.BUDGET_DB['NAME'],
+        'HOST': project_config.BUDGET_DB['HOST'],
+        'PORT': project_config.BUDGET_DB['PORT'],
+        'USER': project_config.BUDGET_DB['USER'],
+        'PASSWORD': project_config.BUDGET_DB['PASSWORD'],
+    }
 }
 
 # Try running with debug toolbar if installed

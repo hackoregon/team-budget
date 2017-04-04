@@ -3,7 +3,6 @@ budget_venv
 .DS_Store
 .idea/*
 budget_db.sqlite3
-env.sh
 project_config.py
 static/
 staticfiles

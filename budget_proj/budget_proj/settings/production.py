@@ -25,11 +25,11 @@ if EC2_PRIVATE_IP:
 # https://docs.djangoproject.com/en/1.10/ref/settings/#databases
 DATABASES = {
     'default': {
-        'ENGINE': project_config.AWS['ENGINE'],
-        'NAME': project_config.AWS['NAME'],
-        'HOST': project_config.AWS['HOST'],
-        'PORT': project_config.AWS['PORT'],
-        'USER': project_config.AWS['USER'],
-        'PASSWORD': project_config.AWS['PASSWORD'],
+        'ENGINE': project_config.BUDGET_DB['ENGINE'],
+        'NAME': project_config.BUDGET_DB['NAME'],
+        'HOST': project_config.BUDGET_DB['HOST'],
+        'PORT': project_config.BUDGET_DB['PORT'],
+        'USER': project_config.BUDGET_DB['USER'],
+        'PASSWORD': project_config.BUDGET_DB['PASSWORD'],
     }
 }
