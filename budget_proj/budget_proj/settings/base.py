@@ -11,40 +11,19 @@ https://docs.djangoproject.com/en/1.10/ref/settings/
 """
 
 import os
-import requests
-from . import project_config
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-# TODO: remove this variable and its consumers once we've confirmed elimination of CSV imports
-# Set directory that contains our csv data etc.
-BASE_DATA_DIR = os.path.join(os.path.dirname(BASE_DIR), 'Data')
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.10/howto/deployment/checklist/
 
-# SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = project_config.DJANGO_SECRET_KEY
+DEBUG = False
 
-# SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
-
-ALLOWED_HOSTS = project_config.ALLOWED_HOSTS
-
-# Get the IPV4 address we're working with on AWS
-# The Loadbalancer uses this ip address for healthchecks
-EC2_PRIVATE_IP = None
-try:
-    EC2_PRIVATE_IP = requests.get('http://169.254.169.254/latest/meta-data/local-ipv4', timeout=0.01).text
-except requests.exceptions.RequestException:
-    pass
-
-if EC2_PRIVATE_IP:
-    ALLOWED_HOSTS.append(EC2_PRIVATE_IP)
+# Note: the 192.168.99.100 address is necessary to enable testing with Docker Toolbox for Mac and Windows
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', '192.168.99.100']
 
 # Application definition
-
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -90,22 +69,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'budget_proj.wsgi.application'
 
-
-# Database
-# https://docs.djangoproject.com/en/1.10/ref/settings/#databases
-
-DATABASES = {
-    'default': {
-        'ENGINE': project_config.AWS['ENGINE'],
-        'NAME': project_config.AWS['NAME'],
-        'HOST': project_config.AWS['HOST'],
-        'PORT': project_config.AWS['PORT'],
-        'USER': project_config.AWS['USER'],
-        'PASSWORD': project_config.AWS['PASSWORD'],
-    }
-}
-
-
 # Password validation
 # https://docs.djangoproject.com/en/1.10/ref/settings/#auth-password-validators
 
@@ -137,7 +100,6 @@ USE_I18N = True
 USE_L10N = True
 
 USE_TZ = True
-
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.10/howto/static-files/

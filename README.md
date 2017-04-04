@@ -22,7 +22,7 @@ git clone https://github.com/hackoregon/team-budget.git
 cd team-budget
 virtualenv -p python3 budget_venv
 source budget_venv/bin/activate
-pip install -r requirements.txt
+pip install -r requirements/dev.txt
 ```
 
 If you are configured to use a local database for development, you might need to run the migrate scripts. You only need to run this when the models have changed:
