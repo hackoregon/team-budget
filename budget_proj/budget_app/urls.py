@@ -11,5 +11,5 @@ urlpatterns = [
     url(r'^history/$', views.ListBudgetHistory.as_view(), name='history-list'),
     url(r'^kpm/$', views.ListKpm.as_view(), name='kpm-list'),
     url(r'^ocrb/$', views.ListOcrb.as_view(), name='ocrb-list'),
-    url(r'^ocrbsummary/$', views.OcrbSummary.as_view(), name='ocrb-summary'),
+    url(r'^ocrb/summary/$', views.OcrbSummary.as_view(), name='ocrb-summary'),
 ]

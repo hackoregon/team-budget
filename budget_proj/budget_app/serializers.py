@@ -11,7 +11,7 @@ class OcrbSumSerializer(serializers.ModelSerializer):
     bureau_total = serializers.IntegerField()
     class Meta:
         model = models.OCRB
-        fields = ('service_area', 'bureau','bureau_total',)
+        fields = ('fy','service_area', 'bureau','bureau_total',)
 
 class KpmSerializer(serializers.ModelSerializer):
     class Meta:

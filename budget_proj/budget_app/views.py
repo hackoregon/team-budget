@@ -70,8 +70,8 @@ class OcrbSummary(generics.ListAPIView):
             ocrbs = models.OCRB.objects.filter(**filter_dict)
         else:
             ocrbs = self.get_queryset()
-        grouped_ocrbs = ocrbs.values('service_area', 'bureau').annotate(bureau_total=Sum('amount'))
-        sorted_ocrbs = grouped_ocrbs.order_by('service_area','bureau')
+        grouped_ocrbs = ocrbs.values('fy','service_area', 'bureau').annotate(bureau_total=Sum('amount'))
+        sorted_ocrbs = grouped_ocrbs.order_by('fy','service_area','bureau')
         serialized_data = self.serializer_class(sorted_ocrbs, many=True)
         return Response(serialized_data.data)
 
