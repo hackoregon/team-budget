@@ -34,13 +34,13 @@ Here's how:
 4. run `./budget_proj/bin/start-proj.sh -l`
     - Note: this script already includes the `--build` parameter for `docker-compose`, so that if you've made changes to the Django code or anything else used by Docker to build the container, Docker will include the changes made since the last start (build) of the container
 
-Once the container is running, you can browser or query the API endpoints at http://127.0.0.1:8000.  (If you're using **Docker Toolbox**, they'll be available at http://192.168.99.100:8000 instead).
+Once the container is running, you can browser or query the API endpoints at http://127.0.0.1:8000/budget.  (If you're using **Docker Toolbox**, they'll be available at http://192.168.99.100:8000/budget instead).
 
 ## How can you troubleshoot the app or other bits in the container?
 
 Sometimes you'll have to troubleshoot the server - look at log files, look for a missing file, whatever.
 
-This is when you use the Docker cli:
+This is when you can use the Docker cli:
 
 ```
 docker exec -it [container_id or name] /bin/bash
