@@ -111,7 +111,7 @@ class ListBudgetHistory(generics.ListAPIView):
         serialized_data = self.serializer_class(sorted_rows, many=True)
         return Response(serialized_data.data)
 
-class HistorySummaryBureau(generics.ListAPIView):
+class HistorySummaryByBureau(generics.ListAPIView):
     """
     Summary of Historical Operating and Capital Requirements by Service Area and Bureau
     """
