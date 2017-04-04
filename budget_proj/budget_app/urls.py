@@ -9,7 +9,8 @@ urlpatterns = [
     url(r'^$', schema_view),
     url(r'^code/$', views.ListLookupCode.as_view(), name='code-list'),
     url(r'^history/$', views.ListBudgetHistory.as_view(), name='history-list'),
+    url(r'^history/summary/$', views.HistorySummaryBureau.as_view(), name='history-summary'),
     url(r'^kpm/$', views.ListKpm.as_view(), name='kpm-list'),
     url(r'^ocrb/$', views.ListOcrb.as_view(), name='ocrb-list'),
-    url(r'^ocrbsummary/$', views.OcrbSummary.as_view(), name='ocrb-summary'),
+    url(r'^ocrb/summary/$', views.OcrbSummary.as_view(), name='ocrb-summary'),
 ]

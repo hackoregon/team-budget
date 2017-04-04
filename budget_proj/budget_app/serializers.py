@@ -11,7 +11,7 @@ class OcrbSumSerializer(serializers.ModelSerializer):
     bureau_total = serializers.IntegerField()
     class Meta:
         model = models.OCRB
-        fields = ('service_area', 'bureau','bureau_total',)
+        fields = ('fy','service_area', 'bureau','bureau_total',)
 
 class KpmSerializer(serializers.ModelSerializer):
     class Meta:
@@ -23,6 +23,12 @@ class BudgetHistorySerializer(serializers.ModelSerializer):
     class Meta:
         model = models.BudgetHistory
         exclude = ('id',)
+
+class HistorySummaryBureauSerializer(serializers.ModelSerializer):
+    bureau_total = serializers.IntegerField()
+    class Meta:
+        model = models.BudgetHistory
+        fields = ('fiscal_year','service_area_code', 'bureau_name','bureau_total',)
 
 class LookupCodeSerializer(serializers.ModelSerializer):
     class Meta:
