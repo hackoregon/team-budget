@@ -17,7 +17,7 @@ in '.gitignore'. Therefore, you can put your password safely in
 repository.
 '''
 
-BUDGET_DB = {
+AWS = {
     # Specify parameters for either SQLite or an external database, but not both!
 
     # If you are using Django's 'runserver' tool to run locally,
