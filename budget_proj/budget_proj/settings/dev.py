@@ -1,4 +1,5 @@
 from .base import *
+from .. import project_config
 
 SECRET_KEY = 'Anything will do for local dev'
 DEBUG = True
@@ -7,9 +8,13 @@ DEBUG = True
 # https://docs.djangoproject.com/en/1.10/ref/settings/#databases
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': 'budget_db.sqlite3',
-    },
+        'ENGINE': project_config.AWS['ENGINE'],
+        'NAME': project_config.AWS['NAME'],
+        'HOST': project_config.AWS['HOST'],
+        'PORT': project_config.AWS['PORT'],
+        'USER': project_config.AWS['USER'],
+        'PASSWORD': project_config.AWS['PASSWORD'],
+    }
 }
 
 # Try running with debug toolbar if installed
