@@ -32,14 +32,18 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     # *******************************
-    # added outside of default setup
+    # non-default 3rd party packages
     'rest_framework',
-    'budget_app',
-    'rest_framework_swagger'
+    'rest_framework_swagger',
+    'corsheaders',
+    # project-specific code
+    'budget_app'
     # *******************************
 ]
 
 MIDDLEWARE = [
+    # should be placed as high as possible and before CommonMiddleware response generator
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -109,3 +113,5 @@ STATIC_URL = "/budget/static/"
 # This seems to be necessary to enable the Django app to correctly style
 # the Swagger wrapper when the Django app runs inside a Docker container
 STATIC_ROOT = 'staticfiles'
+
+CORS_ORIGIN_ALLOW_ALL = True
