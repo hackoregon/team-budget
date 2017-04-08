@@ -90,6 +90,11 @@ Run this command to load the historical data into the database:
 ./budget_proj/manage.py importcsv budget_app.BudgetHistory ./Data/HackOregon_hx_budget_data_ASV2_transformed.csv "fund_center_code:fund_center_code" "fund_code:fund_code" "functional_area_code:functional_area_code" "object_code:object_code" "fund_center:fund_center" "fund_name:fund_name" "functional_area_name:functional_area_name" "accounting_object_name:accounting_object_name" "service_area:service_area" "program_code:program_code" "sub_program_code:sub_program_code" "fund_center:fund_center" "division_code:division_code" "bureau_code:bureau_code" "bureau_name:bureau_name" "fiscal_year:fiscal_year" "amount:amount"
 ```
 
+Run this command to load the lookup codes into the database:
+```
+./budget_proj/manage.py importcsv budget_app.lookupcode ./Data/lookupcode.csv "id:id" "code_type:code_type" "code:code" "description:description"
+```
+
 ### (7) Download budget data formatted as [JSON](http://www.json.org/)
 You now have the web service running and you loaded the database with data.
 
