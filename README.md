@@ -48,7 +48,7 @@ git clone git@github.com:YourGitHubName/team-budget.git
 cd team-budget
 virtualenv -p python3 budget_venv
 source budget_venv/bin/activate
-pip install -r requirements/dev.txt
+pip install -r budget_proj/requirements/dev.txt
 ```
 
 ### (3) Configure your environment for the database management system that you will use
