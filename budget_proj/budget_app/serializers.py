@@ -28,7 +28,7 @@ class HistorySummaryBureauSerializer(serializers.ModelSerializer):
     bureau_total = serializers.IntegerField()
     class Meta:
         model = models.BudgetHistory
-        fields = ('fiscal_year','service_area_code', 'bureau_name','bureau_total',)
+        fields = ('fiscal_year','service_area_code', 'bureau_code', 'bureau_name','bureau_total',)
 
 class LookupCodeSerializer(serializers.ModelSerializer):
     class Meta:
