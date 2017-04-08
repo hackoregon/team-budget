@@ -73,6 +73,13 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'budget_proj.wsgi.application'
 
+
+# DRF Settings:
+REST_FRAMEWORK = {
+    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
+    'PAGE_SIZE': 100
+}
+
 # Password validation
 # https://docs.djangoproject.com/en/1.10/ref/settings/#auth-password-validators
 
