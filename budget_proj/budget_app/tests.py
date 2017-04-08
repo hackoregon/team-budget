@@ -61,7 +61,8 @@ class TestKpmEndpoint(TestCase):
         response = self.client.get("/budget/kpm/?fy=2015-16")
         self.assertEqual(response.status_code, 200)
         json_content = json.loads(response.content.decode('utf-8'))
-        fiscal_years = [item["fy"] for item in json_content]
+        results = json_content['results']
+        fiscal_years = [item["fy"] for item in results]
 
         for fiscal_year in fiscal_years:
             self.assertEqual(fiscal_year, '2015-16')
@@ -80,6 +81,8 @@ class TestOcrbEndpoint(TestCase):
         self.assertEqual(response.status_code, 200)
         json_content = json.loads(response.content.decode('utf-8'))
         fiscal_years = [item["fy"] for item in json_content]
+        results = json_content['results']
+        fiscal_years = [item["fy"] for item in results]
 
         for fiscal_year in fiscal_years:
             self.assertEqual(fiscal_year, '2015-16')
