@@ -21,15 +21,22 @@ except requests.exceptions.RequestException:
 if EC2_PRIVATE_IP:
     ALLOWED_HOSTS.append(EC2_PRIVATE_IP)
 
+if TRAVIS:
+    DB_HOST = project_config.AWS['HOST_EXTERNAL']
+else:
+    DB_HOST = project_config.AWS['HOST_INTERNAL']
+
 # Database
 # https://docs.djangoproject.com/en/1.10/ref/settings/#databases
 DATABASES = {
     'default': {
         'ENGINE': project_config.AWS['ENGINE'],
         'NAME': project_config.AWS['NAME'],
-        'HOST': project_config.AWS['HOST'],
+        'HOST': DB_HOST,
         'PORT': project_config.AWS['PORT'],
         'USER': project_config.AWS['USER'],
         'PASSWORD': project_config.AWS['PASSWORD'],
     }
 }
+
+DEBUG = True # 2017-04-08 let's get all the debug spew we can find, to track down the 504 errors
