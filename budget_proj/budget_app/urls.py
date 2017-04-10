@@ -10,6 +10,7 @@ urlpatterns = [
     url(r'^code/$', views.ListLookupCode.as_view(), name='code-list'),
     url(r'^history/$', views.ListBudgetHistory.as_view(), name='history-list'),
     url(r'^history/bureau/$', views.HistorySummaryByBureau.as_view(), name='history-bureau'),
+    url(r'^history/sa/objcode/$', views.HistorySummaryByServiceAreaObjCode.as_view(), name='history-sa-objcode-summary'),
     url(r'^kpm/$', views.ListKpm.as_view(), name='kpm-list'),
     url(r'^ocrb/$', views.ListOcrb.as_view(), name='ocrb-list'),
     url(r'^ocrb/summary/$', views.OcrbSummary.as_view(), name='ocrb-summary'),
