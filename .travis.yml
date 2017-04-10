@@ -5,6 +5,7 @@ install:
   - pip install --upgrade --user awscli
 before_script:
   - ./budget_proj/bin/getconfig.sh
+  - echo $TRAVIS  # 2017-04-09 troubleshooting mikehthecanuck/test-db-peering branch
 script:
   - './budget_proj/bin/test-proj.sh -t'
 after_success:
