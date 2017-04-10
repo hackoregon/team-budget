@@ -21,7 +21,7 @@ except requests.exceptions.RequestException:
 if EC2_PRIVATE_IP:
     ALLOWED_HOSTS.append(EC2_PRIVATE_IP)
 
-if TRAVIS:
+if os.getenv('TRAVIS', 'false'):
     DB_HOST = project_config.AWS['HOST_EXTERNAL']
 else:
     DB_HOST = project_config.AWS['HOST_INTERNAL']
