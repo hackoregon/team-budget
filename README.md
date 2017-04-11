@@ -134,91 +134,16 @@ http://127.0.0.1:8000/kpm
 ```
 
 # Endpoint map
-- kpm: provides data from City of Portland "Budget in Brief" documents (e.g. [FY 2016-17](https://www.portlandoregon.gov/cbo/article/584584)) for all Service Area sections from the tables named, "Key Performance Measures".
-- ocrb: provides data from City of Portland "Budget in Brief" documents (e.g. [FY 2016-17](https://www.portlandoregon.gov/cbo/article/584584)) for all Service Area sections from the tables named, "Operating and Capital Requirements by Bureau".
 - history: uses query parameters to return subsets of the budget data from the past 10 years.
 - code: returns codes used in other tables along with their descriptions.
+- ocrb: provides data from City of Portland "Budget in Brief" documents (e.g. [FY 2016-17](https://www.portlandoregon.gov/cbo/article/584584)) for all Service Area sections from the tables named, "Operating and Capital Requirements by Bureau".
+- kpm: provides data from City of Portland "Budget in Brief" documents (e.g. [FY 2016-17](https://www.portlandoregon.gov/cbo/article/584584)) for all Service Area sections from the tables named, "Key Performance Measures".
+
+# Sample Endpoint data
+There are sample data files in the `Data/sample-responses/` directory with an associated [README_SampleResponses.md](Data/sample-responses/README_SampleResponses.md) file.
 
 # Using Docker
 See [README-docker.md](https://github.com/hackoregon/team-budget/blob/master/README-docker.md) if you want to run the application from a Docker image, rather than using the Django `runserver` method as above.
 
 # License
 This project is licensed under the terms of the MIT license.
-
-# Sample Endpoint data
-- KPM:
-```json
-[
-  {
-    "source_document": "FY 2015-16 Budget in Brief",
-    "service_area": "Public Safety",
-    "bureau": "Bureau of Emergency Communications",
-    "key_performance_measures": "BOEC - % of priority medical calls dispatched within 90 seconds",
-    "fy": "2013-14",
-    "budget_type": "Actual ",
-    "amount": 72,
-    "units": "%"
-  },
-  {
-    "source_document": "FY 2015-16 Budget in Brief",
-    "service_area": "Public Safety",
-    "bureau": "Bureau of Fire & Police Disability & Retirement",
-    "key_performance_measures": "FPDR - Tax levy rate per $1,000 of Real Market Value",
-    "fy": "2013-14",
-    "budget_type": "Actual ",
-    "amount": 1.62,
-    "units": "$"
-  },
-  {
-    "source_document": "FY 2015-16 Budget in Brief",
-    "service_area": "Transportation & Parking",
-    "bureau": "Portland Bureau of Transportation",
-    "key_performance_measures": "BOT – % of bridges in non-distressed condition",
-    "fy": "2013-14",
-    "budget_type": "Actual ",
-    "amount": null,
-    "units": ""
-  }
-]
-```
-- OCRB: 
-```json
-[
-  {
-    "source_document": "FY 2015-16 Budget in Brief",
-    "service_area": "Public Safety",
-    "bureau": "Bureau of Emergency Communications",
-    "budget_category": "Capital",
-    "amount": 0,
-    "fy": "2013-14",
-    "budget_type": "Actual"
-  },
-  {
-    "source_document": "FY 2015-16 Budget in Brief",
-    "service_area": "Public Safety",
-    "bureau": "Bureau of Fire & Police Disability & Retirement",
-    "budget_category": "Capital",
-    "amount": 232658,
-    "fy": "2013-14",
-    "budget_type": "Actual"
-  },
-  {
-    "source_document": "FY 2015-16 Budget in Brief",
-    "service_area": "Public Safety",
-    "bureau": "Bureau of Emergency Communications",
-    "budget_category": "Operating",
-    "amount": 23346735,
-    "fy": "2013-14",
-    "budget_type": "Actual"
-  },
-  {
-    "source_document": "FY 2015-16 Budget in Brief",
-    "service_area": "Public Safety",
-    "bureau": "Bureau of Fire & Police Disability & Retirement",
-    "budget_category": "Operating",
-    "amount": 162156833,
-    "fy": "2013-14",
-    "budget_type": "Actual"
-  }
-]
-```
