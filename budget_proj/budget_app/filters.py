@@ -3,10 +3,6 @@ from django_filters import rest_framework as filters
 from . import models
 
 
-# All this says is we prefer to use iexact rather than exact for char fields
-# when filtering our models based on query params
-
-
 class DefaultFilterMeta:
     """
     Set our default Filter configurations to DRY up the FilterSet Meta classes.

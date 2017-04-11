@@ -23,6 +23,7 @@ from . import filters
 class ListOcrb(generics.ListAPIView):
     """
     Operating and Capital Requirements by Bureau (OCRB).
+    Note: Parameter values are compared case-insensitive.
     """
     serializer_class = serializers.OcrbSerializer
     filter_class = filters.OcrbFilter
@@ -64,6 +65,7 @@ class OcrbSummary(generics.ListAPIView):
 class ListKpm(generics.ListAPIView):
     """
     Key Performance Measures (KPM).
+    Note: Parameter values are compared case-insensitive.
     """
     queryset = models.KPM.objects.all()
     serializer_class = serializers.KpmSerializer
@@ -73,6 +75,7 @@ class ListKpm(generics.ListAPIView):
 class ListBudgetHistory(generics.ListAPIView):
     """
     Historical Operating and Capital Requirements by Service Area and Bureau
+    Note: Parameter values are compared case-insensitive.
     """
     serializer_class = serializers.BudgetHistorySerializer
     filter_class = filters.BudgetHistoryFilter
@@ -170,6 +173,7 @@ class HistorySummaryByServiceAreaObjCode(generics.ListAPIView):
 class ListLookupCode(generics.ListAPIView):
     """
     Code reference table for Budget History.
+    Note: Parameter values are compared case-insensitive.
     """
     serializer_class = serializers.LookupCodeSerializer
     filter_class = filters.LookupCodeFilter
