@@ -163,7 +163,7 @@ class HistorySummaryByServiceArea(generics.ListAPIView):
             rows = models.BudgetHistory.objects.filter(**filter_dict)
         else:
             rows = self.get_queryset()
-        grouped_rows = rows.values('fiscal_year', 'service_area_code').annotate(service_area_total=Sum('amount'))
+        grouped_rows = rows.values('fiscal_year', 'service_area_code').annotate(amount=Sum('amount'))
         sorted_rows = grouped_rows.order_by('fiscal_year', 'service_area_code')
         serialized_data = self.serializer_class(sorted_rows, many=True)
         return Response(serialized_data.data)
