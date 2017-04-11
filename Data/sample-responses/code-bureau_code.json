@@ -1,0 +1,142 @@
+[
+  {
+    "code": "AT", 
+    "code_type": "bureau_code", 
+    "description": "Office of the City Attorney"
+  }, 
+  {
+    "code": "AU", 
+    "code_type": "bureau_code", 
+    "description": "Office of the City Auditor"
+  }, 
+  {
+    "code": "BO", 
+    "code_type": "bureau_code", 
+    "description": "City Budget Office"
+  }, 
+  {
+    "code": "CB", 
+    "code_type": "bureau_code", 
+    "description": "Office for Community Technology"
+  }, 
+  {
+    "code": "DR", 
+    "code_type": "bureau_code", 
+    "description": "Bureau of Fire & Police Disability & Retirement"
+  }, 
+  {
+    "code": "DS", 
+    "code_type": "bureau_code", 
+    "description": "Bureau of Development Services"
+  }, 
+  {
+    "code": "EC", 
+    "code_type": "bureau_code", 
+    "description": "Bureau of Emergency Communications"
+  }, 
+  {
+    "code": "EM", 
+    "code_type": "bureau_code", 
+    "description": "Portland Bureau of Emergency Management"
+  }, 
+  {
+    "code": "ES", 
+    "code_type": "bureau_code", 
+    "description": "Bureau of Environmental Services"
+  }, 
+  {
+    "code": "FR", 
+    "code_type": "bureau_code", 
+    "description": "Portland Fire & Rescue"
+  }, 
+  {
+    "code": "GR", 
+    "code_type": "bureau_code", 
+    "description": "Office of Government Relations"
+  }, 
+  {
+    "code": "HC", 
+    "code_type": "bureau_code", 
+    "description": "Portland Housing Bureau"
+  }, 
+  {
+    "code": "HN", 
+    "code_type": "bureau_code", 
+    "description": "Office of Human Relations"
+  }, 
+  {
+    "code": "MF", 
+    "code_type": "bureau_code", 
+    "description": "Office of Management & Finance"
+  }, 
+  {
+    "code": "MY", 
+    "code_type": "bureau_code", 
+    "description": "Office of the Mayor"
+  }, 
+  {
+    "code": "NI", 
+    "code_type": "bureau_code", 
+    "description": "Office of Neighborhood Involvement"
+  }, 
+  {
+    "code": "OE", 
+    "code_type": "bureau_code", 
+    "description": "Office of Equity & Human Rights"
+  }, 
+  {
+    "code": "PA", 
+    "code_type": "bureau_code", 
+    "description": "Commissioner of Public Affairs"
+  }, 
+  {
+    "code": "PK", 
+    "code_type": "bureau_code", 
+    "description": "Portland Parks & Recreation"
+  }, 
+  {
+    "code": "PL", 
+    "code_type": "bureau_code", 
+    "description": "Portland Police Bureau"
+  }, 
+  {
+    "code": "PN", 
+    "code_type": "bureau_code", 
+    "description": "Bureau of Planning & Sustainability"
+  }, 
+  {
+    "code": "PS", 
+    "code_type": "bureau_code", 
+    "description": "Commissioner of Public Safety"
+  }, 
+  {
+    "code": "PU", 
+    "code_type": "bureau_code", 
+    "description": "Commissioner of Public Utilities"
+  }, 
+  {
+    "code": "PW", 
+    "code_type": "bureau_code", 
+    "description": "Commissioner of Public Works"
+  }, 
+  {
+    "code": "SD", 
+    "code_type": "bureau_code", 
+    "description": "Office of Sustainable Development"
+  }, 
+  {
+    "code": "TR", 
+    "code_type": "bureau_code", 
+    "description": "Portland Bureau of Transportation"
+  }, 
+  {
+    "code": "WA", 
+    "code_type": "bureau_code", 
+    "description": "Portland Water Bureau"
+  }, 
+  {
+    "code": "ZD", 
+    "code_type": "bureau_code", 
+    "description": "Portland Development Commission"
+  }
+]

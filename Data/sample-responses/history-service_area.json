@@ -1,0 +1,302 @@
+[
+  {
+    "amount": 223755032, 
+    "fiscal_year": "2006-07", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 872038820, 
+    "fiscal_year": "2006-07", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 131163373, 
+    "fiscal_year": "2006-07", 
+    "service_area_code": "PR"
+  }, 
+  {
+    "amount": 375542531, 
+    "fiscal_year": "2006-07", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 1472330509, 
+    "fiscal_year": "2006-07", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 256320999, 
+    "fiscal_year": "2006-07", 
+    "service_area_code": "TP"
+  }, 
+  {
+    "amount": 202622775, 
+    "fiscal_year": "2007-08", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 925177129, 
+    "fiscal_year": "2007-08", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 151307392, 
+    "fiscal_year": "2007-08", 
+    "service_area_code": "PR"
+  }, 
+  {
+    "amount": 399363449, 
+    "fiscal_year": "2007-08", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 1609400176, 
+    "fiscal_year": "2007-08", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 206543005, 
+    "fiscal_year": "2007-08", 
+    "service_area_code": "TP"
+  }, 
+  {
+    "amount": 240250960, 
+    "fiscal_year": "2008-09", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 816094302, 
+    "fiscal_year": "2008-09", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 148890051, 
+    "fiscal_year": "2008-09", 
+    "service_area_code": "PR"
+  }, 
+  {
+    "amount": 430686323, 
+    "fiscal_year": "2008-09", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 1250875024, 
+    "fiscal_year": "2008-09", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 193378286, 
+    "fiscal_year": "2008-09", 
+    "service_area_code": "TP"
+  }, 
+  {
+    "amount": 278318958, 
+    "fiscal_year": "2009-10", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 852309239, 
+    "fiscal_year": "2009-10", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 128010408, 
+    "fiscal_year": "2009-10", 
+    "service_area_code": "PR"
+  }, 
+  {
+    "amount": 470884013, 
+    "fiscal_year": "2009-10", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 1303193630, 
+    "fiscal_year": "2009-10", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 240283972, 
+    "fiscal_year": "2009-10", 
+    "service_area_code": "TP"
+  }, 
+  {
+    "amount": 411658494, 
+    "fiscal_year": "2010-11", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 881091079, 
+    "fiscal_year": "2010-11", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 128894919, 
+    "fiscal_year": "2010-11", 
+    "service_area_code": "PR"
+  }, 
+  {
+    "amount": 476588146, 
+    "fiscal_year": "2010-11", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 1705198802, 
+    "fiscal_year": "2010-11", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 246067362, 
+    "fiscal_year": "2010-11", 
+    "service_area_code": "TP"
+  }, 
+  {
+    "amount": 469510996, 
+    "fiscal_year": "2011-12", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 936606841, 
+    "fiscal_year": "2011-12", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 142276810, 
+    "fiscal_year": "2011-12", 
+    "service_area_code": "PR"
+  }, 
+  {
+    "amount": 480159893, 
+    "fiscal_year": "2011-12", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 1189209735, 
+    "fiscal_year": "2011-12", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 237111101, 
+    "fiscal_year": "2011-12", 
+    "service_area_code": "TP"
+  }, 
+  {
+    "amount": 325118678, 
+    "fiscal_year": "2012-13", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 872416369, 
+    "fiscal_year": "2012-13", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 142562186, 
+    "fiscal_year": "2012-13", 
+    "service_area_code": "PR"
+  }, 
+  {
+    "amount": 475218943, 
+    "fiscal_year": "2012-13", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 1537815556, 
+    "fiscal_year": "2012-13", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 238643517, 
+    "fiscal_year": "2012-13", 
+    "service_area_code": "TP"
+  }, 
+  {
+    "amount": 269674746, 
+    "fiscal_year": "2013-14", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 915480675, 
+    "fiscal_year": "2013-14", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 177023891, 
+    "fiscal_year": "2013-14", 
+    "service_area_code": "PR"
+  }, 
+  {
+    "amount": 496342942, 
+    "fiscal_year": "2013-14", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 1582081673, 
+    "fiscal_year": "2013-14", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 273179274, 
+    "fiscal_year": "2013-14", 
+    "service_area_code": "TP"
+  }, 
+  {
+    "amount": 305495956, 
+    "fiscal_year": "2014-15", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 891908591, 
+    "fiscal_year": "2014-15", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 173466646, 
+    "fiscal_year": "2014-15", 
+    "service_area_code": "PR"
+  }, 
+  {
+    "amount": 528545038, 
+    "fiscal_year": "2014-15", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 1728205623, 
+    "fiscal_year": "2014-15", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 269265273, 
+    "fiscal_year": "2014-15", 
+    "service_area_code": "TP"
+  }, 
+  {
+    "amount": 372799318, 
+    "fiscal_year": "2015-16", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 911966115, 
+    "fiscal_year": "2015-16", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 219571533, 
+    "fiscal_year": "2015-16", 
+    "service_area_code": "PR"
+  }, 
+  {
+    "amount": 530104701, 
+    "fiscal_year": "2015-16", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 1985943260, 
+    "fiscal_year": "2015-16", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 336629241, 
+    "fiscal_year": "2015-16", 
+    "service_area_code": "TP"
+  }
+]
