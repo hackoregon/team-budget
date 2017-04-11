@@ -21,13 +21,25 @@ class TestCodeEndpoint(TestCase):
         self.assertEqual(response.status_code, 200)
 
     def test_code_get_request_works_with_query_param(self):
-        response = self.client.get("/budget/code/?code=AT")
+        response = self.client.get("/budget/code/", {'code': 'AT'})
         self.assertEqual(response.status_code, 200)
         json_content = response.json()
-        codes = [item["code"] for item in json_content]
+        code_data = json_content['results']
+        codes = [item["code"] for item in code_data]
 
         for code in codes:
             self.assertEqual(code, 'AT')
+
+    def test_code_response_is_paginated(self):
+        response = self.client.get('/budget/code/')
+
+        json = response.json()
+
+        self.assertTrue('count' in json)
+        self.assertTrue('next' in json)
+        self.assertTrue('previous' in json)
+        self.assertTrue('results' in json)
+
 
 class TestHistoryEndpoint(TestCase):
     def setup(self):
@@ -94,6 +106,7 @@ class TestKpmEndpoint(TestCase):
         # regression test
         response = self.client.get('/budget/kpm/', {'page': 1})
         self.assertEqual(response.status_code, 200)
+
 
 class TestOcrbEndpoint(TestCase):
     def setup(self):

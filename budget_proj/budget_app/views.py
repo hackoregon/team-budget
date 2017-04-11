@@ -27,7 +27,6 @@ class ListOcrb(generics.ListAPIView):
     serializer_class = serializers.OcrbSerializer
     filter_class = filters.OcrbFilter
 
-
     def get_queryset(self):
         return models.OCRB.objects.order_by('-fy', 'budget_type', 'service_area', 'bureau', 'budget_category')
 
@@ -47,6 +46,7 @@ class OcrbSummary(generics.ListAPIView):
         Uses query parameters to select items to be returned from the database that summarizes Operating and Capital Requirements by Bureau.
         Note: Parameter names and parameter values are compared case-insensitive.
         """
+
         if request.GET.keys():
             # Build a dictionary of query parameters and their values.
             filter_dict = {}
@@ -139,7 +139,7 @@ class HistorySummaryByServiceArea(generics.ListAPIView):
         return Response(serialized_data.data)
 
 
-class HistorySummaryByServiceAreaObjectCode(generics.ListAPIView):
+class HistorySummaryByServiceAreaObjCode(generics.ListAPIView):
     """
     Summary of Historical Operating and Capital Requirements by Service Area and Object Code
     """
@@ -172,21 +172,8 @@ class ListLookupCode(generics.ListAPIView):
     Code reference table for Budget History.
     """
     serializer_class = serializers.LookupCodeSerializer
+    filter_class = filters.LookupCodeFilter
 
 
     def get_queryset(self):
         return models.LookupCode.objects.all()
-
-
-    def get(self, request, *args, **kwargs):
-        if request.GET.keys():
-            # Build a dictionary of query parameters and their values.
-            filter_dict = {}
-            for key, value in request.GET.items():
-                filter_dict[key.lower() + "__iexact"] = value
-            rows = models.LookupCode.objects.filter(**filter_dict)
-        else:
-            rows = self.get_queryset()
-        sorted_rows = rows.order_by('code')
-        serialized_data = self.serializer_class(sorted_rows, many=True)
-        return Response(serialized_data.data)

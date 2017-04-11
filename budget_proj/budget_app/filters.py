@@ -37,3 +37,10 @@ class KpmFilter(filters.FilterSet):
 class BudgetHistoryFilter(filters.FilterSet):
     class Meta(DefaultFilterMeta):
         model = models.BudgetHistory
+
+
+
+class LookupCodeFilter(filters.FilterSet):
+    class Meta(DefaultFilterMeta):
+        model = models.LookupCode
+
