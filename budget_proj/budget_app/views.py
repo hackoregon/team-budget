@@ -169,11 +169,11 @@ class HistorySummaryByServiceArea(generics.ListAPIView):
         return Response(serialized_data.data)
 
 
-class HistorySummaryByServiceAreaObjCode(generics.ListAPIView):
+class HistorySummaryByServiceAreaObjectCode(generics.ListAPIView):
     """
     Summary of Historical Operating and Capital Requirements by Service Area and Object Code
     """
-    serializer_class = serializers.HistorySummaryByServiceAreaObjCodeSerializer
+    serializer_class = serializers.HistorySummaryByServiceAreaObjectCodeSerializer
 
     def get_queryset(self):
         return models.BudgetHistory.objects.all()
@@ -191,7 +191,7 @@ class HistorySummaryByServiceAreaObjCode(generics.ListAPIView):
             rows = models.BudgetHistory.objects.filter(**filter_dict)
         else:
             rows = self.get_queryset()
-        grouped_rows = rows.values('fiscal_year','service_area_code', 'object_code').annotate(object_total=Sum('amount'))
+        grouped_rows = rows.values('fiscal_year','service_area_code', 'object_code').annotate(amount=Sum('amount'))
         sorted_rows = grouped_rows.order_by('fiscal_year','service_area_code','object_code')
         serialized_data = self.serializer_class(sorted_rows, many=True)
         return Response(serialized_data.data)
