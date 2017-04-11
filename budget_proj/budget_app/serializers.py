@@ -25,10 +25,10 @@ class BudgetHistorySerializer(serializers.ModelSerializer):
         exclude = ('id',)
 
 class HistorySummaryBureauSerializer(serializers.ModelSerializer):
-    bureau_total = serializers.IntegerField()
+    amount = serializers.IntegerField()
     class Meta:
         model = models.BudgetHistory
-        fields = ('fiscal_year','service_area_code', 'bureau_name','bureau_total',)
+        fields = ('fiscal_year','service_area_code', 'bureau_code', 'bureau_name','amount',)
 
 class HistorySummaryByServiceAreaObjCodeSerializer(serializers.ModelSerializer):
     object_total = serializers.IntegerField()
