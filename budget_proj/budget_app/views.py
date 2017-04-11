@@ -75,6 +75,7 @@ class OcrbSummary(generics.ListAPIView):
         serialized_data = self.serializer_class(sorted_ocrbs, many=True)
         return Response(serialized_data.data)
 
+
 class ListKpm(generics.ListAPIView):
     """
     Key Performance Measures (KPM).
@@ -111,6 +112,7 @@ class ListBudgetHistory(generics.ListAPIView):
         serialized_data = self.serializer_class(sorted_rows, many=True)
         return Response(serialized_data.data)
 
+
 class HistorySummaryByBureau(generics.ListAPIView):
     """
     Summary of Historical Operating and Capital Requirements by Service Area and Bureau
@@ -138,6 +140,35 @@ class HistorySummaryByBureau(generics.ListAPIView):
         serialized_data = self.serializer_class(sorted_rows, many=True)
         return Response(serialized_data.data)
 
+
+class HistorySummaryByServiceArea(generics.ListAPIView):
+    """
+    Summary of BudgetHistory by Service Area.
+    """
+    serializer_class = serializers.HistorySummaryByServiceAreaSerializer
+
+    def get_queryset(self):
+        return models.BudgetHistory.objects.all()
+
+    def get(self, request, *args, **kwargs):
+        """
+        Uses query parameters to select items to be returned from the database that summarizes Operating and Capital Requirements by Bureau.
+        Note: Parameter names and parameter values are compared case-insensitive.
+        """
+        if request.GET.keys():
+            # Build a dictionary of query parameters and their values.
+            filter_dict = {}
+            for key, value in request.GET.items():
+                filter_dict[key.lower() + "__iexact"] = value  # Assumes all model attributes are lowercase.
+            rows = models.BudgetHistory.objects.filter(**filter_dict)
+        else:
+            rows = self.get_queryset()
+        grouped_rows = rows.values('fiscal_year', 'service_area_code').annotate(amount=Sum('amount'))
+        sorted_rows = grouped_rows.order_by('fiscal_year', 'service_area_code')
+        serialized_data = self.serializer_class(sorted_rows, many=True)
+        return Response(serialized_data.data)
+
+
 class HistorySummaryByServiceAreaObjCode(generics.ListAPIView):
     """
     Summary of Historical Operating and Capital Requirements by Service Area and Object Code
@@ -164,6 +195,7 @@ class HistorySummaryByServiceAreaObjCode(generics.ListAPIView):
         sorted_rows = grouped_rows.order_by('fiscal_year','service_area_code','object_code')
         serialized_data = self.serializer_class(sorted_rows, many=True)
         return Response(serialized_data.data)
+
 
 class ListLookupCode(generics.ListAPIView):
     """
