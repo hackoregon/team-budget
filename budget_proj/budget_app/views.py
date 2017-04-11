@@ -17,6 +17,7 @@ from django.db.models import Sum, Count
 # main pieces from our DRF app that need to be linked
 from . import models
 from . import serializers
+from . import filters
 # ------------------------------------------
 
 class ListOcrb(generics.ListAPIView):
@@ -24,20 +25,8 @@ class ListOcrb(generics.ListAPIView):
     Operating and Capital Requirements by Bureau (OCRB).
     """
     serializer_class = serializers.OcrbSerializer
+    filter_class = filters.OcrbFilter
 
-    def filter_queryset(self, queryset):
-        """
-        We normally don't overwrite this method, but this is just a stop-gap
-        so we can put our custom filtering code here until we replace with filter-backends.
-        """
-        if not self.request.GET.keys():
-            return queryset
-
-        whitelist = ('page', 'format')
-        # Build a dictionary of query parameters and their values.
-        filters = {key.lower() + '__iexact': val for key, val in self.request.GET.items() if key not in whitelist}
-
-        return queryset.filter(**filters)
 
     def get_queryset(self):
         return models.OCRB.objects.order_by('-fy', 'budget_type', 'service_area', 'bureau', 'budget_category')
@@ -78,6 +67,7 @@ class ListKpm(generics.ListAPIView):
     """
     queryset = models.KPM.objects.all()
     serializer_class = serializers.KpmSerializer
+    filter_class = filters.KpmFilter
 
 
 class ListBudgetHistory(generics.ListAPIView):
@@ -85,28 +75,12 @@ class ListBudgetHistory(generics.ListAPIView):
     Historical Operating and Capital Requirements by Service Area and Bureau
     """
     serializer_class = serializers.BudgetHistorySerializer
+    filter_class = filters.BudgetHistoryFilter
 
 
     def get_queryset(self):
-        return models.BudgetHistory.objects.all()
+        return models.BudgetHistory.objects.order_by('fiscal_year', 'bureau_name', 'accounting_object_name', 'functional_area_name')
 
-
-    def get(self, request, *args, **kwargs):
-        """
-        Uses query parameters to select items to be returned from the database that summarizes Operating and Capital Requirements by Bureau.
-        Note: Parameter names and parameter values are compared case-insensitive.
-        """
-        if request.GET.keys():
-            # Build a dictionary of query parameters and their values.
-            filter_dict = {}
-            for key, value in request.GET.items():
-                filter_dict[key.lower() + "__iexact"] = value  # Assumes all model attributes are lowercase.
-            rows = models.BudgetHistory.objects.filter(**filter_dict)
-        else:
-            rows = self.get_queryset()
-        sorted_rows = rows.order_by('fiscal_year', 'bureau_name', 'accounting_object_name', 'functional_area_name')
-        serialized_data = self.serializer_class(sorted_rows, many=True)
-        return Response(serialized_data.data)
 
 
 class HistorySummaryByBureau(generics.ListAPIView):

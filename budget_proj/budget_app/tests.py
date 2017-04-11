@@ -1,4 +1,3 @@
-import json # enables inspecting JSON data for certain fields
 from django.test import TestCase, Client
 # NOTE: disabled these for now but expect they'll be used in the near future
 # from django.urls import reverse
@@ -24,7 +23,7 @@ class TestCodeEndpoint(TestCase):
     def test_code_get_request_works_with_query_param(self):
         response = self.client.get("/budget/code/?code=AT")
         self.assertEqual(response.status_code, 200)
-        json_content = json.loads(response.content.decode('utf-8'))
+        json_content = response.json()
         codes = [item["code"] for item in json_content]
 
         for code in codes:
@@ -40,13 +39,27 @@ class TestHistoryEndpoint(TestCase):
         self.assertEqual(response.status_code, 200)
 
     def test_history_get_request_works_with_query_param(self):
-        response = self.client.get("/budget/history/?fiscal_year=2015-16&bureau_code=PS")
+        query_params = {'fiscal_year': '2015-16', 'bureau_code': 'PS'}
+        response = self.client.get("/budget/history/", query_params)
+
         self.assertEqual(response.status_code, 200)
-        json_content = json.loads(response.content.decode('utf-8'))
-        fiscal_years = [item["fiscal_year"] for item in json_content]
+
+        results = response.json()['results']
+        fiscal_years = [item["fiscal_year"] for item in results]
 
         for fiscal_year in fiscal_years:
             self.assertEqual(fiscal_year, '2015-16')
+
+    def test_history_response_is_paginated(self):
+        response = self.client.get('/budget/history/')
+
+        json = response.json()
+
+        self.assertTrue('count' in json)
+        self.assertTrue('next' in json)
+        self.assertTrue('previous' in json)
+        self.assertTrue('results' in json)
+
 
 class TestKpmEndpoint(TestCase):
     def setup(self):
@@ -60,7 +73,7 @@ class TestKpmEndpoint(TestCase):
     def test_kpm_get_request_works_with_query_param(self):
         response = self.client.get("/budget/kpm/?fy=2015-16")
         self.assertEqual(response.status_code, 200)
-        json_content = json.loads(response.content.decode('utf-8'))
+        json_content = response.json()
         results = json_content['results']
         fiscal_years = [item["fy"] for item in results]
 
@@ -94,7 +107,7 @@ class TestOcrbEndpoint(TestCase):
     def test_ocrb_get_request_works_with_query_param(self):
         response = self.client.get("/budget/ocrb/?fy=2015-16")
         self.assertEqual(response.status_code, 200)
-        json_content = json.loads(response.content.decode('utf-8'))
+        json_content = response.json()
         results = json_content['results']
         fiscal_years = [item["fy"] for item in results]
 
