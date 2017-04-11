@@ -6,6 +6,8 @@ from .. import project_config
 
 SECRET_KEY = project_config.DJANGO_SECRET_KEY
 
+ALLOWED_HOSTS = projec_config.ALLOWED_HOSTS
+
 AWS_LOAD_BALANCER = 'hacko-integration-658279555.us-west-2.elb.amazonaws.com'
 
 ALLOWED_HOSTS.append(AWS_LOAD_BALANCER)
@@ -25,6 +27,8 @@ if os.getenv('TRAVIS', 'false'):
     DB_HOST = project_config.AWS['HOST_EXTERNAL']
 else:
     DB_HOST = project_config.AWS['HOST_INTERNAL']
+
+print DB_HOST
 
 # Database
 # https://docs.djangoproject.com/en/1.10/ref/settings/#databases
