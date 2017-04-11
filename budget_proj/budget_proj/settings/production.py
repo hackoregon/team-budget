@@ -6,7 +6,7 @@ from .. import project_config
 
 SECRET_KEY = project_config.DJANGO_SECRET_KEY
 
-ALLOWED_HOSTS = projec_config.ALLOWED_HOSTS
+ALLOWED_HOSTS = project_config.ALLOWED_HOSTS
 
 AWS_LOAD_BALANCER = 'hacko-integration-658279555.us-west-2.elb.amazonaws.com'
 
@@ -16,7 +16,8 @@ ALLOWED_HOSTS.append(AWS_LOAD_BALANCER)
 # The Loadbalancer uses this ip address for healthchecks
 EC2_PRIVATE_IP = None
 try:
-    EC2_PRIVATE_IP = requests.get('http://169.254.169.254/latest/meta-data/local-ipv4', timeout=0.01).text
+    EC2_PRIVATE_IP = requests.get('http://169.254.169.254/latest/meta-data/local-ipv4',
+                                  timeout=0.01).text
 except requests.exceptions.RequestException:
     pass
 
@@ -27,8 +28,6 @@ if os.getenv('TRAVIS', 'false'):
     DB_HOST = project_config.AWS['HOST_EXTERNAL']
 else:
     DB_HOST = project_config.AWS['HOST_INTERNAL']
-
-print DB_HOST
 
 # Database
 # https://docs.djangoproject.com/en/1.10/ref/settings/#databases
