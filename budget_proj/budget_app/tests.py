@@ -16,7 +16,7 @@ class TestCodeEndpoint(TestCase):
     def setup(self):
         self.client = Client()
 
-    def test(self):
+    def test_ok(self):
         response = self.client.get('/budget/code/')
 
         self.assertEqual(response.status_code, 200)
@@ -34,7 +34,7 @@ class TestHistoryEndpoint(TestCase):
     def setup(self):
         self.client = Client()
 
-    def test(self):
+    def test_ok(self):
         response = self.client.get('/budget/history/')
 
         self.assertEqual(response.status_code, 200)
@@ -52,7 +52,7 @@ class TestKpmEndpoint(TestCase):
     def setup(self):
         self.client = Client()
 
-    def test(self):
+    def test_ok(self):
         response = self.client.get('/budget/kpm/')
 
         self.assertEqual(response.status_code, 200)
@@ -67,11 +67,26 @@ class TestKpmEndpoint(TestCase):
         for fiscal_year in fiscal_years:
             self.assertEqual(fiscal_year, '2015-16')
 
+    def test_kpm_response_is_paginated(self):
+        response = self.client.get('/budget/kpm/')
+
+        json = response.json()
+
+        self.assertTrue('count' in json)
+        self.assertTrue('next' in json)
+        self.assertTrue('previous' in json)
+        self.assertTrue('results' in json)
+
+    def test_kpm_accepts_page_query_param(self):
+        # regression test
+        response = self.client.get('/budget/kpm/', {'page': 1})
+        self.assertEqual(response.status_code, 200)
+
 class TestOcrbEndpoint(TestCase):
     def setup(self):
         self.client = Client()
 
-    def test(self):
+    def test_ok(self):
         response = self.client.get('/budget/ocrb/')
 
         self.assertEqual(response.status_code, 200)
@@ -85,3 +100,19 @@ class TestOcrbEndpoint(TestCase):
 
         for fiscal_year in fiscal_years:
             self.assertEqual(fiscal_year, '2015-16')
+
+    def test_ocrb_response_is_paginated(self):
+        response = self.client.get('/budget/ocrb/')
+
+        json = response.json()
+
+        # look for pagination keys
+        self.assertTrue('count' in json)
+        self.assertTrue('next' in json)
+        self.assertTrue('previous' in json)
+        self.assertTrue('results' in json)
+
+    def test_ocrb_accepts_page_query_param(self):
+        # regression test
+        response = self.client.get('/budget/ocrb/', {'page': 1})
+        self.assertEqual(response.status_code, 200)

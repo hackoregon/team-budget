@@ -25,42 +25,22 @@ class ListOcrb(generics.ListAPIView):
     """
     serializer_class = serializers.OcrbSerializer
 
+    def filter_queryset(self, queryset):
+        """
+        We normally don't overwrite this method, but this is just a stop-gap
+        so we can put our custom filtering code here until we replace with filter-backends.
+        """
+        if not self.request.GET.keys():
+            return queryset
+
+        whitelist = ('page', 'format')
+        # Build a dictionary of query parameters and their values.
+        filters = {key.lower() + '__iexact': val for key, val in self.request.GET.items() if key not in whitelist}
+
+        return queryset.filter(**filters)
 
     def get_queryset(self):
-        return models.OCRB.objects.all()
-
-
-    def get(self, request, *args, **kwargs):
-        """
-        Uses query parameters to select items to be returned from the database that summarizes Operating and Capital Requirements by Bureau.
-        Note: Parameter names and parameter values are compared case-insensitive.
-        """
-        if request.GET.keys():
-            # Build a dictionary of query parameters and their values.
-            filter_dict = {}
-            for key, value in request.GET.items():
-                if key != 'page':
-                    filter_dict[key.lower() + "__iexact"] = value  # Assumes all model attributes are lowercase.
-            ocrbs = models.OCRB.objects.filter(**filter_dict)
-        else:
-            ocrbs = self.get_queryset()
-        sorted_ocrbs = ocrbs.order_by('fy', 'budget_type', 'service_area', 'bureau', 'budget_category')
-        page = self.paginate_queryset(sorted_ocrbs)
-        if page is not None:
-            serializer = self.get_serializer(page, many=True)
-            return self.get_paginated_response(serializer.data)
-
-        serialized_data = self.serializer_class(sorted_ocrbs, many=True)
-        return Response(serialized_data.data)
-    #   queryset = self.filter_queryset(self.get_queryset())
-
-        # page = self.paginate_queryset(queryset)
-        # if page is not None:
-        #     serializer = self.get_serializer(page, many=True)
-        #     return self.get_paginated_response(serializer.data)
-
-        # serializer = self.get_serializer(queryset, many=True)
-        # return Response(serializer.data)
+        return models.OCRB.objects.order_by('-fy', 'budget_type', 'service_area', 'bureau', 'budget_category')
 
 
 
