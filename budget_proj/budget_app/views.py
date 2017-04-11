@@ -142,7 +142,7 @@ class HistorySummaryByServiceArea(generics.ListAPIView):
         return Response(serialized_data.data)
 
 
-class HistorySummaryByServiceAreaObjCode(generics.ListAPIView):
+class HistorySummaryByServiceAreaObjectCode(generics.ListAPIView):
     """
     Summary of Historical Operating and Capital Requirements by Service Area and Object Code
     """
