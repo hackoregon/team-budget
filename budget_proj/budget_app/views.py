@@ -148,7 +148,7 @@ class HistorySummaryByServiceArea(generics.ListAPIView):
     serializer_class = serializers.HistorySummaryByServiceAreaSerializer
 
     def get_queryset(self):
-        return models.BudgetHistory.objects.select_related('service_area').all()
+        return models.BudgetHistory.objects.all()
 
     def get(self, request, *args, **kwargs):
         """
@@ -160,10 +160,10 @@ class HistorySummaryByServiceArea(generics.ListAPIView):
             filter_dict = {}
             for key, value in request.GET.items():
                 filter_dict[key.lower() + "__iexact"] = value  # Assumes all model attributes are lowercase.
-            rows = models.BudgetHistory.objects.select_related('service_area').filter(**filter_dict)
+            rows = models.BudgetHistory.objects.filter(**filter_dict)
         else:
             rows = self.get_queryset()
-        grouped_rows = rows.values('fiscal_year', 'service_area_code', 'service_area').annotate(service_area_total=Sum('amount'))
+        grouped_rows = rows.values('fiscal_year', 'service_area_code').annotate(service_area_total=Sum('amount'))
         sorted_rows = grouped_rows.order_by('fiscal_year', 'service_area_code')
         serialized_data = self.serializer_class(sorted_rows, many=True)
         return Response(serialized_data.data)

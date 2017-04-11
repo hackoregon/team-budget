@@ -36,10 +36,9 @@ class HistorySummaryBureauSerializer(serializers.ModelSerializer):
 
 class HistorySummaryByServiceAreaSerializer(serializers.ModelSerializer):
     service_area_total = serializers.IntegerField()
-    service_area_name = serializers.ReadOnlyField(source='service_area.description')
     class Meta:
         model = models.BudgetHistory
-        fields = ('fiscal_year','service_area_code', 'service_area_name', 'service_area_total')
+        fields = ('fiscal_year','service_area_code', 'service_area_total')
 
 
 class HistorySummaryByServiceAreaObjCodeSerializer(serializers.ModelSerializer):

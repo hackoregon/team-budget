@@ -42,7 +42,6 @@ class BudgetHistory(models.Model):
     functional_area_name = models.CharField(max_length=255, default='')
     accounting_object_name = models.CharField(max_length=255, default='')
     service_area_code = models.CharField(max_length=32, default='')
-    service_area = models.ForeignKey(LookupCode)
     program_code = models.CharField(max_length=32, default='')
     sub_program_code = models.CharField(max_length=32, default='')
     fund_center = models.CharField(max_length=32, default='')
