@@ -6,6 +6,8 @@ from .. import project_config
 
 SECRET_KEY = project_config.DJANGO_SECRET_KEY
 
+ALLOWED_HOSTS = project_config.ALLOWED_HOSTS
+
 AWS_LOAD_BALANCER = 'hacko-integration-658279555.us-west-2.elb.amazonaws.com'
 
 ALLOWED_HOSTS.append(AWS_LOAD_BALANCER)
