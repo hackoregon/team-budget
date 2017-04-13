@@ -9,6 +9,7 @@ class OCRB(models.Model):
     budget_category = models.CharField(max_length=255, default='')
     amount = models.IntegerField(blank=True, null=True)
     fy = models.CharField(max_length=255, default='')
+    fy.help_text = 'Fiscal Year (i.e. 2016-16)'
     budget_type = models.CharField(max_length=255, default='')
 
 
@@ -18,7 +19,7 @@ class KPM(models.Model):
     service_area = models.CharField(max_length=255, default='')
     bureau = models.CharField(max_length=255, default='')
     key_performance_measures = models.CharField(max_length=255, default='')
-    fy = models.CharField(max_length=255, default='')
+    fy = models.CharField(max_length=255, default='', help_text='Fiscal year (i.e. 2015-16)')
     budget_type = models.CharField(max_length=255, default='')
     amount = models.FloatField(blank=True, null=True)
     units = models.CharField(max_length=255, default='')
