@@ -125,7 +125,7 @@ class HistorySummaryByServiceArea(generics.ListAPIView):
 
     def get(self, request, *args, **kwargs):
         """
-        Uses query parameters to select items to be returned from the database that summarizes Operating and Capital Requirements by Bureau.
+        Uses query parameters to select items to be returned from the database that summarizes Operating and Capital Requirements by Service Area.
         Note: Parameter names and parameter values are compared case-insensitive.
         """
         if request.GET.keys():
