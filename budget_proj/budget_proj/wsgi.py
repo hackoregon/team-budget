@@ -8,8 +8,11 @@ https://docs.djangoproject.com/en/1.10/howto/deployment/wsgi/
 """
 
 import os
-
 from django.core.wsgi import get_wsgi_application
+from psycogreen.gevent import patch_psycopg
+from gevent import monkey; monkey.patch_all()
+
+patch_psycopg()
 
 from whitenoise.django import DjangoWhiteNoise
 
