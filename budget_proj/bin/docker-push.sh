@@ -15,9 +15,9 @@ if [ -z "$TRAVIS_PULL_REQUEST" ] || [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
      -c "$ECS_CLUSTER"   \
      -i "$DOCKER_REPO"/"$DEPLOY_TARGET"/"$DOCKER_IMAGE":latest \
      --timeout 300
-   else
-     echo "Skipping deploy because branch is not master"
-  fi
+  else
+    echo "Skipping deploy because branch is not master"
+ fi
 else
   echo "Skipping deploy because it's a pull request"
 fi
