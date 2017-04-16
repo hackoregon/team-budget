@@ -12,7 +12,7 @@ class OCRB(models.Model):
     budget_category.help_text = 'General category for this amount, which is one of [Capital, Operating].'
     amount = models.IntegerField(blank=True, null=True)
     amount.help_text = 'Integer dollar amount.'
-    fy = models.CharField(max_length=255, default='')
+    fy = models.CharField(db_index=True, max_length=255, default='')
     fy.help_text = 'Fiscal Year as a string, e.g. 2015-16'
     budget_type = models.CharField(max_length=255, default='')
     budget_type.help_text = 'Status of an item within the budget lifecycle: [Adopted, Revised, Actual].'
@@ -24,7 +24,7 @@ class KPM(models.Model):
     service_area = models.CharField(max_length=255, default='')
     bureau = models.CharField(max_length=255, default='')
     key_performance_measures = models.CharField(max_length=255, default='')
-    fy = models.CharField(max_length=255, default='', help_text='Fiscal year (i.e. 2015-16)')
+    fy = models.CharField(db_index=True, max_length=255, default='', help_text='Fiscal year (i.e. 2015-16)')
     budget_type = models.CharField(max_length=255, default='')
     amount = models.FloatField(blank=True, null=True)
     units = models.CharField(max_length=255, default='')
@@ -64,7 +64,7 @@ class BudgetHistory(models.Model):
     bureau_code = models.CharField(max_length=32, default='')
     bureau_code.help_text = '2-character ID for a Bureau, e.g. "PS" for Public Safety.'
     bureau_name = models.CharField(max_length=255, default='')
-    fiscal_year = models.CharField(max_length=32, default='')
+    fiscal_year = models.CharField(db_index=True, max_length=32, default='')
     fiscal_year.help_text = 'Fiscal Year as a string, e.g. 2015-16.'
     amount = models.IntegerField(blank=True, null=True)
     amount.help_text = 'Dollar amount as an integer, including 0. May be positive or negative.'
