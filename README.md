@@ -5,8 +5,7 @@ This repository contains two major components:
 - issue tracking for all aspects (API, Frontend, data, deployment) of the Budget project
 
 ## Deployed Code!
-Here's the backend API in the Integration environment:
-http://hacko-integration-658279555.us-west-2.elb.amazonaws.com/budget
+Here's the backend API in the Integration environment: http://service.civicpdx.org/budget (or this older URL which points to the same instance: http://hacko-integration-658279555.us-west-2.elb.amazonaws.com/budget) 
 
 ## Team Budget source repositories
 Per the current recommended approach for organizing code for Hack Oregon projects, Budget team will use two repositories:
