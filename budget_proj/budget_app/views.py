@@ -35,7 +35,7 @@ class OcrbSummary(generics.ListAPIView):
     Summarize Budget for Operating and Capital Requirements by Service Area and Bureau
     """
     serializer_class = serializers.OcrbSumSerializer
-    filter_class = filters.OcrbFilter
+    filter_class = filters.OcrbSummaryFilter
 
     def get_queryset(self):
         return models.OCRB.objects.values('fy', 'service_area', 'bureau')\
@@ -73,7 +73,7 @@ class HistorySummaryByBureau(generics.ListAPIView):
     Summary of Historical Operating and Capital Requirements by Service Area and Bureau
     """
     serializer_class = serializers.HistorySummaryBureauSerializer
-    filter_class = filters.BudgetHistoryFilter
+    filter_class = filters.HistoryBureauFilter
 
     def get_queryset(self):
         qs = models.BudgetHistory.objects.all()
@@ -88,7 +88,7 @@ class HistorySummaryByServiceArea(generics.ListAPIView):
     Summary of BudgetHistory by Service Area.
     """
     serializer_class = serializers.HistorySummaryByServiceAreaSerializer
-    filter_class = filters.BudgetHistoryFilter
+    filter_class = filters.HistoryServiceAreaFilter
 
     def get_queryset(self):
         qs = models.BudgetHistory.objects.all()
@@ -103,7 +103,7 @@ class HistorySummaryByServiceAreaObjectCode(generics.ListAPIView):
     Summary of Historical Operating and Capital Requirements by Service Area and Object Code
     """
     serializer_class = serializers.HistorySummaryByServiceAreaObjectCodeSerializer
-    filter_class = filters.BudgetHistoryFilter
+    filter_class = filters.HistoryObjectCode
 
     def get_queryset(self):
         qs = models.BudgetHistory.objects.all()

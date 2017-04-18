@@ -41,6 +41,12 @@ class OcrbFilter(CustomFilterBase):
         model = models.OCRB
 
 
+class OcrbSummaryFilter(CustomFilterBase):
+    class Meta(DefaultFilterMeta):
+        fields = ('fy', 'service_area', 'bureau')
+        model = models.OCRB
+
+
 class KpmFilter(CustomFilterBase):
     class Meta(DefaultFilterMeta):
         model = models.KPM
@@ -51,8 +57,24 @@ class BudgetHistoryFilter(CustomFilterBase):
         model = models.BudgetHistory
 
 
-
 class LookupCodeFilter(CustomFilterBase):
     class Meta(DefaultFilterMeta):
         model = models.LookupCode
 
+
+class HistoryServiceAreaFilter(CustomFilterBase):
+    class Meta(DefaultFilterMeta):
+        fields = ('service_area_code', 'fiscal_year')
+        model = models.BudgetHistory
+
+
+class HistoryBureauFilter(CustomFilterBase):
+    class Meta(DefaultFilterMeta):
+        fields = ('service_area_code', 'fiscal_year', 'bureau_code', 'bureau_name')
+        model = models.BudgetHistory
+
+
+class HistoryObjectCode(CustomFilterBase):
+    class Meta(DefaultFilterMeta):
+        fields = ('fiscal_year', 'service_area_code', 'object_code')
+        model = models.BudgetHistory
