@@ -10,7 +10,8 @@ https://docs.djangoproject.com/en/1.10/howto/deployment/wsgi/
 import os
 from django.core.wsgi import get_wsgi_application
 from psycogreen.gevent import patch_psycopg
-from gevent import monkey; monkey.patch_all()
+# thread=False used to address https://github.com/hackoregon/team-budget/issues/128
+from gevent import monkey; monkey.patch_all(thread=False)
 
 patch_psycopg()
 
