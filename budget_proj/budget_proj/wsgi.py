@@ -15,6 +15,9 @@ from gevent import monkey; monkey.patch_all(thread=False)
 
 patch_psycopg()
 
+from whitenoise.django import DjangoWhiteNoise
+
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "budget_proj.settings.dev")
 
 application = get_wsgi_application()
+application = DjangoWhiteNoise(application)
