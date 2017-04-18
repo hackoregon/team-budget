@@ -142,3 +142,24 @@ class TestOcrbEndpoint(TestCase):
         # regression test
         response = self.client.get('/budget/ocrb/', {'page': 1})
         self.assertEqual(response.status_code, 200)
+
+
+class TestOcrbSummaryView(TestCase):
+
+    def setup(self):
+        self.client = Client()
+
+    def test_ok(self):
+        response = self.client.get('/budget/ocrb/summary/')
+        self.assertEqual(response.status_code, 200)
+
+    def test_kpm_response_is_paginated(self):
+        response = self.client.get('/budget/ocrb/')
+
+        json = response.json()
+
+        # look for pagination keys
+        self.assertTrue('count' in json)
+        self.assertTrue('next' in json)
+        self.assertTrue('previous' in json)
+        self.assertTrue('results' in json)
