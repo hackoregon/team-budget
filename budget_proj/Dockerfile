@@ -1,16 +1,8 @@
-FROM python:latest
+FROM python:3.5
 ENV PYTHONUNBUFFERED 1
-RUN mkdir /code
+ENV DJANGO_SETTINGS_MODULE budget_proj.settings.production
 WORKDIR /code
-ADD requirements.txt /code/
-RUN pip install -r requirements.txt
+ADD requirements/ /code/
+RUN pip install -r prod.txt
 ADD . /code/
-RUN mkdir /Data
-WORKDIR /Data
-RUN wget \
-    -O /Data/Budget_in_Brief_KPM_data_All_Years.csv \
-    https://raw.githubusercontent.com/hackoregon/team-budget/master/Data/Budget_in_Brief_KPM_data_All_Years.csv
-RUN wget \
-    -O /Data/Budget_in_Brief_OCRB_data_All_Years.csv \
-    https://raw.githubusercontent.com/hackoregon/team-budget/master/Data/Budget_in_Brief_OCRB_data_All_Years.csv
-WORKDIR /code
+ENTRYPOINT [ "/code/bin/docker-entrypoint.sh" ]

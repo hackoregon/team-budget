@@ -8,9 +8,16 @@ https://docs.djangoproject.com/en/1.10/howto/deployment/wsgi/
 """
 
 import os
-
 from django.core.wsgi import get_wsgi_application
+from psycogreen.gevent import patch_psycopg
+# thread=False used to address https://github.com/hackoregon/team-budget/issues/128
+from gevent import monkey; monkey.patch_all(thread=False)
 
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "budget_proj.settings")
+patch_psycopg()
+
+from whitenoise.django import DjangoWhiteNoise
+
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "budget_proj.settings.dev")
 
 application = get_wsgi_application()
+application = DjangoWhiteNoise(application)

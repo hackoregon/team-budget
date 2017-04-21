@@ -1,12 +1,16 @@
-budget-service:
-  environment:
-  - AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID}
-  - AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY}
-  - CONFIG_BUCKET=${CONFIG_BUCKET}  
-  - DEPLOY_TARGET=${DEPLOY_TARGET}
-  - PROJ_SETTINGS_DIR=${PROJ_SETTINGS_DIR}
-  build: .
-  volumes:
-    - .:/code
-  ports:
-    - "8000:8000"
+version: "2"
+services:
+  budget-service:
+    environment:
+    - AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID}
+    - AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY}
+    - CONFIG_BUCKET=${CONFIG_BUCKET}
+    - DEPLOY_TARGET=${DEPLOY_TARGET}
+    - PROJ_SETTINGS_DIR=${PROJ_SETTINGS_DIR}
+    build: .
+    image: "${DOCKER_REPO}/${DEPLOY_TARGET}/${DOCKER_IMAGE}:latest"
+    command: /code/bin/docker-entrypoint.sh
+    volumes:
+      - .:/code
+    ports:
+      - "8000:8000"

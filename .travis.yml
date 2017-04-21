@@ -2,10 +2,10 @@ sudo: required
 services:
   - docker
 install:
-  - pip install awscli
+  - pip install --upgrade --user awscli
 before_script:
   - ./budget_proj/bin/getconfig.sh
 script:
   - './budget_proj/bin/test-proj.sh -t'
 after_success:
-#  - ./budget_proj/bin/docker-push.sh
+  - ./budget_proj/bin/docker-push.sh

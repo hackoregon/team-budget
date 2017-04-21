@@ -1,4 +1,5 @@
-from django.views.decorators.http import require_http_methods
+# include for aggregation
+from django.db.models import Sum
 
 # ------------------------------------------
 # imports needed for the functional view
@@ -8,99 +9,118 @@ from rest_framework.response import Response
 # ------------------------------------------
 # generics class to make writing endpoints easier
 from rest_framework import generics
-# ------------------------------------------
 
 # ------------------------------------------
 # main pieces from our DRF app that need to be linked
 from . import models
 from . import serializers
+from . import filters
 # ------------------------------------------
 
 class ListOcrb(generics.ListAPIView):
     """
     Operating and Capital Requirements by Bureau (OCRB).
+    Note: Parameter values are compared case-insensitive.
     """
     serializer_class = serializers.OcrbSerializer
-
+    filter_class = filters.OcrbFilter
 
     def get_queryset(self):
-        return models.OCRB.objects.all()
+        return models.OCRB.objects.order_by('-fy', 'budget_type', 'service_area', 'bureau', 'budget_category')
 
 
-    def get(self, request, *args, **kwargs):
-        """
-        Uses query parameters to select items to be returned from the database that summarizes Operating and Capital Requirements by Bureau.
-        Note: Parameter names and parameter values are compared case-insensitive.
-        """
-        if(request.GET.keys()):
-            # Build a dictionary of query parameters and their values.
-            filter_dict = {}
-            for key, value in request.GET.items():
-                filter_dict[key.lower() + "__iexact"] = value  # Assumes all model attributes are lowercase.
-            ocrbs = models.OCRB.objects.filter(**filter_dict)
-        else:
-            ocrbs = self.get_queryset()
-        sorted_ocrbs = ocrbs.order_by('fy', 'budget_type', 'service_area', 'bureau', 'budget_category')
-        serialized_data = self.serializer_class(sorted_ocrbs, many=True)
-        return Response(serialized_data.data)
+
+class OcrbSummary(generics.ListAPIView):
+    """
+    Summarize Budget for Operating and Capital Requirements by Service Area and Bureau
+    """
+    serializer_class = serializers.OcrbSumSerializer
+    filter_class = filters.OcrbSummaryFilter
+
+    def get_queryset(self):
+        return models.OCRB.objects.values('fy', 'service_area', 'bureau')\
+               .annotate(bureau_total=Sum('amount'))\
+               .order_by('fy', 'service_area', 'bureau')
+
 
 
 class ListKpm(generics.ListAPIView):
     """
     Key Performance Measures (KPM).
+    Note: Parameter values are compared case-insensitive.
     """
     queryset = models.KPM.objects.all()
     serializer_class = serializers.KpmSerializer
+    filter_class = filters.KpmFilter
+
 
 
 class ListBudgetHistory(generics.ListAPIView):
     """
-    Historical Operating and Capital Requirements by Bureau (OCRB).
+    Historical Operating and Capital Requirements by Service Area and Bureau
+    Note: Parameter values are compared case-insensitive.
     """
     serializer_class = serializers.BudgetHistorySerializer
-
+    filter_class = filters.BudgetHistoryFilter
 
     def get_queryset(self):
-        return models.BudgetHistory.objects.all()
+        return models.BudgetHistory.objects.order_by('fiscal_year', 'bureau_name', 'accounting_object_name', 'functional_area_name')
 
 
-    def get(self, request, *args, **kwargs):
-        """
-        Uses query parameters to select items to be returned from the database that summarizes Operating and Capital Requirements by Bureau.
-        Note: Parameter names and parameter values are compared case-insensitive.
-        """
-        if(request.GET.keys()):
-            # Build a dictionary of query parameters and their values.
-            filter_dict = {}
-            for key, value in request.GET.items():
-                filter_dict[key.lower() + "__iexact"] = value  # Assumes all model attributes are lowercase.
-            rows = models.BudgetHistory.objects.filter(**filter_dict)
-        else:
-            rows = self.get_queryset()
-        sorted_rows = rows.order_by('fiscal_year', 'bureau_name', 'accounting_object_name', 'functional_area_name')
-        serialized_data = self.serializer_class(sorted_rows, many=True)
-        return Response(serialized_data.data)
+
+class HistorySummaryByBureau(generics.ListAPIView):
+    """
+    Summary of Historical Operating and Capital Requirements by Service Area and Bureau
+    """
+    serializer_class = serializers.HistorySummaryBureauSerializer
+    filter_class = filters.HistoryBureauFilter
+
+    def get_queryset(self):
+        qs = models.BudgetHistory.objects.all()
+        qs = qs.values('fiscal_year', 'service_area_code', 'bureau_code', 'bureau_name').annotate(amount=Sum('amount'))
+        qs = qs.order_by('fiscal_year', 'service_area_code', 'bureau_code', 'bureau_name')
+        return qs
+
+
+
+class HistorySummaryByServiceArea(generics.ListAPIView):
+    """
+    Summary of BudgetHistory by Service Area.
+    """
+    serializer_class = serializers.HistorySummaryByServiceAreaSerializer
+    filter_class = filters.HistoryServiceAreaFilter
+
+    def get_queryset(self):
+        qs = models.BudgetHistory.objects.all()
+        qs = qs.values('fiscal_year', 'service_area_code').annotate(amount=Sum('amount'))
+        qs = qs.order_by('fiscal_year', 'service_area_code')
+        return qs
+
+
+
+class HistorySummaryByServiceAreaObjectCode(generics.ListAPIView):
+    """
+    Summary of Historical Operating and Capital Requirements by Service Area and Object Code
+    """
+    serializer_class = serializers.HistorySummaryByServiceAreaObjectCodeSerializer
+    filter_class = filters.HistoryObjectCode
+
+    def get_queryset(self):
+        qs = models.BudgetHistory.objects.all()
+        qs = qs.values('fiscal_year', 'service_area_code', 'object_code').annotate(amount=Sum('amount'))
+        qs = qs.order_by('fiscal_year', 'service_area_code', 'object_code')
+        return qs
+
+
 
 class ListLookupCode(generics.ListAPIView):
     """
     Code reference table for Budget History.
+    Note: Parameter values are compared case-insensitive.
     """
     serializer_class = serializers.LookupCodeSerializer
+    filter_class = filters.LookupCodeFilter
 
 
     def get_queryset(self):
         return models.LookupCode.objects.all()
-
-
-    def get(self, request, *args, **kwargs):
-        if(request.GET.keys()):
-            # Build a dictionary of query parameters and their values.
-            filter_dict = {}
-            for key, value in request.GET.items():
-                filter_dict[key.lower() + "__iexact"] = value
-            rows = models.LookupCode.objects.filter(**filter_dict)
-        else:
-            rows = self.get_queryset()
-        sorted_rows = rows.order_by('code')
-        serialized_data = self.serializer_class(sorted_rows, many=True)
-        return Response(serialized_data.data)

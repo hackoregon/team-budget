@@ -2,6 +2,8 @@
 
 usage() { echo "Usage: $0 [-l] for a local build or [-t] for a travis build " 1>&2; exit 1; }
 
+if [ $# == 0 ]; then usage; fi
+
 # PURPOSE: used to launch the Django app inside the Docker container
 # Can be used on local developer machine; if used in Travis build, will fail the build after 10min timeout
 
