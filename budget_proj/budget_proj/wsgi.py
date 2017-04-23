@@ -9,6 +9,11 @@ https://docs.djangoproject.com/en/1.10/howto/deployment/wsgi/
 
 import os
 from django.core.wsgi import get_wsgi_application
+
+# Monkey patching the application to help stabilize the Docker container deploy
+# Deploying Docker containers to ECS often timed out and the new container would get killed by ALB
+# That problem disappeared completely once this monkey patching was implemented
+# https://github.com/hackoregon/devops-17/issues/49
 from psycogreen.gevent import patch_psycopg
 # thread=False used to address https://github.com/hackoregon/team-budget/issues/128
 from gevent import monkey; monkey.patch_all(thread=False)
