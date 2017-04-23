@@ -25,4 +25,7 @@ from whitenoise.django import DjangoWhiteNoise
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "budget_proj.settings.dev")
 
 application = get_wsgi_application()
+
+# WhiteNoise allows us to serve the Swagger static files directly from Django even when settings.py:DEBUG=False
+# This saves us the trouble of having to build a static files web server, though that would be a great long-term solution
 application = DjangoWhiteNoise(application)
