@@ -1,11 +1,11 @@
 -- View: public."HistorySummaryByBureau"
 -- Subtotal Budget History by Service Area & Bureau
 
--- DROP VIEW public."HistorySummaryByBureau";
+-- DROP VIEW main."HistorySummaryByBureau";
 
-CREATE OR REPLACE VIEW public."HistorySummaryByBureau" WITH (security_barrier=true) AS 
+CREATE VIEW main."HistorySummaryByBureau" AS
  SELECT budget_app_budgethistory.fiscal_year,
-    case 
+    case
       when budget_app_budgethistory.bureau_code = 'MF' then 'LA'
       when budget_app_budgethistory.bureau_code in ('MY','PA','PS','PW','PU','AU') then 'EO'
       else budget_app_budgethistory.service_area_code
@@ -15,6 +15,3 @@ CREATE OR REPLACE VIEW public."HistorySummaryByBureau" WITH (security_barrier=tr
    FROM budget_app_budgethistory
   GROUP BY 1,2,3
   ORDER BY 1,2,3;
-
-ALTER TABLE public."HistorySummaryByBureau"
-  OWNER TO budget_user;
