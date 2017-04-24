@@ -18,7 +18,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.10/howto/deployment/checklist/
 
-DEBUG = True
+DEBUG = False
 
 # Note: the 192.168.99.100 address is necessary to enable testing with Docker Toolbox for Mac and Windows
 ALLOWED_HOSTS = ['127.0.0.1', 'localhost', '192.168.99.100']
