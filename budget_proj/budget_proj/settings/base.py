@@ -124,6 +124,7 @@ STATIC_URL = "/budget/static/"
 # the Swagger wrapper when the Django app runs inside a Docker container
 STATIC_ROOT = 'staticfiles'
 
+# This allows any site to call these API endpoints, which is entirely the point of making them available
 CORS_ORIGIN_ALLOW_ALL = True
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
