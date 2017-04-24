@@ -68,3 +68,15 @@ class BudgetHistory(models.Model):
     service_area_code = models.CharField(db_index=True, max_length=32, default='')
     service_area_code.help_text = '2-character ID [CD, LA, PR, PS, PU, TP] for a Service Area, which is a grouping of related Bureaus.'
     sub_program_code = models.CharField(max_length=32, default='')
+    @property
+    def sa_calc(self):
+        return( 'OO')
+        # "Returns the calculated service area."
+        # eo_list = ['MY', 'PA', 'PS', 'PW', 'PU', 'AU']
+        # if self.bureau_code == 'MF':
+        #     aResult = 'LA'
+        # elif self.bureau_code in eo_list:
+        #     aResult = 'EO'
+        # else:
+        #     aResult = self.service_area_code
+        # return (aResult)
