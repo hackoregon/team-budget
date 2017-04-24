@@ -76,12 +76,12 @@ Type [Control-C] when you want to stop the server.
 If you are using a local database for development, rather than accessing the integration database or production database, you need to import data into your local dev database, because the embedded [SQLite](https://www.sqlite.org/) database used for development has no data when you clone the project repository. From the top-level directory of this project, run the following command to 
 load the Operating and Capital Requirements by Bureau (OCRB) data into the database specified in your `budget_proj/budget_proj/project_config.py` file:
 ```
-./budget_proj/manage.py importcsv budget_app.OCRB ./Data/Budget_in_Brief_OCRB_data_All_Years.csv "Source document:source_document" "Service Area:service_area" "Bureau:bureau" "Budget Category:budget_category" "Amount:amount" "FY:fy" "Budget Type:budget_type"
+./budget_proj/manage.py importcsv budget_app.OCRB ./Data/Budget_in_Brief_OCRB_data_All_Years.csv "Source document:source_document" "Service Area:service_area" "Bureau:bureau" "Budget Category:budget_category" "Amount:amount" "Fiscal Year:fiscal_year" "Budget Type:budget_type"
 ```
 
 Run this command to load the Key Performance Measures (KPM) data into the database:
 ```
-./budget_proj/manage.py importcsv budget_app.KPM ./Data/Budget_in_Brief_KPM_data_All_Years.csv "Source Document:source_document" "Service Area:service_area" "Bureau:bureau" "Key Performance Measure:key_performance_measures" "FY:fy" "Budget Type:budget_type" "Amount:amount" "Units:units"
+./budget_proj/manage.py importcsv budget_app.KPM ./Data/Budget_in_Brief_KPM_data_All_Years.csv "Source Document:source_document" "Service Area:service_area" "Bureau:bureau" "Key Performance Measure:key_performance_measures" "Fiscal Year:fiscal_year" "Budget Type:budget_type" "Amount:amount" "Units:units"
 ```
 
 Run this command to load the historical data into the database:

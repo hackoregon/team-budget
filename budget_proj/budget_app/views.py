@@ -26,7 +26,7 @@ class ListOcrb(generics.ListAPIView):
     filter_class = filters.OcrbFilter
 
     def get_queryset(self):
-        return models.OCRB.objects.order_by('-fy', 'budget_type', 'service_area', 'bureau', 'budget_category')
+        return models.OCRB.objects.order_by('-fiscal_year', 'budget_type', 'service_area', 'bureau', 'budget_category')
 
 
 
@@ -38,9 +38,9 @@ class OcrbSummary(generics.ListAPIView):
     filter_class = filters.OcrbSummaryFilter
 
     def get_queryset(self):
-        return models.OCRB.objects.values('fy', 'service_area', 'bureau')\
+        return models.OCRB.objects.values('fiscal_year', 'service_area', 'bureau')\
                .annotate(bureau_total=Sum('amount'))\
-               .order_by('fy', 'service_area', 'bureau')
+               .order_by('fiscal_year', 'service_area', 'bureau')
 
 
 
