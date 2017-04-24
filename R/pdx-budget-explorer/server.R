@@ -6,7 +6,17 @@ source("data.R")
 BUDGET_PLOT_TITLE <- "Budget for the City of Portland"
 
 # color-blind-friendly palette from http://www.cookbook-r.com/Graphs/Colors_(ggplot2)/
-CBB_PALETTE <- c(BLACK = "#000000", ORANGE = "#E69F00", LIGHT_BLUE = "#56B4E9", GREEN = "#009E73", YELLOW = "#F0E442", BLUE = "#0072B2", RED = "#D55E00", PURPLE = "#CC79A7")
+CBB_PALETTE <-
+  c(
+    BLACK = "#000000",
+    ORANGE = "#E69F00",
+    LIGHT_BLUE = "#56B4E9",
+    GREEN = "#009E73",
+    YELLOW = "#F0E442",
+    BLUE = "#0072B2",
+    RED = "#D55E00",
+    PURPLE = "#CC79A7"
+  )
 
 # Translates budgetLevel selection to displayable name.
 BUDGET_LEVEL_NAMES <- list(SERVICE_AREA_LEVEL, BUREAU_LEVEL)
@@ -14,17 +24,16 @@ names(BUDGET_LEVEL_NAMES) <- c(SERVICE_AREA_SELECTOR, BUREAU_SELECTOR)
 
 # Plot variables against total budget.
 shinyServer(function(input, output) {
-
   # Computes the caption in a reactive expression, because
   # it depends on the choices of budgetLevel and fiscalYear.
   captionText <- reactive({
     paste("By", BUDGET_LEVEL_NAMES[[input$budgetLevel]], "for", input$fiscalYear)
   })
-
+  
   budgetLevelName <- reactive({
     BUDGET_LEVEL_NAMES[[input$budgetLevel]]
   })
-
+  
   ####################
   output$budgetPlot <- renderPlot({
     if (SERVICE_AREA_SELECTOR == input$budgetLevel) {
@@ -53,5 +62,13 @@ shinyServer(function(input, output) {
         ggtitle(paste0(BUDGET_PLOT_TITLE, ": ", captionText()))
     }
   })
-
+  
+  output$personnelPlot <- renderText({
+    "FIXME: Use renderPlot Personnel data here."
+  })
+  
+  output$enterprisePlot <- renderText({
+    "FIXME: Use renderPlot Enterprise Fund data here."
+  })
+  
 })
