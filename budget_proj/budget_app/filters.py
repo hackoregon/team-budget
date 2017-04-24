@@ -43,7 +43,7 @@ class OcrbFilter(CustomFilterBase):
 
 class OcrbSummaryFilter(CustomFilterBase):
     class Meta(DefaultFilterMeta):
-        fields = ('fy', 'service_area', 'bureau')
+        fields = ('fiscal_year', 'service_area', 'bureau')
         model = models.OCRB
 
 
