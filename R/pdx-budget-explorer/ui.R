@@ -1,5 +1,5 @@
 library(shiny)
-source("budgetLevels.R")
+source("commonConstants.R")
 
 BUDGET_LEVEL_SELECTIONS <-
   list(SERVICE_AREA_SELECTOR, BUREAU_SELECTOR)
@@ -10,6 +10,7 @@ names(BUDGET_LEVEL_SELECTIONS) <-
 shinyUI(fluidPage(
   titlePanel("PDX Budget Explorer"),
   p(h4(em("Prototype ... work in progress!"))),
+  
   tabsetPanel(
     tabPanel("Service/Bureau",
              sidebarLayout(
@@ -38,10 +39,13 @@ shinyUI(fluidPage(
                mainPanel(plotOutput("budgetPlot"))
              )),
     
-    tabPanel("Personnel",
-             plotOutput("personnelPlot")),
-
-    tabPanel("Enterprise Fund",
-             textOutput("enterprisePlot")) # FIXME: Use plotOutput)
+    tabPanel("Personnel", plotOutput("personnelPlot")),
+    
+    tabPanel("Enterprise Fund", textOutput("enterprisePlot")),
+    
+    tags$head(tags$style(
+      type = "text/css",
+      paste0("li a{color: ", SITE_COLOR, ";}")
+    ))
   )
 ))

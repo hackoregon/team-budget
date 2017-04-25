@@ -2,7 +2,7 @@ library(httr)
 library(jsonlite)
 library(magrittr)
 library(dplyr)
-source("budgetLevels.R")
+source("commonConstants.R")
 
 BASE_URL <- "http://service.civicpdx.org/budget"
 HISTORY_PATH <- paste0(BASE_URL, "/history")
