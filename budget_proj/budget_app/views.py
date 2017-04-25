@@ -90,9 +90,10 @@ class HistorySummaryByServiceArea(generics.ListAPIView):
     serializer_class = serializers.HistorySummaryByServiceAreaSerializer
     filter_class = filters.HistoryServiceAreaFilter
 
+
     def get_queryset(self):
         qs = models.BudgetHistory.objects.all()
-        qs = qs.values('fiscal_year', 'service_area_code').annotate(amount=Sum('amount'))
+        qs = qs.values('fiscal_year', 'service_area_code', 'bureau_code').annotate(amount=Sum('amount'))
         qs = qs.order_by('fiscal_year', 'service_area_code')
         return qs
 
