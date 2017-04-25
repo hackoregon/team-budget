@@ -37,7 +37,7 @@ shinyUI(fluidPage(
              )),
     
     tabPanel("Personnel",
-             textOutput("personnelPlot")), # FIXME: Use plotOutput
+             plotOutput("personnelPlot")),
     
     tabPanel("Enterprise Fund",
              textOutput("enterprisePlot")) # FIXME: Use plotOutput)

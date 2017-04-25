@@ -1,5 +1,11 @@
 library(shiny)
-library(ggplot2)
+library(stringr)
+library(tidyverse)
+library(lubridate)
+library(tidyr)
+library(hrbrthemes)
+library(scales)
+
 source("budgetLevels.R")
 source("data.R")
 
@@ -63,8 +69,20 @@ shinyServer(function(input, output) {
     }
   })
   
-  output$personnelPlot <- renderText({
-    "FIXME: Use renderPlot Personnel data here."
+  output$personnelPlot <- renderPlot({
+    getBudgetHistory(fields = c("object_code"), values = c("PERSONAL")) %>% 
+      mutate(
+        amount = amount / 1000000
+      ) %>% 
+      ggplot(aes(fiscal_year, amount)) +
+      scale_y_continuous(labels = comma) +
+      geom_bar(stat = "identity") +
+      #coord_flip() +
+      facet_wrap(~bureau_name) +
+      labs(x = "Fiscal\nYear", y = "Millions of Dollars",
+           title = "Personnel Budget by Bureau and Fiscal-Year"
+      ) +
+      theme_ipsum()
   })
   
   output$enterprisePlot <- renderText({
