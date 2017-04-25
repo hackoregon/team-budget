@@ -5,8 +5,8 @@ library(lubridate)
 library(tidyr)
 library(hrbrthemes)
 library(scales)
-source("commonConstants.R")
-source("data.R")
+source("./R/commonConstants.R")
+source("./R/data.R")
 
 BUDGET_PLOT_TITLE <- "Budget for the City of Portland"
 

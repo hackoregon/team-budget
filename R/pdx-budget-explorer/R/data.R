@@ -2,7 +2,7 @@ library(httr)
 library(jsonlite)
 library(magrittr)
 library(dplyr)
-source("commonConstants.R")
+source("./R/commonConstants.R")
 
 BASE_URL <- "http://service.civicpdx.org/budget"
 HISTORY_PATH <- paste0(BASE_URL, "/history")
@@ -14,7 +14,7 @@ MAX_DOLLARS_PER_YEAR <- data.frame(c(2000000000), c(1500000000))
 colnames(MAX_DOLLARS_PER_YEAR) <- c(SERVICE_AREA_SELECTOR, BUREAU_SELECTOR)
 
 #' Builds the query part of an HTTP call, matching up each field 
-#' with its corresponding value.
+#' with its corresponding value to build query parameters.
 #' 
 #' @param fields array of string field names.
 #' @param values array of string values.
@@ -23,6 +23,7 @@ colnames(MAX_DOLLARS_PER_YEAR) <- c(SERVICE_AREA_SELECTOR, BUREAU_SELECTOR)
 #' by "&". For example,
 #' "?fiscal_year=2014-15&object_code=PERSONAL".
 #' Returns empty string when no fields and values are given.
+#' @export
 buildQueryString <- function(fields = c(), values = c()) {
   query <- ""
   if (!is.null(fields) && length(fields) > 0 &&
