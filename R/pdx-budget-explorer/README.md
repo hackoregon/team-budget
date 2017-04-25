@@ -1,5 +1,5 @@
 # pdx-budget-explorer
-This is a web application for exploring historical budget data for the [City of Portland](https://www.portlandoregon.gov/cbo/), Oregon, USA. This prototype is currently deployed at: [https://jimtyhurst.shinyapps.io/budget-explorer/](https://jimtyhurst.shinyapps.io/budget-explorer/)
+This is a web application for exploring historical budget data for the [City of Portland](https://www.portlandoregon.gov/cbo/), Oregon, USA. This prototype is currently deployed at: [https://hackoregon.shinyapps.io/pdx-budget-explorer/](https://hackoregon.shinyapps.io/pdx-budget-explorer/)
 
 The application is written completely in the [R language](https://www.r-project.org/), using the [Shiny](https://shiny.rstudio.com/) web application framework. Data is pulled from [Hack Oregon](http://www.hackoregon.org/)'s [budget web service](http://service.civicpdx.org/budget/), which is documented [here](https://github.com/hackoregon/team-budget).
 
