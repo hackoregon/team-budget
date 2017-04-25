@@ -47,28 +47,30 @@ buildQueryString <- function(fields = c(), values = c()) {
 #' All Budget History columns, filtered by arbitrary choice of
 #' field names and their associated values.
 #' 
-#'   accounting_object_name (name for 'object_code')
-#'   amount
-#'   bureau_code
-#'   bureau_name
-#'   division_code
-#'   fiscal_year
-#'   functional_area_code
-#'   functional_area_name
-#'   fund_center
-#'   fund_center_code
-#'   fund_center_name
-#'   fund_code
-#'   fund_name
-#'   object_code
-#'   program_code
-#'   service_area_code
+#' Returns the following fields:
+#'   accounting_object_name (name for 'object_code'),
+#'   amount,
+#'   bureau_code,
+#'   bureau_name,
+#'   division_code,
+#'   fiscal_year,
+#'   functional_area_code,
+#'   functional_area_name,
+#'   fund_center,
+#'   fund_center_code,
+#'   fund_center_name,
+#'   fund_code,
+#'   fund_name,
+#'   object_code,
+#'   program_code,
+#'   service_area_code,
 #'   sub_program_code
 #' @param fields array of string field names for filtering.
 #' @param values array of string values for filtering.
 #' @return data.frame with rows that passed the filtering
 #' by field=value pairs. Returns empty data.frame when no rows
 #' pass the filter criteria.
+#' @export
 getBudgetHistory <- function(fields = c(), values = c()) {
   history <- data.frame()
   nextPage <- paste0(HISTORY_PATH, buildQueryString(fields = fields, values = values))
@@ -89,10 +91,11 @@ getBudgetHistory <- function(fields = c(), values = c()) {
 #' @param fiscalYear string representation must be 4 digits, dash,
 #' 2 digits. For example, "2006-07".
 #' @return data.frame with column names:
-#'   amount
-#'   fiscal_year
-#'   service_area_code
-#' where the amount is aggregated by service_area_code.
+#'   amount,
+#'   fiscal_year,
+#'   service_area_code,
+#' where the 'amount' is aggregated by service_area_code.
+#' @export
 getServiceAreaTotals <- function(fiscalYear = "2015-16") {
   return(
     httr::GET(SERVICE_AREA_PATH, query = list(fiscal_year = fiscalYear)) %>%
@@ -107,12 +110,13 @@ getServiceAreaTotals <- function(fiscalYear = "2015-16") {
 #' @param fiscalYear string representation must be 4 digits, dash,
 #' 2 digits. For example, "2006-07".
 #' @return data.frame with column names:
-#'   amount
-#'   bureau_code
-#'   bureau_name
-#'   fiscal_year
-#'   service_area_code
-#' where the amount is aggregated by bureau_code.
+#'   amount,
+#'   bureau_code,
+#'   bureau_name,
+#'   fiscal_year,
+#'   service_area_code,
+#' where the 'amount' is aggregated by bureau_code.
+#' @export
 getBureauTotals <- function(fiscalYear = "2015-16") {
   return(
     httr::GET(BUREAU_PATH, query = list(fiscal_year = fiscalYear)) %>%
@@ -122,6 +126,13 @@ getBureauTotals <- function(fiscalYear = "2015-16") {
   )
 }
 
+#' Returns amount limits for each level of the budget.
+#' 
+#' This is useful when specifying the limits for a plot.
+#' @param budgetLevel one of [SERVICE_AREA_SELECTOR, BUREAU_SELECTOR].
+#' @return 2-element vector with c(min, max) amounts expected
+#' for the range of possible budget amount for the given budgetLevel.
+#' @export
 getAmountLimits <- function(budgetLevel = SERVICE_AREA_SELECTOR) {
   # TODO: Calculate this dynamically from the history table.
   return(c(0, MAX_DOLLARS_PER_YEAR[[budgetLevel]]))
