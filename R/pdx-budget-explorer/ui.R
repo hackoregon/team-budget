@@ -41,7 +41,7 @@ shinyUI(fluidPage(
     
     tabPanel("Personnel", plotOutput("personnelPlot")),
     
-    tabPanel("Enterprise Fund", textOutput("enterprisePlot")),
+    tabPanel("Enterprise Fund", plotOutput("enterprisePlot")),
     
     tags$head(tags$style(
       type = "text/css",
