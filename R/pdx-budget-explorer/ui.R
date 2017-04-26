@@ -43,6 +43,8 @@ shinyUI(fluidPage(
     
     tabPanel("Enterprise Fund", plotOutput("enterprisePlot")),
     
+    tabPanel("Year End Balances", plotOutput("yearEndBalancesPlot")),
+    
     tags$head(tags$style(
       type = "text/css",
       paste0("li a{color: ", SITE_COLOR, ";}")

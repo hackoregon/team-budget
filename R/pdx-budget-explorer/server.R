@@ -105,4 +105,28 @@ shinyServer(function(input, output) {
     value = 0,
     message = PROGESS_MESSAGE)
   })
+
+  output$yearEndBalancesPlot <- renderPlot({
+    shiny::withProgress({
+      getBudgetHistory(
+        fields = c("object_code"),
+        values = c("ENDBAL"),
+        progressCallback = shiny::setProgress
+      ) %>%
+        dplyr::mutate(amount = amount / 1000000) %>%
+        ggplot(aes(fiscal_year, amount)) +
+        geom_bar(stat = "identity",
+                 fill = SITE_COLOR,
+                 colour = SITE_COLOR) +
+        scale_y_continuous(labels = comma) +
+        coord_flip() +
+        facet_wrap( ~ bureau_name) +
+        labs(x = "Fiscal\nYear", y = "Millions of Dollars",
+             title = "Year-End Fund Balance by Fiscal Year") +
+        hrbrthemes::theme_ipsum()
+    },
+    value = 0,
+    message = PROGESS_MESSAGE)
+  })
+  
 })
