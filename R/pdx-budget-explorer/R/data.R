@@ -67,13 +67,17 @@ buildQueryString <- function(fields = c(), values = c()) {
 #'   sub_program_code
 #' @param fields array of string field names for filtering.
 #' @param values array of string values for filtering.
+#' @param progressCallback function to be called to report incremental progress.
+#' The callback function must follow the protocol of shiny::setProgress().
 #' @return data.frame with rows that passed the filtering
 #' by field=value pairs. Returns empty data.frame when no rows
 #' pass the filter criteria.
 #' @export
-getBudgetHistory <- function(fields = c(), values = c()) {
+getBudgetHistory <- function(fields = c(), values = c(), progressCallback = NULL) {
   history <- data.frame()
   nextPage <- paste0(HISTORY_PATH, buildQueryString(fields = fields, values = values))
+  receivedCount <- 0
+  totalCount <- 0
   while (!is.null(nextPage)) {
     response <-
       httr::GET(nextPage) %>%
@@ -82,6 +86,14 @@ getBudgetHistory <- function(fields = c(), values = c()) {
     nextPage <- response$'next'
     nextBatch <- response$results
     history <- rbind(history, nextBatch)
+    if (!is.null(progressCallback)) {
+      totalCount <- response$count
+      receivedCount <- dim(history)[[1]]
+      progressCallback(
+        value = receivedCount / totalCount,
+        message = paste("Retrieving", totalCount, "budget history records")
+      )
+    }
   }
   return(history)
 }

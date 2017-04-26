@@ -55,19 +55,23 @@ shinyServer(function(input, output) {
   })
 
   output$personnelPlot <- renderPlot({
-    getBudgetHistory(fields = c("object_code"), values = c("PERSONAL")) %>%
-      mutate(amount = amount / 1000000) %>%
-      ggplot(aes(fiscal_year, amount)) +
-      scale_y_continuous(labels = comma) +
-      geom_bar(stat = "identity",
-               fill = SITE_COLOR,
-               colour = SITE_COLOR) +
-      #coord_flip() +
-      facet_wrap(~ bureau_name) +
-      labs(x = "Fiscal\nYear",
-           y = "Millions of Dollars",
-           title = "Personnel Budget by Bureau and Fiscal-Year") +
-      theme_ipsum()
+    shiny::withProgress({
+      getBudgetHistory(fields = c("object_code"),
+                       values = c("PERSONAL"),
+                       shiny::setProgress) %>%
+        dplyr::mutate(amount = amount / 1000000) %>%
+        ggplot(aes(fiscal_year, amount)) +
+        scale_y_continuous(labels = comma) +
+        geom_bar(stat = "identity",
+                 fill = SITE_COLOR,
+                 colour = SITE_COLOR) +
+        #coord_flip() +
+        facet_wrap( ~ bureau_name) +
+        labs(x = "Fiscal\nYear",
+             y = "Millions of Dollars",
+             title = "Personnel Budget by Bureau and Fiscal-Year") +
+        hrbrthemes::theme_ipsum()
+    })
   })
   
   output$enterprisePlot <- renderText({
