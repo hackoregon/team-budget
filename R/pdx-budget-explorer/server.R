@@ -9,6 +9,7 @@ source("./R/commonConstants.R")
 source("./R/data.R")
 
 BUDGET_PLOT_TITLE <- "Budget for the City of Portland"
+PROGESS_MESSAGE <- "Retrieving budget history records ..."
 
 # Translates budgetLevel selection to displayable name.
 BUDGET_LEVEL_NAMES <- list(SERVICE_AREA_LEVEL, BUREAU_LEVEL)
@@ -73,7 +74,9 @@ shinyServer(function(input, output) {
              y = "Millions of Dollars",
              title = "Personnel Budget by Bureau and Fiscal-Year") +
         hrbrthemes::theme_ipsum()
-    })
+    },
+    value = 0,
+    message = PROGESS_MESSAGE)
   })
   
   output$enterprisePlot <- renderPlot({
@@ -98,6 +101,8 @@ shinyServer(function(input, output) {
           subtitle = "Could this be revenue from self-funding parts of the City's budget?"
         ) +
         hrbrthemes::theme_ipsum()
-    })
+    },
+    value = 0,
+    message = PROGESS_MESSAGE)
   })
 })

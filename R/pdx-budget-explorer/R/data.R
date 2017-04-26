@@ -91,7 +91,7 @@ getBudgetHistory <- function(fields = c(), values = c(), progressCallback = NULL
       receivedCount <- dim(history)[[1]]
       progressCallback(
         value = receivedCount / totalCount,
-        message = paste("Retrieving", totalCount, "budget history records")
+        message = paste("Retrieving", totalCount, "budget history records ...")
       )
     }
   }
