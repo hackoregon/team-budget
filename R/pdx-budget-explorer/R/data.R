@@ -117,6 +117,34 @@ getServiceAreaTotals <- function(fiscalYear = "2015-16") {
   )
 }
 
+#' Aggregates budget amounts by Service Area for all years.
+#' 
+#' @param progressCallback function to be called to report incremental progress.
+#' The callback function must follow the protocol of shiny::setProgress().
+#' @return data.frame with column names:
+#'   amount,
+#'   fiscal_year,
+#'   service_area_code,
+#' where the 'amount' is aggregated by service_area_code and fiscal_year.
+#' @export
+getAllServiceAreaTotals <- function(progressCallback = NULL) {
+  history <- data.frame()
+  totalLoops <- length(FISCAL_YEARS)
+  loopCount <- 0
+  for (year in FISCAL_YEARS) {
+    nextBatch <- getServiceAreaTotals(year)
+    history <- rbind(history, nextBatch)
+    if (!is.null(progressCallback)) {
+      loopCount <- loopCount + 1
+      progressCallback(
+        value = loopCount / totalLoops,
+        message = paste("Retrieving", totalLoops, "years of budget records ...")
+      )
+    }
+  }
+  return(history)
+}
+
 #' Aggregates budget amounts by Bureau for a given year.
 #' 
 #' @param fiscalYear string representation must be 4 digits, dash,

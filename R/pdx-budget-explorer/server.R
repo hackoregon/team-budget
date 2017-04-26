@@ -9,7 +9,8 @@ source("./R/commonConstants.R")
 source("./R/data.R")
 
 BUDGET_PLOT_TITLE <- "Budget for the City of Portland"
-PROGESS_MESSAGE <- "Retrieving budget history records ..."
+HISTORY_PROGESS_MESSAGE <- "Retrieving budget history records ..."
+YEAR_PROGESS_MESSAGE <- "Retrieving budget records by year ..."
 
 # Translates budgetLevel selection to displayable name.
 BUDGET_LEVEL_NAMES <- list(SERVICE_AREA_LEVEL, BUREAU_LEVEL)
@@ -76,7 +77,7 @@ shinyServer(function(input, output) {
         hrbrthemes::theme_ipsum()
     },
     value = 0,
-    message = PROGESS_MESSAGE)
+    message = HISTORY_PROGESS_MESSAGE)
   })
   
   output$enterprisePlot <- renderPlot({
@@ -103,7 +104,7 @@ shinyServer(function(input, output) {
         hrbrthemes::theme_ipsum()
     },
     value = 0,
-    message = PROGESS_MESSAGE)
+    message = HISTORY_PROGESS_MESSAGE)
   })
 
   output$yearEndBalancesPlot <- renderPlot({
@@ -126,7 +127,29 @@ shinyServer(function(input, output) {
         hrbrthemes::theme_ipsum()
     },
     value = 0,
-    message = PROGESS_MESSAGE)
+    message = HISTORY_PROGESS_MESSAGE)
+  })
+  
+  output$serviceAreaByYearPlot <- renderPlot({
+    shiny::withProgress({
+      getAllServiceAreaTotals(progressCallback = shiny::setProgress) %>%
+        dplyr::mutate(amount = amount / 1000000) %>%
+        ggplot(
+          aes(
+            x = fiscal_year,
+            y = amount,
+            group = service_area_code,
+            colour = service_area_code
+          )
+        ) +
+        geom_line(stat = "identity") +
+        scale_y_continuous(labels = comma) +
+        labs(x = "Fiscal\nYear", y = "Millions of Dollars",
+             title = "Service Areas by Fiscal Year") +
+        hrbrthemes::theme_ipsum()
+    },
+    value = 0,
+    message = YEAR_PROGESS_MESSAGE)
   })
   
 })
