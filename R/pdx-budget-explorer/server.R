@@ -56,9 +56,11 @@ shinyServer(function(input, output) {
 
   output$personnelPlot <- renderPlot({
     shiny::withProgress({
-      getBudgetHistory(fields = c("object_code"),
-                       values = c("PERSONAL"),
-                       shiny::setProgress) %>%
+      getBudgetHistory(
+        fields = c("object_code"),
+        values = c("PERSONAL"),
+        progressCallback = shiny::setProgress
+      ) %>%
         dplyr::mutate(amount = amount / 1000000) %>%
         ggplot(aes(fiscal_year, amount)) +
         scale_y_continuous(labels = comma) +
@@ -66,7 +68,7 @@ shinyServer(function(input, output) {
                  fill = SITE_COLOR,
                  colour = SITE_COLOR) +
         #coord_flip() +
-        facet_wrap( ~ bureau_name) +
+        facet_wrap(~ bureau_name) +
         labs(x = "Fiscal\nYear",
              y = "Millions of Dollars",
              title = "Personnel Budget by Bureau and Fiscal-Year") +
@@ -74,8 +76,28 @@ shinyServer(function(input, output) {
     })
   })
   
-  output$enterprisePlot <- renderText({
-    "FIXME: Use renderPlot Enterprise Fund data here."
+  output$enterprisePlot <- renderPlot({
+    shiny::withProgress({
+      getBudgetHistory(
+        fields = c("fund_code"),
+        values = c("ENTERPRISE"),
+        progressCallback = shiny::setProgress
+      ) %>%
+        dplyr::mutate(amount = amount / 1000000) %>%
+        ggplot(aes(fiscal_year, amount)) +
+        geom_bar(stat = "identity",
+                 fill = SITE_COLOR,
+                 colour = SITE_COLOR) +
+        scale_y_continuous(labels = comma) +
+        coord_flip() +
+        facet_wrap( ~ bureau_name) +
+        labs(
+          x = "Fiscal\nYear",
+          y = "Millions of Dollars",
+          title = "Enterprise",
+          subtitle = "Could this be revenue from self-funding parts of the City's budget?"
+        ) +
+        hrbrthemes::theme_ipsum()
+    })
   })
-  
 })
