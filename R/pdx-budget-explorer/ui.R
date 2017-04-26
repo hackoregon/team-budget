@@ -1,5 +1,5 @@
 library(shiny)
-source("commonConstants.R")
+source("./R/commonConstants.R")
 
 BUDGET_LEVEL_SELECTIONS <-
   list(SERVICE_AREA_SELECTOR, BUREAU_SELECTOR)

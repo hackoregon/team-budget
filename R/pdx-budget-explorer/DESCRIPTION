@@ -12,6 +12,7 @@ LazyData: TRUE
 Depends:
     R (>= 3.3.3)
 Imports:
+    forcats (>= 0.2.0),
     hrbrthemes (>= 0.1.0),
     httr (>= 1.2.1),
     jsonlite (>= 1.4),
