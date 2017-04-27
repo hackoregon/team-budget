@@ -36,11 +36,12 @@ class HistorySummaryBureauSerializer(serializers.ModelSerializer):
 
 class HistorySummaryByServiceAreaSerializer(serializers.ModelSerializer):
     amount = serializers.IntegerField()
-    service_area_calc = serializers.SerializerMethodField()
+    sa_calced = serializers.CharField()
+    # service_area_calc = serializers.SerializerMethodField()
 
     class Meta:
         model = models.BudgetHistory
-        fields = ('fiscal_year', 'service_area_calc',  'amount')
+        fields = ('fiscal_year', 'service_area_code', 'bureau_code', 'sa_calced', 'amount')
 
     def get_service_area_calc(self, history):
         "Returns the calculated service area."

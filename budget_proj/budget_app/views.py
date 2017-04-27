@@ -1,6 +1,6 @@
 # include for aggregation
-from django.db.models import Sum
-
+from django.db.models import Case, IntegerField, Sum, Value, When
+from django.db.models import CharField
 # ------------------------------------------
 # imports needed for the functional view
 from rest_framework.response import Response
@@ -81,8 +81,6 @@ class HistorySummaryByBureau(generics.ListAPIView):
         qs = qs.order_by('fiscal_year', 'service_area_code', 'bureau_code', 'bureau_name')
         return qs
 
-
-
 class HistorySummaryByServiceArea(generics.ListAPIView):
     """
     Summary of BudgetHistory by Service Area.
@@ -90,11 +88,24 @@ class HistorySummaryByServiceArea(generics.ListAPIView):
     serializer_class = serializers.HistorySummaryByServiceAreaSerializer
     filter_class = filters.HistoryServiceAreaFilter
 
-
     def get_queryset(self):
         qs = models.BudgetHistory.objects.all()
-        qs = qs.values('fiscal_year', 'service_area_code', 'bureau_code').annotate(amount=Sum('amount'))
-        qs = qs.order_by('fiscal_year', 'service_area_code')
+        qs = qs.values('fiscal_year', ).annotate(
+            sa_calced=Case(
+            When(bureau_code=Value('MF'), then=Value('LA')),
+            When(bureau_code=Value('MY'), then=Value('EO')),
+            When(bureau_code=Value('PA'), then=Value('EO')),
+            When(bureau_code=Value('PS'), then=Value('EO')),
+            When(bureau_code=Value('PW'), then=Value('EO')),
+            When(bureau_code=Value('PU'), then=Value('EO')),
+            When(bureau_code=Value('AU'), then=Value('EO')),
+            # When(bureau_code in ('MY', 'PA', 'PS', 'PW', 'PU', 'AU'), then='EO'),  #this would be better
+            default='service_area_code',
+            output_field=CharField()
+            ),
+            amount=Sum('amount'),
+        )
+        qs = qs.order_by('fiscal_year', 'sa_calced')
         return qs
 
 
