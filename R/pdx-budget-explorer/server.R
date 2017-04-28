@@ -135,11 +135,11 @@ shinyServer(function(input, output) {
       getAllServiceAreaTotals(progressCallback = shiny::setProgress) %>%
         dplyr::mutate(amount = amount / 1000000) %>%
         ggplot(
-          aes(
-            x = fiscal_year,
-            y = amount,
-            group = service_area_code,
-            colour = service_area_code
+          aes_string(
+            x = 'fiscal_year',
+            y = 'amount',
+            group = SERVICE_AREA_SELECTOR,
+            colour = SERVICE_AREA_SELECTOR
           )
         ) +
         geom_line(stat = "identity") +
