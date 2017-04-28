@@ -4,7 +4,7 @@ SERVICE_AREA_LEVEL <- "Service Area"
 BUREAU_LEVEL <- "Bureau"
 
 # Field names
-SERVICE_AREA_SELECTOR <- "service_area_code"
+SERVICE_AREA_SELECTOR <- "sa_calced"
 BUREAU_SELECTOR <- "bureau_code"
 
 # color-blind-friendly palette from http://www.cookbook-r.com/Graphs/Colors_(ggplot2)/
