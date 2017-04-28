@@ -1,4 +1,4 @@
-appdirs==1.4.0
+appdirs==1.4.3
 Django==1.10.5
 django-filter==1.0.1
 django-rest-swagger==2.1.1
