@@ -32,7 +32,7 @@ shinyServer(function(input, output) {
     if (SERVICE_AREA_SELECTOR == input$budgetLevel) {
       budgetData <- getServiceAreaTotals(input$fiscalYear)
       ggplot(data = budgetData,
-             aes(x = reorder(service_area_code, amount), y = amount)) +
+             aes(x = reorder(sa_calced, amount), y = amount)) +
         geom_bar(stat = "identity",
                  fill = SITE_COLOR,
                  colour = SITE_COLOR) +
@@ -138,8 +138,8 @@ shinyServer(function(input, output) {
           aes(
             x = fiscal_year,
             y = amount,
-            group = service_area_code,
-            colour = service_area_code
+            group = sa_calced,
+            colour = sa_calced
           )
         ) +
         geom_line(stat = "identity") +
