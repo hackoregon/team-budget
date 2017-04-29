@@ -29,30 +29,21 @@ class BudgetHistorySerializer(serializers.ModelSerializer):
 
 class HistorySummaryBureauSerializer(serializers.ModelSerializer):
     amount = serializers.IntegerField()
+    sa_calced = serializers.CharField()
+
     class Meta:
         model = models.BudgetHistory
-        fields = ('fiscal_year', 'service_area_code', 'bureau_code', 'bureau_name', 'amount',)
+        fields = ('fiscal_year', 'service_area_code', 'bureau_code', 'bureau_name', 'sa_calced', 'amount',)
 
 
 class HistorySummaryByServiceAreaSerializer(serializers.ModelSerializer):
     amount = serializers.IntegerField()
     sa_calced = serializers.CharField()
-    # service_area_calc = serializers.SerializerMethodField()
 
     class Meta:
         model = models.BudgetHistory
         fields = ('fiscal_year', 'service_area_code', 'bureau_code', 'sa_calced', 'amount')
 
-    def get_service_area_calc(self, history):
-        "Returns the calculated service area."
-        eo_list = ['MY', 'PA', 'PS', 'PW', 'PU', 'AU']
-        if history['bureau_code'] == 'MF':
-            aResult = 'LA'
-        elif history['bureau_code'] in eo_list:
-            aResult = 'EO'
-        else:
-            aResult = history['service_area_code']
-        return aResult
 
 class HistorySummaryByServiceAreaObjectCodeSerializer(serializers.ModelSerializer):
     amount = serializers.IntegerField()
