@@ -63,6 +63,8 @@ insert into public.budget_app_lookupcode (code_type, code, description) select '
 insert into public.budget_app_lookupcode (code_type, code, description) select 'bureau_code',bureau_code, bureau_name from public.budget_app_budgethistory group by bureau_code,bureau_name;
 insert into public.budget_app_lookupcode (code_type, code, description) select 'fund_center_code',fund_center_code, fund_center_name from public.budget_app_budgethistory group by fund_center_code,fund_center_name;
 insert into public.budget_app_lookupcode (code_type, code, description) select 'functional_area_code',functional_area_code, functional_area_name from public.budget_app_budgethistory group by functional_area_code,functional_area_name;
+-- add rows that cannot be derived from public.budget_app_budgethistory
+insert into public.budget_app_lookupcode (code_type, code, description) values ('service_area_code', 'EO', 'Elected Officials');
 end
 
 

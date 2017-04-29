@@ -22,6 +22,9 @@ insert into main.budget_app_lookupcode (code_type, code, description) select 'bu
 insert into main.budget_app_lookupcode (code_type, code, description) select 'fund_center_code',fund_center_code, fund_center_name from main.budget_app_budgethistory group by fund_center_code,fund_center_name;
 insert into main.budget_app_lookupcode (code_type, code, description) select 'functional_area_code',functional_area_code, functional_area_name from main.budget_app_budgethistory group by functional_area_code,functional_area_name;
 
+-- add rows that cannot be derived from main.budget_app_budgethistory
+insert into main.budget_app_lookupcode (code_type, code, description) values ('service_area_code', 'EO', 'Elected Officials');
+
 
 -- update service areas with description from spreadsheet
 update main.budget_app_lookupcode set description='Community Development' where code='CD' and code_type='service_area_code';
