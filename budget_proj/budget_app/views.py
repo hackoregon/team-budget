@@ -89,25 +89,24 @@ class HistorySummaryByServiceArea(generics.ListAPIView):
     filter_class = filters.HistoryServiceAreaFilter
 
     def get_queryset(self):
+        """
+        Calculate service area based on business logic.
+        (Some bureaus are in service areas not reflected by the data)
+        """
+        LA_Bureaus = ['MF']
+        EO_Bureaus = ['MY','PA','PS','PW','PU','AU']
         qs = models.BudgetHistory.objects.all()
         qs = qs.values('fiscal_year', ).annotate(
             sa_calced=Case(
-            When(bureau_code=Value('MF'), then=Value('LA')),
-            When(bureau_code=Value('MY'), then=Value('EO')),
-            When(bureau_code=Value('PA'), then=Value('EO')),
-            When(bureau_code=Value('PS'), then=Value('EO')),
-            When(bureau_code=Value('PW'), then=Value('EO')),
-            When(bureau_code=Value('PU'), then=Value('EO')),
-            When(bureau_code=Value('AU'), then=Value('EO')),
-            # When(bureau_code in ('MY', 'PA', 'PS', 'PW', 'PU', 'AU'), then='EO'),  #this would be better
-            default='service_area_code',
-            output_field=CharField()
+            When(bureau_code__in = LA_Bureaus, then = Value('LA')),
+            When(bureau_code__in = EO_Bureaus, then = Value('EO')),
+            default = 'service_area_code',
+            output_field = CharField()
             ),
             amount=Sum('amount'),
         )
         qs = qs.order_by('fiscal_year', 'sa_calced')
         return qs
-
 
 
 class HistorySummaryByServiceAreaObjectCode(generics.ListAPIView):
