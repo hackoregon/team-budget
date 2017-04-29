@@ -113,8 +113,14 @@ getServiceAreaTotals <- function(fiscalYear = "2015-16") {
     httr::GET(SERVICE_AREA_PATH, query = list(fiscal_year = fiscalYear)) %>%
       httr::content(type = "text", encoding = ENCODING) %>%
       jsonlite::fromJSON() %>%
-      with(results)
+      with(results) %>%
+      standardizeColNames()
   )
+}
+
+standardizeColNames <- function(df) {
+  colnames(df)[colnames(df) == "sa_calced"] <- SERVICE_AREA_SELECTOR
+  return(df)
 }
 
 #' Aggregates budget amounts by Service Area for all years.
@@ -142,6 +148,7 @@ getAllServiceAreaTotals <- function(progressCallback = NULL) {
       )
     }
   }
+  history <- standardizeColNames(history)
   return(history)
 }
 
