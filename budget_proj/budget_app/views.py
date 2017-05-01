@@ -17,6 +17,9 @@ from . import serializers
 from . import filters
 # ------------------------------------------
 
+LA_Bureaus = ['MF']
+EO_Bureaus = ['MY', 'PA', 'PS', 'PW', 'PU', 'AU']
+
 class ListOcrb(generics.ListAPIView):
     """
     Operating and Capital Requirements by Bureau (OCRB).
@@ -67,7 +70,6 @@ class ListBudgetHistory(generics.ListAPIView):
         return models.BudgetHistory.objects.order_by('fiscal_year', 'bureau_name', 'accounting_object_name', 'functional_area_name')
 
 
-
 class HistorySummaryByBureau(generics.ListAPIView):
     """
     Summary of Historical Operating and Capital Requirements by Service Area and Bureau
@@ -76,8 +78,19 @@ class HistorySummaryByBureau(generics.ListAPIView):
     filter_class = filters.HistoryBureauFilter
 
     def get_queryset(self):
+        """
+        Append the calculated service area based on business logic.
+        (Some bureaus are in service areas not reflected by the data)
+        """
         qs = models.BudgetHistory.objects.all()
-        qs = qs.values('fiscal_year', 'service_area_code', 'bureau_code', 'bureau_name').annotate(amount=Sum('amount'))
+        qs = qs.values('fiscal_year', 'service_area_code', 'bureau_code', 'bureau_name').annotate(
+            sa_calced=Case(
+                When(bureau_code__in = LA_Bureaus, then = Value('LA')),
+                When(bureau_code__in = EO_Bureaus, then = Value('EO')),
+                default = 'service_area_code',
+                output_field = CharField()
+            ),
+            amount=Sum('amount'))
         qs = qs.order_by('fiscal_year', 'service_area_code', 'bureau_code', 'bureau_name')
         return qs
 
@@ -89,25 +102,22 @@ class HistorySummaryByServiceArea(generics.ListAPIView):
     filter_class = filters.HistoryServiceAreaFilter
 
     def get_queryset(self):
+        """
+        Calculate service area based on business logic.
+        (Some bureaus are in service areas not reflected by the data)
+        """
         qs = models.BudgetHistory.objects.all()
         qs = qs.values('fiscal_year', ).annotate(
             sa_calced=Case(
-            When(bureau_code=Value('MF'), then=Value('LA')),
-            When(bureau_code=Value('MY'), then=Value('EO')),
-            When(bureau_code=Value('PA'), then=Value('EO')),
-            When(bureau_code=Value('PS'), then=Value('EO')),
-            When(bureau_code=Value('PW'), then=Value('EO')),
-            When(bureau_code=Value('PU'), then=Value('EO')),
-            When(bureau_code=Value('AU'), then=Value('EO')),
-            # When(bureau_code in ('MY', 'PA', 'PS', 'PW', 'PU', 'AU'), then='EO'),  #this would be better
-            default='service_area_code',
-            output_field=CharField()
+                When(bureau_code__in = LA_Bureaus, then = Value('LA')),
+                When(bureau_code__in = EO_Bureaus, then = Value('EO')),
+                default = 'service_area_code',
+                output_field = CharField()
             ),
             amount=Sum('amount'),
         )
         qs = qs.order_by('fiscal_year', 'sa_calced')
         return qs
-
 
 
 class HistorySummaryByServiceAreaObjectCode(generics.ListAPIView):
@@ -122,7 +132,6 @@ class HistorySummaryByServiceAreaObjectCode(generics.ListAPIView):
         qs = qs.values('fiscal_year', 'service_area_code', 'object_code').annotate(amount=Sum('amount'))
         qs = qs.order_by('fiscal_year', 'service_area_code', 'object_code')
         return qs
-
 
 
 class ListLookupCode(generics.ListAPIView):
