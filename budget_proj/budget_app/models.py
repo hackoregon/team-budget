@@ -66,5 +66,5 @@ class BudgetHistory(models.Model):
     object_code.help_text = 'Short string ID for a general accounting category, e.g. "EMS" for External Material and Services or "CAPITAL" for Capital Expenditures.'
     program_code = models.CharField(max_length=32, default='')
     service_area_code = models.CharField(db_index=True, max_length=32, default='')
-    service_area_code.help_text = '2-character ID [CD, LA, PR, PS, PU, TP] for a Service Area, which is a grouping of related Bureaus.'
+    service_area_code.help_text = '2-character ID [CD, EO, LA, PR, PS, PU, TP] for a Service Area, which is a grouping of related Bureaus.'
     sub_program_code = models.CharField(max_length=32, default='')
