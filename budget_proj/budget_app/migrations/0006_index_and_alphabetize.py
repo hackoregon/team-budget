@@ -45,7 +45,7 @@ class Migration(migrations.Migration):
         migrations.AlterField(
             model_name='budgethistory',
             name='service_area_code',
-            field=models.CharField(db_index=True, default='', help_text='2-character ID [CD, LA, PR, PS, PU, TP] for a Service Area, which is a grouping of related Bureaus.', max_length=32),
+            field=models.CharField(db_index=True, default='', help_text='2-character ID [CD, EO, LA, PR, PS, PU, TP] for a Service Area, which is a grouping of related Bureaus.', max_length=32),
         ),
         migrations.AlterField(
             model_name='kpm',
