@@ -4,15 +4,30 @@ This repository contains two major components:
 - code for the backend (API) layer of the Budget project
 - issue tracking for all aspects (API, Frontend, data, deployment) of the Budget project
 
+## Table of Contents
+
+- [Deployed Code!](#deployedcode)
+- [Team Budget source repositories](#sourcerepositories)
+- [Development environment prerequisites](#developmentenvironmentprerequisites)
+- [Setting up your development environment](#settingup)
+- [Endpoint map](#endpointmap)
+- [Sample Endpoint data](#sampledata)
+- [Using Docker](#docker)
+- [License](#license)
+
+<a name="deployedcode"/>
 ## Deployed Code!
 Here's the backend API in the Integration environment: http://service.civicpdx.org/budget (or this older URL which points to the same instance: http://hacko-integration-658279555.us-west-2.elb.amazonaws.com/budget) 
 
+<a name="sourcerepositories"/>
 ## Team Budget source repositories
 Per the current recommended approach for organizing code for Hack Oregon projects, Budget team will use two repositories:
 
 - [team-budget](https://github.com/hackoregon/team-budget) for all code related to the RESTful web service built with Django and a SQL database.
 - [team-budget-frontend](https://github.com/hackoregon/team-budget-frontend) for all code related to the frontend web application (React/HTML/CSS/JavaScript).
 
+
+<a name="developmentenvironmentprerequisites"/>
 ## Development environment prerequisites
 
 To work on code in this [team-budget](https://github.com/hackoregon/team-budget) (backend) repository, you must have:
@@ -29,6 +44,7 @@ For production data storage, we use:
 
 - [PostgreSQL 9.5.5](https://www.postgresql.org/) running on an [AWS EC2](https://aws.amazon.com/products/compute/#ec2) instance.<br>You do _not_ need either of these for development. Some of us run a local instance of [PostgreSQL](https://www.postgresql.org/) for development, but others use the default embedded [SQLite](https://www.sqlite.org/) database that comes with [Django](https://www.djangoproject.com/) for development.
 
+<a name="settingup"/>
 ## Setting up your development environment
 
 Please follow these instructions carefully, so that your environment will be configured correctly and you can start contributing as soon as possible.
@@ -132,17 +148,21 @@ No query parameters are accepted.
 http://127.0.0.1:8000/kpm
 ```
 
-# Endpoint map
+<a name="endpointmap"/>
+## Endpoint map
 - history: uses query parameters to return subsets of the budget data from the past 10 years.
 - code: returns codes used in other tables along with their descriptions.
 - ocrb: provides data from City of Portland "Budget in Brief" documents (e.g. [FY 2016-17](https://www.portlandoregon.gov/cbo/article/584584)) for all Service Area sections from the tables named, "Operating and Capital Requirements by Bureau".
 - kpm: provides data from City of Portland "Budget in Brief" documents (e.g. [FY 2016-17](https://www.portlandoregon.gov/cbo/article/584584)) for all Service Area sections from the tables named, "Key Performance Measures".
 
-# Sample Endpoint data
+<a name="sampledata"/>
+## Sample Endpoint data
 There are sample data files in the `Data/sample-responses/` directory with an associated [README_SampleResponses.md](Data/sample-responses/README_SampleResponses.md) file.
 
-# Using Docker
+<a name="docker"/>
+## Using Docker
 See [README-docker.md](https://github.com/hackoregon/team-budget/blob/master/README-docker.md) if you want to run the application from a Docker image, rather than using the Django `runserver` method as above.
 
-# License
+<a name="license"/>
+## License
 This project is licensed under the terms of the MIT license.
