@@ -4,6 +4,17 @@ This repository contains two major components:
 - code for the backend (API) layer of the Budget project
 - issue tracking for all aspects (API, Frontend, data, deployment) of the Budget project
 
+## Table of Contents
+
+- [Deployed Code!](#deployed-code)
+- [Team Budget source repositories](#team-budget-source-repositories)
+- [Development environment prerequisites](#development-environment-prerequisites)
+- [Setting up your development environment](#setting-up-your-development-environment)
+- [Endpoint map](#endpoint-map)
+- [Sample Endpoint data](#sample-endpoint-data)
+- [Using Docker](#using-docker)
+- [License](#license)
+
 ## Deployed Code!
 Here's the backend API in the Integration environment: http://service.civicpdx.org/budget (or this older URL which points to the same instance: http://hacko-integration-658279555.us-west-2.elb.amazonaws.com/budget) 
 
@@ -132,17 +143,17 @@ No query parameters are accepted.
 http://127.0.0.1:8000/kpm
 ```
 
-# Endpoint map
+## Endpoint map
 - history: uses query parameters to return subsets of the budget data from the past 10 years.
 - code: returns codes used in other tables along with their descriptions.
 - ocrb: provides data from City of Portland "Budget in Brief" documents (e.g. [FY 2016-17](https://www.portlandoregon.gov/cbo/article/584584)) for all Service Area sections from the tables named, "Operating and Capital Requirements by Bureau".
 - kpm: provides data from City of Portland "Budget in Brief" documents (e.g. [FY 2016-17](https://www.portlandoregon.gov/cbo/article/584584)) for all Service Area sections from the tables named, "Key Performance Measures".
 
-# Sample Endpoint data
+## Sample Endpoint data
 There are sample data files in the `Data/sample-responses/` directory with an associated [README_SampleResponses.md](Data/sample-responses/README_SampleResponses.md) file.
 
-# Using Docker
+## Using Docker
 See [README-docker.md](https://github.com/hackoregon/team-budget/blob/master/README-docker.md) if you want to run the application from a Docker image, rather than using the Django `runserver` method as above.
 
-# License
+## License
 This project is licensed under the terms of the MIT license.
