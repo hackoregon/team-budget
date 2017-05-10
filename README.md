@@ -24,7 +24,6 @@ Per the current recommended approach for organizing code for Hack Oregon project
 - [team-budget](https://github.com/hackoregon/team-budget) for all code related to the RESTful web service built with Django and a SQL database.
 - [team-budget-frontend](https://github.com/hackoregon/team-budget-frontend) for all code related to the frontend web application (React/HTML/CSS/JavaScript).
 
-
 ## Development environment prerequisites
 
 To work on code in this [team-budget](https://github.com/hackoregon/team-budget) (backend) repository, you must have:
