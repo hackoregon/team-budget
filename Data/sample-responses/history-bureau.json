@@ -1,0 +1,4552 @@
+[
+  {
+    "amount": 50427995, 
+    "bureau_code": "AU", 
+    "bureau_name": "Office of the City Auditor", 
+    "fiscal_year": "2006-07", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 9235542, 
+    "bureau_code": "CB", 
+    "bureau_name": "Office for Community Technology", 
+    "fiscal_year": "2006-07", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "DR", 
+    "bureau_name": "Bureau of Fire & Police Disability & Retirement", 
+    "fiscal_year": "2006-07", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 51999709, 
+    "bureau_code": "DS", 
+    "bureau_name": "Bureau of Development Services", 
+    "fiscal_year": "2006-07", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "ES", 
+    "bureau_name": "Bureau of Environmental Services", 
+    "fiscal_year": "2006-07", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "FR", 
+    "bureau_name": "Portland Fire & Rescue", 
+    "fiscal_year": "2006-07", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 47689614, 
+    "bureau_code": "HC", 
+    "bureau_name": "Portland Housing Bureau", 
+    "fiscal_year": "2006-07", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "HN", 
+    "bureau_name": "Office of Human Relations", 
+    "fiscal_year": "2006-07", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 17636038, 
+    "bureau_code": "MF", 
+    "bureau_name": "Office of Management & Finance", 
+    "fiscal_year": "2006-07", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "MY", 
+    "bureau_name": "Office of the Mayor", 
+    "fiscal_year": "2006-07", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 4975403, 
+    "bureau_code": "NI", 
+    "bureau_name": "Office of Neighborhood Involvement", 
+    "fiscal_year": "2006-07", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "OE", 
+    "bureau_name": "Office of Equity & Human Rights", 
+    "fiscal_year": "2006-07", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 23051660, 
+    "bureau_code": "PA", 
+    "bureau_name": "Commissioner of Public Affairs", 
+    "fiscal_year": "2006-07", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "PL", 
+    "bureau_name": "Portland Police Bureau", 
+    "fiscal_year": "2006-07", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 6672206, 
+    "bureau_code": "PN", 
+    "bureau_name": "Bureau of Planning & Sustainability", 
+    "fiscal_year": "2006-07", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "PU", 
+    "bureau_name": "Commissioner of Public Utilities", 
+    "fiscal_year": "2006-07", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 12066865, 
+    "bureau_code": "SD", 
+    "bureau_name": "Office of Sustainable Development", 
+    "fiscal_year": "2006-07", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "TR", 
+    "bureau_name": "Portland Bureau of Transportation", 
+    "fiscal_year": "2006-07", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "ZD", 
+    "bureau_name": "Portland Development Commission", 
+    "fiscal_year": "2006-07", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 6573113, 
+    "bureau_code": "AT", 
+    "bureau_name": "Office of the City Attorney", 
+    "fiscal_year": "2006-07", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 52310776, 
+    "bureau_code": "AU", 
+    "bureau_name": "Office of the City Auditor", 
+    "fiscal_year": "2006-07", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "BO", 
+    "bureau_name": "City Budget Office", 
+    "fiscal_year": "2006-07", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "DS", 
+    "bureau_name": "Bureau of Development Services", 
+    "fiscal_year": "2006-07", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "EC", 
+    "bureau_name": "Bureau of Emergency Communications", 
+    "fiscal_year": "2006-07", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "ES", 
+    "bureau_name": "Bureau of Environmental Services", 
+    "fiscal_year": "2006-07", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 834480, 
+    "bureau_code": "GR", 
+    "bureau_name": "Office of Government Relations", 
+    "fiscal_year": "2006-07", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "HN", 
+    "bureau_name": "Office of Human Relations", 
+    "fiscal_year": "2006-07", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 806892430, 
+    "bureau_code": "MF", 
+    "bureau_name": "Office of Management & Finance", 
+    "fiscal_year": "2006-07", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 2421479, 
+    "bureau_code": "MY", 
+    "bureau_name": "Office of the Mayor", 
+    "fiscal_year": "2006-07", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 729182, 
+    "bureau_code": "PA", 
+    "bureau_name": "Commissioner of Public Affairs", 
+    "fiscal_year": "2006-07", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "PK", 
+    "bureau_name": "Portland Parks & Recreation", 
+    "fiscal_year": "2006-07", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "PL", 
+    "bureau_name": "Portland Police Bureau", 
+    "fiscal_year": "2006-07", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 650153, 
+    "bureau_code": "PS", 
+    "bureau_name": "Commissioner of Public Safety", 
+    "fiscal_year": "2006-07", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 805874, 
+    "bureau_code": "PU", 
+    "bureau_name": "Commissioner of Public Utilities", 
+    "fiscal_year": "2006-07", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 738333, 
+    "bureau_code": "PW", 
+    "bureau_name": "Commissioner of Public Works", 
+    "fiscal_year": "2006-07", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 83000, 
+    "bureau_code": "ZD", 
+    "bureau_name": "Portland Development Commission", 
+    "fiscal_year": "2006-07", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "ES", 
+    "bureau_name": "Bureau of Environmental Services", 
+    "fiscal_year": "2006-07", 
+    "service_area_code": "PR"
+  }, 
+  {
+    "amount": 10388556, 
+    "bureau_code": "MF", 
+    "bureau_name": "Office of Management & Finance", 
+    "fiscal_year": "2006-07", 
+    "service_area_code": "PR"
+  }, 
+  {
+    "amount": 120774817, 
+    "bureau_code": "PK", 
+    "bureau_name": "Portland Parks & Recreation", 
+    "fiscal_year": "2006-07", 
+    "service_area_code": "PR"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "PL", 
+    "bureau_name": "Portland Police Bureau", 
+    "fiscal_year": "2006-07", 
+    "service_area_code": "PR"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "PW", 
+    "bureau_name": "Commissioner of Public Works", 
+    "fiscal_year": "2006-07", 
+    "service_area_code": "PR"
+  }, 
+  {
+    "amount": 111967838, 
+    "bureau_code": "DR", 
+    "bureau_name": "Bureau of Fire & Police Disability & Retirement", 
+    "fiscal_year": "2006-07", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 19146238, 
+    "bureau_code": "EC", 
+    "bureau_name": "Bureau of Emergency Communications", 
+    "fiscal_year": "2006-07", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 10045618, 
+    "bureau_code": "EM", 
+    "bureau_name": "Portland Bureau of Emergency Management", 
+    "fiscal_year": "2006-07", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "ES", 
+    "bureau_name": "Bureau of Environmental Services", 
+    "fiscal_year": "2006-07", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 81107023, 
+    "bureau_code": "FR", 
+    "bureau_name": "Portland Fire & Rescue", 
+    "fiscal_year": "2006-07", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "HC", 
+    "bureau_name": "Portland Housing Bureau", 
+    "fiscal_year": "2006-07", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 7907211, 
+    "bureau_code": "MF", 
+    "bureau_name": "Office of Management & Finance", 
+    "fiscal_year": "2006-07", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 96536, 
+    "bureau_code": "MY", 
+    "bureau_name": "Office of the Mayor", 
+    "fiscal_year": "2006-07", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 1023825, 
+    "bureau_code": "NI", 
+    "bureau_name": "Office of Neighborhood Involvement", 
+    "fiscal_year": "2006-07", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "PA", 
+    "bureau_name": "Commissioner of Public Affairs", 
+    "fiscal_year": "2006-07", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "PK", 
+    "bureau_name": "Portland Parks & Recreation", 
+    "fiscal_year": "2006-07", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 144248242, 
+    "bureau_code": "PL", 
+    "bureau_name": "Portland Police Bureau", 
+    "fiscal_year": "2006-07", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "TR", 
+    "bureau_name": "Portland Bureau of Transportation", 
+    "fiscal_year": "2006-07", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "DS", 
+    "bureau_name": "Bureau of Development Services", 
+    "fiscal_year": "2006-07", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 1101589159, 
+    "bureau_code": "ES", 
+    "bureau_name": "Bureau of Environmental Services", 
+    "fiscal_year": "2006-07", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "FR", 
+    "bureau_name": "Portland Fire & Rescue", 
+    "fiscal_year": "2006-07", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "MF", 
+    "bureau_name": "Office of Management & Finance", 
+    "fiscal_year": "2006-07", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "PK", 
+    "bureau_name": "Portland Parks & Recreation", 
+    "fiscal_year": "2006-07", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "PL", 
+    "bureau_name": "Portland Police Bureau", 
+    "fiscal_year": "2006-07", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "TR", 
+    "bureau_name": "Portland Bureau of Transportation", 
+    "fiscal_year": "2006-07", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 370741350, 
+    "bureau_code": "WA", 
+    "bureau_name": "Portland Water Bureau", 
+    "fiscal_year": "2006-07", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "FR", 
+    "bureau_name": "Portland Fire & Rescue", 
+    "fiscal_year": "2006-07", 
+    "service_area_code": "TP"
+  }, 
+  {
+    "amount": 10483459, 
+    "bureau_code": "MF", 
+    "bureau_name": "Office of Management & Finance", 
+    "fiscal_year": "2006-07", 
+    "service_area_code": "TP"
+  }, 
+  {
+    "amount": 245837540, 
+    "bureau_code": "TR", 
+    "bureau_name": "Portland Bureau of Transportation", 
+    "fiscal_year": "2006-07", 
+    "service_area_code": "TP"
+  }, 
+  {
+    "amount": 7294667, 
+    "bureau_code": "AU", 
+    "bureau_name": "Office of the City Auditor", 
+    "fiscal_year": "2007-08", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 10585485, 
+    "bureau_code": "CB", 
+    "bureau_name": "Office for Community Technology", 
+    "fiscal_year": "2007-08", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "DR", 
+    "bureau_name": "Bureau of Fire & Police Disability & Retirement", 
+    "fiscal_year": "2007-08", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 56123903, 
+    "bureau_code": "DS", 
+    "bureau_name": "Bureau of Development Services", 
+    "fiscal_year": "2007-08", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "ES", 
+    "bureau_name": "Bureau of Environmental Services", 
+    "fiscal_year": "2007-08", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "FR", 
+    "bureau_name": "Portland Fire & Rescue", 
+    "fiscal_year": "2007-08", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 66015325, 
+    "bureau_code": "HC", 
+    "bureau_name": "Portland Housing Bureau", 
+    "fiscal_year": "2007-08", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "HN", 
+    "bureau_name": "Office of Human Relations", 
+    "fiscal_year": "2007-08", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 7023193, 
+    "bureau_code": "MF", 
+    "bureau_name": "Office of Management & Finance", 
+    "fiscal_year": "2007-08", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "MY", 
+    "bureau_name": "Office of the Mayor", 
+    "fiscal_year": "2007-08", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 5651615, 
+    "bureau_code": "NI", 
+    "bureau_name": "Office of Neighborhood Involvement", 
+    "fiscal_year": "2007-08", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "OE", 
+    "bureau_name": "Office of Equity & Human Rights", 
+    "fiscal_year": "2007-08", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 26248245, 
+    "bureau_code": "PA", 
+    "bureau_name": "Commissioner of Public Affairs", 
+    "fiscal_year": "2007-08", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "PL", 
+    "bureau_name": "Portland Police Bureau", 
+    "fiscal_year": "2007-08", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 10457589, 
+    "bureau_code": "PN", 
+    "bureau_name": "Bureau of Planning & Sustainability", 
+    "fiscal_year": "2007-08", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "PU", 
+    "bureau_name": "Commissioner of Public Utilities", 
+    "fiscal_year": "2007-08", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 13222753, 
+    "bureau_code": "SD", 
+    "bureau_name": "Office of Sustainable Development", 
+    "fiscal_year": "2007-08", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "TR", 
+    "bureau_name": "Portland Bureau of Transportation", 
+    "fiscal_year": "2007-08", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "ZD", 
+    "bureau_name": "Portland Development Commission", 
+    "fiscal_year": "2007-08", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 7321099, 
+    "bureau_code": "AT", 
+    "bureau_name": "Office of the City Attorney", 
+    "fiscal_year": "2007-08", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 35647396, 
+    "bureau_code": "AU", 
+    "bureau_name": "Office of the City Auditor", 
+    "fiscal_year": "2007-08", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "BO", 
+    "bureau_name": "City Budget Office", 
+    "fiscal_year": "2007-08", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "DS", 
+    "bureau_name": "Bureau of Development Services", 
+    "fiscal_year": "2007-08", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "EC", 
+    "bureau_name": "Bureau of Emergency Communications", 
+    "fiscal_year": "2007-08", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "ES", 
+    "bureau_name": "Bureau of Environmental Services", 
+    "fiscal_year": "2007-08", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 1066029, 
+    "bureau_code": "GR", 
+    "bureau_name": "Office of Government Relations", 
+    "fiscal_year": "2007-08", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "HN", 
+    "bureau_name": "Office of Human Relations", 
+    "fiscal_year": "2007-08", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 873034807, 
+    "bureau_code": "MF", 
+    "bureau_name": "Office of Management & Finance", 
+    "fiscal_year": "2007-08", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 2664912, 
+    "bureau_code": "MY", 
+    "bureau_name": "Office of the Mayor", 
+    "fiscal_year": "2007-08", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 1236770, 
+    "bureau_code": "PA", 
+    "bureau_name": "Commissioner of Public Affairs", 
+    "fiscal_year": "2007-08", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "PK", 
+    "bureau_name": "Portland Parks & Recreation", 
+    "fiscal_year": "2007-08", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "PL", 
+    "bureau_name": "Portland Police Bureau", 
+    "fiscal_year": "2007-08", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 780393, 
+    "bureau_code": "PS", 
+    "bureau_name": "Commissioner of Public Safety", 
+    "fiscal_year": "2007-08", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 845995, 
+    "bureau_code": "PU", 
+    "bureau_name": "Commissioner of Public Utilities", 
+    "fiscal_year": "2007-08", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 756489, 
+    "bureau_code": "PW", 
+    "bureau_name": "Commissioner of Public Works", 
+    "fiscal_year": "2007-08", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 1823239, 
+    "bureau_code": "ZD", 
+    "bureau_name": "Portland Development Commission", 
+    "fiscal_year": "2007-08", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "ES", 
+    "bureau_name": "Bureau of Environmental Services", 
+    "fiscal_year": "2007-08", 
+    "service_area_code": "PR"
+  }, 
+  {
+    "amount": 11814190, 
+    "bureau_code": "MF", 
+    "bureau_name": "Office of Management & Finance", 
+    "fiscal_year": "2007-08", 
+    "service_area_code": "PR"
+  }, 
+  {
+    "amount": 139493202, 
+    "bureau_code": "PK", 
+    "bureau_name": "Portland Parks & Recreation", 
+    "fiscal_year": "2007-08", 
+    "service_area_code": "PR"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "PL", 
+    "bureau_name": "Portland Police Bureau", 
+    "fiscal_year": "2007-08", 
+    "service_area_code": "PR"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "PW", 
+    "bureau_name": "Commissioner of Public Works", 
+    "fiscal_year": "2007-08", 
+    "service_area_code": "PR"
+  }, 
+  {
+    "amount": 122175458, 
+    "bureau_code": "DR", 
+    "bureau_name": "Bureau of Fire & Police Disability & Retirement", 
+    "fiscal_year": "2007-08", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 21054961, 
+    "bureau_code": "EC", 
+    "bureau_name": "Bureau of Emergency Communications", 
+    "fiscal_year": "2007-08", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 9938303, 
+    "bureau_code": "EM", 
+    "bureau_name": "Portland Bureau of Emergency Management", 
+    "fiscal_year": "2007-08", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "ES", 
+    "bureau_name": "Bureau of Environmental Services", 
+    "fiscal_year": "2007-08", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 88224306, 
+    "bureau_code": "FR", 
+    "bureau_name": "Portland Fire & Rescue", 
+    "fiscal_year": "2007-08", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "HC", 
+    "bureau_name": "Portland Housing Bureau", 
+    "fiscal_year": "2007-08", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 5931167, 
+    "bureau_code": "MF", 
+    "bureau_name": "Office of Management & Finance", 
+    "fiscal_year": "2007-08", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 68546, 
+    "bureau_code": "MY", 
+    "bureau_name": "Office of the Mayor", 
+    "fiscal_year": "2007-08", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 1085045, 
+    "bureau_code": "NI", 
+    "bureau_name": "Office of Neighborhood Involvement", 
+    "fiscal_year": "2007-08", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "PA", 
+    "bureau_name": "Commissioner of Public Affairs", 
+    "fiscal_year": "2007-08", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "PK", 
+    "bureau_name": "Portland Parks & Recreation", 
+    "fiscal_year": "2007-08", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 150885663, 
+    "bureau_code": "PL", 
+    "bureau_name": "Portland Police Bureau", 
+    "fiscal_year": "2007-08", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "TR", 
+    "bureau_name": "Portland Bureau of Transportation", 
+    "fiscal_year": "2007-08", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "DS", 
+    "bureau_name": "Bureau of Development Services", 
+    "fiscal_year": "2007-08", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 1312872544, 
+    "bureau_code": "ES", 
+    "bureau_name": "Bureau of Environmental Services", 
+    "fiscal_year": "2007-08", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "FR", 
+    "bureau_name": "Portland Fire & Rescue", 
+    "fiscal_year": "2007-08", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "MF", 
+    "bureau_name": "Office of Management & Finance", 
+    "fiscal_year": "2007-08", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "PK", 
+    "bureau_name": "Portland Parks & Recreation", 
+    "fiscal_year": "2007-08", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "PL", 
+    "bureau_name": "Portland Police Bureau", 
+    "fiscal_year": "2007-08", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "TR", 
+    "bureau_name": "Portland Bureau of Transportation", 
+    "fiscal_year": "2007-08", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 296527632, 
+    "bureau_code": "WA", 
+    "bureau_name": "Portland Water Bureau", 
+    "fiscal_year": "2007-08", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "FR", 
+    "bureau_name": "Portland Fire & Rescue", 
+    "fiscal_year": "2007-08", 
+    "service_area_code": "TP"
+  }, 
+  {
+    "amount": 11193123, 
+    "bureau_code": "MF", 
+    "bureau_name": "Office of Management & Finance", 
+    "fiscal_year": "2007-08", 
+    "service_area_code": "TP"
+  }, 
+  {
+    "amount": 195349882, 
+    "bureau_code": "TR", 
+    "bureau_name": "Portland Bureau of Transportation", 
+    "fiscal_year": "2007-08", 
+    "service_area_code": "TP"
+  }, 
+  {
+    "amount": 9425304, 
+    "bureau_code": "AU", 
+    "bureau_name": "Office of the City Auditor", 
+    "fiscal_year": "2008-09", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 12039304, 
+    "bureau_code": "CB", 
+    "bureau_name": "Office for Community Technology", 
+    "fiscal_year": "2008-09", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 920, 
+    "bureau_code": "DR", 
+    "bureau_name": "Bureau of Fire & Police Disability & Retirement", 
+    "fiscal_year": "2008-09", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 44933951, 
+    "bureau_code": "DS", 
+    "bureau_name": "Bureau of Development Services", 
+    "fiscal_year": "2008-09", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 416, 
+    "bureau_code": "ES", 
+    "bureau_name": "Bureau of Environmental Services", 
+    "fiscal_year": "2008-09", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "FR", 
+    "bureau_name": "Portland Fire & Rescue", 
+    "fiscal_year": "2008-09", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 52182130, 
+    "bureau_code": "HC", 
+    "bureau_name": "Portland Housing Bureau", 
+    "fiscal_year": "2008-09", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 413909, 
+    "bureau_code": "HN", 
+    "bureau_name": "Office of Human Relations", 
+    "fiscal_year": "2008-09", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 77083531, 
+    "bureau_code": "MF", 
+    "bureau_name": "Office of Management & Finance", 
+    "fiscal_year": "2008-09", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "MY", 
+    "bureau_name": "Office of the Mayor", 
+    "fiscal_year": "2008-09", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 4679297, 
+    "bureau_code": "NI", 
+    "bureau_name": "Office of Neighborhood Involvement", 
+    "fiscal_year": "2008-09", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "OE", 
+    "bureau_name": "Office of Equity & Human Rights", 
+    "fiscal_year": "2008-09", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 16453583, 
+    "bureau_code": "PA", 
+    "bureau_name": "Commissioner of Public Affairs", 
+    "fiscal_year": "2008-09", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 618, 
+    "bureau_code": "PL", 
+    "bureau_name": "Portland Police Bureau", 
+    "fiscal_year": "2008-09", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 11058780, 
+    "bureau_code": "PN", 
+    "bureau_name": "Bureau of Planning & Sustainability", 
+    "fiscal_year": "2008-09", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "PU", 
+    "bureau_name": "Commissioner of Public Utilities", 
+    "fiscal_year": "2008-09", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 11978987, 
+    "bureau_code": "SD", 
+    "bureau_name": "Office of Sustainable Development", 
+    "fiscal_year": "2008-09", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 230, 
+    "bureau_code": "TR", 
+    "bureau_name": "Portland Bureau of Transportation", 
+    "fiscal_year": "2008-09", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "ZD", 
+    "bureau_name": "Portland Development Commission", 
+    "fiscal_year": "2008-09", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 8016265, 
+    "bureau_code": "AT", 
+    "bureau_name": "Office of the City Attorney", 
+    "fiscal_year": "2008-09", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 33309744, 
+    "bureau_code": "AU", 
+    "bureau_name": "Office of the City Auditor", 
+    "fiscal_year": "2008-09", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "BO", 
+    "bureau_name": "City Budget Office", 
+    "fiscal_year": "2008-09", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "DS", 
+    "bureau_name": "Bureau of Development Services", 
+    "fiscal_year": "2008-09", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 6913, 
+    "bureau_code": "EC", 
+    "bureau_name": "Bureau of Emergency Communications", 
+    "fiscal_year": "2008-09", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 17327, 
+    "bureau_code": "ES", 
+    "bureau_name": "Bureau of Environmental Services", 
+    "fiscal_year": "2008-09", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 1207673, 
+    "bureau_code": "GR", 
+    "bureau_name": "Office of Government Relations", 
+    "fiscal_year": "2008-09", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 806, 
+    "bureau_code": "HN", 
+    "bureau_name": "Office of Human Relations", 
+    "fiscal_year": "2008-09", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 767939701, 
+    "bureau_code": "MF", 
+    "bureau_name": "Office of Management & Finance", 
+    "fiscal_year": "2008-09", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 2339014, 
+    "bureau_code": "MY", 
+    "bureau_name": "Office of the Mayor", 
+    "fiscal_year": "2008-09", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 980240, 
+    "bureau_code": "PA", 
+    "bureau_name": "Commissioner of Public Affairs", 
+    "fiscal_year": "2008-09", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "PK", 
+    "bureau_name": "Portland Parks & Recreation", 
+    "fiscal_year": "2008-09", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 2124, 
+    "bureau_code": "PL", 
+    "bureau_name": "Portland Police Bureau", 
+    "fiscal_year": "2008-09", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 690150, 
+    "bureau_code": "PS", 
+    "bureau_name": "Commissioner of Public Safety", 
+    "fiscal_year": "2008-09", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 812459, 
+    "bureau_code": "PU", 
+    "bureau_name": "Commissioner of Public Utilities", 
+    "fiscal_year": "2008-09", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 771886, 
+    "bureau_code": "PW", 
+    "bureau_name": "Commissioner of Public Works", 
+    "fiscal_year": "2008-09", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "ZD", 
+    "bureau_name": "Portland Development Commission", 
+    "fiscal_year": "2008-09", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 68, 
+    "bureau_code": "ES", 
+    "bureau_name": "Bureau of Environmental Services", 
+    "fiscal_year": "2008-09", 
+    "service_area_code": "PR"
+  }, 
+  {
+    "amount": 20056426, 
+    "bureau_code": "MF", 
+    "bureau_name": "Office of Management & Finance", 
+    "fiscal_year": "2008-09", 
+    "service_area_code": "PR"
+  }, 
+  {
+    "amount": 128833287, 
+    "bureau_code": "PK", 
+    "bureau_name": "Portland Parks & Recreation", 
+    "fiscal_year": "2008-09", 
+    "service_area_code": "PR"
+  }, 
+  {
+    "amount": 270, 
+    "bureau_code": "PL", 
+    "bureau_name": "Portland Police Bureau", 
+    "fiscal_year": "2008-09", 
+    "service_area_code": "PR"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "PW", 
+    "bureau_name": "Commissioner of Public Works", 
+    "fiscal_year": "2008-09", 
+    "service_area_code": "PR"
+  }, 
+  {
+    "amount": 137703912, 
+    "bureau_code": "DR", 
+    "bureau_name": "Bureau of Fire & Police Disability & Retirement", 
+    "fiscal_year": "2008-09", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 20757943, 
+    "bureau_code": "EC", 
+    "bureau_name": "Bureau of Emergency Communications", 
+    "fiscal_year": "2008-09", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 2951057, 
+    "bureau_code": "EM", 
+    "bureau_name": "Portland Bureau of Emergency Management", 
+    "fiscal_year": "2008-09", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 2104, 
+    "bureau_code": "ES", 
+    "bureau_name": "Bureau of Environmental Services", 
+    "fiscal_year": "2008-09", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 86192485, 
+    "bureau_code": "FR", 
+    "bureau_name": "Portland Fire & Rescue", 
+    "fiscal_year": "2008-09", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "HC", 
+    "bureau_name": "Portland Housing Bureau", 
+    "fiscal_year": "2008-09", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 27707103, 
+    "bureau_code": "MF", 
+    "bureau_name": "Office of Management & Finance", 
+    "fiscal_year": "2008-09", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 56664, 
+    "bureau_code": "MY", 
+    "bureau_name": "Office of the Mayor", 
+    "fiscal_year": "2008-09", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 1337869, 
+    "bureau_code": "NI", 
+    "bureau_name": "Office of Neighborhood Involvement", 
+    "fiscal_year": "2008-09", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "PA", 
+    "bureau_name": "Commissioner of Public Affairs", 
+    "fiscal_year": "2008-09", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 1239, 
+    "bureau_code": "PK", 
+    "bureau_name": "Portland Parks & Recreation", 
+    "fiscal_year": "2008-09", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 153975887, 
+    "bureau_code": "PL", 
+    "bureau_name": "Portland Police Bureau", 
+    "fiscal_year": "2008-09", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 60, 
+    "bureau_code": "TR", 
+    "bureau_name": "Portland Bureau of Transportation", 
+    "fiscal_year": "2008-09", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "DS", 
+    "bureau_name": "Bureau of Development Services", 
+    "fiscal_year": "2008-09", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 895029979, 
+    "bureau_code": "ES", 
+    "bureau_name": "Bureau of Environmental Services", 
+    "fiscal_year": "2008-09", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "FR", 
+    "bureau_name": "Portland Fire & Rescue", 
+    "fiscal_year": "2008-09", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 257, 
+    "bureau_code": "MF", 
+    "bureau_name": "Office of Management & Finance", 
+    "fiscal_year": "2008-09", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "PK", 
+    "bureau_name": "Portland Parks & Recreation", 
+    "fiscal_year": "2008-09", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 57, 
+    "bureau_code": "PL", 
+    "bureau_name": "Portland Police Bureau", 
+    "fiscal_year": "2008-09", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "TR", 
+    "bureau_name": "Portland Bureau of Transportation", 
+    "fiscal_year": "2008-09", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 355844731, 
+    "bureau_code": "WA", 
+    "bureau_name": "Portland Water Bureau", 
+    "fiscal_year": "2008-09", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 15, 
+    "bureau_code": "FR", 
+    "bureau_name": "Portland Fire & Rescue", 
+    "fiscal_year": "2008-09", 
+    "service_area_code": "TP"
+  }, 
+  {
+    "amount": 47949722, 
+    "bureau_code": "MF", 
+    "bureau_name": "Office of Management & Finance", 
+    "fiscal_year": "2008-09", 
+    "service_area_code": "TP"
+  }, 
+  {
+    "amount": 145428549, 
+    "bureau_code": "TR", 
+    "bureau_name": "Portland Bureau of Transportation", 
+    "fiscal_year": "2008-09", 
+    "service_area_code": "TP"
+  }, 
+  {
+    "amount": 33369981, 
+    "bureau_code": "AU", 
+    "bureau_name": "Office of the City Auditor", 
+    "fiscal_year": "2009-10", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 12746996, 
+    "bureau_code": "CB", 
+    "bureau_name": "Office for Community Technology", 
+    "fiscal_year": "2009-10", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "DR", 
+    "bureau_name": "Bureau of Fire & Police Disability & Retirement", 
+    "fiscal_year": "2009-10", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 30937460, 
+    "bureau_code": "DS", 
+    "bureau_name": "Bureau of Development Services", 
+    "fiscal_year": "2009-10", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 1476, 
+    "bureau_code": "ES", 
+    "bureau_name": "Bureau of Environmental Services", 
+    "fiscal_year": "2009-10", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "FR", 
+    "bureau_name": "Portland Fire & Rescue", 
+    "fiscal_year": "2009-10", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 58383637, 
+    "bureau_code": "HC", 
+    "bureau_name": "Portland Housing Bureau", 
+    "fiscal_year": "2009-10", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 666231, 
+    "bureau_code": "HN", 
+    "bureau_name": "Office of Human Relations", 
+    "fiscal_year": "2009-10", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 93814560, 
+    "bureau_code": "MF", 
+    "bureau_name": "Office of Management & Finance", 
+    "fiscal_year": "2009-10", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "MY", 
+    "bureau_name": "Office of the Mayor", 
+    "fiscal_year": "2009-10", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 5994729, 
+    "bureau_code": "NI", 
+    "bureau_name": "Office of Neighborhood Involvement", 
+    "fiscal_year": "2009-10", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "OE", 
+    "bureau_name": "Office of Equity & Human Rights", 
+    "fiscal_year": "2009-10", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 20210001, 
+    "bureau_code": "PA", 
+    "bureau_name": "Commissioner of Public Affairs", 
+    "fiscal_year": "2009-10", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "PL", 
+    "bureau_name": "Portland Police Bureau", 
+    "fiscal_year": "2009-10", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 23432763, 
+    "bureau_code": "PN", 
+    "bureau_name": "Bureau of Planning & Sustainability", 
+    "fiscal_year": "2009-10", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "PU", 
+    "bureau_name": "Commissioner of Public Utilities", 
+    "fiscal_year": "2009-10", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": -1238876, 
+    "bureau_code": "SD", 
+    "bureau_name": "Office of Sustainable Development", 
+    "fiscal_year": "2009-10", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "TR", 
+    "bureau_name": "Portland Bureau of Transportation", 
+    "fiscal_year": "2009-10", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "ZD", 
+    "bureau_name": "Portland Development Commission", 
+    "fiscal_year": "2009-10", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 8415443, 
+    "bureau_code": "AT", 
+    "bureau_name": "Office of the City Attorney", 
+    "fiscal_year": "2009-10", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 56621878, 
+    "bureau_code": "AU", 
+    "bureau_name": "Office of the City Auditor", 
+    "fiscal_year": "2009-10", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "BO", 
+    "bureau_name": "City Budget Office", 
+    "fiscal_year": "2009-10", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "DS", 
+    "bureau_name": "Bureau of Development Services", 
+    "fiscal_year": "2009-10", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 4363, 
+    "bureau_code": "EC", 
+    "bureau_name": "Bureau of Emergency Communications", 
+    "fiscal_year": "2009-10", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 15987, 
+    "bureau_code": "ES", 
+    "bureau_name": "Bureau of Environmental Services", 
+    "fiscal_year": "2009-10", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 1156883, 
+    "bureau_code": "GR", 
+    "bureau_name": "Office of Government Relations", 
+    "fiscal_year": "2009-10", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "HN", 
+    "bureau_name": "Office of Human Relations", 
+    "fiscal_year": "2009-10", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 778978387, 
+    "bureau_code": "MF", 
+    "bureau_name": "Office of Management & Finance", 
+    "fiscal_year": "2009-10", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 2969969, 
+    "bureau_code": "MY", 
+    "bureau_name": "Office of the Mayor", 
+    "fiscal_year": "2009-10", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 1783517, 
+    "bureau_code": "PA", 
+    "bureau_name": "Commissioner of Public Affairs", 
+    "fiscal_year": "2009-10", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "PK", 
+    "bureau_name": "Portland Parks & Recreation", 
+    "fiscal_year": "2009-10", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": -1213, 
+    "bureau_code": "PL", 
+    "bureau_name": "Portland Police Bureau", 
+    "fiscal_year": "2009-10", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 722952, 
+    "bureau_code": "PS", 
+    "bureau_name": "Commissioner of Public Safety", 
+    "fiscal_year": "2009-10", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 809282, 
+    "bureau_code": "PU", 
+    "bureau_name": "Commissioner of Public Utilities", 
+    "fiscal_year": "2009-10", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 811620, 
+    "bureau_code": "PW", 
+    "bureau_name": "Commissioner of Public Works", 
+    "fiscal_year": "2009-10", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 20171, 
+    "bureau_code": "ZD", 
+    "bureau_name": "Portland Development Commission", 
+    "fiscal_year": "2009-10", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 150, 
+    "bureau_code": "ES", 
+    "bureau_name": "Bureau of Environmental Services", 
+    "fiscal_year": "2009-10", 
+    "service_area_code": "PR"
+  }, 
+  {
+    "amount": 23574544, 
+    "bureau_code": "MF", 
+    "bureau_name": "Office of Management & Finance", 
+    "fiscal_year": "2009-10", 
+    "service_area_code": "PR"
+  }, 
+  {
+    "amount": 104430887, 
+    "bureau_code": "PK", 
+    "bureau_name": "Portland Parks & Recreation", 
+    "fiscal_year": "2009-10", 
+    "service_area_code": "PR"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "PL", 
+    "bureau_name": "Portland Police Bureau", 
+    "fiscal_year": "2009-10", 
+    "service_area_code": "PR"
+  }, 
+  {
+    "amount": 4827, 
+    "bureau_code": "PW", 
+    "bureau_name": "Commissioner of Public Works", 
+    "fiscal_year": "2009-10", 
+    "service_area_code": "PR"
+  }, 
+  {
+    "amount": 144183541, 
+    "bureau_code": "DR", 
+    "bureau_name": "Bureau of Fire & Police Disability & Retirement", 
+    "fiscal_year": "2009-10", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 19970354, 
+    "bureau_code": "EC", 
+    "bureau_name": "Bureau of Emergency Communications", 
+    "fiscal_year": "2009-10", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 399015, 
+    "bureau_code": "EM", 
+    "bureau_name": "Portland Bureau of Emergency Management", 
+    "fiscal_year": "2009-10", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "ES", 
+    "bureau_name": "Bureau of Environmental Services", 
+    "fiscal_year": "2009-10", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 90477518, 
+    "bureau_code": "FR", 
+    "bureau_name": "Portland Fire & Rescue", 
+    "fiscal_year": "2009-10", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "HC", 
+    "bureau_name": "Portland Housing Bureau", 
+    "fiscal_year": "2009-10", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 50951348, 
+    "bureau_code": "MF", 
+    "bureau_name": "Office of Management & Finance", 
+    "fiscal_year": "2009-10", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 1346, 
+    "bureau_code": "MY", 
+    "bureau_name": "Office of the Mayor", 
+    "fiscal_year": "2009-10", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 1338848, 
+    "bureau_code": "NI", 
+    "bureau_name": "Office of Neighborhood Involvement", 
+    "fiscal_year": "2009-10", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 317, 
+    "bureau_code": "PA", 
+    "bureau_name": "Commissioner of Public Affairs", 
+    "fiscal_year": "2009-10", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "PK", 
+    "bureau_name": "Portland Parks & Recreation", 
+    "fiscal_year": "2009-10", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 163561726, 
+    "bureau_code": "PL", 
+    "bureau_name": "Portland Police Bureau", 
+    "fiscal_year": "2009-10", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "TR", 
+    "bureau_name": "Portland Bureau of Transportation", 
+    "fiscal_year": "2009-10", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "DS", 
+    "bureau_name": "Bureau of Development Services", 
+    "fiscal_year": "2009-10", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 909793906, 
+    "bureau_code": "ES", 
+    "bureau_name": "Bureau of Environmental Services", 
+    "fiscal_year": "2009-10", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "FR", 
+    "bureau_name": "Portland Fire & Rescue", 
+    "fiscal_year": "2009-10", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 349, 
+    "bureau_code": "MF", 
+    "bureau_name": "Office of Management & Finance", 
+    "fiscal_year": "2009-10", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "PK", 
+    "bureau_name": "Portland Parks & Recreation", 
+    "fiscal_year": "2009-10", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "PL", 
+    "bureau_name": "Portland Police Bureau", 
+    "fiscal_year": "2009-10", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "TR", 
+    "bureau_name": "Portland Bureau of Transportation", 
+    "fiscal_year": "2009-10", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 393399375, 
+    "bureau_code": "WA", 
+    "bureau_name": "Portland Water Bureau", 
+    "fiscal_year": "2009-10", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "FR", 
+    "bureau_name": "Portland Fire & Rescue", 
+    "fiscal_year": "2009-10", 
+    "service_area_code": "TP"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "MF", 
+    "bureau_name": "Office of Management & Finance", 
+    "fiscal_year": "2009-10", 
+    "service_area_code": "TP"
+  }, 
+  {
+    "amount": 240283972, 
+    "bureau_code": "TR", 
+    "bureau_name": "Portland Bureau of Transportation", 
+    "fiscal_year": "2009-10", 
+    "service_area_code": "TP"
+  }, 
+  {
+    "amount": 14156701, 
+    "bureau_code": "AU", 
+    "bureau_name": "Office of the City Auditor", 
+    "fiscal_year": "2010-11", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 13039472, 
+    "bureau_code": "CB", 
+    "bureau_name": "Office for Community Technology", 
+    "fiscal_year": "2010-11", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "DR", 
+    "bureau_name": "Bureau of Fire & Police Disability & Retirement", 
+    "fiscal_year": "2010-11", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 30674144, 
+    "bureau_code": "DS", 
+    "bureau_name": "Bureau of Development Services", 
+    "fiscal_year": "2010-11", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 3416, 
+    "bureau_code": "ES", 
+    "bureau_name": "Bureau of Environmental Services", 
+    "fiscal_year": "2010-11", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "FR", 
+    "bureau_name": "Portland Fire & Rescue", 
+    "fiscal_year": "2010-11", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 89640180, 
+    "bureau_code": "HC", 
+    "bureau_name": "Portland Housing Bureau", 
+    "fiscal_year": "2010-11", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 520851, 
+    "bureau_code": "HN", 
+    "bureau_name": "Office of Human Relations", 
+    "fiscal_year": "2010-11", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 212910226, 
+    "bureau_code": "MF", 
+    "bureau_name": "Office of Management & Finance", 
+    "fiscal_year": "2010-11", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 368, 
+    "bureau_code": "MY", 
+    "bureau_name": "Office of the Mayor", 
+    "fiscal_year": "2010-11", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 5745624, 
+    "bureau_code": "NI", 
+    "bureau_name": "Office of Neighborhood Involvement", 
+    "fiscal_year": "2010-11", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "OE", 
+    "bureau_name": "Office of Equity & Human Rights", 
+    "fiscal_year": "2010-11", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 19656334, 
+    "bureau_code": "PA", 
+    "bureau_name": "Commissioner of Public Affairs", 
+    "fiscal_year": "2010-11", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": -1113, 
+    "bureau_code": "PL", 
+    "bureau_name": "Portland Police Bureau", 
+    "fiscal_year": "2010-11", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 22700927, 
+    "bureau_code": "PN", 
+    "bureau_name": "Bureau of Planning & Sustainability", 
+    "fiscal_year": "2010-11", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 352, 
+    "bureau_code": "PU", 
+    "bureau_name": "Commissioner of Public Utilities", 
+    "fiscal_year": "2010-11", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": -1228947, 
+    "bureau_code": "SD", 
+    "bureau_name": "Office of Sustainable Development", 
+    "fiscal_year": "2010-11", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "TR", 
+    "bureau_name": "Portland Bureau of Transportation", 
+    "fiscal_year": "2010-11", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 3839959, 
+    "bureau_code": "ZD", 
+    "bureau_name": "Portland Development Commission", 
+    "fiscal_year": "2010-11", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 8426608, 
+    "bureau_code": "AT", 
+    "bureau_name": "Office of the City Attorney", 
+    "fiscal_year": "2010-11", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 37920815, 
+    "bureau_code": "AU", 
+    "bureau_name": "Office of the City Auditor", 
+    "fiscal_year": "2010-11", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "BO", 
+    "bureau_name": "City Budget Office", 
+    "fiscal_year": "2010-11", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "DS", 
+    "bureau_name": "Bureau of Development Services", 
+    "fiscal_year": "2010-11", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "EC", 
+    "bureau_name": "Bureau of Emergency Communications", 
+    "fiscal_year": "2010-11", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "ES", 
+    "bureau_name": "Bureau of Environmental Services", 
+    "fiscal_year": "2010-11", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 1166065, 
+    "bureau_code": "GR", 
+    "bureau_name": "Office of Government Relations", 
+    "fiscal_year": "2010-11", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "HN", 
+    "bureau_name": "Office of Human Relations", 
+    "fiscal_year": "2010-11", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 826525719, 
+    "bureau_code": "MF", 
+    "bureau_name": "Office of Management & Finance", 
+    "fiscal_year": "2010-11", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 2676597, 
+    "bureau_code": "MY", 
+    "bureau_name": "Office of the Mayor", 
+    "fiscal_year": "2010-11", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 1710826, 
+    "bureau_code": "PA", 
+    "bureau_name": "Commissioner of Public Affairs", 
+    "fiscal_year": "2010-11", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "PK", 
+    "bureau_name": "Portland Parks & Recreation", 
+    "fiscal_year": "2010-11", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "PL", 
+    "bureau_name": "Portland Police Bureau", 
+    "fiscal_year": "2010-11", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 725410, 
+    "bureau_code": "PS", 
+    "bureau_name": "Commissioner of Public Safety", 
+    "fiscal_year": "2010-11", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 826847, 
+    "bureau_code": "PU", 
+    "bureau_name": "Commissioner of Public Utilities", 
+    "fiscal_year": "2010-11", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 912192, 
+    "bureau_code": "PW", 
+    "bureau_name": "Commissioner of Public Works", 
+    "fiscal_year": "2010-11", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 200000, 
+    "bureau_code": "ZD", 
+    "bureau_name": "Portland Development Commission", 
+    "fiscal_year": "2010-11", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "ES", 
+    "bureau_name": "Bureau of Environmental Services", 
+    "fiscal_year": "2010-11", 
+    "service_area_code": "PR"
+  }, 
+  {
+    "amount": 29864609, 
+    "bureau_code": "MF", 
+    "bureau_name": "Office of Management & Finance", 
+    "fiscal_year": "2010-11", 
+    "service_area_code": "PR"
+  }, 
+  {
+    "amount": 99030310, 
+    "bureau_code": "PK", 
+    "bureau_name": "Portland Parks & Recreation", 
+    "fiscal_year": "2010-11", 
+    "service_area_code": "PR"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "PL", 
+    "bureau_name": "Portland Police Bureau", 
+    "fiscal_year": "2010-11", 
+    "service_area_code": "PR"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "PW", 
+    "bureau_name": "Commissioner of Public Works", 
+    "fiscal_year": "2010-11", 
+    "service_area_code": "PR"
+  }, 
+  {
+    "amount": 145717349, 
+    "bureau_code": "DR", 
+    "bureau_name": "Bureau of Fire & Police Disability & Retirement", 
+    "fiscal_year": "2010-11", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 20573537, 
+    "bureau_code": "EC", 
+    "bureau_name": "Bureau of Emergency Communications", 
+    "fiscal_year": "2010-11", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 84934, 
+    "bureau_code": "EM", 
+    "bureau_name": "Portland Bureau of Emergency Management", 
+    "fiscal_year": "2010-11", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "ES", 
+    "bureau_name": "Bureau of Environmental Services", 
+    "fiscal_year": "2010-11", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 98396829, 
+    "bureau_code": "FR", 
+    "bureau_name": "Portland Fire & Rescue", 
+    "fiscal_year": "2010-11", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "HC", 
+    "bureau_name": "Portland Housing Bureau", 
+    "fiscal_year": "2010-11", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 51771808, 
+    "bureau_code": "MF", 
+    "bureau_name": "Office of Management & Finance", 
+    "fiscal_year": "2010-11", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 405366, 
+    "bureau_code": "MY", 
+    "bureau_name": "Office of the Mayor", 
+    "fiscal_year": "2010-11", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 1287973, 
+    "bureau_code": "NI", 
+    "bureau_name": "Office of Neighborhood Involvement", 
+    "fiscal_year": "2010-11", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 28500, 
+    "bureau_code": "PA", 
+    "bureau_name": "Commissioner of Public Affairs", 
+    "fiscal_year": "2010-11", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "PK", 
+    "bureau_name": "Portland Parks & Recreation", 
+    "fiscal_year": "2010-11", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 158321850, 
+    "bureau_code": "PL", 
+    "bureau_name": "Portland Police Bureau", 
+    "fiscal_year": "2010-11", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "TR", 
+    "bureau_name": "Portland Bureau of Transportation", 
+    "fiscal_year": "2010-11", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "DS", 
+    "bureau_name": "Bureau of Development Services", 
+    "fiscal_year": "2010-11", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 1254509662, 
+    "bureau_code": "ES", 
+    "bureau_name": "Bureau of Environmental Services", 
+    "fiscal_year": "2010-11", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "FR", 
+    "bureau_name": "Portland Fire & Rescue", 
+    "fiscal_year": "2010-11", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 500940, 
+    "bureau_code": "MF", 
+    "bureau_name": "Office of Management & Finance", 
+    "fiscal_year": "2010-11", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "PK", 
+    "bureau_name": "Portland Parks & Recreation", 
+    "fiscal_year": "2010-11", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "PL", 
+    "bureau_name": "Portland Police Bureau", 
+    "fiscal_year": "2010-11", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "TR", 
+    "bureau_name": "Portland Bureau of Transportation", 
+    "fiscal_year": "2010-11", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 450188200, 
+    "bureau_code": "WA", 
+    "bureau_name": "Portland Water Bureau", 
+    "fiscal_year": "2010-11", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "FR", 
+    "bureau_name": "Portland Fire & Rescue", 
+    "fiscal_year": "2010-11", 
+    "service_area_code": "TP"
+  }, 
+  {
+    "amount": 4592252, 
+    "bureau_code": "MF", 
+    "bureau_name": "Office of Management & Finance", 
+    "fiscal_year": "2010-11", 
+    "service_area_code": "TP"
+  }, 
+  {
+    "amount": 241475110, 
+    "bureau_code": "TR", 
+    "bureau_name": "Portland Bureau of Transportation", 
+    "fiscal_year": "2010-11", 
+    "service_area_code": "TP"
+  }, 
+  {
+    "amount": 13980550, 
+    "bureau_code": "AU", 
+    "bureau_name": "Office of the City Auditor", 
+    "fiscal_year": "2011-12", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 14598438, 
+    "bureau_code": "CB", 
+    "bureau_name": "Office for Community Technology", 
+    "fiscal_year": "2011-12", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "DR", 
+    "bureau_name": "Bureau of Fire & Police Disability & Retirement", 
+    "fiscal_year": "2011-12", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 40164330, 
+    "bureau_code": "DS", 
+    "bureau_name": "Bureau of Development Services", 
+    "fiscal_year": "2011-12", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 41, 
+    "bureau_code": "ES", 
+    "bureau_name": "Bureau of Environmental Services", 
+    "fiscal_year": "2011-12", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "FR", 
+    "bureau_name": "Portland Fire & Rescue", 
+    "fiscal_year": "2011-12", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 85419422, 
+    "bureau_code": "HC", 
+    "bureau_name": "Portland Housing Bureau", 
+    "fiscal_year": "2011-12", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 260210, 
+    "bureau_code": "HN", 
+    "bureau_name": "Office of Human Relations", 
+    "fiscal_year": "2011-12", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 258709001, 
+    "bureau_code": "MF", 
+    "bureau_name": "Office of Management & Finance", 
+    "fiscal_year": "2011-12", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "MY", 
+    "bureau_name": "Office of the Mayor", 
+    "fiscal_year": "2011-12", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 5342425, 
+    "bureau_code": "NI", 
+    "bureau_name": "Office of Neighborhood Involvement", 
+    "fiscal_year": "2011-12", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 414442, 
+    "bureau_code": "OE", 
+    "bureau_name": "Office of Equity & Human Rights", 
+    "fiscal_year": "2011-12", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 15068013, 
+    "bureau_code": "PA", 
+    "bureau_name": "Commissioner of Public Affairs", 
+    "fiscal_year": "2011-12", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 171, 
+    "bureau_code": "PL", 
+    "bureau_name": "Portland Police Bureau", 
+    "fiscal_year": "2011-12", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 30806658, 
+    "bureau_code": "PN", 
+    "bureau_name": "Bureau of Planning & Sustainability", 
+    "fiscal_year": "2011-12", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "PU", 
+    "bureau_name": "Commissioner of Public Utilities", 
+    "fiscal_year": "2011-12", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "SD", 
+    "bureau_name": "Office of Sustainable Development", 
+    "fiscal_year": "2011-12", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "TR", 
+    "bureau_name": "Portland Bureau of Transportation", 
+    "fiscal_year": "2011-12", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 4747295, 
+    "bureau_code": "ZD", 
+    "bureau_name": "Portland Development Commission", 
+    "fiscal_year": "2011-12", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 9127953, 
+    "bureau_code": "AT", 
+    "bureau_name": "Office of the City Attorney", 
+    "fiscal_year": "2011-12", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 33401517, 
+    "bureau_code": "AU", 
+    "bureau_name": "Office of the City Auditor", 
+    "fiscal_year": "2011-12", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "BO", 
+    "bureau_name": "City Budget Office", 
+    "fiscal_year": "2011-12", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 6, 
+    "bureau_code": "DS", 
+    "bureau_name": "Bureau of Development Services", 
+    "fiscal_year": "2011-12", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "EC", 
+    "bureau_name": "Bureau of Emergency Communications", 
+    "fiscal_year": "2011-12", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "ES", 
+    "bureau_name": "Bureau of Environmental Services", 
+    "fiscal_year": "2011-12", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 1247548, 
+    "bureau_code": "GR", 
+    "bureau_name": "Office of Government Relations", 
+    "fiscal_year": "2011-12", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "HN", 
+    "bureau_name": "Office of Human Relations", 
+    "fiscal_year": "2011-12", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 885435442, 
+    "bureau_code": "MF", 
+    "bureau_name": "Office of Management & Finance", 
+    "fiscal_year": "2011-12", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 3396893, 
+    "bureau_code": "MY", 
+    "bureau_name": "Office of the Mayor", 
+    "fiscal_year": "2011-12", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 1594013, 
+    "bureau_code": "PA", 
+    "bureau_name": "Commissioner of Public Affairs", 
+    "fiscal_year": "2011-12", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "PK", 
+    "bureau_name": "Portland Parks & Recreation", 
+    "fiscal_year": "2011-12", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "PL", 
+    "bureau_name": "Portland Police Bureau", 
+    "fiscal_year": "2011-12", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 742113, 
+    "bureau_code": "PS", 
+    "bureau_name": "Commissioner of Public Safety", 
+    "fiscal_year": "2011-12", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 834880, 
+    "bureau_code": "PU", 
+    "bureau_name": "Commissioner of Public Utilities", 
+    "fiscal_year": "2011-12", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 842476, 
+    "bureau_code": "PW", 
+    "bureau_name": "Commissioner of Public Works", 
+    "fiscal_year": "2011-12", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": -16000, 
+    "bureau_code": "ZD", 
+    "bureau_name": "Portland Development Commission", 
+    "fiscal_year": "2011-12", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "ES", 
+    "bureau_name": "Bureau of Environmental Services", 
+    "fiscal_year": "2011-12", 
+    "service_area_code": "PR"
+  }, 
+  {
+    "amount": 32934443, 
+    "bureau_code": "MF", 
+    "bureau_name": "Office of Management & Finance", 
+    "fiscal_year": "2011-12", 
+    "service_area_code": "PR"
+  }, 
+  {
+    "amount": 109347196, 
+    "bureau_code": "PK", 
+    "bureau_name": "Portland Parks & Recreation", 
+    "fiscal_year": "2011-12", 
+    "service_area_code": "PR"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "PL", 
+    "bureau_name": "Portland Police Bureau", 
+    "fiscal_year": "2011-12", 
+    "service_area_code": "PR"
+  }, 
+  {
+    "amount": -4829, 
+    "bureau_code": "PW", 
+    "bureau_name": "Commissioner of Public Works", 
+    "fiscal_year": "2011-12", 
+    "service_area_code": "PR"
+  }, 
+  {
+    "amount": 143551431, 
+    "bureau_code": "DR", 
+    "bureau_name": "Bureau of Fire & Police Disability & Retirement", 
+    "fiscal_year": "2011-12", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 23756915, 
+    "bureau_code": "EC", 
+    "bureau_name": "Bureau of Emergency Communications", 
+    "fiscal_year": "2011-12", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 2604775, 
+    "bureau_code": "EM", 
+    "bureau_name": "Portland Bureau of Emergency Management", 
+    "fiscal_year": "2011-12", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "ES", 
+    "bureau_name": "Bureau of Environmental Services", 
+    "fiscal_year": "2011-12", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 104143778, 
+    "bureau_code": "FR", 
+    "bureau_name": "Portland Fire & Rescue", 
+    "fiscal_year": "2011-12", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "HC", 
+    "bureau_name": "Portland Housing Bureau", 
+    "fiscal_year": "2011-12", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 29513088, 
+    "bureau_code": "MF", 
+    "bureau_name": "Office of Management & Finance", 
+    "fiscal_year": "2011-12", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 579790, 
+    "bureau_code": "MY", 
+    "bureau_name": "Office of the Mayor", 
+    "fiscal_year": "2011-12", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 1371134, 
+    "bureau_code": "NI", 
+    "bureau_name": "Office of Neighborhood Involvement", 
+    "fiscal_year": "2011-12", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 74000, 
+    "bureau_code": "PA", 
+    "bureau_name": "Commissioner of Public Affairs", 
+    "fiscal_year": "2011-12", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "PK", 
+    "bureau_name": "Portland Parks & Recreation", 
+    "fiscal_year": "2011-12", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 174564982, 
+    "bureau_code": "PL", 
+    "bureau_name": "Portland Police Bureau", 
+    "fiscal_year": "2011-12", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "TR", 
+    "bureau_name": "Portland Bureau of Transportation", 
+    "fiscal_year": "2011-12", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "DS", 
+    "bureau_name": "Bureau of Development Services", 
+    "fiscal_year": "2011-12", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 752031050, 
+    "bureau_code": "ES", 
+    "bureau_name": "Bureau of Environmental Services", 
+    "fiscal_year": "2011-12", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "FR", 
+    "bureau_name": "Portland Fire & Rescue", 
+    "fiscal_year": "2011-12", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "MF", 
+    "bureau_name": "Office of Management & Finance", 
+    "fiscal_year": "2011-12", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "PK", 
+    "bureau_name": "Portland Parks & Recreation", 
+    "fiscal_year": "2011-12", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "PL", 
+    "bureau_name": "Portland Police Bureau", 
+    "fiscal_year": "2011-12", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "TR", 
+    "bureau_name": "Portland Bureau of Transportation", 
+    "fiscal_year": "2011-12", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 437178685, 
+    "bureau_code": "WA", 
+    "bureau_name": "Portland Water Bureau", 
+    "fiscal_year": "2011-12", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "FR", 
+    "bureau_name": "Portland Fire & Rescue", 
+    "fiscal_year": "2011-12", 
+    "service_area_code": "TP"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "MF", 
+    "bureau_name": "Office of Management & Finance", 
+    "fiscal_year": "2011-12", 
+    "service_area_code": "TP"
+  }, 
+  {
+    "amount": 237111101, 
+    "bureau_code": "TR", 
+    "bureau_name": "Portland Bureau of Transportation", 
+    "fiscal_year": "2011-12", 
+    "service_area_code": "TP"
+  }, 
+  {
+    "amount": 6525081, 
+    "bureau_code": "AU", 
+    "bureau_name": "Office of the City Auditor", 
+    "fiscal_year": "2012-13", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "CB", 
+    "bureau_name": "Office for Community Technology", 
+    "fiscal_year": "2012-13", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "DR", 
+    "bureau_name": "Bureau of Fire & Police Disability & Retirement", 
+    "fiscal_year": "2012-13", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 54573519, 
+    "bureau_code": "DS", 
+    "bureau_name": "Bureau of Development Services", 
+    "fiscal_year": "2012-13", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "ES", 
+    "bureau_name": "Bureau of Environmental Services", 
+    "fiscal_year": "2012-13", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "FR", 
+    "bureau_name": "Portland Fire & Rescue", 
+    "fiscal_year": "2012-13", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 75805136, 
+    "bureau_code": "HC", 
+    "bureau_name": "Portland Housing Bureau", 
+    "fiscal_year": "2012-13", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "HN", 
+    "bureau_name": "Office of Human Relations", 
+    "fiscal_year": "2012-13", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 140669112, 
+    "bureau_code": "MF", 
+    "bureau_name": "Office of Management & Finance", 
+    "fiscal_year": "2012-13", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "MY", 
+    "bureau_name": "Office of the Mayor", 
+    "fiscal_year": "2012-13", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 5670180, 
+    "bureau_code": "NI", 
+    "bureau_name": "Office of Neighborhood Involvement", 
+    "fiscal_year": "2012-13", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 1149441, 
+    "bureau_code": "OE", 
+    "bureau_name": "Office of Equity & Human Rights", 
+    "fiscal_year": "2012-13", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 11040605, 
+    "bureau_code": "PA", 
+    "bureau_name": "Commissioner of Public Affairs", 
+    "fiscal_year": "2012-13", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "PL", 
+    "bureau_name": "Portland Police Bureau", 
+    "fiscal_year": "2012-13", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 23617973, 
+    "bureau_code": "PN", 
+    "bureau_name": "Bureau of Planning & Sustainability", 
+    "fiscal_year": "2012-13", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "PU", 
+    "bureau_name": "Commissioner of Public Utilities", 
+    "fiscal_year": "2012-13", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "SD", 
+    "bureau_name": "Office of Sustainable Development", 
+    "fiscal_year": "2012-13", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "TR", 
+    "bureau_name": "Portland Bureau of Transportation", 
+    "fiscal_year": "2012-13", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 6067631, 
+    "bureau_code": "ZD", 
+    "bureau_name": "Portland Development Commission", 
+    "fiscal_year": "2012-13", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 8977893, 
+    "bureau_code": "AT", 
+    "bureau_name": "Office of the City Attorney", 
+    "fiscal_year": "2012-13", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 31642800, 
+    "bureau_code": "AU", 
+    "bureau_name": "Office of the City Auditor", 
+    "fiscal_year": "2012-13", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 547956, 
+    "bureau_code": "BO", 
+    "bureau_name": "City Budget Office", 
+    "fiscal_year": "2012-13", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "DS", 
+    "bureau_name": "Bureau of Development Services", 
+    "fiscal_year": "2012-13", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "EC", 
+    "bureau_name": "Bureau of Emergency Communications", 
+    "fiscal_year": "2012-13", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "ES", 
+    "bureau_name": "Bureau of Environmental Services", 
+    "fiscal_year": "2012-13", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 1251889, 
+    "bureau_code": "GR", 
+    "bureau_name": "Office of Government Relations", 
+    "fiscal_year": "2012-13", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "HN", 
+    "bureau_name": "Office of Human Relations", 
+    "fiscal_year": "2012-13", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 822250649, 
+    "bureau_code": "MF", 
+    "bureau_name": "Office of Management & Finance", 
+    "fiscal_year": "2012-13", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 3632649, 
+    "bureau_code": "MY", 
+    "bureau_name": "Office of the Mayor", 
+    "fiscal_year": "2012-13", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 1633035, 
+    "bureau_code": "PA", 
+    "bureau_name": "Commissioner of Public Affairs", 
+    "fiscal_year": "2012-13", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "PK", 
+    "bureau_name": "Portland Parks & Recreation", 
+    "fiscal_year": "2012-13", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "PL", 
+    "bureau_name": "Portland Police Bureau", 
+    "fiscal_year": "2012-13", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 650735, 
+    "bureau_code": "PS", 
+    "bureau_name": "Commissioner of Public Safety", 
+    "fiscal_year": "2012-13", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 842797, 
+    "bureau_code": "PU", 
+    "bureau_name": "Commissioner of Public Utilities", 
+    "fiscal_year": "2012-13", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 872516, 
+    "bureau_code": "PW", 
+    "bureau_name": "Commissioner of Public Works", 
+    "fiscal_year": "2012-13", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 113450, 
+    "bureau_code": "ZD", 
+    "bureau_name": "Portland Development Commission", 
+    "fiscal_year": "2012-13", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "ES", 
+    "bureau_name": "Bureau of Environmental Services", 
+    "fiscal_year": "2012-13", 
+    "service_area_code": "PR"
+  }, 
+  {
+    "amount": 18178145, 
+    "bureau_code": "MF", 
+    "bureau_name": "Office of Management & Finance", 
+    "fiscal_year": "2012-13", 
+    "service_area_code": "PR"
+  }, 
+  {
+    "amount": 124384041, 
+    "bureau_code": "PK", 
+    "bureau_name": "Portland Parks & Recreation", 
+    "fiscal_year": "2012-13", 
+    "service_area_code": "PR"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "PL", 
+    "bureau_name": "Portland Police Bureau", 
+    "fiscal_year": "2012-13", 
+    "service_area_code": "PR"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "PW", 
+    "bureau_name": "Commissioner of Public Works", 
+    "fiscal_year": "2012-13", 
+    "service_area_code": "PR"
+  }, 
+  {
+    "amount": 152449138, 
+    "bureau_code": "DR", 
+    "bureau_name": "Bureau of Fire & Police Disability & Retirement", 
+    "fiscal_year": "2012-13", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 23367664, 
+    "bureau_code": "EC", 
+    "bureau_name": "Bureau of Emergency Communications", 
+    "fiscal_year": "2012-13", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 1942333, 
+    "bureau_code": "EM", 
+    "bureau_name": "Portland Bureau of Emergency Management", 
+    "fiscal_year": "2012-13", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "ES", 
+    "bureau_name": "Bureau of Environmental Services", 
+    "fiscal_year": "2012-13", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 104185290, 
+    "bureau_code": "FR", 
+    "bureau_name": "Portland Fire & Rescue", 
+    "fiscal_year": "2012-13", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "HC", 
+    "bureau_name": "Portland Housing Bureau", 
+    "fiscal_year": "2012-13", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 21701970, 
+    "bureau_code": "MF", 
+    "bureau_name": "Office of Management & Finance", 
+    "fiscal_year": "2012-13", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 427639, 
+    "bureau_code": "MY", 
+    "bureau_name": "Office of the Mayor", 
+    "fiscal_year": "2012-13", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 1338741, 
+    "bureau_code": "NI", 
+    "bureau_name": "Office of Neighborhood Involvement", 
+    "fiscal_year": "2012-13", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 171026, 
+    "bureau_code": "PA", 
+    "bureau_name": "Commissioner of Public Affairs", 
+    "fiscal_year": "2012-13", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "PK", 
+    "bureau_name": "Portland Parks & Recreation", 
+    "fiscal_year": "2012-13", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 169635142, 
+    "bureau_code": "PL", 
+    "bureau_name": "Portland Police Bureau", 
+    "fiscal_year": "2012-13", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "TR", 
+    "bureau_name": "Portland Bureau of Transportation", 
+    "fiscal_year": "2012-13", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "DS", 
+    "bureau_name": "Bureau of Development Services", 
+    "fiscal_year": "2012-13", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 717933181, 
+    "bureau_code": "ES", 
+    "bureau_name": "Bureau of Environmental Services", 
+    "fiscal_year": "2012-13", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "FR", 
+    "bureau_name": "Portland Fire & Rescue", 
+    "fiscal_year": "2012-13", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "MF", 
+    "bureau_name": "Office of Management & Finance", 
+    "fiscal_year": "2012-13", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "PK", 
+    "bureau_name": "Portland Parks & Recreation", 
+    "fiscal_year": "2012-13", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "PL", 
+    "bureau_name": "Portland Police Bureau", 
+    "fiscal_year": "2012-13", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "TR", 
+    "bureau_name": "Portland Bureau of Transportation", 
+    "fiscal_year": "2012-13", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 819882375, 
+    "bureau_code": "WA", 
+    "bureau_name": "Portland Water Bureau", 
+    "fiscal_year": "2012-13", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "FR", 
+    "bureau_name": "Portland Fire & Rescue", 
+    "fiscal_year": "2012-13", 
+    "service_area_code": "TP"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "MF", 
+    "bureau_name": "Office of Management & Finance", 
+    "fiscal_year": "2012-13", 
+    "service_area_code": "TP"
+  }, 
+  {
+    "amount": 238643517, 
+    "bureau_code": "TR", 
+    "bureau_name": "Portland Bureau of Transportation", 
+    "fiscal_year": "2012-13", 
+    "service_area_code": "TP"
+  }, 
+  {
+    "amount": 14069669, 
+    "bureau_code": "AU", 
+    "bureau_name": "Office of the City Auditor", 
+    "fiscal_year": "2013-14", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "CB", 
+    "bureau_name": "Office for Community Technology", 
+    "fiscal_year": "2013-14", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "DR", 
+    "bureau_name": "Bureau of Fire & Police Disability & Retirement", 
+    "fiscal_year": "2013-14", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 73147581, 
+    "bureau_code": "DS", 
+    "bureau_name": "Bureau of Development Services", 
+    "fiscal_year": "2013-14", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 73, 
+    "bureau_code": "ES", 
+    "bureau_name": "Bureau of Environmental Services", 
+    "fiscal_year": "2013-14", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 26, 
+    "bureau_code": "FR", 
+    "bureau_name": "Portland Fire & Rescue", 
+    "fiscal_year": "2013-14", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 50938858, 
+    "bureau_code": "HC", 
+    "bureau_name": "Portland Housing Bureau", 
+    "fiscal_year": "2013-14", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "HN", 
+    "bureau_name": "Office of Human Relations", 
+    "fiscal_year": "2013-14", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 92807277, 
+    "bureau_code": "MF", 
+    "bureau_name": "Office of Management & Finance", 
+    "fiscal_year": "2013-14", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "MY", 
+    "bureau_name": "Office of the Mayor", 
+    "fiscal_year": "2013-14", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 5742828, 
+    "bureau_code": "NI", 
+    "bureau_name": "Office of Neighborhood Involvement", 
+    "fiscal_year": "2013-14", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 1428905, 
+    "bureau_code": "OE", 
+    "bureau_name": "Office of Equity & Human Rights", 
+    "fiscal_year": "2013-14", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 11107735, 
+    "bureau_code": "PA", 
+    "bureau_name": "Commissioner of Public Affairs", 
+    "fiscal_year": "2013-14", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "PL", 
+    "bureau_name": "Portland Police Bureau", 
+    "fiscal_year": "2013-14", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 15923874, 
+    "bureau_code": "PN", 
+    "bureau_name": "Bureau of Planning & Sustainability", 
+    "fiscal_year": "2013-14", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "PU", 
+    "bureau_name": "Commissioner of Public Utilities", 
+    "fiscal_year": "2013-14", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "SD", 
+    "bureau_name": "Office of Sustainable Development", 
+    "fiscal_year": "2013-14", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "TR", 
+    "bureau_name": "Portland Bureau of Transportation", 
+    "fiscal_year": "2013-14", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 4507920, 
+    "bureau_code": "ZD", 
+    "bureau_name": "Portland Development Commission", 
+    "fiscal_year": "2013-14", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 9599607, 
+    "bureau_code": "AT", 
+    "bureau_name": "Office of the City Attorney", 
+    "fiscal_year": "2013-14", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 43069624, 
+    "bureau_code": "AU", 
+    "bureau_name": "Office of the City Auditor", 
+    "fiscal_year": "2013-14", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 1816713, 
+    "bureau_code": "BO", 
+    "bureau_name": "City Budget Office", 
+    "fiscal_year": "2013-14", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "DS", 
+    "bureau_name": "Bureau of Development Services", 
+    "fiscal_year": "2013-14", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "EC", 
+    "bureau_name": "Bureau of Emergency Communications", 
+    "fiscal_year": "2013-14", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 1022, 
+    "bureau_code": "ES", 
+    "bureau_name": "Bureau of Environmental Services", 
+    "fiscal_year": "2013-14", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 1168302, 
+    "bureau_code": "GR", 
+    "bureau_name": "Office of Government Relations", 
+    "fiscal_year": "2013-14", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "HN", 
+    "bureau_name": "Office of Human Relations", 
+    "fiscal_year": "2013-14", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 853313863, 
+    "bureau_code": "MF", 
+    "bureau_name": "Office of Management & Finance", 
+    "fiscal_year": "2013-14", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 2002634, 
+    "bureau_code": "MY", 
+    "bureau_name": "Office of the Mayor", 
+    "fiscal_year": "2013-14", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 1574066, 
+    "bureau_code": "PA", 
+    "bureau_name": "Commissioner of Public Affairs", 
+    "fiscal_year": "2013-14", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "PK", 
+    "bureau_name": "Portland Parks & Recreation", 
+    "fiscal_year": "2013-14", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "PL", 
+    "bureau_name": "Portland Police Bureau", 
+    "fiscal_year": "2013-14", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 790806, 
+    "bureau_code": "PS", 
+    "bureau_name": "Commissioner of Public Safety", 
+    "fiscal_year": "2013-14", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 914513, 
+    "bureau_code": "PU", 
+    "bureau_name": "Commissioner of Public Utilities", 
+    "fiscal_year": "2013-14", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 877254, 
+    "bureau_code": "PW", 
+    "bureau_name": "Commissioner of Public Works", 
+    "fiscal_year": "2013-14", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 352271, 
+    "bureau_code": "ZD", 
+    "bureau_name": "Portland Development Commission", 
+    "fiscal_year": "2013-14", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "ES", 
+    "bureau_name": "Bureau of Environmental Services", 
+    "fiscal_year": "2013-14", 
+    "service_area_code": "PR"
+  }, 
+  {
+    "amount": 36185670, 
+    "bureau_code": "MF", 
+    "bureau_name": "Office of Management & Finance", 
+    "fiscal_year": "2013-14", 
+    "service_area_code": "PR"
+  }, 
+  {
+    "amount": 140838221, 
+    "bureau_code": "PK", 
+    "bureau_name": "Portland Parks & Recreation", 
+    "fiscal_year": "2013-14", 
+    "service_area_code": "PR"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "PL", 
+    "bureau_name": "Portland Police Bureau", 
+    "fiscal_year": "2013-14", 
+    "service_area_code": "PR"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "PW", 
+    "bureau_name": "Commissioner of Public Works", 
+    "fiscal_year": "2013-14", 
+    "service_area_code": "PR"
+  }, 
+  {
+    "amount": 162389491, 
+    "bureau_code": "DR", 
+    "bureau_name": "Bureau of Fire & Police Disability & Retirement", 
+    "fiscal_year": "2013-14", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 23346735, 
+    "bureau_code": "EC", 
+    "bureau_name": "Bureau of Emergency Communications", 
+    "fiscal_year": "2013-14", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 510559, 
+    "bureau_code": "EM", 
+    "bureau_name": "Portland Bureau of Emergency Management", 
+    "fiscal_year": "2013-14", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "ES", 
+    "bureau_name": "Bureau of Environmental Services", 
+    "fiscal_year": "2013-14", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 98589187, 
+    "bureau_code": "FR", 
+    "bureau_name": "Portland Fire & Rescue", 
+    "fiscal_year": "2013-14", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "HC", 
+    "bureau_name": "Portland Housing Bureau", 
+    "fiscal_year": "2013-14", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 40251353, 
+    "bureau_code": "MF", 
+    "bureau_name": "Office of Management & Finance", 
+    "fiscal_year": "2013-14", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 421093, 
+    "bureau_code": "MY", 
+    "bureau_name": "Office of the Mayor", 
+    "fiscal_year": "2013-14", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 1372922, 
+    "bureau_code": "NI", 
+    "bureau_name": "Office of Neighborhood Involvement", 
+    "fiscal_year": "2013-14", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 26474, 
+    "bureau_code": "PA", 
+    "bureau_name": "Commissioner of Public Affairs", 
+    "fiscal_year": "2013-14", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "PK", 
+    "bureau_name": "Portland Parks & Recreation", 
+    "fiscal_year": "2013-14", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 169435128, 
+    "bureau_code": "PL", 
+    "bureau_name": "Portland Police Bureau", 
+    "fiscal_year": "2013-14", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "TR", 
+    "bureau_name": "Portland Bureau of Transportation", 
+    "fiscal_year": "2013-14", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "DS", 
+    "bureau_name": "Bureau of Development Services", 
+    "fiscal_year": "2013-14", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 936308071, 
+    "bureau_code": "ES", 
+    "bureau_name": "Bureau of Environmental Services", 
+    "fiscal_year": "2013-14", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "FR", 
+    "bureau_name": "Portland Fire & Rescue", 
+    "fiscal_year": "2013-14", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "MF", 
+    "bureau_name": "Office of Management & Finance", 
+    "fiscal_year": "2013-14", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "PK", 
+    "bureau_name": "Portland Parks & Recreation", 
+    "fiscal_year": "2013-14", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "PL", 
+    "bureau_name": "Portland Police Bureau", 
+    "fiscal_year": "2013-14", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "TR", 
+    "bureau_name": "Portland Bureau of Transportation", 
+    "fiscal_year": "2013-14", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 645773602, 
+    "bureau_code": "WA", 
+    "bureau_name": "Portland Water Bureau", 
+    "fiscal_year": "2013-14", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "FR", 
+    "bureau_name": "Portland Fire & Rescue", 
+    "fiscal_year": "2013-14", 
+    "service_area_code": "TP"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "MF", 
+    "bureau_name": "Office of Management & Finance", 
+    "fiscal_year": "2013-14", 
+    "service_area_code": "TP"
+  }, 
+  {
+    "amount": 273179274, 
+    "bureau_code": "TR", 
+    "bureau_name": "Portland Bureau of Transportation", 
+    "fiscal_year": "2013-14", 
+    "service_area_code": "TP"
+  }, 
+  {
+    "amount": 5085506, 
+    "bureau_code": "AU", 
+    "bureau_name": "Office of the City Auditor", 
+    "fiscal_year": "2014-15", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "CB", 
+    "bureau_name": "Office for Community Technology", 
+    "fiscal_year": "2014-15", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "DR", 
+    "bureau_name": "Bureau of Fire & Police Disability & Retirement", 
+    "fiscal_year": "2014-15", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 93304186, 
+    "bureau_code": "DS", 
+    "bureau_name": "Bureau of Development Services", 
+    "fiscal_year": "2014-15", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 667, 
+    "bureau_code": "ES", 
+    "bureau_name": "Bureau of Environmental Services", 
+    "fiscal_year": "2014-15", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "FR", 
+    "bureau_name": "Portland Fire & Rescue", 
+    "fiscal_year": "2014-15", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 81012367, 
+    "bureau_code": "HC", 
+    "bureau_name": "Portland Housing Bureau", 
+    "fiscal_year": "2014-15", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "HN", 
+    "bureau_name": "Office of Human Relations", 
+    "fiscal_year": "2014-15", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 80913489, 
+    "bureau_code": "MF", 
+    "bureau_name": "Office of Management & Finance", 
+    "fiscal_year": "2014-15", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "MY", 
+    "bureau_name": "Office of the Mayor", 
+    "fiscal_year": "2014-15", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 6421528, 
+    "bureau_code": "NI", 
+    "bureau_name": "Office of Neighborhood Involvement", 
+    "fiscal_year": "2014-15", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 1616842, 
+    "bureau_code": "OE", 
+    "bureau_name": "Office of Equity & Human Rights", 
+    "fiscal_year": "2014-15", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 14835526, 
+    "bureau_code": "PA", 
+    "bureau_name": "Commissioner of Public Affairs", 
+    "fiscal_year": "2014-15", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "PL", 
+    "bureau_name": "Portland Police Bureau", 
+    "fiscal_year": "2014-15", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 17008321, 
+    "bureau_code": "PN", 
+    "bureau_name": "Bureau of Planning & Sustainability", 
+    "fiscal_year": "2014-15", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "PU", 
+    "bureau_name": "Commissioner of Public Utilities", 
+    "fiscal_year": "2014-15", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "SD", 
+    "bureau_name": "Office of Sustainable Development", 
+    "fiscal_year": "2014-15", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "TR", 
+    "bureau_name": "Portland Bureau of Transportation", 
+    "fiscal_year": "2014-15", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 5297524, 
+    "bureau_code": "ZD", 
+    "bureau_name": "Portland Development Commission", 
+    "fiscal_year": "2014-15", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 10852497, 
+    "bureau_code": "AT", 
+    "bureau_name": "Office of the City Attorney", 
+    "fiscal_year": "2014-15", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 32830018, 
+    "bureau_code": "AU", 
+    "bureau_name": "Office of the City Auditor", 
+    "fiscal_year": "2014-15", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 1915924, 
+    "bureau_code": "BO", 
+    "bureau_name": "City Budget Office", 
+    "fiscal_year": "2014-15", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "DS", 
+    "bureau_name": "Bureau of Development Services", 
+    "fiscal_year": "2014-15", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "EC", 
+    "bureau_name": "Bureau of Emergency Communications", 
+    "fiscal_year": "2014-15", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "ES", 
+    "bureau_name": "Bureau of Environmental Services", 
+    "fiscal_year": "2014-15", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 1372388, 
+    "bureau_code": "GR", 
+    "bureau_name": "Office of Government Relations", 
+    "fiscal_year": "2014-15", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "HN", 
+    "bureau_name": "Office of Human Relations", 
+    "fiscal_year": "2014-15", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 837730891, 
+    "bureau_code": "MF", 
+    "bureau_name": "Office of Management & Finance", 
+    "fiscal_year": "2014-15", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 2516499, 
+    "bureau_code": "MY", 
+    "bureau_name": "Office of the Mayor", 
+    "fiscal_year": "2014-15", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 1540779, 
+    "bureau_code": "PA", 
+    "bureau_name": "Commissioner of Public Affairs", 
+    "fiscal_year": "2014-15", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "PK", 
+    "bureau_name": "Portland Parks & Recreation", 
+    "fiscal_year": "2014-15", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "PL", 
+    "bureau_name": "Portland Police Bureau", 
+    "fiscal_year": "2014-15", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 904369, 
+    "bureau_code": "PS", 
+    "bureau_name": "Commissioner of Public Safety", 
+    "fiscal_year": "2014-15", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 891132, 
+    "bureau_code": "PU", 
+    "bureau_name": "Commissioner of Public Utilities", 
+    "fiscal_year": "2014-15", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 905002, 
+    "bureau_code": "PW", 
+    "bureau_name": "Commissioner of Public Works", 
+    "fiscal_year": "2014-15", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 449092, 
+    "bureau_code": "ZD", 
+    "bureau_name": "Portland Development Commission", 
+    "fiscal_year": "2014-15", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "ES", 
+    "bureau_name": "Bureau of Environmental Services", 
+    "fiscal_year": "2014-15", 
+    "service_area_code": "PR"
+  }, 
+  {
+    "amount": 19400029, 
+    "bureau_code": "MF", 
+    "bureau_name": "Office of Management & Finance", 
+    "fiscal_year": "2014-15", 
+    "service_area_code": "PR"
+  }, 
+  {
+    "amount": 154066617, 
+    "bureau_code": "PK", 
+    "bureau_name": "Portland Parks & Recreation", 
+    "fiscal_year": "2014-15", 
+    "service_area_code": "PR"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "PL", 
+    "bureau_name": "Portland Police Bureau", 
+    "fiscal_year": "2014-15", 
+    "service_area_code": "PR"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "PW", 
+    "bureau_name": "Commissioner of Public Works", 
+    "fiscal_year": "2014-15", 
+    "service_area_code": "PR"
+  }, 
+  {
+    "amount": 164286502, 
+    "bureau_code": "DR", 
+    "bureau_name": "Bureau of Fire & Police Disability & Retirement", 
+    "fiscal_year": "2014-15", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 25648759, 
+    "bureau_code": "EC", 
+    "bureau_name": "Bureau of Emergency Communications", 
+    "fiscal_year": "2014-15", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": -435600, 
+    "bureau_code": "EM", 
+    "bureau_name": "Portland Bureau of Emergency Management", 
+    "fiscal_year": "2014-15", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "ES", 
+    "bureau_name": "Bureau of Environmental Services", 
+    "fiscal_year": "2014-15", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 106020212, 
+    "bureau_code": "FR", 
+    "bureau_name": "Portland Fire & Rescue", 
+    "fiscal_year": "2014-15", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "HC", 
+    "bureau_name": "Portland Housing Bureau", 
+    "fiscal_year": "2014-15", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 49118802, 
+    "bureau_code": "MF", 
+    "bureau_name": "Office of Management & Finance", 
+    "fiscal_year": "2014-15", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 7791, 
+    "bureau_code": "MY", 
+    "bureau_name": "Office of the Mayor", 
+    "fiscal_year": "2014-15", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 1388199, 
+    "bureau_code": "NI", 
+    "bureau_name": "Office of Neighborhood Involvement", 
+    "fiscal_year": "2014-15", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "PA", 
+    "bureau_name": "Commissioner of Public Affairs", 
+    "fiscal_year": "2014-15", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "PK", 
+    "bureau_name": "Portland Parks & Recreation", 
+    "fiscal_year": "2014-15", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 182510373, 
+    "bureau_code": "PL", 
+    "bureau_name": "Portland Police Bureau", 
+    "fiscal_year": "2014-15", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "TR", 
+    "bureau_name": "Portland Bureau of Transportation", 
+    "fiscal_year": "2014-15", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 60, 
+    "bureau_code": "DS", 
+    "bureau_name": "Bureau of Development Services", 
+    "fiscal_year": "2014-15", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 1111002628, 
+    "bureau_code": "ES", 
+    "bureau_name": "Bureau of Environmental Services", 
+    "fiscal_year": "2014-15", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "FR", 
+    "bureau_name": "Portland Fire & Rescue", 
+    "fiscal_year": "2014-15", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 26871, 
+    "bureau_code": "MF", 
+    "bureau_name": "Office of Management & Finance", 
+    "fiscal_year": "2014-15", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "PK", 
+    "bureau_name": "Portland Parks & Recreation", 
+    "fiscal_year": "2014-15", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "PL", 
+    "bureau_name": "Portland Police Bureau", 
+    "fiscal_year": "2014-15", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 2500, 
+    "bureau_code": "TR", 
+    "bureau_name": "Portland Bureau of Transportation", 
+    "fiscal_year": "2014-15", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 617173564, 
+    "bureau_code": "WA", 
+    "bureau_name": "Portland Water Bureau", 
+    "fiscal_year": "2014-15", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "FR", 
+    "bureau_name": "Portland Fire & Rescue", 
+    "fiscal_year": "2014-15", 
+    "service_area_code": "TP"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "MF", 
+    "bureau_name": "Office of Management & Finance", 
+    "fiscal_year": "2014-15", 
+    "service_area_code": "TP"
+  }, 
+  {
+    "amount": 269265273, 
+    "bureau_code": "TR", 
+    "bureau_name": "Portland Bureau of Transportation", 
+    "fiscal_year": "2014-15", 
+    "service_area_code": "TP"
+  }, 
+  {
+    "amount": 5416450, 
+    "bureau_code": "AU", 
+    "bureau_name": "Office of the City Auditor", 
+    "fiscal_year": "2015-16", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "CB", 
+    "bureau_name": "Office for Community Technology", 
+    "fiscal_year": "2015-16", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "DR", 
+    "bureau_name": "Bureau of Fire & Police Disability & Retirement", 
+    "fiscal_year": "2015-16", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 119860464, 
+    "bureau_code": "DS", 
+    "bureau_name": "Bureau of Development Services", 
+    "fiscal_year": "2015-16", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "ES", 
+    "bureau_name": "Bureau of Environmental Services", 
+    "fiscal_year": "2015-16", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "FR", 
+    "bureau_name": "Portland Fire & Rescue", 
+    "fiscal_year": "2015-16", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 82426526, 
+    "bureau_code": "HC", 
+    "bureau_name": "Portland Housing Bureau", 
+    "fiscal_year": "2015-16", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "HN", 
+    "bureau_name": "Office of Human Relations", 
+    "fiscal_year": "2015-16", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 111121302, 
+    "bureau_code": "MF", 
+    "bureau_name": "Office of Management & Finance", 
+    "fiscal_year": "2015-16", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "MY", 
+    "bureau_name": "Office of the Mayor", 
+    "fiscal_year": "2015-16", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 7385286, 
+    "bureau_code": "NI", 
+    "bureau_name": "Office of Neighborhood Involvement", 
+    "fiscal_year": "2015-16", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 1834795, 
+    "bureau_code": "OE", 
+    "bureau_name": "Office of Equity & Human Rights", 
+    "fiscal_year": "2015-16", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 19311870, 
+    "bureau_code": "PA", 
+    "bureau_name": "Commissioner of Public Affairs", 
+    "fiscal_year": "2015-16", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "PL", 
+    "bureau_name": "Portland Police Bureau", 
+    "fiscal_year": "2015-16", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 18467151, 
+    "bureau_code": "PN", 
+    "bureau_name": "Bureau of Planning & Sustainability", 
+    "fiscal_year": "2015-16", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "PU", 
+    "bureau_name": "Commissioner of Public Utilities", 
+    "fiscal_year": "2015-16", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "SD", 
+    "bureau_name": "Office of Sustainable Development", 
+    "fiscal_year": "2015-16", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "TR", 
+    "bureau_name": "Portland Bureau of Transportation", 
+    "fiscal_year": "2015-16", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 6975474, 
+    "bureau_code": "ZD", 
+    "bureau_name": "Portland Development Commission", 
+    "fiscal_year": "2015-16", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 10767908, 
+    "bureau_code": "AT", 
+    "bureau_name": "Office of the City Attorney", 
+    "fiscal_year": "2015-16", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 34435490, 
+    "bureau_code": "AU", 
+    "bureau_name": "Office of the City Auditor", 
+    "fiscal_year": "2015-16", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 2167866, 
+    "bureau_code": "BO", 
+    "bureau_name": "City Budget Office", 
+    "fiscal_year": "2015-16", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "DS", 
+    "bureau_name": "Bureau of Development Services", 
+    "fiscal_year": "2015-16", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "EC", 
+    "bureau_name": "Bureau of Emergency Communications", 
+    "fiscal_year": "2015-16", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": -2441441, 
+    "bureau_code": "ES", 
+    "bureau_name": "Bureau of Environmental Services", 
+    "fiscal_year": "2015-16", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 1508436, 
+    "bureau_code": "GR", 
+    "bureau_name": "Office of Government Relations", 
+    "fiscal_year": "2015-16", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "HN", 
+    "bureau_name": "Office of Human Relations", 
+    "fiscal_year": "2015-16", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 857759088, 
+    "bureau_code": "MF", 
+    "bureau_name": "Office of Management & Finance", 
+    "fiscal_year": "2015-16", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 3191118, 
+    "bureau_code": "MY", 
+    "bureau_name": "Office of the Mayor", 
+    "fiscal_year": "2015-16", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 1703925, 
+    "bureau_code": "PA", 
+    "bureau_name": "Commissioner of Public Affairs", 
+    "fiscal_year": "2015-16", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 7, 
+    "bureau_code": "PK", 
+    "bureau_name": "Portland Parks & Recreation", 
+    "fiscal_year": "2015-16", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "PL", 
+    "bureau_name": "Portland Police Bureau", 
+    "fiscal_year": "2015-16", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 964492, 
+    "bureau_code": "PS", 
+    "bureau_name": "Commissioner of Public Safety", 
+    "fiscal_year": "2015-16", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 912233, 
+    "bureau_code": "PU", 
+    "bureau_name": "Commissioner of Public Utilities", 
+    "fiscal_year": "2015-16", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 948772, 
+    "bureau_code": "PW", 
+    "bureau_name": "Commissioner of Public Works", 
+    "fiscal_year": "2015-16", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 48221, 
+    "bureau_code": "ZD", 
+    "bureau_name": "Portland Development Commission", 
+    "fiscal_year": "2015-16", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "ES", 
+    "bureau_name": "Bureau of Environmental Services", 
+    "fiscal_year": "2015-16", 
+    "service_area_code": "PR"
+  }, 
+  {
+    "amount": 15008555, 
+    "bureau_code": "MF", 
+    "bureau_name": "Office of Management & Finance", 
+    "fiscal_year": "2015-16", 
+    "service_area_code": "PR"
+  }, 
+  {
+    "amount": 204562978, 
+    "bureau_code": "PK", 
+    "bureau_name": "Portland Parks & Recreation", 
+    "fiscal_year": "2015-16", 
+    "service_area_code": "PR"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "PL", 
+    "bureau_name": "Portland Police Bureau", 
+    "fiscal_year": "2015-16", 
+    "service_area_code": "PR"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "PW", 
+    "bureau_name": "Commissioner of Public Works", 
+    "fiscal_year": "2015-16", 
+    "service_area_code": "PR"
+  }, 
+  {
+    "amount": 167441952, 
+    "bureau_code": "DR", 
+    "bureau_name": "Bureau of Fire & Police Disability & Retirement", 
+    "fiscal_year": "2015-16", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 25565590, 
+    "bureau_code": "EC", 
+    "bureau_name": "Bureau of Emergency Communications", 
+    "fiscal_year": "2015-16", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": -640373, 
+    "bureau_code": "EM", 
+    "bureau_name": "Portland Bureau of Emergency Management", 
+    "fiscal_year": "2015-16", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "ES", 
+    "bureau_name": "Bureau of Environmental Services", 
+    "fiscal_year": "2015-16", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 118731825, 
+    "bureau_code": "FR", 
+    "bureau_name": "Portland Fire & Rescue", 
+    "fiscal_year": "2015-16", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 746510, 
+    "bureau_code": "HC", 
+    "bureau_name": "Portland Housing Bureau", 
+    "fiscal_year": "2015-16", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 26302753, 
+    "bureau_code": "MF", 
+    "bureau_name": "Office of Management & Finance", 
+    "fiscal_year": "2015-16", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 11628, 
+    "bureau_code": "MY", 
+    "bureau_name": "Office of the Mayor", 
+    "fiscal_year": "2015-16", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 1523842, 
+    "bureau_code": "NI", 
+    "bureau_name": "Office of Neighborhood Involvement", 
+    "fiscal_year": "2015-16", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "PA", 
+    "bureau_name": "Commissioner of Public Affairs", 
+    "fiscal_year": "2015-16", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "PK", 
+    "bureau_name": "Portland Parks & Recreation", 
+    "fiscal_year": "2015-16", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 190420974, 
+    "bureau_code": "PL", 
+    "bureau_name": "Portland Police Bureau", 
+    "fiscal_year": "2015-16", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "TR", 
+    "bureau_name": "Portland Bureau of Transportation", 
+    "fiscal_year": "2015-16", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "DS", 
+    "bureau_name": "Bureau of Development Services", 
+    "fiscal_year": "2015-16", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 1428626976, 
+    "bureau_code": "ES", 
+    "bureau_name": "Bureau of Environmental Services", 
+    "fiscal_year": "2015-16", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": -458649, 
+    "bureau_code": "FR", 
+    "bureau_name": "Portland Fire & Rescue", 
+    "fiscal_year": "2015-16", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "MF", 
+    "bureau_name": "Office of Management & Finance", 
+    "fiscal_year": "2015-16", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "PK", 
+    "bureau_name": "Portland Parks & Recreation", 
+    "fiscal_year": "2015-16", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "PL", 
+    "bureau_name": "Portland Police Bureau", 
+    "fiscal_year": "2015-16", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "TR", 
+    "bureau_name": "Portland Bureau of Transportation", 
+    "fiscal_year": "2015-16", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 557774933, 
+    "bureau_code": "WA", 
+    "bureau_name": "Portland Water Bureau", 
+    "fiscal_year": "2015-16", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "FR", 
+    "bureau_name": "Portland Fire & Rescue", 
+    "fiscal_year": "2015-16", 
+    "service_area_code": "TP"
+  }, 
+  {
+    "amount": 0, 
+    "bureau_code": "MF", 
+    "bureau_name": "Office of Management & Finance", 
+    "fiscal_year": "2015-16", 
+    "service_area_code": "TP"
+  }, 
+  {
+    "amount": 336629241, 
+    "bureau_code": "TR", 
+    "bureau_name": "Portland Bureau of Transportation", 
+    "fiscal_year": "2015-16", 
+    "service_area_code": "TP"
+  }
+]

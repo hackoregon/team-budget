@@ -1,0 +1,32 @@
+Package: PDXBudgetExplorer
+Type: Package
+Title: Web app for exploring the Portland City Budget
+Version: 0.1.0
+Date: 2017-04-23
+Author: person("Hack", "Oregon", email = "hello@hackoregon.org", role = c("aut", "cre"))
+Description: This web application uses Hack Oregon's budget web service (http://service.civicpdx.org/endpoints/) to access historical data for the City of Portland, Oregon's budget (https://www.portlandoregon.gov/cbo/).
+License: file LICENSE
+Copyright: 2017 Hack Oregon
+Encoding: UTF-8
+LazyData: TRUE
+Depends:
+    R (>= 3.3.3)
+Imports:
+    forcats (>= 0.2.0),
+    hrbrthemes (>= 0.1.0),
+    httr (>= 1.2.1),
+    jsonlite (>= 1.4),
+    lubridate (>= 1.6.0),
+    magrittr (>= 1.5),
+    scales (>= 0.4.1),
+    shiny (>= 1.0.2),
+    stringr (>= 1.2.0),
+    tidyverse (>= 1.1.1)
+Suggests:
+    devtools,
+    knitr,
+    rmarkdown,
+    roxygen2,
+    testthat
+RoxygenNote: 6.0.1
+VignetteBuilder: knitr

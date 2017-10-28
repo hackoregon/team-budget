@@ -1,0 +1,32 @@
+[
+  {
+    "code": "CD", 
+    "code_type": "service_area_code", 
+    "description": "Community Development"
+  }, 
+  {
+    "code": "LA", 
+    "code_type": "service_area_code", 
+    "description": "Legislative, Administrative, & Support"
+  }, 
+  {
+    "code": "PR", 
+    "code_type": "service_area_code", 
+    "description": "Parks, Recreation, & Culture"
+  }, 
+  {
+    "code": "PS", 
+    "code_type": "service_area_code", 
+    "description": "Public Safety"
+  }, 
+  {
+    "code": "PU", 
+    "code_type": "service_area_code", 
+    "description": "Public Utilities"
+  }, 
+  {
+    "code": "TP", 
+    "code_type": "service_area_code", 
+    "description": "Transportation & Parking"
+  }
+]

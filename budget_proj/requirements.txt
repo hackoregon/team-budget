@@ -1,13 +1,4 @@
 # This file is required at least to support the Docker build
-appdirs==1.4.0
-Django==1.10.5
-django-filter==1.0.1
-django-rest-swagger==2.1.1
-djangorestframework==3.5.4
-packaging==16.8
-psycopg2==2.7
-pyparsing==2.1.10
-requests==2.13.0
-six==1.10.0
+# It is now just a mirror of requirements/prod.txt for legacy purposes
 
-gunicorn
+-r requirements/prod.txt

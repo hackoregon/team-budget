@@ -1,0 +1,2582 @@
+[
+  {
+    "amount": 47653671, 
+    "fiscal_year": "2006-07", 
+    "object_code": "BOND", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 24500, 
+    "fiscal_year": "2006-07", 
+    "object_code": "CAPITAL", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 64847698, 
+    "fiscal_year": "2006-07", 
+    "object_code": "EMS", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 52524064, 
+    "fiscal_year": "2006-07", 
+    "object_code": "ENDBAL", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 4445828, 
+    "fiscal_year": "2006-07", 
+    "object_code": "FNDXFER", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 14338768, 
+    "fiscal_year": "2006-07", 
+    "object_code": "IMS", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 39920503, 
+    "fiscal_year": "2006-07", 
+    "object_code": "PERSONAL", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 126664308, 
+    "fiscal_year": "2006-07", 
+    "object_code": "BOND", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 17743254, 
+    "fiscal_year": "2006-07", 
+    "object_code": "CAPITAL", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 211891006, 
+    "fiscal_year": "2006-07", 
+    "object_code": "EMS", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 301002579, 
+    "fiscal_year": "2006-07", 
+    "object_code": "ENDBAL", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 98363132, 
+    "fiscal_year": "2006-07", 
+    "object_code": "FNDXFER", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 42525027, 
+    "fiscal_year": "2006-07", 
+    "object_code": "IMS", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 73849514, 
+    "fiscal_year": "2006-07", 
+    "object_code": "PERSONAL", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 6619807, 
+    "fiscal_year": "2006-07", 
+    "object_code": "BOND", 
+    "service_area_code": "PR"
+  }, 
+  {
+    "amount": 7927457, 
+    "fiscal_year": "2006-07", 
+    "object_code": "CAPITAL", 
+    "service_area_code": "PR"
+  }, 
+  {
+    "amount": 24458061, 
+    "fiscal_year": "2006-07", 
+    "object_code": "EMS", 
+    "service_area_code": "PR"
+  }, 
+  {
+    "amount": 32177592, 
+    "fiscal_year": "2006-07", 
+    "object_code": "ENDBAL", 
+    "service_area_code": "PR"
+  }, 
+  {
+    "amount": 5713549, 
+    "fiscal_year": "2006-07", 
+    "object_code": "FNDXFER", 
+    "service_area_code": "PR"
+  }, 
+  {
+    "amount": 18358377, 
+    "fiscal_year": "2006-07", 
+    "object_code": "IMS", 
+    "service_area_code": "PR"
+  }, 
+  {
+    "amount": 35908530, 
+    "fiscal_year": "2006-07", 
+    "object_code": "PERSONAL", 
+    "service_area_code": "PR"
+  }, 
+  {
+    "amount": 16256701, 
+    "fiscal_year": "2006-07", 
+    "object_code": "BOND", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 2884002, 
+    "fiscal_year": "2006-07", 
+    "object_code": "CAPITAL", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 110885978, 
+    "fiscal_year": "2006-07", 
+    "object_code": "EMS", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 16332713, 
+    "fiscal_year": "2006-07", 
+    "object_code": "ENDBAL", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 3667727, 
+    "fiscal_year": "2006-07", 
+    "object_code": "FNDXFER", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 36008808, 
+    "fiscal_year": "2006-07", 
+    "object_code": "IMS", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 189506602, 
+    "fiscal_year": "2006-07", 
+    "object_code": "PERSONAL", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 378225234, 
+    "fiscal_year": "2006-07", 
+    "object_code": "BOND", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 152712793, 
+    "fiscal_year": "2006-07", 
+    "object_code": "CAPITAL", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 71531922, 
+    "fiscal_year": "2006-07", 
+    "object_code": "EMS", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 305103166, 
+    "fiscal_year": "2006-07", 
+    "object_code": "ENDBAL", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 419327060, 
+    "fiscal_year": "2006-07", 
+    "object_code": "FNDXFER", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 56752485, 
+    "fiscal_year": "2006-07", 
+    "object_code": "IMS", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 88677849, 
+    "fiscal_year": "2006-07", 
+    "object_code": "PERSONAL", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 26886855, 
+    "fiscal_year": "2006-07", 
+    "object_code": "BOND", 
+    "service_area_code": "TP"
+  }, 
+  {
+    "amount": 65349361, 
+    "fiscal_year": "2006-07", 
+    "object_code": "CAPITAL", 
+    "service_area_code": "TP"
+  }, 
+  {
+    "amount": 0, 
+    "fiscal_year": "2006-07", 
+    "object_code": "CONT", 
+    "service_area_code": "TP"
+  }, 
+  {
+    "amount": 34964764, 
+    "fiscal_year": "2006-07", 
+    "object_code": "EMS", 
+    "service_area_code": "TP"
+  }, 
+  {
+    "amount": 22573526, 
+    "fiscal_year": "2006-07", 
+    "object_code": "ENDBAL", 
+    "service_area_code": "TP"
+  }, 
+  {
+    "amount": 28565725, 
+    "fiscal_year": "2006-07", 
+    "object_code": "FNDXFER", 
+    "service_area_code": "TP"
+  }, 
+  {
+    "amount": 21228381, 
+    "fiscal_year": "2006-07", 
+    "object_code": "IMS", 
+    "service_area_code": "TP"
+  }, 
+  {
+    "amount": 56752387, 
+    "fiscal_year": "2006-07", 
+    "object_code": "PERSONAL", 
+    "service_area_code": "TP"
+  }, 
+  {
+    "amount": 10940087, 
+    "fiscal_year": "2007-08", 
+    "object_code": "BOND", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 0, 
+    "fiscal_year": "2007-08", 
+    "object_code": "CAPITAL", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 67801192, 
+    "fiscal_year": "2007-08", 
+    "object_code": "EMS", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 52087864, 
+    "fiscal_year": "2007-08", 
+    "object_code": "ENDBAL", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 10937082, 
+    "fiscal_year": "2007-08", 
+    "object_code": "FNDXFER", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 15803653, 
+    "fiscal_year": "2007-08", 
+    "object_code": "IMS", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 45052897, 
+    "fiscal_year": "2007-08", 
+    "object_code": "PERSONAL", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 170394954, 
+    "fiscal_year": "2007-08", 
+    "object_code": "BOND", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 17460450, 
+    "fiscal_year": "2007-08", 
+    "object_code": "CAPITAL", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 229395971, 
+    "fiscal_year": "2007-08", 
+    "object_code": "EMS", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 315850294, 
+    "fiscal_year": "2007-08", 
+    "object_code": "ENDBAL", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 74637501, 
+    "fiscal_year": "2007-08", 
+    "object_code": "FNDXFER", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 43505274, 
+    "fiscal_year": "2007-08", 
+    "object_code": "IMS", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 73932685, 
+    "fiscal_year": "2007-08", 
+    "object_code": "PERSONAL", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 7017462, 
+    "fiscal_year": "2007-08", 
+    "object_code": "BOND", 
+    "service_area_code": "PR"
+  }, 
+  {
+    "amount": 17845977, 
+    "fiscal_year": "2007-08", 
+    "object_code": "CAPITAL", 
+    "service_area_code": "PR"
+  }, 
+  {
+    "amount": 29809321, 
+    "fiscal_year": "2007-08", 
+    "object_code": "EMS", 
+    "service_area_code": "PR"
+  }, 
+  {
+    "amount": 38115914, 
+    "fiscal_year": "2007-08", 
+    "object_code": "ENDBAL", 
+    "service_area_code": "PR"
+  }, 
+  {
+    "amount": 2837906, 
+    "fiscal_year": "2007-08", 
+    "object_code": "FNDXFER", 
+    "service_area_code": "PR"
+  }, 
+  {
+    "amount": 17118047, 
+    "fiscal_year": "2007-08", 
+    "object_code": "IMS", 
+    "service_area_code": "PR"
+  }, 
+  {
+    "amount": 38562765, 
+    "fiscal_year": "2007-08", 
+    "object_code": "PERSONAL", 
+    "service_area_code": "PR"
+  }, 
+  {
+    "amount": 24507026, 
+    "fiscal_year": "2007-08", 
+    "object_code": "BOND", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 4907278, 
+    "fiscal_year": "2007-08", 
+    "object_code": "CAPITAL", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 114277101, 
+    "fiscal_year": "2007-08", 
+    "object_code": "EMS", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 9949041, 
+    "fiscal_year": "2007-08", 
+    "object_code": "ENDBAL", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 7558504, 
+    "fiscal_year": "2007-08", 
+    "object_code": "FNDXFER", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 39090427, 
+    "fiscal_year": "2007-08", 
+    "object_code": "IMS", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 199074072, 
+    "fiscal_year": "2007-08", 
+    "object_code": "PERSONAL", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 399845876, 
+    "fiscal_year": "2007-08", 
+    "object_code": "BOND", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 163172042, 
+    "fiscal_year": "2007-08", 
+    "object_code": "CAPITAL", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 73332065, 
+    "fiscal_year": "2007-08", 
+    "object_code": "EMS", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 383704512, 
+    "fiscal_year": "2007-08", 
+    "object_code": "ENDBAL", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 437975703, 
+    "fiscal_year": "2007-08", 
+    "object_code": "FNDXFER", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 52998801, 
+    "fiscal_year": "2007-08", 
+    "object_code": "IMS", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 98371177, 
+    "fiscal_year": "2007-08", 
+    "object_code": "PERSONAL", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 7754447, 
+    "fiscal_year": "2007-08", 
+    "object_code": "BOND", 
+    "service_area_code": "TP"
+  }, 
+  {
+    "amount": 13697771, 
+    "fiscal_year": "2007-08", 
+    "object_code": "CAPITAL", 
+    "service_area_code": "TP"
+  }, 
+  {
+    "amount": 0, 
+    "fiscal_year": "2007-08", 
+    "object_code": "CONT", 
+    "service_area_code": "TP"
+  }, 
+  {
+    "amount": 60705164, 
+    "fiscal_year": "2007-08", 
+    "object_code": "EMS", 
+    "service_area_code": "TP"
+  }, 
+  {
+    "amount": 21039215, 
+    "fiscal_year": "2007-08", 
+    "object_code": "ENDBAL", 
+    "service_area_code": "TP"
+  }, 
+  {
+    "amount": 22512666, 
+    "fiscal_year": "2007-08", 
+    "object_code": "FNDXFER", 
+    "service_area_code": "TP"
+  }, 
+  {
+    "amount": 21772682, 
+    "fiscal_year": "2007-08", 
+    "object_code": "IMS", 
+    "service_area_code": "TP"
+  }, 
+  {
+    "amount": 59061060, 
+    "fiscal_year": "2007-08", 
+    "object_code": "PERSONAL", 
+    "service_area_code": "TP"
+  }, 
+  {
+    "amount": 70730484, 
+    "fiscal_year": "2008-09", 
+    "object_code": "BOND", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 0, 
+    "fiscal_year": "2008-09", 
+    "object_code": "CAPITAL", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 75386417, 
+    "fiscal_year": "2008-09", 
+    "object_code": "EMS", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 25210411, 
+    "fiscal_year": "2008-09", 
+    "object_code": "ENDBAL", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 6579578, 
+    "fiscal_year": "2008-09", 
+    "object_code": "FNDXFER", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 14373392, 
+    "fiscal_year": "2008-09", 
+    "object_code": "IMS", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 47970678, 
+    "fiscal_year": "2008-09", 
+    "object_code": "PERSONAL", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 103460963, 
+    "fiscal_year": "2008-09", 
+    "object_code": "BOND", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 13939054, 
+    "fiscal_year": "2008-09", 
+    "object_code": "CAPITAL", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 217930902, 
+    "fiscal_year": "2008-09", 
+    "object_code": "EMS", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 304558832, 
+    "fiscal_year": "2008-09", 
+    "object_code": "ENDBAL", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 66693436, 
+    "fiscal_year": "2008-09", 
+    "object_code": "FNDXFER", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 30874173, 
+    "fiscal_year": "2008-09", 
+    "object_code": "IMS", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 78636942, 
+    "fiscal_year": "2008-09", 
+    "object_code": "PERSONAL", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 8792188, 
+    "fiscal_year": "2008-09", 
+    "object_code": "BOND", 
+    "service_area_code": "PR"
+  }, 
+  {
+    "amount": 14543620, 
+    "fiscal_year": "2008-09", 
+    "object_code": "CAPITAL", 
+    "service_area_code": "PR"
+  }, 
+  {
+    "amount": 29694229, 
+    "fiscal_year": "2008-09", 
+    "object_code": "EMS", 
+    "service_area_code": "PR"
+  }, 
+  {
+    "amount": 31200892, 
+    "fiscal_year": "2008-09", 
+    "object_code": "ENDBAL", 
+    "service_area_code": "PR"
+  }, 
+  {
+    "amount": 7327927, 
+    "fiscal_year": "2008-09", 
+    "object_code": "FNDXFER", 
+    "service_area_code": "PR"
+  }, 
+  {
+    "amount": 14865781, 
+    "fiscal_year": "2008-09", 
+    "object_code": "IMS", 
+    "service_area_code": "PR"
+  }, 
+  {
+    "amount": 42465414, 
+    "fiscal_year": "2008-09", 
+    "object_code": "PERSONAL", 
+    "service_area_code": "PR"
+  }, 
+  {
+    "amount": 30076551, 
+    "fiscal_year": "2008-09", 
+    "object_code": "BOND", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 7532160, 
+    "fiscal_year": "2008-09", 
+    "object_code": "CAPITAL", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 117816852, 
+    "fiscal_year": "2008-09", 
+    "object_code": "EMS", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 15888298, 
+    "fiscal_year": "2008-09", 
+    "object_code": "ENDBAL", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 9312338, 
+    "fiscal_year": "2008-09", 
+    "object_code": "FNDXFER", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 42113561, 
+    "fiscal_year": "2008-09", 
+    "object_code": "IMS", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 207946563, 
+    "fiscal_year": "2008-09", 
+    "object_code": "PERSONAL", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 148695524, 
+    "fiscal_year": "2008-09", 
+    "object_code": "BOND", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 145839539, 
+    "fiscal_year": "2008-09", 
+    "object_code": "CAPITAL", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 79092023, 
+    "fiscal_year": "2008-09", 
+    "object_code": "EMS", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 272311357, 
+    "fiscal_year": "2008-09", 
+    "object_code": "ENDBAL", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 448562862, 
+    "fiscal_year": "2008-09", 
+    "object_code": "FNDXFER", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 53097505, 
+    "fiscal_year": "2008-09", 
+    "object_code": "IMS", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 103276214, 
+    "fiscal_year": "2008-09", 
+    "object_code": "PERSONAL", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 31027389, 
+    "fiscal_year": "2008-09", 
+    "object_code": "BOND", 
+    "service_area_code": "TP"
+  }, 
+  {
+    "amount": 4151308, 
+    "fiscal_year": "2008-09", 
+    "object_code": "CAPITAL", 
+    "service_area_code": "TP"
+  }, 
+  {
+    "amount": 0, 
+    "fiscal_year": "2008-09", 
+    "object_code": "CONT", 
+    "service_area_code": "TP"
+  }, 
+  {
+    "amount": 50390736, 
+    "fiscal_year": "2008-09", 
+    "object_code": "EMS", 
+    "service_area_code": "TP"
+  }, 
+  {
+    "amount": 8207335, 
+    "fiscal_year": "2008-09", 
+    "object_code": "ENDBAL", 
+    "service_area_code": "TP"
+  }, 
+  {
+    "amount": 15874836, 
+    "fiscal_year": "2008-09", 
+    "object_code": "FNDXFER", 
+    "service_area_code": "TP"
+  }, 
+  {
+    "amount": 23112424, 
+    "fiscal_year": "2008-09", 
+    "object_code": "IMS", 
+    "service_area_code": "TP"
+  }, 
+  {
+    "amount": 60614258, 
+    "fiscal_year": "2008-09", 
+    "object_code": "PERSONAL", 
+    "service_area_code": "TP"
+  }, 
+  {
+    "amount": 68733141, 
+    "fiscal_year": "2009-10", 
+    "object_code": "BOND", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 12155, 
+    "fiscal_year": "2009-10", 
+    "object_code": "CAPITAL", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 103536740, 
+    "fiscal_year": "2009-10", 
+    "object_code": "EMS", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 25211312, 
+    "fiscal_year": "2009-10", 
+    "object_code": "ENDBAL", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 31126375, 
+    "fiscal_year": "2009-10", 
+    "object_code": "FNDXFER", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 13315468, 
+    "fiscal_year": "2009-10", 
+    "object_code": "IMS", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 36383767, 
+    "fiscal_year": "2009-10", 
+    "object_code": "PERSONAL", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 205403042, 
+    "fiscal_year": "2009-10", 
+    "object_code": "BOND", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 6756844, 
+    "fiscal_year": "2009-10", 
+    "object_code": "CAPITAL", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 172483756, 
+    "fiscal_year": "2009-10", 
+    "object_code": "EMS", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 290355399, 
+    "fiscal_year": "2009-10", 
+    "object_code": "ENDBAL", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 69211887, 
+    "fiscal_year": "2009-10", 
+    "object_code": "FNDXFER", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 25769945, 
+    "fiscal_year": "2009-10", 
+    "object_code": "IMS", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 82328366, 
+    "fiscal_year": "2009-10", 
+    "object_code": "PERSONAL", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 7339756, 
+    "fiscal_year": "2009-10", 
+    "object_code": "BOND", 
+    "service_area_code": "PR"
+  }, 
+  {
+    "amount": 11741664, 
+    "fiscal_year": "2009-10", 
+    "object_code": "CAPITAL", 
+    "service_area_code": "PR"
+  }, 
+  {
+    "amount": 28652606, 
+    "fiscal_year": "2009-10", 
+    "object_code": "EMS", 
+    "service_area_code": "PR"
+  }, 
+  {
+    "amount": 24910645, 
+    "fiscal_year": "2009-10", 
+    "object_code": "ENDBAL", 
+    "service_area_code": "PR"
+  }, 
+  {
+    "amount": 3315605, 
+    "fiscal_year": "2009-10", 
+    "object_code": "FNDXFER", 
+    "service_area_code": "PR"
+  }, 
+  {
+    "amount": 8584577, 
+    "fiscal_year": "2009-10", 
+    "object_code": "IMS", 
+    "service_area_code": "PR"
+  }, 
+  {
+    "amount": 43465555, 
+    "fiscal_year": "2009-10", 
+    "object_code": "PERSONAL", 
+    "service_area_code": "PR"
+  }, 
+  {
+    "amount": 29967395, 
+    "fiscal_year": "2009-10", 
+    "object_code": "BOND", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 7395218, 
+    "fiscal_year": "2009-10", 
+    "object_code": "CAPITAL", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 131015825, 
+    "fiscal_year": "2009-10", 
+    "object_code": "EMS", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 36076378, 
+    "fiscal_year": "2009-10", 
+    "object_code": "ENDBAL", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 11070915, 
+    "fiscal_year": "2009-10", 
+    "object_code": "FNDXFER", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 40710714, 
+    "fiscal_year": "2009-10", 
+    "object_code": "IMS", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 214647568, 
+    "fiscal_year": "2009-10", 
+    "object_code": "PERSONAL", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 180972859, 
+    "fiscal_year": "2009-10", 
+    "object_code": "BOND", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 163749085, 
+    "fiscal_year": "2009-10", 
+    "object_code": "CAPITAL", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 86424277, 
+    "fiscal_year": "2009-10", 
+    "object_code": "EMS", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 245461074, 
+    "fiscal_year": "2009-10", 
+    "object_code": "ENDBAL", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 460350829, 
+    "fiscal_year": "2009-10", 
+    "object_code": "FNDXFER", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 56939374, 
+    "fiscal_year": "2009-10", 
+    "object_code": "IMS", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 109296132, 
+    "fiscal_year": "2009-10", 
+    "object_code": "PERSONAL", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 16387190, 
+    "fiscal_year": "2009-10", 
+    "object_code": "BOND", 
+    "service_area_code": "TP"
+  }, 
+  {
+    "amount": 75672000, 
+    "fiscal_year": "2009-10", 
+    "object_code": "CAPITAL", 
+    "service_area_code": "TP"
+  }, 
+  {
+    "amount": 0, 
+    "fiscal_year": "2009-10", 
+    "object_code": "CONT", 
+    "service_area_code": "TP"
+  }, 
+  {
+    "amount": 48645498, 
+    "fiscal_year": "2009-10", 
+    "object_code": "EMS", 
+    "service_area_code": "TP"
+  }, 
+  {
+    "amount": -322237, 
+    "fiscal_year": "2009-10", 
+    "object_code": "ENDBAL", 
+    "service_area_code": "TP"
+  }, 
+  {
+    "amount": 12554974, 
+    "fiscal_year": "2009-10", 
+    "object_code": "FNDXFER", 
+    "service_area_code": "TP"
+  }, 
+  {
+    "amount": 25518068, 
+    "fiscal_year": "2009-10", 
+    "object_code": "IMS", 
+    "service_area_code": "TP"
+  }, 
+  {
+    "amount": 61828479, 
+    "fiscal_year": "2009-10", 
+    "object_code": "PERSONAL", 
+    "service_area_code": "TP"
+  }, 
+  {
+    "amount": 191419782, 
+    "fiscal_year": "2010-11", 
+    "object_code": "BOND", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 7500, 
+    "fiscal_year": "2010-11", 
+    "object_code": "CAPITAL", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 131787248, 
+    "fiscal_year": "2010-11", 
+    "object_code": "EMS", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 26710955, 
+    "fiscal_year": "2010-11", 
+    "object_code": "ENDBAL", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 11488521, 
+    "fiscal_year": "2010-11", 
+    "object_code": "FNDXFER", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 13974911, 
+    "fiscal_year": "2010-11", 
+    "object_code": "IMS", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 36269577, 
+    "fiscal_year": "2010-11", 
+    "object_code": "PERSONAL", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 195530808, 
+    "fiscal_year": "2010-11", 
+    "object_code": "BOND", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 11794331, 
+    "fiscal_year": "2010-11", 
+    "object_code": "CAPITAL", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 168354101, 
+    "fiscal_year": "2010-11", 
+    "object_code": "EMS", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 352779275, 
+    "fiscal_year": "2010-11", 
+    "object_code": "ENDBAL", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 45040761, 
+    "fiscal_year": "2010-11", 
+    "object_code": "FNDXFER", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 25987475, 
+    "fiscal_year": "2010-11", 
+    "object_code": "IMS", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 81604328, 
+    "fiscal_year": "2010-11", 
+    "object_code": "PERSONAL", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 8826829, 
+    "fiscal_year": "2010-11", 
+    "object_code": "BOND", 
+    "service_area_code": "PR"
+  }, 
+  {
+    "amount": 13405557, 
+    "fiscal_year": "2010-11", 
+    "object_code": "CAPITAL", 
+    "service_area_code": "PR"
+  }, 
+  {
+    "amount": 24193795, 
+    "fiscal_year": "2010-11", 
+    "object_code": "EMS", 
+    "service_area_code": "PR"
+  }, 
+  {
+    "amount": 24337572, 
+    "fiscal_year": "2010-11", 
+    "object_code": "ENDBAL", 
+    "service_area_code": "PR"
+  }, 
+  {
+    "amount": 3769148, 
+    "fiscal_year": "2010-11", 
+    "object_code": "FNDXFER", 
+    "service_area_code": "PR"
+  }, 
+  {
+    "amount": 9640983, 
+    "fiscal_year": "2010-11", 
+    "object_code": "IMS", 
+    "service_area_code": "PR"
+  }, 
+  {
+    "amount": 44721035, 
+    "fiscal_year": "2010-11", 
+    "object_code": "PERSONAL", 
+    "service_area_code": "PR"
+  }, 
+  {
+    "amount": 27286446, 
+    "fiscal_year": "2010-11", 
+    "object_code": "BOND", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 4743602, 
+    "fiscal_year": "2010-11", 
+    "object_code": "CAPITAL", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 130557309, 
+    "fiscal_year": "2010-11", 
+    "object_code": "EMS", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 51693591, 
+    "fiscal_year": "2010-11", 
+    "object_code": "ENDBAL", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 1663020, 
+    "fiscal_year": "2010-11", 
+    "object_code": "FNDXFER", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 44298007, 
+    "fiscal_year": "2010-11", 
+    "object_code": "IMS", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 216346171, 
+    "fiscal_year": "2010-11", 
+    "object_code": "PERSONAL", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 344896339, 
+    "fiscal_year": "2010-11", 
+    "object_code": "BOND", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 192633706, 
+    "fiscal_year": "2010-11", 
+    "object_code": "CAPITAL", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 72750133, 
+    "fiscal_year": "2010-11", 
+    "object_code": "EMS", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 365705496, 
+    "fiscal_year": "2010-11", 
+    "object_code": "ENDBAL", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 561313394, 
+    "fiscal_year": "2010-11", 
+    "object_code": "FNDXFER", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 57389353, 
+    "fiscal_year": "2010-11", 
+    "object_code": "IMS", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 110510381, 
+    "fiscal_year": "2010-11", 
+    "object_code": "PERSONAL", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 25880346, 
+    "fiscal_year": "2010-11", 
+    "object_code": "BOND", 
+    "service_area_code": "TP"
+  }, 
+  {
+    "amount": 86861557, 
+    "fiscal_year": "2010-11", 
+    "object_code": "CAPITAL", 
+    "service_area_code": "TP"
+  }, 
+  {
+    "amount": 0, 
+    "fiscal_year": "2010-11", 
+    "object_code": "CONT", 
+    "service_area_code": "TP"
+  }, 
+  {
+    "amount": 60255300, 
+    "fiscal_year": "2010-11", 
+    "object_code": "EMS", 
+    "service_area_code": "TP"
+  }, 
+  {
+    "amount": -26347865, 
+    "fiscal_year": "2010-11", 
+    "object_code": "ENDBAL", 
+    "service_area_code": "TP"
+  }, 
+  {
+    "amount": 9269501, 
+    "fiscal_year": "2010-11", 
+    "object_code": "FNDXFER", 
+    "service_area_code": "TP"
+  }, 
+  {
+    "amount": 27311351, 
+    "fiscal_year": "2010-11", 
+    "object_code": "IMS", 
+    "service_area_code": "TP"
+  }, 
+  {
+    "amount": 62837172, 
+    "fiscal_year": "2010-11", 
+    "object_code": "PERSONAL", 
+    "service_area_code": "TP"
+  }, 
+  {
+    "amount": 184654082, 
+    "fiscal_year": "2011-12", 
+    "object_code": "BOND", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 58610, 
+    "fiscal_year": "2011-12", 
+    "object_code": "CAPITAL", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 191939972, 
+    "fiscal_year": "2011-12", 
+    "object_code": "EMS", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 30142451, 
+    "fiscal_year": "2011-12", 
+    "object_code": "ENDBAL", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 11032718, 
+    "fiscal_year": "2011-12", 
+    "object_code": "FNDXFER", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 12750643, 
+    "fiscal_year": "2011-12", 
+    "object_code": "IMS", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 38932520, 
+    "fiscal_year": "2011-12", 
+    "object_code": "PERSONAL", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 216155945, 
+    "fiscal_year": "2011-12", 
+    "object_code": "BOND", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 16699254, 
+    "fiscal_year": "2011-12", 
+    "object_code": "CAPITAL", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 181576728, 
+    "fiscal_year": "2011-12", 
+    "object_code": "EMS", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 356649339, 
+    "fiscal_year": "2011-12", 
+    "object_code": "ENDBAL", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 51640833, 
+    "fiscal_year": "2011-12", 
+    "object_code": "FNDXFER", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 26948985, 
+    "fiscal_year": "2011-12", 
+    "object_code": "IMS", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 86935757, 
+    "fiscal_year": "2011-12", 
+    "object_code": "PERSONAL", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 20916799, 
+    "fiscal_year": "2011-12", 
+    "object_code": "BOND", 
+    "service_area_code": "PR"
+  }, 
+  {
+    "amount": 4824089, 
+    "fiscal_year": "2011-12", 
+    "object_code": "CAPITAL", 
+    "service_area_code": "PR"
+  }, 
+  {
+    "amount": 25981053, 
+    "fiscal_year": "2011-12", 
+    "object_code": "EMS", 
+    "service_area_code": "PR"
+  }, 
+  {
+    "amount": 30927391, 
+    "fiscal_year": "2011-12", 
+    "object_code": "ENDBAL", 
+    "service_area_code": "PR"
+  }, 
+  {
+    "amount": 2365654, 
+    "fiscal_year": "2011-12", 
+    "object_code": "FNDXFER", 
+    "service_area_code": "PR"
+  }, 
+  {
+    "amount": 10157503, 
+    "fiscal_year": "2011-12", 
+    "object_code": "IMS", 
+    "service_area_code": "PR"
+  }, 
+  {
+    "amount": 47104321, 
+    "fiscal_year": "2011-12", 
+    "object_code": "PERSONAL", 
+    "service_area_code": "PR"
+  }, 
+  {
+    "amount": 18323075, 
+    "fiscal_year": "2011-12", 
+    "object_code": "BOND", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 4821379, 
+    "fiscal_year": "2011-12", 
+    "object_code": "CAPITAL", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 131804776, 
+    "fiscal_year": "2011-12", 
+    "object_code": "EMS", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 38175619, 
+    "fiscal_year": "2011-12", 
+    "object_code": "ENDBAL", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 6421843, 
+    "fiscal_year": "2011-12", 
+    "object_code": "FNDXFER", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 46898485, 
+    "fiscal_year": "2011-12", 
+    "object_code": "IMS", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 233714716, 
+    "fiscal_year": "2011-12", 
+    "object_code": "PERSONAL", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 187167550, 
+    "fiscal_year": "2011-12", 
+    "object_code": "BOND", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 116728730, 
+    "fiscal_year": "2011-12", 
+    "object_code": "CAPITAL", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 61732937, 
+    "fiscal_year": "2011-12", 
+    "object_code": "EMS", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 209466705, 
+    "fiscal_year": "2011-12", 
+    "object_code": "ENDBAL", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 436635892, 
+    "fiscal_year": "2011-12", 
+    "object_code": "FNDXFER", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 62203879, 
+    "fiscal_year": "2011-12", 
+    "object_code": "IMS", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 115274042, 
+    "fiscal_year": "2011-12", 
+    "object_code": "PERSONAL", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 30317821, 
+    "fiscal_year": "2011-12", 
+    "object_code": "BOND", 
+    "service_area_code": "TP"
+  }, 
+  {
+    "amount": 64963721, 
+    "fiscal_year": "2011-12", 
+    "object_code": "CAPITAL", 
+    "service_area_code": "TP"
+  }, 
+  {
+    "amount": 0, 
+    "fiscal_year": "2011-12", 
+    "object_code": "CONT", 
+    "service_area_code": "TP"
+  }, 
+  {
+    "amount": 39655466, 
+    "fiscal_year": "2011-12", 
+    "object_code": "EMS", 
+    "service_area_code": "TP"
+  }, 
+  {
+    "amount": -2873263, 
+    "fiscal_year": "2011-12", 
+    "object_code": "ENDBAL", 
+    "service_area_code": "TP"
+  }, 
+  {
+    "amount": 12146034, 
+    "fiscal_year": "2011-12", 
+    "object_code": "FNDXFER", 
+    "service_area_code": "TP"
+  }, 
+  {
+    "amount": 26698916, 
+    "fiscal_year": "2011-12", 
+    "object_code": "IMS", 
+    "service_area_code": "TP"
+  }, 
+  {
+    "amount": 66202406, 
+    "fiscal_year": "2011-12", 
+    "object_code": "PERSONAL", 
+    "service_area_code": "TP"
+  }, 
+  {
+    "amount": 126094878, 
+    "fiscal_year": "2012-13", 
+    "object_code": "BOND", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 8563, 
+    "fiscal_year": "2012-13", 
+    "object_code": "CAPITAL", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 106646469, 
+    "fiscal_year": "2012-13", 
+    "object_code": "EMS", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 35297902, 
+    "fiscal_year": "2012-13", 
+    "object_code": "ENDBAL", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 3663500, 
+    "fiscal_year": "2012-13", 
+    "object_code": "FNDXFER", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 12708444, 
+    "fiscal_year": "2012-13", 
+    "object_code": "IMS", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 40698922, 
+    "fiscal_year": "2012-13", 
+    "object_code": "PERSONAL", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 128803474, 
+    "fiscal_year": "2012-13", 
+    "object_code": "BOND", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 18961849, 
+    "fiscal_year": "2012-13", 
+    "object_code": "CAPITAL", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 203104376, 
+    "fiscal_year": "2012-13", 
+    "object_code": "EMS", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 366224257, 
+    "fiscal_year": "2012-13", 
+    "object_code": "ENDBAL", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 40260611, 
+    "fiscal_year": "2012-13", 
+    "object_code": "FNDXFER", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 27509244, 
+    "fiscal_year": "2012-13", 
+    "object_code": "IMS", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 87552558, 
+    "fiscal_year": "2012-13", 
+    "object_code": "PERSONAL", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 8180476, 
+    "fiscal_year": "2012-13", 
+    "object_code": "BOND", 
+    "service_area_code": "PR"
+  }, 
+  {
+    "amount": 12083903, 
+    "fiscal_year": "2012-13", 
+    "object_code": "CAPITAL", 
+    "service_area_code": "PR"
+  }, 
+  {
+    "amount": 24592506, 
+    "fiscal_year": "2012-13", 
+    "object_code": "EMS", 
+    "service_area_code": "PR"
+  }, 
+  {
+    "amount": 40479540, 
+    "fiscal_year": "2012-13", 
+    "object_code": "ENDBAL", 
+    "service_area_code": "PR"
+  }, 
+  {
+    "amount": 918459, 
+    "fiscal_year": "2012-13", 
+    "object_code": "FNDXFER", 
+    "service_area_code": "PR"
+  }, 
+  {
+    "amount": 9213987, 
+    "fiscal_year": "2012-13", 
+    "object_code": "IMS", 
+    "service_area_code": "PR"
+  }, 
+  {
+    "amount": 47093315, 
+    "fiscal_year": "2012-13", 
+    "object_code": "PERSONAL", 
+    "service_area_code": "PR"
+  }, 
+  {
+    "amount": 22771732, 
+    "fiscal_year": "2012-13", 
+    "object_code": "BOND", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 7617178, 
+    "fiscal_year": "2012-13", 
+    "object_code": "CAPITAL", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 129611400, 
+    "fiscal_year": "2012-13", 
+    "object_code": "EMS", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 31140543, 
+    "fiscal_year": "2012-13", 
+    "object_code": "ENDBAL", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 4835438, 
+    "fiscal_year": "2012-13", 
+    "object_code": "FNDXFER", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 45183187, 
+    "fiscal_year": "2012-13", 
+    "object_code": "IMS", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 234059465, 
+    "fiscal_year": "2012-13", 
+    "object_code": "PERSONAL", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 307937408, 
+    "fiscal_year": "2012-13", 
+    "object_code": "BOND", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 144620075, 
+    "fiscal_year": "2012-13", 
+    "object_code": "CAPITAL", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 88916234, 
+    "fiscal_year": "2012-13", 
+    "object_code": "EMS", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 365233796, 
+    "fiscal_year": "2012-13", 
+    "object_code": "ENDBAL", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 449960030, 
+    "fiscal_year": "2012-13", 
+    "object_code": "FNDXFER", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 64114420, 
+    "fiscal_year": "2012-13", 
+    "object_code": "IMS", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 117033593, 
+    "fiscal_year": "2012-13", 
+    "object_code": "PERSONAL", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 20853717, 
+    "fiscal_year": "2012-13", 
+    "object_code": "BOND", 
+    "service_area_code": "TP"
+  }, 
+  {
+    "amount": 14654331, 
+    "fiscal_year": "2012-13", 
+    "object_code": "CAPITAL", 
+    "service_area_code": "TP"
+  }, 
+  {
+    "amount": 0, 
+    "fiscal_year": "2012-13", 
+    "object_code": "CONT", 
+    "service_area_code": "TP"
+  }, 
+  {
+    "amount": 92342697, 
+    "fiscal_year": "2012-13", 
+    "object_code": "EMS", 
+    "service_area_code": "TP"
+  }, 
+  {
+    "amount": 6877798, 
+    "fiscal_year": "2012-13", 
+    "object_code": "ENDBAL", 
+    "service_area_code": "TP"
+  }, 
+  {
+    "amount": 15436058, 
+    "fiscal_year": "2012-13", 
+    "object_code": "FNDXFER", 
+    "service_area_code": "TP"
+  }, 
+  {
+    "amount": 24380802, 
+    "fiscal_year": "2012-13", 
+    "object_code": "IMS", 
+    "service_area_code": "TP"
+  }, 
+  {
+    "amount": 64098114, 
+    "fiscal_year": "2012-13", 
+    "object_code": "PERSONAL", 
+    "service_area_code": "TP"
+  }, 
+  {
+    "amount": 88912511, 
+    "fiscal_year": "2013-14", 
+    "object_code": "BOND", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 2623267, 
+    "fiscal_year": "2013-14", 
+    "object_code": "CAPITAL", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 58174803, 
+    "fiscal_year": "2013-14", 
+    "object_code": "EMS", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 54709692, 
+    "fiscal_year": "2013-14", 
+    "object_code": "ENDBAL", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 8950488, 
+    "fiscal_year": "2013-14", 
+    "object_code": "FNDXFER", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 12942968, 
+    "fiscal_year": "2013-14", 
+    "object_code": "IMS", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 43361017, 
+    "fiscal_year": "2013-14", 
+    "object_code": "PERSONAL", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 152973244, 
+    "fiscal_year": "2013-14", 
+    "object_code": "BOND", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 15540204, 
+    "fiscal_year": "2013-14", 
+    "object_code": "CAPITAL", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 200759971, 
+    "fiscal_year": "2013-14", 
+    "object_code": "EMS", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 369501584, 
+    "fiscal_year": "2013-14", 
+    "object_code": "ENDBAL", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 58998798, 
+    "fiscal_year": "2013-14", 
+    "object_code": "FNDXFER", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 27912652, 
+    "fiscal_year": "2013-14", 
+    "object_code": "IMS", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 89794222, 
+    "fiscal_year": "2013-14", 
+    "object_code": "PERSONAL", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 33150021, 
+    "fiscal_year": "2013-14", 
+    "object_code": "BOND", 
+    "service_area_code": "PR"
+  }, 
+  {
+    "amount": 13567823, 
+    "fiscal_year": "2013-14", 
+    "object_code": "CAPITAL", 
+    "service_area_code": "PR"
+  }, 
+  {
+    "amount": 23218379, 
+    "fiscal_year": "2013-14", 
+    "object_code": "EMS", 
+    "service_area_code": "PR"
+  }, 
+  {
+    "amount": 47934036, 
+    "fiscal_year": "2013-14", 
+    "object_code": "ENDBAL", 
+    "service_area_code": "PR"
+  }, 
+  {
+    "amount": 678486, 
+    "fiscal_year": "2013-14", 
+    "object_code": "FNDXFER", 
+    "service_area_code": "PR"
+  }, 
+  {
+    "amount": 9620668, 
+    "fiscal_year": "2013-14", 
+    "object_code": "IMS", 
+    "service_area_code": "PR"
+  }, 
+  {
+    "amount": 48854478, 
+    "fiscal_year": "2013-14", 
+    "object_code": "PERSONAL", 
+    "service_area_code": "PR"
+  }, 
+  {
+    "amount": 28380951, 
+    "fiscal_year": "2013-14", 
+    "object_code": "BOND", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 2186694, 
+    "fiscal_year": "2013-14", 
+    "object_code": "CAPITAL", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 154219578, 
+    "fiscal_year": "2013-14", 
+    "object_code": "EMS", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 22426086, 
+    "fiscal_year": "2013-14", 
+    "object_code": "ENDBAL", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 8118940, 
+    "fiscal_year": "2013-14", 
+    "object_code": "FNDXFER", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 45222944, 
+    "fiscal_year": "2013-14", 
+    "object_code": "IMS", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 235787749, 
+    "fiscal_year": "2013-14", 
+    "object_code": "PERSONAL", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 322074874, 
+    "fiscal_year": "2013-14", 
+    "object_code": "BOND", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 148071707, 
+    "fiscal_year": "2013-14", 
+    "object_code": "CAPITAL", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 81741946, 
+    "fiscal_year": "2013-14", 
+    "object_code": "EMS", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 323701090, 
+    "fiscal_year": "2013-14", 
+    "object_code": "ENDBAL", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 528531000, 
+    "fiscal_year": "2013-14", 
+    "object_code": "FNDXFER", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 62077532, 
+    "fiscal_year": "2013-14", 
+    "object_code": "IMS", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 115883524, 
+    "fiscal_year": "2013-14", 
+    "object_code": "PERSONAL", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 17529893, 
+    "fiscal_year": "2013-14", 
+    "object_code": "BOND", 
+    "service_area_code": "TP"
+  }, 
+  {
+    "amount": 18101353, 
+    "fiscal_year": "2013-14", 
+    "object_code": "CAPITAL", 
+    "service_area_code": "TP"
+  }, 
+  {
+    "amount": 0, 
+    "fiscal_year": "2013-14", 
+    "object_code": "CONT", 
+    "service_area_code": "TP"
+  }, 
+  {
+    "amount": 93631428, 
+    "fiscal_year": "2013-14", 
+    "object_code": "EMS", 
+    "service_area_code": "TP"
+  }, 
+  {
+    "amount": 35771530, 
+    "fiscal_year": "2013-14", 
+    "object_code": "ENDBAL", 
+    "service_area_code": "TP"
+  }, 
+  {
+    "amount": 17359531, 
+    "fiscal_year": "2013-14", 
+    "object_code": "FNDXFER", 
+    "service_area_code": "TP"
+  }, 
+  {
+    "amount": 24607008, 
+    "fiscal_year": "2013-14", 
+    "object_code": "IMS", 
+    "service_area_code": "TP"
+  }, 
+  {
+    "amount": 66178531, 
+    "fiscal_year": "2013-14", 
+    "object_code": "PERSONAL", 
+    "service_area_code": "TP"
+  }, 
+  {
+    "amount": 72568073, 
+    "fiscal_year": "2014-15", 
+    "object_code": "BOND", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 1215763, 
+    "fiscal_year": "2014-15", 
+    "object_code": "CAPITAL", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 84964344, 
+    "fiscal_year": "2014-15", 
+    "object_code": "EMS", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 81155145, 
+    "fiscal_year": "2014-15", 
+    "object_code": "ENDBAL", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 2083849, 
+    "fiscal_year": "2014-15", 
+    "object_code": "FNDXFER", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 14757263, 
+    "fiscal_year": "2014-15", 
+    "object_code": "IMS", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 48751519, 
+    "fiscal_year": "2014-15", 
+    "object_code": "PERSONAL", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 124602069, 
+    "fiscal_year": "2014-15", 
+    "object_code": "BOND", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 12254065, 
+    "fiscal_year": "2014-15", 
+    "object_code": "CAPITAL", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 200805050, 
+    "fiscal_year": "2014-15", 
+    "object_code": "EMS", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 383092956, 
+    "fiscal_year": "2014-15", 
+    "object_code": "ENDBAL", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 51056146, 
+    "fiscal_year": "2014-15", 
+    "object_code": "FNDXFER", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 26442379, 
+    "fiscal_year": "2014-15", 
+    "object_code": "IMS", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 93655926, 
+    "fiscal_year": "2014-15", 
+    "object_code": "PERSONAL", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 13391029, 
+    "fiscal_year": "2014-15", 
+    "object_code": "BOND", 
+    "service_area_code": "PR"
+  }, 
+  {
+    "amount": 11709052, 
+    "fiscal_year": "2014-15", 
+    "object_code": "CAPITAL", 
+    "service_area_code": "PR"
+  }, 
+  {
+    "amount": 22126349, 
+    "fiscal_year": "2014-15", 
+    "object_code": "EMS", 
+    "service_area_code": "PR"
+  }, 
+  {
+    "amount": 59752639, 
+    "fiscal_year": "2014-15", 
+    "object_code": "ENDBAL", 
+    "service_area_code": "PR"
+  }, 
+  {
+    "amount": 1080919, 
+    "fiscal_year": "2014-15", 
+    "object_code": "FNDXFER", 
+    "service_area_code": "PR"
+  }, 
+  {
+    "amount": 10786742, 
+    "fiscal_year": "2014-15", 
+    "object_code": "IMS", 
+    "service_area_code": "PR"
+  }, 
+  {
+    "amount": 54619916, 
+    "fiscal_year": "2014-15", 
+    "object_code": "PERSONAL", 
+    "service_area_code": "PR"
+  }, 
+  {
+    "amount": 27273026, 
+    "fiscal_year": "2014-15", 
+    "object_code": "BOND", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 2681442, 
+    "fiscal_year": "2014-15", 
+    "object_code": "CAPITAL", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 145563914, 
+    "fiscal_year": "2014-15", 
+    "object_code": "EMS", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 45454418, 
+    "fiscal_year": "2014-15", 
+    "object_code": "ENDBAL", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 8417077, 
+    "fiscal_year": "2014-15", 
+    "object_code": "FNDXFER", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 50324026, 
+    "fiscal_year": "2014-15", 
+    "object_code": "IMS", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 248831135, 
+    "fiscal_year": "2014-15", 
+    "object_code": "PERSONAL", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 327147958, 
+    "fiscal_year": "2014-15", 
+    "object_code": "BOND", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 106983263, 
+    "fiscal_year": "2014-15", 
+    "object_code": "CAPITAL", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 82374288, 
+    "fiscal_year": "2014-15", 
+    "object_code": "EMS", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 539774708, 
+    "fiscal_year": "2014-15", 
+    "object_code": "ENDBAL", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 492634838, 
+    "fiscal_year": "2014-15", 
+    "object_code": "FNDXFER", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 60029168, 
+    "fiscal_year": "2014-15", 
+    "object_code": "IMS", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 119261400, 
+    "fiscal_year": "2014-15", 
+    "object_code": "PERSONAL", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 22383564, 
+    "fiscal_year": "2014-15", 
+    "object_code": "BOND", 
+    "service_area_code": "TP"
+  }, 
+  {
+    "amount": 19127347, 
+    "fiscal_year": "2014-15", 
+    "object_code": "CAPITAL", 
+    "service_area_code": "TP"
+  }, 
+  {
+    "amount": 0, 
+    "fiscal_year": "2014-15", 
+    "object_code": "CONT", 
+    "service_area_code": "TP"
+  }, 
+  {
+    "amount": 72644202, 
+    "fiscal_year": "2014-15", 
+    "object_code": "EMS", 
+    "service_area_code": "TP"
+  }, 
+  {
+    "amount": 44246356, 
+    "fiscal_year": "2014-15", 
+    "object_code": "ENDBAL", 
+    "service_area_code": "TP"
+  }, 
+  {
+    "amount": 14200082, 
+    "fiscal_year": "2014-15", 
+    "object_code": "FNDXFER", 
+    "service_area_code": "TP"
+  }, 
+  {
+    "amount": 25840483, 
+    "fiscal_year": "2014-15", 
+    "object_code": "IMS", 
+    "service_area_code": "TP"
+  }, 
+  {
+    "amount": 70823239, 
+    "fiscal_year": "2014-15", 
+    "object_code": "PERSONAL", 
+    "service_area_code": "TP"
+  }, 
+  {
+    "amount": 72423207, 
+    "fiscal_year": "2015-16", 
+    "object_code": "BOND", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 702191, 
+    "fiscal_year": "2015-16", 
+    "object_code": "CAPITAL", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 106125021, 
+    "fiscal_year": "2015-16", 
+    "object_code": "EMS", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 118811994, 
+    "fiscal_year": "2015-16", 
+    "object_code": "ENDBAL", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 2751463, 
+    "fiscal_year": "2015-16", 
+    "object_code": "FNDXFER", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 15358342, 
+    "fiscal_year": "2015-16", 
+    "object_code": "IMS", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 56627100, 
+    "fiscal_year": "2015-16", 
+    "object_code": "PERSONAL", 
+    "service_area_code": "CD"
+  }, 
+  {
+    "amount": 141642718, 
+    "fiscal_year": "2015-16", 
+    "object_code": "BOND", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 11894602, 
+    "fiscal_year": "2015-16", 
+    "object_code": "CAPITAL", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 220493578, 
+    "fiscal_year": "2015-16", 
+    "object_code": "EMS", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 340506482, 
+    "fiscal_year": "2015-16", 
+    "object_code": "ENDBAL", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 70817674, 
+    "fiscal_year": "2015-16", 
+    "object_code": "FNDXFER", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 28392254, 
+    "fiscal_year": "2015-16", 
+    "object_code": "IMS", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 98218807, 
+    "fiscal_year": "2015-16", 
+    "object_code": "PERSONAL", 
+    "service_area_code": "LA"
+  }, 
+  {
+    "amount": 7426622, 
+    "fiscal_year": "2015-16", 
+    "object_code": "BOND", 
+    "service_area_code": "PR"
+  }, 
+  {
+    "amount": 3946582, 
+    "fiscal_year": "2015-16", 
+    "object_code": "CAPITAL", 
+    "service_area_code": "PR"
+  }, 
+  {
+    "amount": 30366816, 
+    "fiscal_year": "2015-16", 
+    "object_code": "EMS", 
+    "service_area_code": "PR"
+  }, 
+  {
+    "amount": 105070384, 
+    "fiscal_year": "2015-16", 
+    "object_code": "ENDBAL", 
+    "service_area_code": "PR"
+  }, 
+  {
+    "amount": 728221, 
+    "fiscal_year": "2015-16", 
+    "object_code": "FNDXFER", 
+    "service_area_code": "PR"
+  }, 
+  {
+    "amount": 11320187, 
+    "fiscal_year": "2015-16", 
+    "object_code": "IMS", 
+    "service_area_code": "PR"
+  }, 
+  {
+    "amount": 60712721, 
+    "fiscal_year": "2015-16", 
+    "object_code": "PERSONAL", 
+    "service_area_code": "PR"
+  }, 
+  {
+    "amount": 26147870, 
+    "fiscal_year": "2015-16", 
+    "object_code": "BOND", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 6809983, 
+    "fiscal_year": "2015-16", 
+    "object_code": "CAPITAL", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 144991862, 
+    "fiscal_year": "2015-16", 
+    "object_code": "EMS", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 36908386, 
+    "fiscal_year": "2015-16", 
+    "object_code": "ENDBAL", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 2103522, 
+    "fiscal_year": "2015-16", 
+    "object_code": "FNDXFER", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 53018354, 
+    "fiscal_year": "2015-16", 
+    "object_code": "IMS", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 260124724, 
+    "fiscal_year": "2015-16", 
+    "object_code": "PERSONAL", 
+    "service_area_code": "PS"
+  }, 
+  {
+    "amount": 674391597, 
+    "fiscal_year": "2015-16", 
+    "object_code": "BOND", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 71501813, 
+    "fiscal_year": "2015-16", 
+    "object_code": "CAPITAL", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 87296325, 
+    "fiscal_year": "2015-16", 
+    "object_code": "EMS", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 490677260, 
+    "fiscal_year": "2015-16", 
+    "object_code": "ENDBAL", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 478703604, 
+    "fiscal_year": "2015-16", 
+    "object_code": "FNDXFER", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 59106934, 
+    "fiscal_year": "2015-16", 
+    "object_code": "IMS", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 124265727, 
+    "fiscal_year": "2015-16", 
+    "object_code": "PERSONAL", 
+    "service_area_code": "PU"
+  }, 
+  {
+    "amount": 27609207, 
+    "fiscal_year": "2015-16", 
+    "object_code": "BOND", 
+    "service_area_code": "TP"
+  }, 
+  {
+    "amount": 11702549, 
+    "fiscal_year": "2015-16", 
+    "object_code": "CAPITAL", 
+    "service_area_code": "TP"
+  }, 
+  {
+    "amount": 0, 
+    "fiscal_year": "2015-16", 
+    "object_code": "CONT", 
+    "service_area_code": "TP"
+  }, 
+  {
+    "amount": 52582351, 
+    "fiscal_year": "2015-16", 
+    "object_code": "EMS", 
+    "service_area_code": "TP"
+  }, 
+  {
+    "amount": 127823551, 
+    "fiscal_year": "2015-16", 
+    "object_code": "ENDBAL", 
+    "service_area_code": "TP"
+  }, 
+  {
+    "amount": 13277430, 
+    "fiscal_year": "2015-16", 
+    "object_code": "FNDXFER", 
+    "service_area_code": "TP"
+  }, 
+  {
+    "amount": 26487883, 
+    "fiscal_year": "2015-16", 
+    "object_code": "IMS", 
+    "service_area_code": "TP"
+  }, 
+  {
+    "amount": 77146270, 
+    "fiscal_year": "2015-16", 
+    "object_code": "PERSONAL", 
+    "service_area_code": "TP"
+  }
+]
