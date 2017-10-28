@@ -75,12 +75,16 @@ If you are configured to use a local database for development, you need to run t
 ./budget_proj/manage.py migrate
 ```
 
+Note: the `makemigrations` step may result in `No changes detected`, if other project participants have already generated all current migrations.
+
 ### (5) Run the app server
 ```
 ./budget_proj/manage.py runserver
 ```
 
 Type [Control-C] when you want to stop the server.
+
+Note: browsing to http://127.0.0.1:8000/ may display a "Page not found (404)" error.  The page will tell you which suffixes (e.g. "budget/") are available in the app server, in which case you can browse to that route by appending a valid one e.g. http://127.0.0.1:8000/budget/
 
 ### (6) Import data into your local database instance
 
@@ -144,10 +148,10 @@ http://127.0.0.1:8000/kpm
 ```
 
 ## Endpoint map
-- history: uses query parameters to return subsets of the budget data from the past 10 years.
 - code: returns codes used in other tables along with their descriptions.
-- ocrb: provides data from City of Portland "Budget in Brief" documents (e.g. [FY 2016-17](https://www.portlandoregon.gov/cbo/article/584584)) for all Service Area sections from the tables named, "Operating and Capital Requirements by Bureau".
+- history: uses query parameters to return subsets of the budget data from the past 10 years.
 - kpm: provides data from City of Portland "Budget in Brief" documents (e.g. [FY 2016-17](https://www.portlandoregon.gov/cbo/article/584584)) for all Service Area sections from the tables named, "Key Performance Measures".
+- ocrb: provides data from City of Portland "Budget in Brief" documents (e.g. [FY 2016-17](https://www.portlandoregon.gov/cbo/article/584584)) for all Service Area sections from the tables named, "Operating and Capital Requirements by Bureau".
 
 ## Sample Endpoint data
 There are sample data files in the `Data/sample-responses/` directory with an associated [README_SampleResponses.md](Data/sample-responses/README_SampleResponses.md) file.
