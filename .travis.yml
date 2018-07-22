@@ -5,6 +5,7 @@ install:
   - pip install --upgrade --user awscli
 before_script:
   - ./budget_proj/bin/getconfig.sh
+  - ls -la
 script:
   - './budget_proj/bin/test-proj.sh -t'
 after_success:
