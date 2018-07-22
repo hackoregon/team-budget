@@ -2,7 +2,8 @@ import pytest
 import os
 import budget_proj
 #from . import project_config
-import project_config
+#import project_config
+from budget_proj import project_config
 
 @pytest.fixture(scope='session')
 def django_db_setup():
