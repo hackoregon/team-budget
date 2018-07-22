@@ -5,4 +5,5 @@ WORKDIR /code
 ADD requirements/ /code/
 RUN pip install -r prod.txt
 ADD . /code/
+RUN ls -la /code/
 ENTRYPOINT [ "/code/bin/docker-entrypoint.sh" ]
