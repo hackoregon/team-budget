@@ -83,7 +83,7 @@ class TestKpmEndpoint(TestCase):
         self.assertEqual(response.status_code, 200)
 
     def test_kpm_get_request_works_with_query_param(self):
-        response = self.client.get("/budget/kpm/?fy=2015-16")
+        response = self.client.get("/budget/kpm/?fiscal_year=2015-16")
         self.assertEqual(response.status_code, 200)
         json_content = response.json()
         results = json_content['results']
@@ -118,7 +118,7 @@ class TestOcrbEndpoint(TestCase):
         self.assertEqual(response.status_code, 200)
 
     def test_ocrb_get_request_works_with_query_param(self):
-        response = self.client.get("/budget/ocrb/?fy=2015-16")
+        response = self.client.get("/budget/ocrb/?fiscal_year=2015-16")
         self.assertEqual(response.status_code, 200)
         json_content = response.json()
         results = json_content['results']
