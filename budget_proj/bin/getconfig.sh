@@ -24,7 +24,7 @@ else
     export PATH=$PATH:~/.local/bin # necessary to help locate the awscli binaries which are pip installed --user
     aws s3 cp \
           s3://$CONFIG_BUCKET/$DEPLOY_TARGET/$CONFIG_FILE \
-          $PROJ_SETTINGS_DIR/budget_proj/$CONFIG_FILE;
+          $PROJ_SETTINGS_DIR/$CONFIG_FILE;
 
   echo "#### CONFIG COPY COMPLETE ###"
 
