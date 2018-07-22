@@ -27,6 +27,5 @@ else
           budget_proj/$PROJ_SETTINGS_DIR/$CONFIG_FILE;
 
   echo "#### CONFIG COPY COMPLETE ###"
-  ls -la budget_proj/$PROJ_SETTINGS_DIR/
 
 fi
