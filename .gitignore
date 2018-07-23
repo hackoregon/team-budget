@@ -7,3 +7,6 @@ project_config.py
 static/
 staticfiles
 .Rproj.user
+env.sh
+.env
+.pytest_cache/

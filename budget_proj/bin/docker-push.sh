@@ -1,9 +1,9 @@
 #! /bin/bash
 
 # Push and Deploy only if it's not a pull request
-#if [ -z "$TRAVIS_PULL_REQUEST" ] || [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
-  # Push only if we're testing the master branch
-#   if [ "$TRAVIS_BRANCH" == "master" ]; then
+if [ -z "$TRAVIS_PULL_REQUEST" ] || [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
+# Push only if we're testing the master branch
+  if [ "$TRAVIS_BRANCH" == "master" ]; then
     export PATH=$PATH:$HOME/.local/bin
     echo Getting the ECR login...
     eval $(aws ecr get-login --region $AWS_DEFAULT_REGION --no-include-email)
