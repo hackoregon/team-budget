@@ -7,6 +7,8 @@ echo Debug: $DEBUG
 # Pull in environment variables values from AWS Parameter Store, and preserve the exports
 # source usage per https://stackoverflow.com/q/14742358/452120
 source /code/bin/get-ssm-parameters.sh
+echo Did get-ssm-parameters.sh pull down the params successfully?
+echo POSTGRES_HOST is equal to $POSTGRES_HOST
 
 python manage.py migrate --no-input
 python manage.py collectstatic --no-input
