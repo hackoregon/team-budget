@@ -6,11 +6,10 @@ echo  Running docker-entrypoint.sh...
 
 echo Debug: $DEBUG
 
-ls /code/bin
-
 # Pull in environment variables values from AWS Parameter Store, and preserve the exports
 # source usage per https://stackoverflow.com/q/14742358/452120
 source /code/bin/get-ssm-parameters.sh
+## TROUBLESHOOTING ONLY
 echo Did get-ssm-parameters.sh pull down the params successfully?
 env
 

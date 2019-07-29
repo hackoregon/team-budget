@@ -27,9 +27,6 @@ PROJECT_NAME=`aws ssm get-parameters --names "$NAMESPACE"/"$PROJECT_CANONICAL_NA
 DJANGO_SECRET_KEY=`aws ssm get-parameters --names "$NAMESPACE"/"$PROJECT_CANONICAL_NAME"/DJANGO_SECRET_KEY --with-decryption --region $EC2_REGION | jq -r ".Parameters[0].Value"`
 POSTGRES_PASSWORD=`aws ssm get-parameters --names "$NAMESPACE"/"$PROJECT_CANONICAL_NAME"/POSTGRES_PASSWORD --with-decryption --region $EC2_REGION | jq -r ".Parameters[0].Value"`
 
-echo This is from within get-ssm...
-echo DJANGO_SECRET_KEY is equal to $DJANGO_SECRET_KEY
-
 # Set environment variables in the container
 export DJANGO_SECRET_KEY=$DJANGO_SECRET_KEY
 export POSTGRES_HOST=$POSTGRES_HOST
