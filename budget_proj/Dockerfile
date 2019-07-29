@@ -7,6 +7,5 @@ RUN apt-get update && apt-get install -qqy --no-install-recommends jq && apt-get
 WORKDIR /code
 ADD requirements/ /code/
 RUN pip install -r prod.txt
-RUN pip install awscli
 ADD . /code/
 ENTRYPOINT [ "/code/bin/docker-entrypoint.sh" ]
