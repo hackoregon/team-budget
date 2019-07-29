@@ -10,6 +10,6 @@ def django_db_setup():
         'NAME': os.environ.get('POSTGRES_NAME'),
         'HOST': os.environ.get('POSTGRES_HOST'),
         'PORT': os.environ.get('POSTGRES_PORT'),
-        'USER': pos.environ.get('POSTGRES_USER'),
+        'USER': os.environ.get('POSTGRES_USER'),
         'PASSWORD': os.environ.get('POSTGRES_PASSWORD')
     }
