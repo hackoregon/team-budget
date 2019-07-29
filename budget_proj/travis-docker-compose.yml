@@ -7,9 +7,7 @@ services:
     - CONFIG_BUCKET=${CONFIG_BUCKET}
     - DEPLOY_TARGET=${DEPLOY_TARGET}
     - PROJ_SETTINGS_DIR=${PROJ_SETTINGS_DIR}
-    # Added these late for troubleshooting
     - PROJECT_NAME
-    - DEBUG=False
     - POSTGRES_USER
     - POSTGRES_NAME
     - POSTGRES_HOST
