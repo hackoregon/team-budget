@@ -2,11 +2,10 @@
 
 echo  Running docker-entrypoint.sh...
 
-set -e
+# set -e
 
 echo Debug: $DEBUG
 
-echo docker-entrypoint says...
 ls /code/bin
 
 # Pull in environment variables values from AWS Parameter Store, and preserve the exports
