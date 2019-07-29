@@ -1,15 +1,15 @@
 import pytest
 import os
 import budget_proj
-from budget_proj import project_config
+# from budget_proj import project_config
 
 @pytest.fixture(scope='session')
 def django_db_setup():
     budget_proj.settings.production.DATABASES['default'] = {
-        'ENGINE': project_config.AWS['ENGINE'],
-        'NAME': project_config.AWS['NAME'],
-        'HOST': project_config.AWS['HOST'],
-        'PORT': 5432,
-        'USER': project_config.AWS['USER'],
-        'PASSWORD': project_config.AWS['PASSWORD']
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': os.environ.get('POSTGRES_NAME'),
+        'HOST': os.environ.get('POSTGRES_HOST'),
+        'PORT': os.environ.get('POSTGRES_PORT'),
+        'USER': os.environ.get('POSTGRES_USER'),
+        'PASSWORD': os.environ.get('POSTGRES_PASSWORD')
     }

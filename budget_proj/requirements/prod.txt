@@ -1,1 +1,4 @@
 -r common.txt
+
+# install for use by get-ssm-parameters.sh script
+awscli

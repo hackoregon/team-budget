@@ -1,6 +1,3 @@
 #!/bin/bash
-export PATH=$PATH:~/.local/bin
-#./bin/getconfig.sh
-#python manage.py migrate --noinput
-#python manage.py test --no-input --keepdb
+source /code/bin/get-ssm-parameters.sh
 pytest
