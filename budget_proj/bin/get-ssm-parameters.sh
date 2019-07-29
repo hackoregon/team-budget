@@ -9,6 +9,11 @@ EC2_REGION="$AWS_DEFAULT_REGION" # unfortunately cannot rely on dynamic env var 
 NAMESPACE="$DOCKER_REPO_NAMESPACE" # future-proofing this script for subsequent or past containers
 PROJECT_CANONICAL_NAME="$PROJECT_NAME" # must be set to each project's "Final naming convention" from here https://github.com/hackoregon/civic-devops/issues/1
 
+# Troubleshooting
+echo EC2_REGION
+echo NAMESPACE
+echo PROJECT_CANONICAL_NAME
+
 # Get unencrypted values
 echo Are the variables expanding before we pass them into aws ssm get-parameters?
 echo "$NAMESPACE"/"$PROJECT_CANONICAL_NAME"/POSTGRES_HOST
