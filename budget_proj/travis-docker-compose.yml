@@ -16,6 +16,11 @@ services:
     - POSTGRES_PORT
     - POSTGRES_PASSWORD
     - DJANGO_SECRET_KEY
+    - AWS_DEFAULT_REGION
+    - DOCKER_REPO_NAMESPACE
+    - EC2_REGION
+    - NAMESPACE
+    - PROJECT_CANONICAL_NAME
     build: .
     image: "${DOCKER_REPO}/${DEPLOY_TARGET}/${DOCKER_IMAGE}:latest"
     command: /code/bin/docker-entrypoint.sh

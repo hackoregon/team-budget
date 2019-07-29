@@ -10,6 +10,10 @@ NAMESPACE="$DOCKER_REPO_NAMESPACE" # future-proofing this script for subsequent 
 PROJECT_CANONICAL_NAME="$PROJECT_NAME" # must be set to each project's "Final naming convention" from here https://github.com/hackoregon/civic-devops/issues/1
 
 # Troubleshooting
+echo $AWS_DEFAULT_REGION
+echo $DOCKER_REPO_NAMESPACE
+echo $PROJECT_NAME
+
 echo $EC2_REGION
 echo $NAMESPACE
 echo $PROJECT_CANONICAL_NAME
