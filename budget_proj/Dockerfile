@@ -1,4 +1,4 @@
-FROM python:3.5
+FROM python:3.6.5-stretch
 ENV PYTHONUNBUFFERED 1
 ENV DEBUG=True
 ENV DJANGO_SETTINGS_MODULE budget_proj.settings.production

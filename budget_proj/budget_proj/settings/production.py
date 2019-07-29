@@ -4,7 +4,7 @@ import os
 from .base import *
 # from .. import project_config
 print("This is from within production.py...")
-print(os.environ.get('POSTGRES_NAME'))
+print("POSTGRES_NAME: " + os.environ.get('POSTGRES_NAME'))
 
 
 SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY')

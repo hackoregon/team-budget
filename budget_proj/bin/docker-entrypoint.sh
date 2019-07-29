@@ -6,6 +6,9 @@ set -e
 
 echo Debug: $DEBUG
 
+echo docker-entrypoint says...
+ls /code/bin
+
 # Pull in environment variables values from AWS Parameter Store, and preserve the exports
 # source usage per https://stackoverflow.com/q/14742358/452120
 source /code/bin/get-ssm-parameters.sh
