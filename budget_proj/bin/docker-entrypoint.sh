@@ -18,7 +18,7 @@ python manage.py collectstatic --no-input
 
 # Fire up a lightweight frontend to host the Django endpoints - gunicorn was the default choice
 # gevent used to address ELB/gunicorn issue here https://github.com/benoitc/gunicorn/issues/1194
-gunicorn $PROJECT_NAME.wsgi:application -b :8000 --worker-class 'gevent' --workers 1
+gunicorn budget_proj.wsgi:application -b :8000 --worker-class 'gevent' --workers 1
 
 # The access-log settings will enable detailed logging in CloudWatch to trap every incoming HTTP request - useful for debugging
 # Output looks like this:
