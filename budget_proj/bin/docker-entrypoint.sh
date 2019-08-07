@@ -10,8 +10,8 @@ echo Debug: $DEBUG
 # source usage per https://stackoverflow.com/q/14742358/452120
 source /code/bin/get-ssm-parameters.sh
 ## TROUBLESHOOTING ONLY
-echo Did get-ssm-parameters.sh pull down the params successfully?
-env
+#echo Did get-ssm-parameters.sh pull down the params successfully?
+#env
 
 python manage.py migrate --no-input
 python manage.py collectstatic --no-input
